@@ -1,0 +1,33 @@
+{
+  "input": "../2026-08-28/work/adressen-basemap-roh-sortiert.tsv",
+  "records": 22750793,
+  "states": {
+    "BB": 865218,
+    "BE": 394452,
+    "BW": 3081505,
+    "BY": 3761180,
+    "HB": 176265,
+    "HE": 1628646,
+    "HH": 284445,
+    "MV": 517422,
+    "NI": 2630761,
+    "NW": 4447809,
+    "RP": 1402151,
+    "SH": 949935,
+    "SL": 334367,
+    "SN": 987910,
+    "ST": 664049,
+    "TH": 624678
+  },
+  "blank_locality": 0,
+  "blank_district": 2783740,
+  "blank_street": 0,
+  "blank_house_number": 135,
+  "invalid_coordinates": 0,
+  "longitude_min": 5.8730587,
+  "longitude_max": 15.0332585,
+  "latitude_min": 47.315621,
+  "latitude_max": 55.0524743,
+  "duplicate_house_keys": 14798,
+  "duplicate_house_key_occurrences": 15134
+}

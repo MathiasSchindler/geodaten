@@ -1,0 +1,44 @@
+{
+  "state_code": "BW",
+  "basemap_unique_normalized_addresses": 3059530,
+  "state_unique_normalized_addresses_either_locality": 3364398,
+  "state_unique_normalized_addresses_postal_locality": 3364398,
+  "state_unique_normalized_addresses_municipality": 3364398,
+  "matched_either_locality": 2655768,
+  "matched_postal_locality": 2655768,
+  "matched_municipality": 2655768,
+  "basemap_fields": {
+    "mode": "basemap",
+    "input": "/Users/mathiasschindler/PLZ/adressen/bund/basemap/2026-08-28/work/states/BW.tsv",
+    "state_code": "BW",
+    "records": 3081505,
+    "usable_primary": 3081370,
+    "usable_secondary": 0,
+    "blank_street": 0,
+    "blank_house_number": 135,
+    "blank_primary_locality": 0
+  },
+  "state_fields": {
+    "mode": "state",
+    "input": "/Users/mathiasschindler/PLZ/adressen/BW/2026-08-28/adressen.csv.gz",
+    "state_code": "BW",
+    "records": 3382566,
+    "usable_primary": 3382566,
+    "usable_secondary": 3382566,
+    "blank_street": 0,
+    "blank_house_number": 0,
+    "blank_primary_locality": 0
+  },
+  "coordinate_agreement": {
+    "matched_normalized_keys": 2655768,
+    "matched_basemap_records": 2673911,
+    "within_1_metre": 2657868,
+    "within_5_metres": 2666850,
+    "within_25_metres": 2671777,
+    "within_100_metres": 2672463,
+    "mean_distance_metres": 47.244250395455744,
+    "maximum_distance_metres": 195326.23258661147
+  },
+  "basemap_match_rate_either_locality": 0.8680313642945158,
+  "state_match_rate_either_locality": 0.7893739087943816
+}

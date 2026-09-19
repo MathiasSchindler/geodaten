@@ -1,0 +1,4 @@
+"vollstaendige_adresse","bundesland","landesschluessel","postleitzahl","ortsname_post","gemeindename","ortsteilname","strassenname","hausnummer","hausnummernzusatz","longitude_wgs84","latitude_wgs84","datensatznummer","hausschluessel"
+"Marienplatz 1, 80331 München","Bayern","09","80331","München","","Altstadt-Lehel","Marienplatz","1","","11.5755000","48.1372000","BUND-muenchen","BY;München;Altstadt-Lehel;Marienplatz;1"
+"Rathausplatz 1ab, 24103 Kiel","Schleswig-Holstein","01","24103","Kiel","Kiel","","Rathausplatz","1a","b","10.1349000","54.3233000","BUND-kiel","01;0;02;000;0000;12345;1"
+"Am Wasser 0ab, Rostock","Mecklenburg-Vorpommern","13","","Rostock","","Warnemünde","Am Wasser","0a","b","12.0883512","54.1817910","BUND-rostock","MV;Rostock;Warnemünde;Am Wasser;0ab"

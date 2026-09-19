@@ -1,0 +1,519 @@
+{
+  "source_polygon_geometries": 8175,
+  "usable_polygon_geometries": 8175,
+  "invalid_polygon_postcodes": [],
+  "boundary_grid_size_degrees": 0.01,
+  "addresses": 23252486,
+  "unique_postcode_assignment": 23252435,
+  "no_polygon": 43,
+  "multiple_postcodes": 8,
+  "multiple_relations_same_postcode": 0,
+  "interior_cell_assignments": 15452225,
+  "boundary_cell_assignments": 7800261,
+  "validation": {
+    "official_records": 8528354,
+    "matching": 8509537,
+    "conflicting": 18787,
+    "no_polygon": 29,
+    "multiple_postcodes": 1,
+    "coverage": 0.9999964823223801,
+    "accuracy_when_unique": 0.9977971052694528,
+    "accuracy_overall": 0.9977935953409064,
+    "interior": {
+      "official_records": 5126690,
+      "matching": 5122560,
+      "conflicting": 4130,
+      "no_polygon": 0,
+      "multiple_postcodes": 0
+    },
+    "boundary": {
+      "official_records": 3401664,
+      "matching": 3386977,
+      "conflicting": 14657,
+      "no_polygon": 29,
+      "multiple_postcodes": 1
+    }
+  },
+  "by_state": {
+    "SN": {
+      "addresses": 993939,
+      "unique_postcode_assignment": 993938,
+      "no_polygon": 1,
+      "multiple_postcodes": 0,
+      "validation": {
+        "official_records": 990090,
+        "matching": 988354,
+        "conflicting": 1735,
+        "no_polygon": 1,
+        "multiple_postcodes": 0,
+        "coverage": 0.9999989899908089,
+        "accuracy_when_unique": 0.9982476322835624,
+        "accuracy_overall": 0.9982466240442788,
+        "interior": {
+          "official_records": 658612,
+          "matching": 657921,
+          "conflicting": 691,
+          "no_polygon": 0,
+          "multiple_postcodes": 0
+        },
+        "boundary": {
+          "official_records": 331478,
+          "matching": 330433,
+          "conflicting": 1044,
+          "no_polygon": 1,
+          "multiple_postcodes": 0
+        }
+      }
+    },
+    "NW": {
+      "addresses": 4516958,
+      "unique_postcode_assignment": 4516953,
+      "no_polygon": 4,
+      "multiple_postcodes": 1,
+      "validation": {
+        "official_records": 4509538,
+        "matching": 4498964,
+        "conflicting": 10570,
+        "no_polygon": 3,
+        "multiple_postcodes": 1,
+        "coverage": 0.9999991129911756,
+        "accuracy_when_unique": 0.9976560771024234,
+        "accuracy_overall": 0.9976551921726793,
+        "interior": {
+          "official_records": 2773986,
+          "matching": 2771544,
+          "conflicting": 2442,
+          "no_polygon": 0,
+          "multiple_postcodes": 0
+        },
+        "boundary": {
+          "official_records": 1735552,
+          "matching": 1727420,
+          "conflicting": 8128,
+          "no_polygon": 3,
+          "multiple_postcodes": 1
+        }
+      }
+    },
+    "BW": {
+      "addresses": 3387256,
+      "unique_postcode_assignment": 3387249,
+      "no_polygon": 6,
+      "multiple_postcodes": 1,
+      "validation": {
+        "official_records": 0,
+        "matching": 0,
+        "conflicting": 0,
+        "no_polygon": 0,
+        "multiple_postcodes": 0,
+        "coverage": null,
+        "accuracy_when_unique": null,
+        "accuracy_overall": null,
+        "interior": {
+          "official_records": 0,
+          "matching": 0,
+          "conflicting": 0,
+          "no_polygon": 0,
+          "multiple_postcodes": 0
+        },
+        "boundary": {
+          "official_records": 0,
+          "matching": 0,
+          "conflicting": 0,
+          "no_polygon": 0,
+          "multiple_postcodes": 0
+        }
+      }
+    },
+    "MV": {
+      "addresses": 517422,
+      "unique_postcode_assignment": 517418,
+      "no_polygon": 4,
+      "multiple_postcodes": 0,
+      "validation": {
+        "official_records": 0,
+        "matching": 0,
+        "conflicting": 0,
+        "no_polygon": 0,
+        "multiple_postcodes": 0,
+        "coverage": null,
+        "accuracy_when_unique": null,
+        "accuracy_overall": null,
+        "interior": {
+          "official_records": 0,
+          "matching": 0,
+          "conflicting": 0,
+          "no_polygon": 0,
+          "multiple_postcodes": 0
+        },
+        "boundary": {
+          "official_records": 0,
+          "matching": 0,
+          "conflicting": 0,
+          "no_polygon": 0,
+          "multiple_postcodes": 0
+        }
+      }
+    },
+    "NI": {
+      "addresses": 2709334,
+      "unique_postcode_assignment": 2709330,
+      "no_polygon": 3,
+      "multiple_postcodes": 1,
+      "validation": {
+        "official_records": 0,
+        "matching": 0,
+        "conflicting": 0,
+        "no_polygon": 0,
+        "multiple_postcodes": 0,
+        "coverage": null,
+        "accuracy_when_unique": null,
+        "accuracy_overall": null,
+        "interior": {
+          "official_records": 0,
+          "matching": 0,
+          "conflicting": 0,
+          "no_polygon": 0,
+          "multiple_postcodes": 0
+        },
+        "boundary": {
+          "official_records": 0,
+          "matching": 0,
+          "conflicting": 0,
+          "no_polygon": 0,
+          "multiple_postcodes": 0
+        }
+      }
+    },
+    "BB": {
+      "addresses": 868435,
+      "unique_postcode_assignment": 868435,
+      "no_polygon": 0,
+      "multiple_postcodes": 0,
+      "validation": {
+        "official_records": 867290,
+        "matching": 867046,
+        "conflicting": 244,
+        "no_polygon": 0,
+        "multiple_postcodes": 0,
+        "coverage": 1,
+        "accuracy_when_unique": 0.9997186638840526,
+        "accuracy_overall": 0.9997186638840526,
+        "interior": {
+          "official_records": 668884,
+          "matching": 668871,
+          "conflicting": 13,
+          "no_polygon": 0,
+          "multiple_postcodes": 0
+        },
+        "boundary": {
+          "official_records": 198406,
+          "matching": 198175,
+          "conflicting": 231,
+          "no_polygon": 0,
+          "multiple_postcodes": 0
+        }
+      }
+    },
+    "RP": {
+      "addresses": 1407373,
+      "unique_postcode_assignment": 1407373,
+      "no_polygon": 0,
+      "multiple_postcodes": 0,
+      "validation": {
+        "official_records": 0,
+        "matching": 0,
+        "conflicting": 0,
+        "no_polygon": 0,
+        "multiple_postcodes": 0,
+        "coverage": null,
+        "accuracy_when_unique": null,
+        "accuracy_overall": null,
+        "interior": {
+          "official_records": 0,
+          "matching": 0,
+          "conflicting": 0,
+          "no_polygon": 0,
+          "multiple_postcodes": 0
+        },
+        "boundary": {
+          "official_records": 0,
+          "matching": 0,
+          "conflicting": 0,
+          "no_polygon": 0,
+          "multiple_postcodes": 0
+        }
+      }
+    },
+    "TH": {
+      "addresses": 626135,
+      "unique_postcode_assignment": 626135,
+      "no_polygon": 0,
+      "multiple_postcodes": 0,
+      "validation": {
+        "official_records": 0,
+        "matching": 0,
+        "conflicting": 0,
+        "no_polygon": 0,
+        "multiple_postcodes": 0,
+        "coverage": null,
+        "accuracy_when_unique": null,
+        "accuracy_overall": null,
+        "interior": {
+          "official_records": 0,
+          "matching": 0,
+          "conflicting": 0,
+          "no_polygon": 0,
+          "multiple_postcodes": 0
+        },
+        "boundary": {
+          "official_records": 0,
+          "matching": 0,
+          "conflicting": 0,
+          "no_polygon": 0,
+          "multiple_postcodes": 0
+        }
+      }
+    },
+    "HH": {
+      "addresses": 303414,
+      "unique_postcode_assignment": 303414,
+      "no_polygon": 0,
+      "multiple_postcodes": 0,
+      "validation": {
+        "official_records": 302408,
+        "matching": 300978,
+        "conflicting": 1430,
+        "no_polygon": 0,
+        "multiple_postcodes": 0,
+        "coverage": 1,
+        "accuracy_when_unique": 0.9952712891193355,
+        "accuracy_overall": 0.9952712891193355,
+        "interior": {
+          "official_records": 61913,
+          "matching": 61869,
+          "conflicting": 44,
+          "no_polygon": 0,
+          "multiple_postcodes": 0
+        },
+        "boundary": {
+          "official_records": 240495,
+          "matching": 239109,
+          "conflicting": 1386,
+          "no_polygon": 0,
+          "multiple_postcodes": 0
+        }
+      }
+    },
+    "ST": {
+      "addresses": 667116,
+      "unique_postcode_assignment": 667116,
+      "no_polygon": 0,
+      "multiple_postcodes": 0,
+      "validation": {
+        "official_records": 0,
+        "matching": 0,
+        "conflicting": 0,
+        "no_polygon": 0,
+        "multiple_postcodes": 0,
+        "coverage": null,
+        "accuracy_when_unique": null,
+        "accuracy_overall": null,
+        "interior": {
+          "official_records": 0,
+          "matching": 0,
+          "conflicting": 0,
+          "no_polygon": 0,
+          "multiple_postcodes": 0
+        },
+        "boundary": {
+          "official_records": 0,
+          "matching": 0,
+          "conflicting": 0,
+          "no_polygon": 0,
+          "multiple_postcodes": 0
+        }
+      }
+    },
+    "SH": {
+      "addresses": 955211,
+      "unique_postcode_assignment": 955186,
+      "no_polygon": 25,
+      "multiple_postcodes": 0,
+      "validation": {
+        "official_records": 953360,
+        "matching": 950968,
+        "conflicting": 2367,
+        "no_polygon": 25,
+        "multiple_postcodes": 0,
+        "coverage": 0.999973776957288,
+        "accuracy_when_unique": 0.9975171372078021,
+        "accuracy_overall": 0.997490979273307,
+        "interior": {
+          "official_records": 629911,
+          "matching": 629007,
+          "conflicting": 904,
+          "no_polygon": 0,
+          "multiple_postcodes": 0
+        },
+        "boundary": {
+          "official_records": 323449,
+          "matching": 321961,
+          "conflicting": 1463,
+          "no_polygon": 25,
+          "multiple_postcodes": 0
+        }
+      }
+    },
+    "BY": {
+      "addresses": 3761180,
+      "unique_postcode_assignment": 3761179,
+      "no_polygon": 0,
+      "multiple_postcodes": 1,
+      "validation": {
+        "official_records": 0,
+        "matching": 0,
+        "conflicting": 0,
+        "no_polygon": 0,
+        "multiple_postcodes": 0,
+        "coverage": null,
+        "accuracy_when_unique": null,
+        "accuracy_overall": null,
+        "interior": {
+          "official_records": 0,
+          "matching": 0,
+          "conflicting": 0,
+          "no_polygon": 0,
+          "multiple_postcodes": 0
+        },
+        "boundary": {
+          "official_records": 0,
+          "matching": 0,
+          "conflicting": 0,
+          "no_polygon": 0,
+          "multiple_postcodes": 0
+        }
+      }
+    },
+    "HE": {
+      "addresses": 1632549,
+      "unique_postcode_assignment": 1632545,
+      "no_polygon": 0,
+      "multiple_postcodes": 4,
+      "validation": {
+        "official_records": 0,
+        "matching": 0,
+        "conflicting": 0,
+        "no_polygon": 0,
+        "multiple_postcodes": 0,
+        "coverage": null,
+        "accuracy_when_unique": null,
+        "accuracy_overall": null,
+        "interior": {
+          "official_records": 0,
+          "matching": 0,
+          "conflicting": 0,
+          "no_polygon": 0,
+          "multiple_postcodes": 0
+        },
+        "boundary": {
+          "official_records": 0,
+          "matching": 0,
+          "conflicting": 0,
+          "no_polygon": 0,
+          "multiple_postcodes": 0
+        }
+      }
+    },
+    "BE": {
+      "addresses": 394456,
+      "unique_postcode_assignment": 394456,
+      "no_polygon": 0,
+      "multiple_postcodes": 0,
+      "validation": {
+        "official_records": 394303,
+        "matching": 393669,
+        "conflicting": 634,
+        "no_polygon": 0,
+        "multiple_postcodes": 0,
+        "coverage": 1,
+        "accuracy_when_unique": 0.9983920994767983,
+        "accuracy_overall": 0.9983920994767983,
+        "interior": {
+          "official_records": 71465,
+          "matching": 71465,
+          "conflicting": 0,
+          "no_polygon": 0,
+          "multiple_postcodes": 0
+        },
+        "boundary": {
+          "official_records": 322838,
+          "matching": 322204,
+          "conflicting": 634,
+          "no_polygon": 0,
+          "multiple_postcodes": 0
+        }
+      }
+    },
+    "HB": {
+      "addresses": 176527,
+      "unique_postcode_assignment": 176527,
+      "no_polygon": 0,
+      "multiple_postcodes": 0,
+      "validation": {
+        "official_records": 176374,
+        "matching": 174821,
+        "conflicting": 1553,
+        "no_polygon": 0,
+        "multiple_postcodes": 0,
+        "coverage": 1,
+        "accuracy_when_unique": 0.991194847313096,
+        "accuracy_overall": 0.991194847313096,
+        "interior": {
+          "official_records": 34862,
+          "matching": 34860,
+          "conflicting": 2,
+          "no_polygon": 0,
+          "multiple_postcodes": 0
+        },
+        "boundary": {
+          "official_records": 141512,
+          "matching": 139961,
+          "conflicting": 1551,
+          "no_polygon": 0,
+          "multiple_postcodes": 0
+        }
+      }
+    },
+    "SL": {
+      "addresses": 335181,
+      "unique_postcode_assignment": 335181,
+      "no_polygon": 0,
+      "multiple_postcodes": 0,
+      "validation": {
+        "official_records": 334991,
+        "matching": 334737,
+        "conflicting": 254,
+        "no_polygon": 0,
+        "multiple_postcodes": 0,
+        "coverage": 1,
+        "accuracy_when_unique": 0.999241770674436,
+        "accuracy_overall": 0.999241770674436,
+        "interior": {
+          "official_records": 227057,
+          "matching": 227023,
+          "conflicting": 34,
+          "no_polygon": 0,
+          "multiple_postcodes": 0
+        },
+        "boundary": {
+          "official_records": 107934,
+          "matching": 107714,
+          "conflicting": 220,
+          "no_polygon": 0,
+          "multiple_postcodes": 0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "started_at": "2026-08-28T11:10:15.347Z",
+  "completed_at": "2026-08-28T11:29:39.441Z",
+  "tile_url": "https://sgx.geodatenzentrum.de/gdz_basemapde_vektor/tiles/v2/bm_web_de_3857/{z}/{x}/{y}.pbf",
+  "planned_tiles": 679682,
+  "completed_tiles": 226500,
+  "empty_tiles": 108359,
+  "not_found_tiles": 9355,
+  "records_before_exact_deduplication": 7535085,
+  "downloaded_bytes": 1809444302,
+  "chunk_size": 500,
+  "concurrency": 12,
+  "shard_count": 3,
+  "shard_index": 1
+}

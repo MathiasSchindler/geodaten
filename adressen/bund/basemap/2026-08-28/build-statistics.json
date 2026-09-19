@@ -1,0 +1,8 @@
+{
+  "input": "../2026-08-28/work/adressen-basemap-roh-sortiert.tsv",
+  "output": "../2026-08-28/work/adressen-unsortiert.csv",
+  "state_filter": null,
+  "records": 22750793,
+  "blank_house_numbers": 135,
+  "unknown_states": 0
+}

@@ -1,0 +1,577 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "Ortssuchdienst",
+    "description" : "LDBV Geodatendienste - RESTful-Webservice der BVV für die Suche nach Ort und Adressen",
+    "termsOfService" : "https://geodatenonline.bayern.de/geodatenonline/seiten/nutzungsbedingungen",
+    "contact" : {
+      "url" : "https://geodatenonline.bayern.de/geodatenonline/anwendungen4/kontakt",
+      "email" : "service@geodaten.bayern.de"
+    },
+    "license" : {
+      "name" : "Nutzungsbedingungen",
+      "url" : "https://geodatenonline.bayern.de/geodatenonline/seiten/nutzungsbedingungen"
+    },
+    "version" : "2.0"
+  },
+  "servers" : [ {
+    "url" : "https://geoservices.bayern.de/bvvapi/tb/adressen"
+  } ],
+  "security" : [ {
+    "ApiKeyAuth" : [ ]
+  } ],
+  "paths" : {
+    "/v2/adressen/coord/{srid_in}/{east}/{north}" : {
+      "get" : {
+        "summary" : "Liefert das Ergebnis einer Koordinaten-Anfrage.",
+        "description" : "Die id der Antwort ist nur temporär gültig.",
+        "operationId" : "getClosestLocationsToCoord",
+        "parameters" : [ {
+          "name" : "east",
+          "in" : "path",
+          "description" : "Rechtswert / Länge",
+          "required" : true,
+          "schema" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "example" : 692692.01
+        }, {
+          "name" : "north",
+          "in" : "path",
+          "description" : "Hochwert / Breite",
+          "required" : true,
+          "schema" : {
+            "type" : "number",
+            "format" : "double"
+          },
+          "example" : 5335289.01
+        }, {
+          "name" : "srid_in",
+          "in" : "path",
+          "description" : "gewünschtes Anfrage-/Ausgabe-SRID (Koordinatensystem).",
+          "required" : true,
+          "schema" : {
+            "type" : "integer",
+            "format" : "int32",
+            "default" : 25832,
+            "enum" : [ 25832, 4326, 25833, 31468, 3857 ]
+          }
+        }, {
+          "name" : "limit",
+          "in" : "query",
+          "description" : "Maximale Anzahl an gelieferten Ergebnissen. Limitiert auf Maximalwert 100",
+          "allowEmptyValue" : true,
+          "schema" : {
+            "maximum" : 100,
+            "minimum" : 1,
+            "type" : "integer",
+            "format" : "int32",
+            "default" : 10
+          }
+        }, {
+          "name" : "max_dist",
+          "in" : "query",
+          "description" : "Maximalabstand in Metern zum Eingabepunkt bei dem Ergebnisse geliefert werden. Limitiert auf Maximalwert 500",
+          "allowEmptyValue" : true,
+          "schema" : {
+            "maximum" : 500,
+            "exclusiveMaximum" : false,
+            "minimum" : 1.0,
+            "exclusiveMinimum" : false,
+            "type" : "number",
+            "format" : "double",
+            "default" : 50
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Liefert Adressen innerhalb eines Maximalabstandes zur Eingabekoordinate. Geordnet nach Abstand zur Eingabekoordinate. Leere Liste falls keine Ergebnisse.",
+            "content" : {
+              "application/json;charset=utf-8" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/LocationSearchResults"
+                }
+              },
+              "application/geo+json;charset=utf-8" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/LocationSearchResults"
+                }
+              }
+            }
+          },
+          "400" : {
+            "description" : "Ungültige Eingabe"
+          },
+          "403" : {
+            "description" : "Fehlende Zugriffsberechtigung"
+          },
+          "500" : {
+            "description" : "Interner Fehler"
+          }
+        }
+      }
+    },
+    "/v2/adressen/{id}" : {
+      "get" : {
+        "summary" : "Liefert das Ergebnis einer ID-Anfrage",
+        "description" : "Liefert Detailinformationen einer\n     Adresse. Normalerweise wird zuerst /adressen/search/{term} mit\n     filter=address aufgerufen und dann die ID der Antwort für\n     diesen Aufruf verwendet.",
+        "operationId" : "getLocationById",
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "ID (interne ID, nur temporär gültig)",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "srid_out",
+          "in" : "query",
+          "description" : "gewünschte Ausgabe-SRID (Koordinatensystem)",
+          "schema" : {
+            "type" : "integer",
+            "format" : "int32",
+            "default" : 25832,
+            "enum" : [ 25832, 4326, 25833, 31468, 3857 ]
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Liefert eine Adresse mit Detailinformationen",
+            "content" : {
+              "application/json;charset=utf-8" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Location"
+                }
+              },
+              "application/geo+json;charset=utf-8" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/LocationFeature"
+                }
+              }
+            }
+          },
+          "400" : {
+            "description" : "Ungültige Eingabe"
+          },
+          "403" : {
+            "description" : "Fehlende Zugriffsberechtigung"
+          },
+          "404" : {
+            "description" : "Nicht gefunden"
+          },
+          "500" : {
+            "description" : "Interner Fehler"
+          }
+        }
+      }
+    },
+    "/v2/adressen/search/{term}" : {
+      "get" : {
+        "summary" : "Liefert das Ergebnis einer Volltextsuche nach Ort oder Adresse",
+        "description" : "Die id der Antwort ist nur temporär gültig.",
+        "operationId" : "searchLocations",
+        "parameters" : [ {
+          "name" : "term",
+          "in" : "path",
+          "description" : "Sucheingabe",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "srid_out",
+          "in" : "query",
+          "description" : "gewünschtes SRID (Koordinatensystem) der Antwort",
+          "schema" : {
+            "type" : "integer",
+            "format" : "int32",
+            "default" : 25832,
+            "enum" : [ 25832, 4326, 25833, 31468, 3857 ]
+          }
+        }, {
+          "name" : "filter",
+          "in" : "query",
+          "description" : "Beschränkung auf Adressen",
+          "allowEmptyValue" : true,
+          "schema" : {
+            "type" : "string",
+            "enum" : [ "address" ]
+          }
+        }, {
+          "name" : "fuzzy",
+          "in" : "query",
+          "description" : "Unscharfe Suche (basierend auf einer Levenshtein-Distanz von max. 2)",
+          "allowEmptyValue" : true,
+          "schema" : {
+            "type" : "boolean",
+            "default" : false
+          }
+        }, {
+          "name" : "limit",
+          "in" : "query",
+          "description" : "Maximale Anzahl an gelieferten Ergebnissen. Limitiert auf Maximalwert 100",
+          "allowEmptyValue" : true,
+          "schema" : {
+            "maximum" : 100,
+            "minimum" : 1,
+            "type" : "integer",
+            "format" : "int32",
+            "default" : 20
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Liefert Adressen einer Volltextsuche",
+            "content" : {
+              "application/json;charset=utf-8" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/LocationSearchResults"
+                }
+              },
+              "application/geo+json;charset=utf-8" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/LocationSearchResultsFeatureCollection"
+                }
+              }
+            }
+          },
+          "400" : {
+            "description" : "Ungültige Eingabe"
+          },
+          "403" : {
+            "description" : "Fehlende Zugriffsberechtigung"
+          },
+          "500" : {
+            "description" : "Interner Fehler"
+          }
+        }
+      }
+    },
+    "/v2/adressen/search" : {
+      "post" : {
+        "summary" : "Liefert das Ergebnis einer Volltextsuche nach Ort oder Adresse. Prinzipiell wie die GET-Methode, jedoch sicherer bei der Verwendung reservierter Zeichen wie z.B. '/'.",
+        "description" : "Die id der Antwort ist nur temporär gültig.",
+        "operationId" : "searchLocationsPost",
+        "requestBody" : {
+          "description" : "Enthält den Suchbegriff sowie optional weitere Angaben.",
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/LocationRequest"
+              }
+            }
+          },
+          "required" : true
+        },
+        "responses" : {
+          "200" : {
+            "description" : "Liefert Adressen einer Volltextsuche",
+            "content" : {
+              "application/json;charset=utf-8" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/LocationSearchResults"
+                }
+              },
+              "application/geo+json;charset=utf-8" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/LocationSearchResultsFeatureCollection"
+                }
+              }
+            }
+          },
+          "400" : {
+            "description" : "Ungültige Eingabe"
+          },
+          "403" : {
+            "description" : "Fehlende Zugriffsberechtigung"
+          },
+          "500" : {
+            "description" : "Interner Fehler"
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "LocationSearchResult" : {
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "string"
+          },
+          "bbox" : {
+            "type" : "array",
+            "items" : {
+              "type" : "number",
+              "format" : "double"
+            }
+          },
+          "label" : {
+            "type" : "string"
+          },
+          "coord" : {
+            "maxItems" : 2,
+            "minItems" : 2,
+            "type" : "array",
+            "items" : {
+              "type" : "number",
+              "format" : "double"
+            }
+          }
+        }
+      },
+      "LocationSearchResults" : {
+        "type" : "object",
+        "properties" : {
+          "results" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/LocationSearchResult"
+            }
+          },
+          "otherDocs" : {
+            "type" : "integer",
+            "format" : "int64"
+          }
+        }
+      },
+      "Location" : {
+        "type" : "object",
+        "properties" : {
+          "land" : {
+            "type" : "string"
+          },
+          "bezirk" : {
+            "type" : "string"
+          },
+          "kreis" : {
+            "type" : "string"
+          },
+          "gemeinde" : {
+            "type" : "string"
+          },
+          "gemeindeteil" : {
+            "type" : "string"
+          },
+          "strasse" : {
+            "type" : "string"
+          },
+          "hausnummer" : {
+            "type" : "string"
+          },
+          "hausnummer_zusatz" : {
+            "type" : "string"
+          },
+          "postleitzahl" : {
+            "type" : "integer",
+            "format" : "int32",
+            "nullable" : true
+          },
+          "postort" : {
+            "type" : "string"
+          },
+          "postortsteil" : {
+            "type" : "string"
+          },
+          "postort_zusatz" : {
+            "type" : "string"
+          },
+          "label" : {
+            "type" : "string"
+          },
+          "coord" : {
+            "maxItems" : 2,
+            "minItems" : 2,
+            "type" : "array",
+            "items" : {
+              "type" : "number",
+              "format" : "double"
+            }
+          }
+        }
+      },
+      "GeoJsonCrs" : {
+        "type" : "object",
+        "properties" : {
+          "type" : {
+            "type" : "string",
+            "default" : "name",
+            "enum" : [ "name", "link" ]
+          },
+          "properties" : {
+            "$ref" : "#/components/schemas/GeoJsonCrsProperties"
+          }
+        },
+        "description" : "Crs der Geojson Geometrie. Wird nur gesetzt wenn Geometrie nicht in in WGS 84 Crs vorliegt"
+      },
+      "GeoJsonCrsProperties" : {
+        "type" : "object",
+        "properties" : {
+          "name" : {
+            "type" : "string",
+            "description" : "Bezeichner des Crs in Kurzform mit Prefix 'EPSG:'",
+            "example" : "EPSG:25832"
+          }
+        }
+      },
+      "GeoJsonGeometry" : {
+        "type" : "object",
+        "properties" : {
+          "type" : {
+            "type" : "string"
+          },
+          "bbox" : {
+            "type" : "array",
+            "items" : {
+              "type" : "number",
+              "format" : "double"
+            }
+          },
+          "crs" : {
+            "$ref" : "#/components/schemas/GeoJsonCrs"
+          }
+        },
+        "description" : "Erweiterte GeoJson Geometrie, die auch andere Crs als WGS 84 unterstützt. Nur wenn ein anderes Crs vorliegt, wird ein Crs Feld nach GeoJson 2008 Spezifikation http://wiki.geojson.org/GeoJSON_draft_version_6 Kurzform gesetzt."
+      },
+      "LocationFeature" : {
+        "type" : "object",
+        "properties" : {
+          "type" : {
+            "type" : "string"
+          },
+          "bbox" : {
+            "type" : "array",
+            "items" : {
+              "type" : "number",
+              "format" : "double"
+            }
+          },
+          "id" : {
+            "type" : "string"
+          },
+          "geometry" : {
+            "$ref" : "#/components/schemas/GeoJsonGeometry"
+          },
+          "properties" : {
+            "$ref" : "#/components/schemas/LocationFeatureProperties"
+          }
+        },
+        "description" : "GeoJson Feature Objekt, das LocationFeature repräsentiert.Wenn Crs gleich WGS 84 (srid=4326), dann ist das Objekt konform zum Geojson Standard RFC 7946 ( https://datatracker.ietf.org/doc/html/rfc7946 ). Im Fall eines anderen Crs, hat die Geometrie des Geojson Objektes einen CRS SRID identifier."
+      },
+      "LocationFeatureProperties" : {
+        "type" : "object",
+        "properties" : {
+          "land" : {
+            "type" : "string"
+          },
+          "bezirk" : {
+            "type" : "string"
+          },
+          "kreis" : {
+            "type" : "string"
+          },
+          "gemeinde" : {
+            "type" : "string"
+          },
+          "gemeindeteil" : {
+            "type" : "string"
+          },
+          "strasse" : {
+            "type" : "string"
+          },
+          "hausnummer" : {
+            "type" : "string"
+          },
+          "hausnummer_zusatz" : {
+            "type" : "string"
+          },
+          "postleitzahl" : {
+            "type" : "integer",
+            "format" : "int32"
+          },
+          "postort" : {
+            "type" : "string"
+          },
+          "postortsteil" : {
+            "type" : "string"
+          },
+          "postort_zusatz" : {
+            "type" : "string"
+          },
+          "label" : {
+            "type" : "string"
+          },
+          "coord" : {
+            "maxItems" : 2,
+            "minItems" : 2,
+            "type" : "array",
+            "items" : {
+              "type" : "number",
+              "format" : "double"
+            }
+          }
+        }
+      },
+      "LocationSearchResultsFeatureCollection" : {
+        "type" : "object",
+        "properties" : {
+          "type" : {
+            "type" : "string"
+          },
+          "bbox" : {
+            "type" : "array",
+            "items" : {
+              "type" : "number",
+              "format" : "double"
+            }
+          },
+          "features" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/LocationFeature"
+            }
+          },
+          "otherdocs" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        },
+        "description" : "GeoJson FeatureCollection Objekt, das LocationSearchResults repräsentiert.Beinhaltet Liste von LocationSearchResultFeature Objekten"
+      },
+      "LocationRequest" : {
+        "required" : [ "term" ],
+        "type" : "object",
+        "properties" : {
+          "term" : {
+            "minLength" : 1,
+            "type" : "string"
+          },
+          "srid_out" : {
+            "type" : "integer",
+            "format" : "int32"
+          },
+          "filter" : {
+            "type" : "string"
+          },
+          "fuzzy" : {
+            "type" : "boolean"
+          },
+          "limit" : {
+            "type" : "integer",
+            "format" : "int32"
+          }
+        }
+      }
+    },
+    "securitySchemes" : {
+      "ApiKeyAuth" : {
+        "type" : "apiKey",
+        "name" : "x-api-key",
+        "in" : "header"
+      }
+    }
+  }
+}

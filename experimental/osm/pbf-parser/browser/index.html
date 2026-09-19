@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Berlin Route Lab</title>
+  <link rel="stylesheet" href="styles.css?v=3">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="toolbar" aria-label="Route controls">
+      <div class="brand-block">
+        <h1>Berlin Route Lab</h1>
+        <p>OSMRTE01 routing and OSMRPACK rendering in WebAssembly</p>
+      </div>
+
+      <form id="route-form" class="route-form">
+        <label>
+          <span>Start</span>
+          <input id="from-input" autocomplete="street-address" value="Friedrich-Engels-Straße 22" spellcheck="false">
+        </label>
+        <label>
+          <span>Target</span>
+          <input id="to-input" autocomplete="street-address" value="Unter den Linden 50" spellcheck="false">
+        </label>
+        <div class="button-row">
+          <button type="submit" id="route-button">Find Route</button>
+          <button type="button" id="render-button">Render Berlin</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="status-band" aria-live="polite">
+      <div id="status-text">Ready. Data loads on demand.</div>
+      <progress id="progress" value="0" max="1"></progress>
+    </section>
+
+    <section class="workspace">
+      <div id="map-pane" class="map-pane">
+        <img id="map-image" alt="Rendered Berlin map" hidden>
+        <div id="from-marker" class="map-marker from-marker" hidden></div>
+        <div id="to-marker" class="map-marker to-marker" hidden></div>
+        <div id="map-placeholder">Loading Berlin map...</div>
+      </div>
+
+      <aside class="details-pane" aria-label="Route details">
+        <h2>Route</h2>
+        <dl id="summary-list" class="summary-list"></dl>
+        <ol id="steps-list" class="steps-list"></ol>
+        <pre id="log-output" class="log-output"></pre>
+      </aside>
+    </section>
+
+    <footer class="data-footer">
+      Map and routing data rendered from <a href="https://www.openstreetmap.org/" rel="noreferrer" target="_blank">OpenStreetMap</a> and its contributors, provided by <a href="https://download.geofabrik.de/europe/germany.html" rel="noreferrer" target="_blank">Geofabrik</a>, licensed under the <a href="https://opendatacommons.org/licenses/odbl/" rel="noreferrer" target="_blank">ODbL</a>.
+    </footer>
+  </main>
+
+  <script src="wasm/xzdec.js"></script>
+  <script src="wasm/rte-route.js"></script>
+  <script src="wasm/rpack-render.js"></script>
+  <script src="app.js?v=9"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "basemap-address-export",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "plan": "node plan-tiles.mjs",
+    "extract": "node extract-addresses.mjs",
+    "build": "node build-csv.mjs"
+  },
+  "dependencies": {
+    "@mapbox/tile-cover": "3.0.2",
+    "csv-parse": "6.1.0",
+    "vtt": "0.0.3"
+  }
+}

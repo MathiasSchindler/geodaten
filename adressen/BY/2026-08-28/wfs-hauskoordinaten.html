@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="de" xmlns="http://www.w3.org/1999/xhtml" class="no-js">
+<head>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<![endif]-->
+<meta charset="utf-8">
+<title>GEODATENONLINE -  WFS Hauskoordinaten</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Language" content="de"/>
+<meta name="title" content="GeodatenOnline: WFS Hauskoordinaten"/>
+<meta name="keywords" content="GeodatenOnline, Geoportal, Bayerische Vermessungsverwaltung, Karte, Topographische Karten, Luftbild, Digitales Orthophoto, DOP, Digitale Flurkarte, DFK, Digitale Ortskarte, DOK, Digitale Topographische Karte, DTK25, DTK50, DTK500, Positionsblätter, Geowebdienste, Web Map Service, WMS, Web Feature Service, WFS, Katasterauszug zur Bauvorlage, ALB-Auszug, Auszug aus dem Automatisierten Liegenschaftsbuch, Vektordaten, Rasterdaten, Verwaltungsgrenzen, Digitale Höhenlinienkarte, DHK, Kartenblattschnitte, Höhenfestpunkte, Lagefestpunkte, Festpunkte"/>
+<meta name="description" content="GeodatenOnline - Die Vetriebsplattform der Bayerischen Vermessungsverwaltung"/>
+<meta name="robots" content="index, follow"/>
+<meta name="publisher" content="Bayerische Vermessungsverwaltung"/>
+<meta name="copyright" content="&copy; Bayerische Vermessungsverwaltung"/>
+<link rel="shortcut icon" href="../AvM9EO0r7kMlcMj5kFPB8AusklFNvk0qi31Wg0rtaasJdg1kxpIuB8a41AMqOSgQNs0wyMcHsAQwpA4oLtifyU1hyP7C02SBhhElPfTyPZMOUEuOWEdnOl3kfCXividJ4u9NKYpA7mJ_ofSJtuvUo_2rg7t-RD2Z/AvM07/SJt6c/lFN43/1Wg60/Xiv44" type="image/x-icon" />
+<script type="text/javascript" src="../AvM9EO0r7kMlcMj5kFPB8AusklFNvk0qarumWA0i1TR2I9-gSDMjAfAmcqSnbJATKqcAvL-xw1zEruW_UoDZDf1X16e11v-SOv5RS6ffrSAzC5cYSeddw4QZ6S-2ABE6anL0bsFlbq6jhusjTtknIFKCZMT8x47iKodI8sVyoMGK0wM-WPLGnhxVJQ_kWMYFqsx0lxSb184/AvM07/PB8d5/usk4c/VJQ2c/ruWb3"></script>
+<script type="text/javascript" src="../AvM9EO0r7kMlcMj5kFPB8L_7IZeKWaLC7W7d-NBPsF8hdPGV6uJ9a9xr52xZqIYCZCmD65hYNb2i0cNElbB2RePTsCIwAYKiWqRJuasCei0ryMDilHhZgAWlodw5fyRkncHjoPr82HeU-rI8-BNvbkwIldJHCiWsFRIvEm4JWZfrt3f-VWsSEw/AvM07/7W7f6/lHhbb/joP8a/CIw30"></script>
+<link rel="stylesheet" type="text/css" href="../AvM9EO0r7kMlcMj5kFPB8AusklFNvk0qarumWA0i1TR2I9-gSDMjAfAmcqSnbJATKqcAvL-xw1zEruW_UoDZDf1X16e11v-SOv5RS6ffrSAzC5cYSeddw4QZ6S-2ABE6T70MKcqwf56hpYwrggOQqg/AvM07/DZDbd/9-gb2/umW1e/6S-8f;jsessionid=31845D8017A70DE60BAF453B0FA3B500" />
+<link rel="stylesheet" type="text/css" href="../AvM9EO0r7kMlcMj5kFPB8AusklFNvk0qi31Wg0rtaasJdg1kxpIuB8a41AMqOSgQNs0wyMcHsAQwpA4oLtifyfsPRFUGywyLTGo6nQxAniDnSxo_5NmVE_xGvbwoYEk--M8mRRxyFzIe15zniYlJqESAAb4JBb4q/AvM07/zni84/AvM07/zni84/AvM07" />
+
+<link rel="stylesheet" type="text/css" href="../AvM9EO0r7kMlcMj5kFPB8AusklFNvk0qarumWA0i1TR2I9-gSDMjAfAmcqSnbJATKqcAvL-xw1zEruW_UoDZDf1X16e11v-SOv5RS6ffrSAzC5cYSeddw4QZ6S-2ABE6fDmX5dKL_swf3535n6Gqjm3yCo_WVahx/AvM07/35n6b/mcq5a/3yCbc/JATfc;jsessionid=31845D8017A70DE60BAF453B0FA3B500" />
+<link rel="stylesheet" type="text/css" href="../AvM9EO0r7kMlcMj5kFPB8AusklFNvk0qarumWA0i1TR2I9-gSDMjAfAmcqSnbJATKqcAvL-xw1zEruW_UoDZDf1X16e11v-SOv5RS6ffrSAzC5cYSeddw4QZ6S-2ABE62VRVEI3Z-17BQV1MMcQTiw/AvM07/DZDbd/9-gb2/umW1e/6S-8f;jsessionid=31845D8017A70DE60BAF453B0FA3B500" />
+<script type="text/javascript" src="../AvM9EO0r7kMlcMj5kFPB8AusklFNvk0qarumWA0i1TR2I9-gSDMjAfAmcqSnbJATKqcAvL-xw1zEruW_UoDZDf1X16e11v-SOv5RS6ffrSAzC5cYSeddw4QZ6S-2ABE6TPcA_XlRVPZFYZMjY_GxqWEZmgtFPf91BwctWVx8EpW6Wr8GscHgewLpMzHRtObyjXKN5uncg-SxfZxomU6sEw/AvM07/ewLd9/EO045/w1z7f/ewLd9"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+Wicket.Event.add(window, "domready", function(event) { 
+$('#idb').on('click',function(){$('#navbarTogglerDemo01 i').animate({width:'20px'},{duration: 0});if($('#navbarTogglerDemo01').is(':hidden')){$('#idb i').text('close');$('#navbarTogglerDemo01').addClass('portal-mobile-menu');$('#navbarTogglerDemo01').slideToggle(300, function(){});$('.gdo-nav-application').addClass('gdo-bestellen-mobile-menu');$('.gdo-nav-application').slideDown(300, function(){});}else{$('#idb i').text('menu');$('#navbarTogglerDemo01').slideToggle(300, function(){$('#navbarTogglerDemo01').removeClass('portal-mobile-menu');});$('.gdo-nav-application').slideUp(300, function(){$('.gdo-nav-application').removeClass('gdo-bestellen-mobile-menu');});};});;
+Wicket.Event.add('gdoid10_hf_1', 'click', function(event) { var b=document.getElementById('gdoid13'); if (b!=null && b.onclick!=null && typeof(b.onclick) != 'undefined') {  var r = Wicket.bind(b.onclick, b)(); if (r != false) b.click(); } else { b.click(); };  return false;;});;
+$('body').on('click', function (e) {var $target = $( event.currentTarget );var $menu = $('.dropdown'); var $menu2 = $('.gdo-main-box');var $menu2button = $('.gdo-main-menu-button');if (!$menu.is(e.target) && $menu.has(e.target).length === 0){$('.dropdown-menu').removeClass('show');}if (!$menu2.is(e.target) && !$menu2button.is(e.target)  && $menu2.has(e.target).length === 0){$('.gdo-main-box').collapse('hide');}});$('.scroll').on('click', function(e){var target = $(this).attr('data-bs-target');var offset = $(this).attr('data-bs-offset');var element = document.getElementById(target);$('html, body').animate({scrollTop: $(element).offset().top - offset }, 'slow');e.preventDefault();});;
+$('.dropdown-toggle').dropdown();;
+$('.gdo-menu-widget-button').tooltip({delay: { 'show': 0, 'hide': 0 }});
+$('.scroll-top-button').on('click', function() {$('html, body').animate({scrollTop: 0}, 'slow');});;
+window.onscroll = function () {if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {$('.scroll-top-button').fadeIn();} else {$('.scroll-top-button').fadeOut();}if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {$('.god-mobile-header').css('visibility', 'visible');} else {$('.god-mobile-header').css('visibility', 'hidden');}};;
+Wicket.Event.publish(Wicket.Event.Topic.AJAX_HANDLERS_BOUND);
+;});
+/*]]>*/
+</script>
+</head>
+<body>
+
+<div class="container-fluid container-xxl">
+<header id="pageHeader" class="">
+<div id="gdoida">
+<a class="skip-to-content-link" href="#geoportal-main-content">
+zum Inhalt springen
+</a >
+</div>
+<div class="bayern-logo">
+<a href="../" id="gdoid8">
+<img src="../AvM9EO0r7kMlcMj5kFPB8AusklFNvk0qi31Wg0rtaasJdg1kxpIuB8a41AMqOSgQNs0wyMcHsAQwpA4oLtifyTJq988OHdA_PhW8o2sTEZT3KHDy7WxKextrm7HX3IksSeYNgvTkqpWq30CfN8yj6Cx3pgI3uB3J/AvM07/CfN5a/usk4c/Nvk52/_Ph06" alt="Bayerische Vermessungsverwaltung" id="gdoid9">
+</a>
+</div>
+<div class="container-lg">
+<div class="row justify-content-end py-2 mt-3">
+<div class="header-staatswappen_text col-auto ms-auto me-1 align-self-end text-end text-primary lead">
+<span style="" id="gdoid7">Bayerische<br>Vermessungsverwaltung</span>
+</div>
+<div class="header-staatswappen_logo col-auto px-0 me-md-4 me-lg-0">
+<a href="http://vermessung.bayern.de/" id="gdoid5">
+<img src="../AvM9EO0r7kMlcMj5kFPB8AusklFNvk0qi31Wg0rtaasJdg1kxpIuB8a41AMqOSgQNs0wyMcHsAQwpA4oLtifyZCoui_ABJA7NfQLpbAS7pbXsUIniwNTi1vDCDATw0wRpySvTyk5vIKrKTLg6BjIiZBEoMDDgkyL/AvM07/Lg61a/_AB1f/yMcce/NfQ48" alt="Externer Link: Klick auf das Große Bayerische Staatswappen öffnet die Seite der Bayerischen Vermessungsverwaltung" style="width: 120px;" id="gdoid6"></img>
+</a>
+</div>
+</div>
+</div>
+</header>
+
+<style>
+/*<![CDATA[*/
+
+
+/*]]>*/
+</style>
+
+<div id="gdoid1b" class=" modal hide " tabindex="-1" role="dialog">
+<div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h3 class="modal-title">
+Logout erfolgreich
+</h3>
+<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+Sie wurden erfolgreich abgemeldet.
+</div>
+<div class="modal-footer">
+<form>
+<button class="btn btn-secondary" data-bs-dismiss="modal" aria-hidden="true">Ok</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+<div id="gdoid1c" class=" modal hide " tabindex="-1" role="dialog">
+<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h3 class="modal-title">
+Technischer Fehler
+</h3>
+<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+Bestellungen in GeodatenOnline sind aus technischen Gründen derzeit nicht möglich.
+Die Seite ist in Kürze wieder verfügbar. Danke für Ihre Geduld.
+</div>
+<div class="modal-footer">
+<form>
+<button class="btn btn-secondary" data-bs-dismiss="modal" aria-hidden="true">Ok</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+<nav class="gdo-navbar-top">
+<ul class="d-flex flex-row">
+<li id="gdoid49">
+
+<li class="nav-item">
+<a href="https://www.ldbv.bayern.de/vermessung/bvv/" class="nav-lin" id="gdoid4a" target="_blank">Bayerische Vermessungsverwaltung</a>
+</li>
+
+</li><li id="gdoid4c">
+
+<li class="nav-item">
+<a href="http://www.gdi.bayern.de/" class="nav-lin" id="gdoid4d" target="_blank">GDI-Bayern</a>
+</li>
+
+</li><li id="gdoid4f">
+
+<li class="nav-item">
+<a href="../anwendungen4/kontakt;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-lin" id="gdoid50">Kontakt</a>
+</li>
+
+</li><li id="gdoid52">
+
+<li class="nav-item">
+<a href="./hilfe;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-lin" id="gdoid53">Hilfe</a>
+</li>
+
+</li>
+<li>
+<a class="contrast-button" title="Kontrast erhöhen" id="gdoid1d" href="./wfs_hauskoor;jsessionid=31845D8017A70DE60BAF453B0FA3B500?-1.-navigation-contrastButton">
+<span class="material-icons">
+contrast
+</span>
+</a>
+</li>
+<li>
+<a class="fontsize-button" title="Schriftgröße erhöhen" id="gdoid1e" href="./wfs_hauskoor;jsessionid=31845D8017A70DE60BAF453B0FA3B500?-1.-navigation-fontSizeButton">
+<span class="material-icons">
+text_increase
+</span>
+</a>
+</li>
+</ul>
+</nav>
+<div class="gdo-navbar sticky-top">
+<button class="gdo-main-menu-button" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="Geodaten bestellen collapse" id="gdoDirectOrderMenuButton" data-bs-target="#gdoDirectOrderMenu">
+<i class="material-icons md-24">shopping_cart</i>
+<span class="d-none d-lg-inline">
+Geodaten bestellen
+</span>
+</button>
+<div class="collapse gdo-nav-application gdo-main-box gdo-bestellen-menu row-fluid" id="gdoDirectOrderMenu">
+<ul class="list-group">
+<li class="list-group-item" id="gdoid1ad7">
+<a class="nav-link" id="gdoid55" href="../anwendungen3/flurkartenauszug;jsessionid=31845D8017A70DE60BAF453B0FA3B500">
+<i class="material-icons md-18 ">shopping_cart</i>
+<span id="gdoid56">Flurkartenauszug mit/ohne DOP (Luftbild)</span>
+</a>
+</li><li class="list-group-item" id="gdoid1ad7">
+<a class="nav-link" id="gdoid57" href="../anwendungen3/vektordaten;jsessionid=31845D8017A70DE60BAF453B0FA3B500">
+<i class="material-icons md-18 ">shopping_cart</i>
+<span id="gdoid58">ALKIS Geobasisdaten</span>
+</a>
+</li>
+</ul>
+</div>
+<nav class="container-xl sticky-top navbar navbar-expand-xl navbar-dark bg-primary py-1" style="min-height: 3.1em;">
+<button class="navbar-toggler border-0" type="button" id="idb">
+<i class="material-icons md-24 ">
+menu
+</i>
+</button>
+<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+<ul class="main-navbar-list navbar-nav gdo-navbar-items" id="gdoid3a">
+
+<li class="nav-item">
+<a href="../" class="nav-link" id="gdoid3b">Startseite</a>
+</li>
+
+</ul><ul class="main-navbar-list navbar-nav gdo-navbar-items" id="gdoid3d">
+
+<li class="nav-item">
+<a href="https://www.ldbv.bayern.de/produkte/dienste/bayernatlas.html" class="nav-link" id="gdoid3e" target="_blank">Viewer</a>
+</li>
+
+</ul><ul class="main-navbar-list navbar-nav gdo-navbar-items" id="gdoid40">
+
+<li class="nav-item">
+<a href="./bestellen;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link" id="gdoid41">Produkte</a>
+</li>
+
+</ul><ul class="main-navbar-list navbar-nav gdo-navbar-items active " id="gdoid43">
+
+<li class="nav-item">
+<a href="./wms_liste;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link" id="gdoid44">Geodatendienste</a>
+</li>
+
+</ul><ul class="main-navbar-list navbar-nav gdo-navbar-items" id="gdoid46">
+
+<li class="nav-item">
+<a href="../meinKonto;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link" id="gdoid47">Mein Konto</a>
+</li>
+
+</ul>
+</div>
+<div class="dropdown gdo-user-dropdown-button">
+<button class="navbar-brand dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#collapseUser">
+<i class="material-icons" style="position: relative;
+top: 5px">person</i>
+<span id="gdoidf">Anmelden</span>
+</button>
+<div id="collapseUser" class="dropdown-menu" style="right: 0;
+left: inherit">
+<div id="gdoid18">
+<form class="px-4 py-3" style="width: 300px" id="gdoid10" method="post" action="./wfs_hauskoor;jsessionid=31845D8017A70DE60BAF453B0FA3B500?-1.-navigation-box-loginForm"><div id="gdoid10_hf_0" hidden="" class="hidden-fields"></div><div hidden="" class="hidden-fields"><input type="text" tabindex="-1" autocomplete="off"/><input id="gdoid10_hf_1" type="submit" tabindex="-1" name="button" /></div>
+<div class="form-group mb-2">
+<label class="mb-1 required" id="gdoid11-w-lbl" for="gdoid11">Kennung</label>
+<input type="text" placeholder="Ihre Kennung" class="form-control" value="" name="kennung" id="gdoid11" required="required">
+</div>
+<div class="form-group mb-2">
+<label class="mb-1 required" id="gdoid12-w-lbl" for="gdoid12">Passwort</label>
+<input type="password" placeholder="Ihr Passwort" class="form-control" value="" name="password" id="gdoid12" required="required">
+</div>
+<button class="btn btn-primary" type="submit" name="button" id="gdoid13">
+<i class="material-icons float-left">keyboard_arrow_right</i>
+Anmelden
+</button>
+</form>
+<div class="dropdown-divider"></div>
+<div class="warenkorb px-4 py-3">
+<div class="help-block btn_registrieren mb-2">
+<a href="../anwendungen4/passwortvergessen;jsessionid=31845D8017A70DE60BAF453B0FA3B500" id="gdoid15">
+<i class="material-icons ">keyboard_arrow_right</i>
+Passwort vergessen
+</a>
+</div>
+<div class="help-block btn_registrieren mb-2">
+<a href="../anwendungen3/registrierung;jsessionid=31845D8017A70DE60BAF453B0FA3B500" id="gdoid14">
+<i class="material-icons ">keyboard_arrow_right</i>
+Neu registrieren
+</a>
+</div>
+<a href="../warenkorb;jsessionid=31845D8017A70DE60BAF453B0FA3B500" id="gdoid16">
+<i class="material-icons ">shopping_cart</i>
+<span id="gdoid17">Warenkorb (0)</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+
+<div class="row-fluid" id="gdoid20"></div>
+<div class="row-fluid" id="gdoid22">
+<nav aria-label="breadcrumb">
+<ol class="portal-breadcrumb breadcrumb" style="border-bottom: 1px solid rgba(0, 0, 0, 0.1)">
+<li class="breadcrumb-item" id="gdoid59">
+<a href="../" id="gdoid5a">
+<i class="material-icons" style="margin-left: 18px;
+margin-right: 10px;">
+home
+</i>
+<span>
+Startseite
+</span>
+</a>
+</li><li class="breadcrumb-item" id="gdoid5c">
+<a href="./wms_liste;jsessionid=31845D8017A70DE60BAF453B0FA3B500" id="gdoid5d">Geodatendienste</a>
+</li><li class="breadcrumb-item" id="gdoid5f">
+<a href="./wms_liste;jsessionid=31845D8017A70DE60BAF453B0FA3B500" id="gdoid60">Verfügbare Dienste</a>
+</li><li class="breadcrumb-item active" id="gdoid62">
+<span id="gdoid63">WFS Hauskoordinaten</span>
+</li>
+</ol>
+</nav>
+</div>
+<div class="row-fluid" id='geoportal-main-content'>
+
+<div class="row">
+<div class="col-12">
+<div class=" mainContentBox">
+<header>
+<h1 class="display-4">
+Hauskoordinaten (WFS)
+</h1>
+</header>
+<section>
+<div class="row">
+<div class="col-12 col-md-4">
+<img src="../AvM9EO0r7kMlcMj5kFPB8L_7IZeKWaLC7W7d-NBPsF8wojDvnyyJbzdygu2ojKorwhW_QJ291VDODRsuDThyVXug5eMWqvIgKCmmSJP-qVE/AvM07/VDO10/d-Na4/J2920/kMl09;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="img-fluid">
+</div>
+<div class="col-12 col-md-8">
+<p class="mt-3">
+Der WFS auf die Hauskoordinaten übermittelt die Komplettdatensätze der rund 3,6 Mio. georeferenzierten Gebäudeadressen in Bayern. Hauskoordinaten ordnen jeder Gebäudeadresse ihre exakte Lage im Landeskoordinatensystem zu.
+</p>
+<p>Weitere Informationen erhalten Sie auf der <a href="https://www.ldbv.bayern.de/produkte/liegenschaftsinformationen/hauskoordinaten.html" class="externalLink" target="_blank"> BVV-Homepage</a>.
+</p>
+</div>
+</div>
+<hr/>
+</section>
+<section>
+<h3>URL des Dienstes</h3>
+<p><code>https://geoservices.bayern.de/wfs/v1/ogc_hauskoordinaten.cgi?</code></p>
+<p>Nach Abschluss der Nutzungsvereinbarung erhalten Sie die Kennung und das Passwort.</p>
+</section>
+<section>
+<h3>Eigenschaften</h3>
+<table class=" table gdo-wizzard-table ">
+<tbody>
+<tr>
+<th scope="row">Standard</th>
+<td>
+OGC WFS Version 2.0.0
+</td>
+</tr>
+<tr>
+<th scope="row">Abgabeformate</th>
+<td>
+<div>
+text/xml; subtype=gml/3.2.
+</div>
+<div>
+application/gml+xml; version=3.2
+</div>
+<div>
+text/csv
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row">Unterstützte Operationen</th>
+<td>
+<div>
+GetCapabilities
+</div>
+<div>
+DescribeFeatureType
+</div>
+<div>
+GetFeature
+</div>
+<div>
+ListStoredQueries
+</div>
+<div>
+DescribeStoredQueries
+</div>
+<div>
+GetPropertyValue
+</div>
+<br>
+<div>
+<a href="../AvM9EO0r7kMlcMj5kFPB8L_7IZeKWaLC7W7d-NBPsF8wojDvnyyJb7bC9dcanxA5THcETbRW76ntShs73IdkFfXRWDTlKXlikYN5zwu49q8/AvM07/6ntcb/hs7eb/xA5cb;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="pdfIcon" target="_new" title="Beispielaufrufe">
+<i class="material-icons float-left mr-1 ">file_download</i>
+Beispielaufrufe </a>
+<br>
+<a href="../AvM9EO0r7kMlcMj5kFPB8L_7IZeKWaLC7W7d-NBPsF8wojDvnyyJb7bC9dcanxA5THcETbRW76l6B1USvT0QiokiT700lR_5Ri4iAkFXCCU/AvM07/6l62f/TbR53/W7d63;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="pdfIcon" target="_new" title="Stored Queries">
+<i class="material-icons float-left mr-1 ">file_download</i>
+Liste der vordefinierten Abfragen (Stored Queries) </a>
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row">Raumbezugssysteme</th>
+<td>
+<div>
+urn:ogc:def:crs:EPSG::25832 (ETRS 89 / UTM zone 32N):
+<small><i>default (Koordinatensystem der Datenhaltung)</i></small>
+</div>
+<div>
+urn:ogc:def:crs:EPSG::25833 (ETRS 89 / UTM zone 33N)
+</div>
+<div>
+urn:ogc:def:crs:EPSG::31467 (DHDN / GK 3. Meridianstreifen)
+</div>
+<div>
+urn:ogc:def:crs:EPSG::31468 (DHDN / GK 4. Meridianstreifen)
+</div>
+<div>
+urn:ogc:def:crs:EPSG::4258 (ETRS 89 / geographisch 2D)
+</div>
+<div>
+urn:ogc:def:crs:EPSG::4326 (WGS84 / geographisch 2D)
+</div>
+</td>
+</tr>
+<tr>
+<th scope="row">Aktualität</th>
+<td>
+<div>
+täglich
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section>
+<h3>
+Geometrien und Objektklassen
+</h3>
+Punkte
+<table class=" table gdo-wizzard-table ">
+<tbody>
+<tr>
+<th>FeatureType-Titel</th>
+<th>FeatureType-Name</th>
+</tr>
+<tr>
+<td>Hauskoordinaten Bayern (BY)</td>
+<td>bvv:Hauskoordinaten</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section>
+<h3>
+Nutzungsbedingungen
+</h3>
+<p>
+Es gelten die Allgemeinen Nutzungsbedingungen der BVV.
+</p>
+</section>
+
+<section>
+<h3>Räumliche Ausdehnung</h3>
+Bayern - flächendeckend
+</section>
+
+<div class="infoBox flex-column bayern-gray ">
+<h4>
+Freischaltung
+</h4>
+<hr/>
+<p>
+Sie möchten den Geodatendienst nutzen? Dann kontaktieren Sie bitte unseren <a href="./wms_bestellinfo;jsessionid=31845D8017A70DE60BAF453B0FA3B500" target="new">Kundenservice</a>.
+</p>
+</div>
+
+</div>
+</div>
+</div>
+
+
+</div>
+<footer class="bayern-footer bayern-blue-b" id="gdoid2d">
+<div class="d-none d-lg-block">
+<div class="footer-sitemap d-flex justify-content-around">
+<div class="footer-sitemap-links" id="gdoid71">
+
+<a href="../" id="gdoid72"><span id="gdoid73">Startseite</span></a>
+<ul class="bayern-list">
+<li id="gdoid8a">
+<li class="nav-item">
+<a href="./aktuell;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link" id="gdoid8b">Was ist neu?</a>
+</li>
+</li><li id="gdoid8d">
+<li class="nav-item">
+<a href="./nutzungsbedingungen;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link" id="gdoid8e">Nutzungsbedingungen</a>
+</li>
+</li><li id="gdoid90">
+<li class="nav-item">
+<a href="./preise;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link" id="gdoid91">Gebühren, Preise</a>
+</li>
+</li><li id="gdoid93">
+<li class="nav-item">
+<a href="../anwendungen4/kontakt;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link" id="gdoid94">Kontakt</a>
+</li>
+</li><li id="gdoid96">
+<li class="nav-item">
+<a href="./hilfe;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link" id="gdoid97">Hilfe</a>
+</li>
+</li>
+</ul>
+
+</div><div class="footer-sitemap-links" id="gdoid76">
+
+<a href="https://www.ldbv.bayern.de/produkte/dienste/bayernatlas.html" id="gdoid77" target="_blank"><span id="gdoid78">Viewer</span></a>
+<ul class="bayern-list">
+<li id="gdoid99">
+<li class="nav-item">
+<a href="https://www.ldbv.bayern.de/produkte/dienste/bayernatlas.html" class="nav-link" id="gdoid9a" target="_blank">BayernAtlas-plus</a>
+</li>
+</li>
+</ul>
+
+</div><div class="footer-sitemap-links" id="gdoid7b">
+
+<a href="./bestellen;jsessionid=31845D8017A70DE60BAF453B0FA3B500" id="gdoid7c"><span id="gdoid7d">Produkte</span></a>
+<ul class="bayern-list">
+<li id="gdoid9c">
+<li class="nav-item">
+<a href="./bestellen;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link" id="gdoid9d">Geodaten (alle)</a>
+</li>
+</li><li id="gdoid9f">
+<li class="nav-item">
+<a href="./bestellen_kataster;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link" id="gdoida0">Liegenschaftskataster</a>
+</li>
+</li><li id="gdoida2">
+<li class="nav-item">
+<a href="./bestellen_tk;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link" id="gdoida3">Topographische Karten</a>
+</li>
+</li><li id="gdoida5">
+<li class="nav-item">
+<a href="./bestellen_luftbild;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link" id="gdoida6">Luftbildprodukte</a>
+</li>
+</li>
+</ul>
+
+</div><div class="footer-sitemap-links" id="gdoid80">
+
+<a href="./wms_liste;jsessionid=31845D8017A70DE60BAF453B0FA3B500" id="gdoid81"><span id="gdoid82">Geodatendienste</span></a>
+<ul class="bayern-list">
+<li id="gdoida8">
+<li class="nav-item">
+<a href="./wms_liste;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link" id="gdoida9">Verfügbare Dienste</a>
+</li>
+</li><li id="gdoidab">
+<li class="nav-item">
+<a href="./wms_liste_wms;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link" id="gdoidac">Darstellungsdienste (WMS / WMTS)</a>
+</li>
+</li><li id="gdoidaf">
+<li class="nav-item">
+<a href="./wms_liste_wfs;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link" id="gdoidb0">Downloaddienst (WFS)</a>
+</li>
+</li><li id="gdoidb2">
+<li class="nav-item">
+<a href="./wms_liste_geokoder;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link" id="gdoidb3">Geokodierungsdienst</a>
+</li>
+</li><li id="gdoidb5">
+<li class="nav-item">
+<a href="./wms_webdienste;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link" id="gdoidb6">Was sind Geodatendienste?</a>
+</li>
+</li><li id="gdoidb8">
+<li class="nav-item">
+<a href="./wms_bestellinfo;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link" id="gdoidb9">Registrierung (WMS/WFS)</a>
+</li>
+</li><li id="gdoidbb">
+<li class="nav-item">
+<a href="./wms_preise;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link" id="gdoidbc">Preise und Gebühren</a>
+</li>
+</li>
+</ul>
+
+</div><div class="footer-sitemap-links" id="gdoid85">
+
+<a href="../meinKonto;jsessionid=31845D8017A70DE60BAF453B0FA3B500" id="gdoid86"><span id="gdoid87">Mein Konto</span></a>
+<ul class="bayern-list">
+<li id="gdoidbe">
+<li class="nav-item">
+<a href="../meinKonto;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link" id="gdoidbf">Überblick</a>
+</li>
+</li><li id="gdoidc1">
+<li class="nav-item">
+<a href="../login;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link" id="gdoidc2">Anmelden</a>
+</li>
+</li><li id="gdoidc4">
+<li class="nav-item">
+<a href="../anwendungen3/registrierung;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link" id="gdoidc5">Neu registrieren bei GeodatenOnline</a>
+</li>
+</li><li id="gdoidc7">
+<li class="nav-item">
+<a href="../anwendungen4/passwortvergessen;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link" id="gdoidc8">Passwort anfordern</a>
+</li>
+</li><li id="gdoidca"></li><li id="gdoidcd">
+<li class="nav-item">
+<a href="../warenkorb;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link" id="gdoidce">Warenkorb</a>
+</li>
+</li><li id="gdoidd0"></li><li id="gdoidd3">
+<li class="nav-item">
+<a href="../rechnungen;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link" id="gdoidd4">Rechnungen</a>
+</li>
+</li><li id="gdoidd6"></li><li id="gdoidd9"></li><li id="gdoiddc"></li><li id="gdoiddf"></li><li id="gdoide2">
+<li class="nav-item">
+<a href="../anwendungen4/epaymentfrontend;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link" id="gdoide3">ePayment - Download</a>
+</li>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="bayern-footer-end bayern-blue-a">
+<div class="col-12 d-flex justify-content-end">
+<ul style="display: flex" class="footer-bottom-link" id="gdoid65">
+
+<li class="nav-item">
+<a href="https://www.ldbv.bayern.de/service/impressum.html" class="nav-link" id="gdoid66" target="_blank">Impressum</a>
+</li>
+
+</ul><ul style="display: flex" class="footer-bottom-link" id="gdoid68">
+
+<li class="nav-item">
+<a href="https://www.ldbv.bayern.de/service/datenschutz.html" class="nav-link" id="gdoid69" target="_blank">Datenschutz</a>
+</li>
+
+</ul><ul style="display: flex" class="footer-bottom-link" id="gdoid6b">
+
+<li class="nav-item">
+<a href="./barrierefreiheit;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link" id="gdoid6c">Barrierefreiheit</a>
+</li>
+
+</ul><ul style="display: flex" class="footer-bottom-link" id="gdoid6e">
+
+<li class="nav-item">
+<a href="https://www.ldbv.bayern.de/vermessung/bvv/" class="nav-link" id="gdoid6f" target="_blank">Bayerische Vermessungsverwaltung</a>
+</li>
+
+</ul>
+
+</div>
+</div>
+
+</footer>
+</div>
+<div id="gdoid35">
+<div class="widget-menue-button" id="gdoid2e">
+<a href="./preise.html;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link gdo-menu-widget-button" title="Preise, Gebühren" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="custom-tooltip" id="gdoid2f">
+<span class="widget-menue-text">
+Preise,&nbsp;Gebühren
+</span>
+<i class="material-icons float-right">euro_symbol</i>
+</a>
+<a href="./nutzungsbedingungen.html;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link gdo-menu-widget-button" title="Nutzungsbedingungen" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="custom-tooltip" id="gdoid30">
+<span class="widget-menue-text">
+Nutzungsbedingungen
+</span>
+<i class="material-icons float-right ">copyright</i>
+</a>
+<a href="../anwendungen4/kontakt;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link gdo-menu-widget-button" title="Kontakt" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="custom-tooltip" id="gdoid31">
+<span class="widget-menue-text">
+Kontakt
+</span>
+<i class="material-icons float-right" >mail_outline</i>
+</a>
+<a href="./hilfe.html;jsessionid=31845D8017A70DE60BAF453B0FA3B500" class="nav-link gdo-menu-widget-button" title="Hilfe / FAQ" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="custom-tooltip" id="gdoid32">
+<span class="widget-menue-text">
+Hilfe
+</span>
+<i class="material-icons float-right">help_outline</i>
+</a>
+</div>
+<div id="gdoid34">
+<button id="gdoid33" class="scroll-top-button">
+<i class="material-icons">
+keyboard_arrow_up
+</i>
+</button>
+</div>
+</div>
+
+</body>
+</html>

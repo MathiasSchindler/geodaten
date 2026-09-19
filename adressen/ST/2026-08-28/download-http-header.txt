@@ -1,0 +1,21 @@
+HTTP/1.0 200 OK
+Date: Fri, 28 Aug 2026 06:50:54 GMT
+Server: Apache
+Feature-Policy: geolocation 'none'; midi 'none'; camera 'none'; usb 'none'; magnetometer 'none'; accelerometer 'none'; vr 'none'; speaker 'none'; ambient-light-sensor 'none'; gyroscope 'none'; microphone 'none'
+Access-Control-Allow-Headers: x-requested-with, Content-Type, origin, authorization, accept, client-security-token
+Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT, HEAD
+Set-Cookie: 2b41e61c-8e3f-ba8e-df29-a480484d552e=IGL1qKvWuzDqbeytdlzofz2LGYEHpaaxISMIRDA7N9deww5fSpzTLugj5gaNbzCf; path=/; secure; HttpOnly; SameSite=Lax
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Content-Length: 17437221
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: strict-origin-when-cross-origin
+Access-Control-Allow-Credentials: true
+Vary: Origin
+Content-Security-Policy: frame-ancestors 'self' https://geobox-i.de https://www.lvermgeo.sachsen-anhalt.de https://www.lvermgeo.lsa-net.de
+Connection: close
+Content-Type: text/html; charset=UTF-8
+Strict-Transport-Security: max-age=31536000
+Strict-Transport-Security: max-age=31536000
+

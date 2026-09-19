@@ -1,0 +1,10 @@
+candidate_relations: 8
+relations_kept: 3
+relations_excluded: 3
+relations_incomplete: 1
+relations_broken: 1
+features_written: 3
+outer_rings: 3
+inner_rings: 1
+member_ways_resolved: 12
+member_nodes_resolved: 24

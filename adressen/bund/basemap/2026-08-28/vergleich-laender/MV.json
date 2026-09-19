@@ -1,0 +1,44 @@
+{
+  "state_code": "MV",
+  "basemap_unique_normalized_addresses": 516185,
+  "state_unique_normalized_addresses_either_locality": 515228,
+  "state_unique_normalized_addresses_postal_locality": 515228,
+  "state_unique_normalized_addresses_municipality": 515228,
+  "matched_either_locality": 221671,
+  "matched_postal_locality": 221671,
+  "matched_municipality": 221671,
+  "basemap_fields": {
+    "mode": "basemap",
+    "input": "/Users/mathiasschindler/PLZ/adressen/bund/basemap/2026-08-28/work/states/MV.tsv",
+    "state_code": "MV",
+    "records": 517422,
+    "usable_primary": 517422,
+    "usable_secondary": 0,
+    "blank_street": 0,
+    "blank_house_number": 0,
+    "blank_primary_locality": 0
+  },
+  "state_fields": {
+    "mode": "state",
+    "input": "/Users/mathiasschindler/PLZ/adressen/MV/2026-08-27/adressen.csv.gz",
+    "state_code": "MV",
+    "records": 518416,
+    "usable_primary": 518416,
+    "usable_secondary": 518416,
+    "blank_street": 0,
+    "blank_house_number": 0,
+    "blank_primary_locality": 0
+  },
+  "coordinate_agreement": {
+    "matched_normalized_keys": 221671,
+    "matched_basemap_records": 222429,
+    "within_1_metre": 220074,
+    "within_5_metres": 220901,
+    "within_25_metres": 221865,
+    "within_100_metres": 222041,
+    "mean_distance_metres": 67.75999573730122,
+    "maximum_distance_metres": 163050.14514487283
+  },
+  "basemap_match_rate_either_locality": 0.42944099499210553,
+  "state_match_rate_either_locality": 0.4302386516260762
+}

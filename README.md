@@ -5,6 +5,24 @@ in ein gemeinsames CSV-Schema und verbindet sie mit den deutschlandweiten
 Adresspunkten aus **basemap.de Web Vektor**. Das Hauptergebnis ist ein
 konsolidierter Bundesbestand mit nachvollziehbarer Herkunft je Datensatz.
 
+## Inhalt dieses Repositorys
+
+Dieses Git-Repository versioniert bewusst nur die **Rezepte, Metadaten,
+Quellen- und Lizenznachweise, Statistiken, Dokumentation und Skripte**. Die
+heruntergeladenen Quelldaten, erzeugten Adressbestände und großen
+Zwischenergebnisse bleiben lokal und werden durch [`.gitignore`](.gitignore)
+vom Commit ausgeschlossen.
+
+Kleine synthetische Test-Fixtures unter
+`experimental/osm/pbf-parser/tests/` sind ausgenommen. Sie enthalten keine
+amtlichen Echtdaten und werden für reproduzierbare Regressionstests benötigt.
+
+Nach dem Klonen fehlen daher insbesondere `*.csv.gz`, Geodatendateien,
+Archive, PBF-Dateien und der Inhalt von `chunks/`. Die dokumentierten Pfade
+werden beim Abruf beziehungsweise Build lokal wieder befüllt. Vorhandene
+lokale Daten bleiben beim Initialisieren oder Aktualisieren des Repositorys
+unangetastet.
+
 ## Schnellzugriff
 
 - [Aufbau des Adressarchivs](adressen/README.md)
@@ -30,9 +48,10 @@ Der konsolidierte Stand vom 28.08.2026 enthält:
 
 Es gibt drei unterschiedliche Reproduzierbarkeitsebenen:
 
-1. **Vorhandene Veröffentlichung prüfen:** Die gespeicherten Gzip-Dateien
+1. **Lokale Veröffentlichung prüfen:** Bereits lokal vorhandene Gzip-Dateien
    lassen sich unmittelbar gegen die dokumentierten SHA-256-Prüfsummen prüfen.
-2. **Bundesbestand erneut bauen:** Aus den gespeicherten Länderexporten und den
+   Die Dateien selbst sind nicht Teil dieses Git-Repositorys.
+2. **Bundesbestand erneut bauen:** Aus lokal bereitgestellten Länderexporten und den
    1.360 prüfsummierten basemap-Rohdatenblöcken lassen sich Basemap-Abzug,
    Ländervergleich und Konsolidierung erneut erzeugen. Die resultierenden
    Gzip-Archive sind bei identischen Eingaben bytegleich.

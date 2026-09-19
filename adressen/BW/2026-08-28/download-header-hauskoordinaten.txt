@@ -1,0 +1,17 @@
+HTTP/1.1 200 OK
+date: Fri, 28 Aug 2026 10:17:49 GMT
+access-control-allow-origin: https://opengeodata.lgl-bw.de
+content-security-policy: default-src 'self';  style-src 'self' 'unsafe-inline';  script-src 'self' 'unsafe-inline';  connect-src 'self' https://sgx.geodatenzentrum.de https://owsproxy.lgl-bw.de;  img-src 'self' data: blob:
+x-content-type-options: nosniff
+referrer-policy: strict-origin-when-cross-origin
+permissions-policy: geolocation=(), midi=(), camera=(), usb=(), magnetometer=(), accelerometer=(), gyroscope=(), microphone=()
+strict-transport-security: max-age=63072000
+x-frame-options: SAMEORIGIN
+last-modified: Wed, 15 Jul 2026 07:27:05 GMT
+etag: "4607dc5-656a14021d8ec"
+accept-ranges: bytes
+content-length: 73432517
+content-type: application/zip
+Set-Cookie: MyCookie=!SkseG/U7MRbwwiDFJe5mzMv2gLtcHckW/0unWm1AwsuWpsgxNK2tpSyeYqBhdNKHBD63ZBvLVSdJ9NvQngvjHjhvJhQBvWmLQ0qrTcgDMido6/8ddMeUWKQZEwb5r89bIHB3GZuQLlUCkaSkT4VEaGGXLA==; path=/; Httponly; Secure
+Set-Cookie: TS0126c163=0143654e4a1423ccb608f8f4b947d4b7084a10ad9d788c76bc35570caf047a4615902d3fcd98c386d08bab1686044763e17e5a7e8ba736a072d12876876f162dd859cebb26; Path=/
+

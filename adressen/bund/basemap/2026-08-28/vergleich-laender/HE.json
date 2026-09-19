@@ -1,0 +1,44 @@
+{
+  "state_code": "HE",
+  "basemap_unique_normalized_addresses": 1627398,
+  "state_unique_normalized_addresses_either_locality": 1630720,
+  "state_unique_normalized_addresses_postal_locality": 1630720,
+  "state_unique_normalized_addresses_municipality": 1630720,
+  "matched_either_locality": 1279964,
+  "matched_postal_locality": 1279964,
+  "matched_municipality": 1279964,
+  "basemap_fields": {
+    "mode": "basemap",
+    "input": "/Users/mathiasschindler/PLZ/adressen/bund/basemap/2026-08-28/work/states/HE.tsv",
+    "state_code": "HE",
+    "records": 1628646,
+    "usable_primary": 1628646,
+    "usable_secondary": 0,
+    "blank_street": 0,
+    "blank_house_number": 0,
+    "blank_primary_locality": 0
+  },
+  "state_fields": {
+    "mode": "state",
+    "input": "/Users/mathiasschindler/PLZ/adressen/HE/2026-08-28/adressen.csv.gz",
+    "state_code": "HE",
+    "records": 1630801,
+    "usable_primary": 1630801,
+    "usable_secondary": 1630801,
+    "blank_street": 0,
+    "blank_house_number": 0,
+    "blank_primary_locality": 0
+  },
+  "coordinate_agreement": {
+    "matched_normalized_keys": 1279964,
+    "matched_basemap_records": 1280507,
+    "within_1_metre": 1277994,
+    "within_5_metres": 1278933,
+    "within_25_metres": 1280284,
+    "within_100_metres": 1280482,
+    "mean_distance_metres": 0.178213232927633,
+    "maximum_distance_metres": 3997.475099935435
+  },
+  "basemap_match_rate_either_locality": 0.7865095078155436,
+  "state_match_rate_either_locality": 0.7849072802197802
+}

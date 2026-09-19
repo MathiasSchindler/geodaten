@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://schemas.opengis.net/csw/2.0.2/profiles/apiso/1.0.0/apiso.xsd">
+  <gmd:fileIdentifier>
+    <gco:CharacterString>666deaca-27ec-4fdf-91b0-253bff94b738</gco:CharacterString>
+  </gmd:fileIdentifier>
+  <gmd:language>
+    <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ger" />
+  </gmd:language>
+  <gmd:characterSet>
+    <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+  </gmd:characterSet>
+  <gmd:hierarchyLevel>
+    <gmd:MD_ScopeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" />
+  </gmd:hierarchyLevel>
+  <gmd:contact>
+    <gmd:CI_ResponsibleParty>
+      <gmd:individualName>
+        <gco:CharacterString>Hackel, Stefanie</gco:CharacterString>
+      </gmd:individualName>
+      <gmd:organisationName>
+        <gco:CharacterString>Thüringer Landesamt für Bodenmanagement und Geoinformation</gco:CharacterString>
+      </gmd:organisationName>
+      <gmd:contactInfo>
+        <gmd:CI_Contact>
+          <gmd:phone>
+            <gmd:CI_Telephone>
+              <gmd:voice>
+                <gco:CharacterString>+49 361 57-4176 864</gco:CharacterString>
+              </gmd:voice>
+              <gmd:facsimile>
+                <gco:CharacterString>+49 361 57-4176 799</gco:CharacterString>
+              </gmd:facsimile>
+            </gmd:CI_Telephone>
+          </gmd:phone>
+          <gmd:address>
+            <gmd:CI_Address>
+              <gmd:deliveryPoint>
+                <gco:CharacterString>Hohenwindenstraße 13a</gco:CharacterString>
+              </gmd:deliveryPoint>
+              <gmd:city>
+                <gco:CharacterString>Erfurt</gco:CharacterString>
+              </gmd:city>
+              <gmd:administrativeArea>
+                <gco:CharacterString>Thüringen</gco:CharacterString>
+              </gmd:administrativeArea>
+              <gmd:postalCode>
+                <gco:CharacterString>99086</gco:CharacterString>
+              </gmd:postalCode>
+              <gmd:country>
+                <gco:CharacterString>Germany</gco:CharacterString>
+              </gmd:country>
+              <gmd:electronicMailAddress>
+                <gco:CharacterString>stefanie.hackel@tlbg.thueringen.de</gco:CharacterString>
+              </gmd:electronicMailAddress>
+            </gmd:CI_Address>
+          </gmd:address>
+          <gmd:onlineResource>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage>
+                <gmd:URL>https://tlbg.thueringen.de/</gmd:URL>
+              </gmd:linkage>
+              <gmd:description>
+                <gco:CharacterString>Thüringer Landesamt für Bodenmanagement und Geoinformation</gco:CharacterString>
+              </gmd:description>
+              <gmd:function>
+                <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information" />
+              </gmd:function>
+            </gmd:CI_OnlineResource>
+          </gmd:onlineResource>
+        </gmd:CI_Contact>
+      </gmd:contactInfo>
+      <gmd:role>
+        <gmd:CI_RoleCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact" />
+      </gmd:role>
+    </gmd:CI_ResponsibleParty>
+  </gmd:contact>
+  <gmd:dateStamp>
+    <gco:DateTime>2025-05-06T09:35:49</gco:DateTime>
+  </gmd:dateStamp>
+  <gmd:metadataStandardName>
+    <gco:CharacterString>ISO19115</gco:CharacterString>
+  </gmd:metadataStandardName>
+  <gmd:metadataStandardVersion>
+    <gco:CharacterString>2003/Cor.1:2006</gco:CharacterString>
+  </gmd:metadataStandardVersion>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem>
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gco:CharacterString>http://www.opengis.net/def/crs/EPSG/0/25832</gco:CharacterString>
+          </gmd:code>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:identificationInfo>
+    <gmd:MD_DataIdentification>
+      <gmd:citation>
+        <gmd:CI_Citation>
+          <gmd:title>
+            <gco:CharacterString>Hauskoordinaten</gco:CharacterString>
+          </gmd:title>
+          <gmd:alternateTitle>
+            <gco:CharacterString>Hauskoordinaten</gco:CharacterString>
+          </gmd:alternateTitle>
+          <gmd:date>
+            <gmd:CI_Date>
+              <gmd:date>
+                <gco:Date>2006-01-01</gco:Date>
+              </gmd:date>
+              <gmd:dateType>
+                <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication" />
+              </gmd:dateType>
+            </gmd:CI_Date>
+          </gmd:date>
+          <gmd:identifier>
+            <gmd:MD_Identifier>
+              <gmd:code>
+                <gco:CharacterString>https://registry.gdi-de.org/id/de.th.csw/666deaca-27ec-4fdf-91b0-253bff94b738</gco:CharacterString>
+              </gmd:code>
+            </gmd:MD_Identifier>
+          </gmd:identifier>
+        </gmd:CI_Citation>
+      </gmd:citation>
+      <gmd:abstract>
+        <gco:CharacterString>Die amtlichen Hauskoordinaten definieren die genaue Position eines Hauses. Datenquelle ist das Liegenschaftskataster der Länder und somit das amtliche Verzeichnis aller Flurstücke und Gebäude in Deutschland. Anders als durch Interpolation berechnete Daten beruhen die amtlichen Hauskoordinaten auf einer individuellen Vermessung vor Ort. Sie werden durch die Katasterbehörden kontinuierlich aktualisiert, was den Kunden eine langfristige Investitionssicherheit garantiert.Die Hauskoordinaten enthalten: Statistische Landes-, Landkreis- und Gemeindeschlüssel, Straßenschlüssel und -name, Haus-Nr., ETRS89/UTM Koordinaten mit Zonenpräfix 32, Postleitzahl (bisher noch ohne), Postalischer Ortsname, Zusatz zum postalischen Ortsnamen.Nutzungsmöglichkeiten: Hauskoordinaten dokumentieren ihren individuellen Mehrwert z.B. in folgenden Bereichen:  Hausgenaue Geocodierung von Adressbestanden, z.B. Kunden-, Filial- oder Wettbewerbsadressen, Verbesserung der Tragerbezirksverwaltung, Reklamationsbearbeitung und Auftragsplanung bei Verlagen, Einbindung in die Netzdokumentation, Netzverwaltung und im Kundenservice bei Energieversorgern und in der Telekommunikations- und Kabel-TV Branche, Entwicklung von Handy-Kommunikationsdiensten (location-based-services) in einer neuen Dimension, Einbindung in WebMapSevices - Navigationstools; Gazetteer Services im Internet</gco:CharacterString>
+      </gmd:abstract>
+      <gmd:status>
+        <gmd:MD_ProgressCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_ProgressCode" codeListValue="onGoing" />
+      </gmd:status>
+      <gmd:pointOfContact>
+        <gmd:CI_ResponsibleParty>
+          <individualName xmlns="http://www.isotc211.org/2005/gmd">
+            <gco:CharacterString>Fuchs, Frank</gco:CharacterString>
+          </individualName>
+          <organisationName xmlns="http://www.isotc211.org/2005/gmd">
+            <gco:CharacterString>Thüringer Landesamt für Bodenmanagement und Geoinformation</gco:CharacterString>
+          </organisationName>
+          <positionName xmlns="http://www.isotc211.org/2005/gmd">
+            <gco:CharacterString>Referatsleiter - Koordinierung und Fachkonzeption Liegenschaftskataster</gco:CharacterString>
+          </positionName>
+          <gmd:contactInfo>
+            <gmd:CI_Contact>
+              <gmd:phone>
+                <gmd:CI_Telephone>
+                  <voice xmlns="http://www.isotc211.org/2005/gmd">
+                    <gco:CharacterString>+49 361 57-4176 944</gco:CharacterString>
+                  </voice>
+                  <facsimile xmlns="http://www.isotc211.org/2005/gmd">
+                    <gco:CharacterString>+49 361 57-4176 868</gco:CharacterString>
+                  </facsimile>
+                </gmd:CI_Telephone>
+              </gmd:phone>
+              <gmd:address>
+                <gmd:CI_Address>
+                  <deliveryPoint xmlns="http://www.isotc211.org/2005/gmd">
+                    <gco:CharacterString>Hohenwindenstraße 13a</gco:CharacterString>
+                  </deliveryPoint>
+                  <city xmlns="http://www.isotc211.org/2005/gmd">
+                    <gco:CharacterString>Erfurt</gco:CharacterString>
+                  </city>
+                  <administrativeArea xmlns="http://www.isotc211.org/2005/gmd">
+                    <gco:CharacterString>Thüringen</gco:CharacterString>
+                  </administrativeArea>
+                  <postalCode xmlns="http://www.isotc211.org/2005/gmd">
+                    <gco:CharacterString>99086</gco:CharacterString>
+                  </postalCode>
+                  <country xmlns="http://www.isotc211.org/2005/gmd">
+                    <gco:CharacterString>Deutschland</gco:CharacterString>
+                  </country>
+                  <electronicMailAddress xmlns="http://www.isotc211.org/2005/gmd">
+                    <gco:CharacterString>frank.fuchs@tlbg.thueringen.de</gco:CharacterString>
+                  </electronicMailAddress>
+                </gmd:CI_Address>
+              </gmd:address>
+              <gmd:onlineResource>
+                <gmd:CI_OnlineResource xmlns="http://www.isotc211.org/2005/gmd">
+                  <gmd:linkage>
+                    <gmd:URL>https://tlbg.thueringen.de/</gmd:URL>
+                  </gmd:linkage>
+                  <gmd:description>
+                    <gco:CharacterString>Thüringer Landesamt für Bodenmanagement und Geoinformation</gco:CharacterString>
+                  </gmd:description>
+                  <gmd:function>
+                    <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information" />
+                  </gmd:function>
+                </gmd:CI_OnlineResource>
+              </gmd:onlineResource>
+            </gmd:CI_Contact>
+          </gmd:contactInfo>
+          <gmd:role>
+            <CI_RoleCode xmlns="http://www.isotc211.org/2005/gmd" codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact" />
+          </gmd:role>
+        </gmd:CI_ResponsibleParty>
+      </gmd:pointOfContact>
+      <gmd:resourceMaintenance>
+        <gmd:MD_MaintenanceInformation>
+          <gmd:maintenanceAndUpdateFrequency>
+            <gmd:MD_MaintenanceFrequencyCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="continual" />
+          </gmd:maintenanceAndUpdateFrequency>
+          <gmd:updateScope>
+            <gmd:MD_ScopeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" />
+          </gmd:updateScope>
+        </gmd:MD_MaintenanceInformation>
+      </gmd:resourceMaintenance>
+      <gmd:graphicOverview>
+        <gmd:MD_BrowseGraphic>
+          <gmd:fileName>
+            <gco:CharacterString>https://geomis.geoportal-th.de/geonetwork/srv/api/records/666deaca-27ec-4fdf-91b0-253bff94b738/attachments/HK.jpg</gco:CharacterString>
+          </gmd:fileName>
+        </gmd:MD_BrowseGraphic>
+      </gmd:graphicOverview>
+      <gmd:descriptiveKeywords>
+        <gmd:MD_Keywords>
+          <gmd:keyword>
+            <gco:CharacterString>Hausnummer</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>Gemeinde</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>Straße</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>inspireidentifiziert</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>AdVMIS</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>GOVE</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>opendata</gco:CharacterString>
+          </gmd:keyword>
+        </gmd:MD_Keywords>
+      </gmd:descriptiveKeywords>
+      <gmd:descriptiveKeywords>
+        <gmd:MD_Keywords>
+          <gmd:keyword>
+            <gco:CharacterString>Adressen</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:type>
+            <gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" />
+          </gmd:type>
+          <gmd:thesaurusName>
+            <gmd:CI_Citation>
+              <gmd:title>
+                <gco:CharacterString>GEMET - INSPIRE themes, version 1.0</gco:CharacterString>
+              </gmd:title>
+              <gmd:date>
+                <gmd:CI_Date>
+                  <gmd:date>
+                    <gco:Date>2008-06-01</gco:Date>
+                  </gmd:date>
+                  <gmd:dateType>
+                    <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication" />
+                  </gmd:dateType>
+                </gmd:CI_Date>
+              </gmd:date>
+              <gmd:identifier>
+                <gmd:MD_Identifier>
+                  <gmd:code>
+                    <gmx:Anchor xlink:href="https://geomis.geoportal-th.de/geonetwork/srv/api/registries/vocabularies/external.theme.httpinspireeceuropaeutheme-theme">geonetwork.thesaurus.external.theme.httpinspireeceuropaeutheme-theme</gmx:Anchor>
+                  </gmd:code>
+                </gmd:MD_Identifier>
+              </gmd:identifier>
+            </gmd:CI_Citation>
+          </gmd:thesaurusName>
+        </gmd:MD_Keywords>
+      </gmd:descriptiveKeywords>
+      <gmd:descriptiveKeywords>
+        <gmd:MD_Keywords>
+          <gmd:keyword>
+            <gco:CharacterString>Regional</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:type>
+            <gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme" />
+          </gmd:type>
+          <gmd:thesaurusName>
+            <gmd:CI_Citation>
+              <gmd:title>
+                <gco:CharacterString>Spatial scope</gco:CharacterString>
+              </gmd:title>
+              <gmd:date>
+                <gmd:CI_Date>
+                  <gmd:date>
+                    <gco:Date>2019-05-22</gco:Date>
+                  </gmd:date>
+                  <gmd:dateType>
+                    <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication" />
+                  </gmd:dateType>
+                </gmd:CI_Date>
+              </gmd:date>
+              <gmd:identifier>
+                <gmd:MD_Identifier>
+                  <gmd:code>
+                    <gmx:Anchor xlink:href="https://geomis.geoportal-th.de/geonetwork/srv/api/registries/vocabularies/external.theme.httpinspireeceuropaeumetadatacodelistSpatialScope-SpatialScope">geonetwork.thesaurus.external.theme.httpinspireeceuropaeumetadatacodelistSpatialScope-SpatialScope</gmx:Anchor>
+                  </gmd:code>
+                </gmd:MD_Identifier>
+              </gmd:identifier>
+            </gmd:CI_Citation>
+          </gmd:thesaurusName>
+        </gmd:MD_Keywords>
+      </gmd:descriptiveKeywords>
+      <gmd:resourceConstraints>
+        <gmd:MD_LegalConstraints>
+          <gmd:accessConstraints>
+            <gmd:MD_RestrictionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions" />
+          </gmd:accessConstraints>
+          <gmd:otherConstraints>
+            <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations">Es gelten keine Zugriffsbeschränkungen</gmx:Anchor>
+          </gmd:otherConstraints>
+        </gmd:MD_LegalConstraints>
+      </gmd:resourceConstraints>
+      <gmd:resourceConstraints>
+        <gmd:MD_LegalConstraints>
+          <gmd:useConstraints>
+            <gmd:MD_RestrictionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions" />
+          </gmd:useConstraints>
+          <gmd:otherConstraints>
+            <gco:CharacterString>Es gelten die Lizenzbedingungen „Datenlizenz Deutschland - Namensnennung - Version 2.0“ bzw. „dl-de/by-2-0” (https://www.govdata.de/dl-de/by-2-0) mit den dort geforderten Angaben zum Quellenvermerk. Als Rechteinhaber und Bereitsteller ist die Datenhaltende Stelle, sowie das Jahr des Datenbezugs in Klammern anzugeben. Beispiel für Quellenvermerk: GDI-Th (2021) Datenlizenz Deutschland - Namensnennung - Version 2.0 (www.govdata.de/dl-de/by-2-0).</gco:CharacterString>
+          </gmd:otherConstraints>
+          <gmd:otherConstraints>
+            <gco:CharacterString>{ 
+                  "id": "dl-by-de/2.0",  
+                  "name": "Datenlizenz Deutschland Namensnennung 2.0",  
+                  "url": "https://www.govdata.de/dl-de/by-2-0",  
+                  "quelle": "© GDI-Th" 
+                  }</gco:CharacterString>
+          </gmd:otherConstraints>
+        </gmd:MD_LegalConstraints>
+      </gmd:resourceConstraints>
+      <gmd:spatialRepresentationType>
+        <gmd:MD_SpatialRepresentationTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector" />
+      </gmd:spatialRepresentationType>
+      <gmd:spatialResolution>
+        <gmd:MD_Resolution>
+          <gmd:distance>
+            <gco:Distance uom="m">1</gco:Distance>
+          </gmd:distance>
+        </gmd:MD_Resolution>
+      </gmd:spatialResolution>
+      <gmd:language>
+        <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ger" />
+      </gmd:language>
+      <gmd:characterSet>
+        <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+      </gmd:characterSet>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>transportation</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>location</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:extent>
+        <gmd:EX_Extent>
+          <gmd:description>
+            <gco:CharacterString>Thüringen</gco:CharacterString>
+          </gmd:description>
+          <gmd:geographicElement>
+            <gmd:EX_GeographicBoundingBox>
+              <gmd:extentTypeCode>
+                <gco:Boolean>true</gco:Boolean>
+              </gmd:extentTypeCode>
+              <gmd:westBoundLongitude>
+                <gco:Decimal>9.87</gco:Decimal>
+              </gmd:westBoundLongitude>
+              <gmd:eastBoundLongitude>
+                <gco:Decimal>12.65</gco:Decimal>
+              </gmd:eastBoundLongitude>
+              <gmd:southBoundLatitude>
+                <gco:Decimal>50.19</gco:Decimal>
+              </gmd:southBoundLatitude>
+              <gmd:northBoundLatitude>
+                <gco:Decimal>51.64</gco:Decimal>
+              </gmd:northBoundLatitude>
+            </gmd:EX_GeographicBoundingBox>
+          </gmd:geographicElement>
+          <gmd:verticalElement />
+        </gmd:EX_Extent>
+      </gmd:extent>
+    </gmd:MD_DataIdentification>
+  </gmd:identificationInfo>
+  <gmd:distributionInfo>
+    <gmd:MD_Distribution>
+      <gmd:distributionFormat>
+        <gmd:MD_Format>
+          <gmd:name>
+            <gco:CharacterString>ASCII</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>1</gco:CharacterString>
+          </gmd:version>
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+      <gmd:distributor>
+        <gmd:MD_Distributor>
+          <gmd:distributorContact>
+            <gmd:CI_ResponsibleParty>
+              <individualName xmlns="http://www.isotc211.org/2005/gmd">
+                <gco:CharacterString>Kompetenzzentrum Geodateninfrastruktur Thüringen (GDI-Th)</gco:CharacterString>
+              </individualName>
+              <organisationName xmlns="http://www.isotc211.org/2005/gmd">
+                <gco:CharacterString>Thüringer Landesamt für Bodenmanagement und Geoinformation</gco:CharacterString>
+              </organisationName>
+              <positionName xmlns="http://www.isotc211.org/2005/gmd">
+                <gco:CharacterString>Ansprechpartner</gco:CharacterString>
+              </positionName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:phone>
+                    <gmd:CI_Telephone>
+                      <voice xmlns="http://www.isotc211.org/2005/gmd">
+                        <gco:CharacterString>+49 361 57-4176 926</gco:CharacterString>
+                      </voice>
+                      <facsimile xmlns="http://www.isotc211.org/2005/gmd">
+                        <gco:CharacterString>+49 361 57-4176 759</gco:CharacterString>
+                      </facsimile>
+                    </gmd:CI_Telephone>
+                  </gmd:phone>
+                  <gmd:address>
+                    <gmd:CI_Address>
+                      <deliveryPoint xmlns="http://www.isotc211.org/2005/gmd">
+                        <gco:CharacterString>Hohenwindenstraße 13a</gco:CharacterString>
+                      </deliveryPoint>
+                      <city xmlns="http://www.isotc211.org/2005/gmd">
+                        <gco:CharacterString>Erfurt</gco:CharacterString>
+                      </city>
+                      <administrativeArea xmlns="http://www.isotc211.org/2005/gmd">
+                        <gco:CharacterString>Thüringen</gco:CharacterString>
+                      </administrativeArea>
+                      <postalCode xmlns="http://www.isotc211.org/2005/gmd">
+                        <gco:CharacterString>99086</gco:CharacterString>
+                      </postalCode>
+                      <country xmlns="http://www.isotc211.org/2005/gmd">
+                        <gco:CharacterString>Germany</gco:CharacterString>
+                      </country>
+                      <electronicMailAddress xmlns="http://www.isotc211.org/2005/gmd">
+                        <gco:CharacterString>kompetenzzentrum.gdi-th@tlbg.thueringen.de</gco:CharacterString>
+                      </electronicMailAddress>
+                    </gmd:CI_Address>
+                  </gmd:address>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <CI_RoleCode xmlns="http://www.isotc211.org/2005/gmd" codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact" />
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:distributorContact>
+        </gmd:MD_Distributor>
+      </gmd:distributor>
+      <gmd:transferOptions>
+        <gmd:MD_DigitalTransferOptions>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage>
+                <gmd:URL>https://tlbg.thueringen.de/liegenschaftskataster/alkis</gmd:URL>
+              </gmd:linkage>
+              <gmd:protocol>
+                <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+              </gmd:protocol>
+              <gmd:name>
+                <gco:CharacterString>Amtliches Liegenschaftskataster-Informationssystem ALKIS®</gco:CharacterString>
+              </gmd:name>
+              <gmd:description>
+                <gco:CharacterString>ALKIS®, das Amtliche Liegenschaftskataster-Informationssystem, ist eine der drei Komponenten des AAA-Datenmodells (ALKIS, ATKIS, AFIS = AAA).</gco:CharacterString>
+              </gmd:description>
+              <gmd:function>
+                <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information" />
+              </gmd:function>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage>
+                <gmd:URL>https://landesrecht.thueringen.de/jportal/?quelle=jlink&amp;query=VermVwKostO+TH&amp;psml=bsthueprod.psml&amp;max=true&amp;aiz=true</gmd:URL>
+              </gmd:linkage>
+              <gmd:protocol>
+                <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+              </gmd:protocol>
+              <gmd:name>
+                <gco:CharacterString>ThürVwKostOVerm</gco:CharacterString>
+              </gmd:name>
+              <gmd:description>
+                <gco:CharacterString>Thüringer Verwaltungskostenordnung für das amtliche Vermessungswesen (ThürVwKostOVerm)</gco:CharacterString>
+              </gmd:description>
+              <gmd:function>
+                <CI_OnLineFunctionCode xmlns="http://www.isotc211.org/2005/gmd" codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information" />
+              </gmd:function>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage>
+                <gmd:URL>https://geoportal.thueringen.de/gdi-th/download-offene-geodaten</gmd:URL>
+              </gmd:linkage>
+              <gmd:protocol>
+                <gco:CharacterString>WWW:LINK-1.0-http--download</gco:CharacterString>
+              </gmd:protocol>
+              <gmd:name>
+                <gco:CharacterString>Download Offene Geodaten</gco:CharacterString>
+              </gmd:name>
+              <gmd:description>
+                <gco:CharacterString>Downloadbereich auf Geoportal Thüringen</gco:CharacterString>
+              </gmd:description>
+              <gmd:function>
+                <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download" />
+              </gmd:function>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage>
+                <gmd:URL>https://tlbg.thueringen.de/fileadmin/TLBG/Vertrieb/agnb/agnb-tlbg.pdf</gmd:URL>
+              </gmd:linkage>
+              <gmd:protocol>
+                <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+              </gmd:protocol>
+              <gmd:name>
+                <gco:CharacterString>AGNB</gco:CharacterString>
+              </gmd:name>
+              <gmd:description>
+                <gco:CharacterString>AGNB</gco:CharacterString>
+              </gmd:description>
+              <gmd:function>
+                <CI_OnLineFunctionCode xmlns="http://www.isotc211.org/2005/gmd" codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information" />
+              </gmd:function>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+          <gmd:offLine>
+            <gmd:MD_Medium>
+              <gmd:name>
+                <gmd:MD_MediumNameCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_MediumNameCode" codeListValue="cdRom" />
+              </gmd:name>
+            </gmd:MD_Medium>
+          </gmd:offLine>
+        </gmd:MD_DigitalTransferOptions>
+      </gmd:transferOptions>
+      <gmd:transferOptions>
+        <gmd:MD_DigitalTransferOptions>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage>
+                <gmd:URL>https://www.geoproxy.geoportal-th.de/geoproxy/services/HK?REQUEST=GetCapabilities&amp;service=WMS</gmd:URL>
+              </gmd:linkage>
+              <gmd:protocol>
+                <gco:CharacterString>OGC:WMS-http-get-map</gco:CharacterString>
+              </gmd:protocol>
+              <gmd:name>
+                <gco:CharacterString>WMS TH Hauskoordinaten</gco:CharacterString>
+              </gmd:name>
+              <gmd:description>
+                <gco:CharacterString>Geoproxy Thüringen WMS für Hauskoordinaten. Der Web Map Service stellt flächendeckend aus der Datengrundlage ALKIS abgeleitete Hauskoordinaten bereit.</gco:CharacterString>
+              </gmd:description>
+              <gmd:function>
+                <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information" />
+              </gmd:function>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage>
+                <gmd:URL>https://geoportal.geoportal-th.de/hausko_umr/HK-TH.zip</gmd:URL>
+              </gmd:linkage>
+              <gmd:protocol>
+                <gco:CharacterString>WWW:DOWNLOAD-1.0-http--download</gco:CharacterString>
+              </gmd:protocol>
+              <gmd:name>
+                <gco:CharacterString>Hauskoordinaten Thüringen</gco:CharacterString>
+              </gmd:name>
+              <gmd:description>
+                <gco:CharacterString>Downloadbereich auf Geoportal Thüringen</gco:CharacterString>
+              </gmd:description>
+              <gmd:function>
+                <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download" />
+              </gmd:function>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+        </gmd:MD_DigitalTransferOptions>
+      </gmd:transferOptions>
+    </gmd:MD_Distribution>
+  </gmd:distributionInfo>
+  <gmd:dataQualityInfo>
+    <gmd:DQ_DataQuality>
+      <gmd:scope>
+        <gmd:DQ_Scope>
+          <gmd:level>
+            <gmd:MD_ScopeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" />
+          </gmd:level>
+          <gmd:levelDescription>
+            <gmd:MD_ScopeDescription>
+              <gmd:dataset>
+                <gco:CharacterString>Mit der Hauskoordinate - geodätisch korrekt "Georeferenzierte Gebäudeadresse" genannt - wird jedem Gebäude mit einer Hausnummer exakt eine Koordinate im Landeskoordinatensystem zugeordnet. Die Hauskoordinate bildet die Grundlage für zahlreiche Anwendungen, um ein Gebäude genau zu lokalisieren. Dies hilft vor allem Nutzern wie z. B. der Polizei, Feuerwehr, Katastrophenschutz und Taxiunternehmen bei ihrer Arbeit. Die Hauskoordinate besteht im Wesentlichen aus einer Lagebezeichnung mit Angaben zur Stadt, Straße und Hausnummer und einer Koordinate des Gebäudes im Landeskoordinatensystem.</gco:CharacterString>
+              </gmd:dataset>
+            </gmd:MD_ScopeDescription>
+          </gmd:levelDescription>
+        </gmd:DQ_Scope>
+      </gmd:scope>
+      <gmd:report>
+        <gmd:DQ_CompletenessCommission>
+          <gmd:result>
+            <gmd:DQ_ConformanceResult>
+              <gmd:specification>
+                <gmd:CI_Citation>
+                  <gmd:title>
+                    <gco:CharacterString>Hauskoordinaten</gco:CharacterString>
+                  </gmd:title>
+                  <gmd:alternateTitle>
+                    <gco:CharacterString>Hauskoordinaten</gco:CharacterString>
+                  </gmd:alternateTitle>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:Date>2006-01-01</gco:Date>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication" />
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                  <gmd:identifier>
+                    <gmd:MD_Identifier>
+                      <gmd:code>
+                        <gco:CharacterString>https://registry.gdi-de.org/id/de.th.csw/666deaca-27ec-4fdf-91b0-253bff94b738</gco:CharacterString>
+                      </gmd:code>
+                    </gmd:MD_Identifier>
+                  </gmd:identifier>
+                </gmd:CI_Citation>
+              </gmd:specification>
+              <gmd:explanation>
+                <gco:CharacterString>Jedem Gebäude mit einer Hausnummer wird exakt eine Koordinate im Landeskoordinatensystem zugeordnet.</gco:CharacterString>
+              </gmd:explanation>
+              <gmd:pass>
+                <gco:Boolean>true</gco:Boolean>
+              </gmd:pass>
+            </gmd:DQ_ConformanceResult>
+          </gmd:result>
+        </gmd:DQ_CompletenessCommission>
+      </gmd:report>
+      <gmd:report>
+        <gmd:DQ_DomainConsistency>
+          <gmd:result>
+            <gmd:DQ_ConformanceResult>
+              <gmd:specification>
+                <gmd:CI_Citation>
+                  <title xmlns="http://www.isotc211.org/2005/gmd">
+                    <gco:CharacterString>VERORDNUNG (EG) Nr. 1205/2008 der Kommission vom 3. Dezember 2008 zur Durchführung der Richtlinie 2007/2/EG des Europäischen Parlaments und des Rates hinsichtlich Metadaten</gco:CharacterString>
+                  </title>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:Date>2008-12-03</gco:Date>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <CI_DateTypeCode xmlns="http://www.isotc211.org/2005/gmd" codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication" />
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                </gmd:CI_Citation>
+              </gmd:specification>
+              <gmd:explanation>
+                <gco:CharacterString>Getestet mit der GDI - DE Testsuite</gco:CharacterString>
+              </gmd:explanation>
+              <gmd:pass>
+                <gco:Boolean>true</gco:Boolean>
+              </gmd:pass>
+            </gmd:DQ_ConformanceResult>
+          </gmd:result>
+        </gmd:DQ_DomainConsistency>
+      </gmd:report>
+      <gmd:report>
+        <gmd:DQ_DomainConsistency>
+          <gmd:result>
+            <gmd:DQ_ConformanceResult>
+              <gmd:specification>
+                <gmd:CI_Citation>
+                  <title xmlns="http://www.isotc211.org/2005/gmd">
+                    <gco:CharacterString>VERORDNUNG (EG) Nr. 1089/2010 DER KOMMISSION vom 23. November 2010 zur Durchführung der Richtlinie 2007/2/EG des Europäischen Parlaments und des Rates hinsichtlich der Interoperabilität von Geodatensätzen und -diensten</gco:CharacterString>
+                  </title>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:Date>2010-12-08</gco:Date>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <CI_DateTypeCode xmlns="http://www.isotc211.org/2005/gmd" codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication" />
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                </gmd:CI_Citation>
+              </gmd:specification>
+              <gmd:explanation>
+                <gco:CharacterString>Getestet mit der GDI - DE Testsuite</gco:CharacterString>
+              </gmd:explanation>
+              <gmd:pass>
+                <gco:Boolean>false</gco:Boolean>
+              </gmd:pass>
+            </gmd:DQ_ConformanceResult>
+          </gmd:result>
+        </gmd:DQ_DomainConsistency>
+      </gmd:report>
+      <gmd:lineage>
+        <gmd:LI_Lineage>
+          <gmd:statement>
+            <gco:CharacterString>Ableitung aus dem Liegenschaftskataster</gco:CharacterString>
+          </gmd:statement>
+        </gmd:LI_Lineage>
+      </gmd:lineage>
+    </gmd:DQ_DataQuality>
+  </gmd:dataQualityInfo>
+</gmd:MD_Metadata>
+

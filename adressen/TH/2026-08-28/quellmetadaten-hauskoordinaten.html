@@ -1,0 +1,1300 @@
+<html ng-app="gn_search_default" lang="" id="ng-app">
+  <head>
+    <title>Hauskoordinaten</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="description" content="Die amtlichen Hauskoordinaten definieren die genaue Position eines Hauses. Datenquelle ist das Liegenschaftskataster der Länder und somit das amtliche Verzeichnis aller Flurstücke und Gebäude in Deutschland. Anders als durch Interpolation berechnete Daten beruhen die amtlichen Hauskoordinaten auf einer individuellen Vermessung vor Ort. Sie werden durch die Katasterbehörden kontinuierlich aktualisiert, was den Kunden eine langfristige Investitionssicherheit garantiert.Die Hauskoordinaten enthalten: Statistische Landes-, Landkreis- und Gemeindeschlüssel, Straßenschlüssel und -name, Haus-Nr., ETRS89/UTM Koordinaten mit Zonenpräfix 32, Postleitzahl (bisher noch ohne), Postalischer Ortsname, Zusatz zum postalischen Ortsnamen.Nutzungsmöglichkeiten: Hauskoordinaten dokumentieren ihren individuellen Mehrwert z.B. in folgenden Bereichen: Hausgenaue Geocodierung von Adressbestanden, z.B. Kunden-, Filial- oder Wettbewerbsadressen, Verbesserung der Tragerbezirksverwaltung, Reklamationsbearbeitung und Auftragsplanung bei Verlagen, Einbindung in die Netzdokumentation, Netzverwaltung und im Kundenservice bei Energieversorgern und in der Telekommunikations- und Kabel-TV Branche, Entwicklung von Handy-Kommunikationsdiensten (location-based-services) in einer neuen Dimension, Einbindung in WebMapSevices - Navigationstools; Gazetteer Services im Internet" />
+    <meta name="keywords" content="" />
+    <meta property="og:title" content="Hauskoordinaten" />
+    <meta property="og:description" content="Die amtlichen Hauskoordinaten definieren die genaue Position eines Hauses. Datenquelle ist das Liegenschaftskataster der Länder und somit das amtliche Verzeichnis aller Flurstücke und Gebäude in Deutschland. Anders als durch Interpolation berechnete Daten beruhen die amtlichen Hauskoordinaten auf einer individuellen Vermessung vor Ort. Sie werden durch die Katasterbehörden kontinuierlich aktualisiert, was den Kunden eine langfristige Investitionssicherheit garantiert.Die Hauskoordinaten enthalten: Statistische Landes-, Landkreis- und Gemeindeschlüssel, Straßenschlüssel und -name, Haus-Nr., ETRS89/UTM Koordinaten mit Zonenpräfix 32, Postleitzahl (bisher noch ohne), Postalischer Ortsname, Zusatz zum postalischen Ortsnamen.Nutzungsmöglichkeiten: Hauskoordinaten dokumentieren ihren individuellen Mehrwert z.B. in folgenden Bereichen: Hausgenaue Geocodierung von Adressbestanden, z.B. Kunden-, Filial- oder Wettbewerbsadressen, Verbesserung der Tragerbezirksverwaltung, Reklamationsbearbeitung und Auftragsplanung bei Verlagen, Einbindung in die Netzdokumentation, Netzverwaltung und im Kundenservice bei Energieversorgern und in der Telekommunikations- und Kabel-TV Branche, Entwicklung von Handy-Kommunikationsdiensten (location-based-services) in einer neuen Dimension, Einbindung in WebMapSevices - Navigationstools; Gazetteer Services im Internet" />
+    <meta property="og:site_name" content="GeoMIS.Th" />
+    <meta property="og:image" content="https://geomis.geoportal-th.de/geonetwork/srv/api/records/666deaca-27ec-4fdf-91b0-253bff94b738/attachments/HK.jpg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="https://geomis.geoportal-th.de/geonetwork/srv/api/records/666deaca-27ec-4fdf-91b0-253bff94b738/attachments/HK.jpg" />
+    <meta name="twitter:title" content="Hauskoordinaten" />
+    <meta name="twitter:description" content="Die amtlichen Hauskoordinaten definieren die genaue Position eines Hauses. Datenquelle ist das Liegenschaftskataster der Länder und somit das amtliche Verzeichnis aller Flurstücke und Gebäude in Deutschland. Anders als durch Interpolation berechnete Daten beruhen die amtlichen Hauskoordinaten auf einer individuellen Vermessung vor Ort. Sie werden durch die Katasterbehörden kontinuierlich aktualisiert, was den Kunden eine langfristige Investitionssicherheit garantiert.Die Hauskoordinaten enthalten: Statistische Landes-, Landkreis- und Gemeindeschlüssel, Straßenschlüssel und -name, Haus-Nr., ETRS89/UTM Koordinaten mit Zonenpräfix 32, Postleitzahl (bisher noch ohne), Postalischer Ortsname, Zusatz zum postalischen Ortsnamen.Nutzungsmöglichkeiten: Hauskoordinaten dokumentieren ihren individuellen Mehrwert z.B. in folgenden Bereichen: Hausgenaue Geocodierung von Adressbestanden, z.B. Kunden-, Filial- oder Wettbewerbsadressen, Verbesserung der Tragerbezirksverwaltung, Reklamationsbearbeitung und Auftragsplanung bei Verlagen, Einbindung in die Netzdokumentation, Netzverwaltung und im Kundenservice bei Energieversorgern und in der Telekommunikations- und Kabel-TV Branche, Entwicklung von Handy-Kommunikationsdiensten (location-based-services) in einer neuen Dimension, Einbindung in WebMapSevices - Navigationstools; Gazetteer Services im Internet" />
+    <meta name="twitter:site" content="GeoMIS.Th" />
+    <link rel="canonical" href="https://geomis.geoportal-th.de/geonetwork/inspire/api/records/666deaca-27ec-4fdf-91b0-253bff94b738" />
+    <link rel="icon" sizes="16x16 32x32 48x48" type="image/png" href="https://geomis.geoportal-th.de/geonetwork/inspire/ger/../../images/logos/favicon.png" />
+    <link href="https://geomis.geoportal-th.de/geonetwork/inspire/eng/rss.search?sortBy=changeDate" rel="alternate" type="application/rss+xml" title="Hauskoordinaten" />
+    <link href="https://geomis.geoportal-th.de/geonetwork/inspire/eng/portal.opensearch" rel="search" type="application/opensearchdescription+xml" title="Hauskoordinaten" />
+    <link href="https://geomis.geoportal-th.de/geonetwork/inspire/ger/../../static/gn_search_default.css?v=71d70f1fce7fae76cfa04827a99ad49057662188&amp;" rel="stylesheet" media="screen" />
+    <link href="https://geomis.geoportal-th.de/geonetwork/inspire/ger/../../static/gn_metadata_pdf.css?v=71d70f1fce7fae76cfa04827a99ad49057662188&amp;" rel="stylesheet" media="print" />
+  </head>
+  <body class="gn-nojs ">
+    <div class="gn-full">
+      <div class="navbar navbar-default gn-top-bar" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" title="" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only" />
+              <span class="icon-bar" />
+              <span class="icon-bar" />
+              <span class="icon-bar" />
+            </button>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav" id="topbar-left">
+              <li>
+                <a href="https://geomis.geoportal-th.de/geonetwork/inspire/">
+                  <img class="gn-logo" alt="" src="https://geomis.geoportal-th.de/geonetwork/inspire/ger/../../images/logos/eb8aa3a4-118f-4ef4-a3cd-6dcf93d4d3af.png" />
+                  GeoMIS.Th
+                </a>
+              </li>
+              <li>
+                <a title="" href="https://geomis.geoportal-th.de/geonetwork/inspire/search" onclick="location.href=('https://geomis.geoportal-th.de/geonetwork/inspire//catalog.search#/search');return false;">
+                  <i class="fa fa-fw fa-search hidden-sm"> </i>
+                  <span />
+                </a>
+              </li>
+              <li id="map-menu" class="hidden-nojs">
+                <a title="" href="https://geomis.geoportal-th.de/geonetwork/inspire//catalog.search#/map">
+                  <i class="fa fa-fw fa-globe hidden-sm"> </i>
+                  <span />
+                </a>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="https://geomis.geoportal-th.de/geonetwork/inspire//catalog.signin" title="">
+                  <i class="fa fa-sign-in fa-fw"> </i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container" role="main">
+        <div class="container-fluid gn-metadata-view gn-schema-iso19139">
+          <article id="666deaca-27ec-4fdf-91b0-253bff94b738" class="gn-md-view gn-metadata-display">
+            <div class="row">
+              <div class="col-md-8">
+                <header>
+                  <h1>
+                    <i class="fa gn-icon-dataset">
+                      <!--icon-->
+                    </i>
+                    Hauskoordinaten
+                  </h1>
+                  <div class="gn-abstract">
+                    <p>Die amtlichen Hauskoordinaten definieren die genaue Position eines Hauses. Datenquelle ist das Liegenschaftskataster der Länder und somit das amtliche Verzeichnis aller Flurstücke und Gebäude in Deutschland. Anders als durch Interpolation berechnete Daten beruhen die amtlichen Hauskoordinaten auf einer individuellen Vermessung vor Ort. Sie werden durch die Katasterbehörden kontinuierlich aktualisiert, was den Kunden eine langfristige Investitionssicherheit garantiert.Die Hauskoordinaten enthalten: Statistische Landes-, Landkreis- und Gemeindeschlüssel, Straßenschlüssel und -name, Haus-Nr., ETRS89/UTM Koordinaten mit Zonenpräfix 32, Postleitzahl (bisher noch ohne), Postalischer Ortsname, Zusatz zum postalischen Ortsnamen.Nutzungsmöglichkeiten: Hauskoordinaten dokumentieren ihren individuellen Mehrwert z.B. in folgenden Bereichen:  Hausgenaue Geocodierung von Adressbestanden, z.B. Kunden-, Filial- oder Wettbewerbsadressen, Verbesserung der Tragerbezirksverwaltung, Reklamationsbearbeitung und Auftragsplanung bei Verlagen, Einbindung in die Netzdokumentation, Netzverwaltung und im Kundenservice bei Energieversorgern und in der Telekommunikations- und Kabel-TV Branche, Entwicklung von Handy-Kommunikationsdiensten (location-based-services) in einer neuen Dimension, Einbindung in WebMapSevices - Navigationstools; Gazetteer Services im Internet</p>
+                  </div>
+                  <script type="application/ld+json">{
+		"@context": "http://schema.org/",
+    
+      "@type": "schema:Dataset",
+    
+    
+		"@id": "https://geomis.geoportal-th.de/geonetwork/inspire/api/records/666deaca-27ec-4fdf-91b0-253bff94b738",
+		"includedInDataCatalog":[{"url":"https://geomis.geoportal-th.de/geonetwork/inspire/search#","name":""}],
+    
+    "inLanguage":"ger",
+    
+    "name": "Hauskoordinaten",
+
+    
+    
+      "alternateName": "Hauskoordinaten",
+    
+
+    "dateCreated": [
+    ],
+    "dateModified": [
+    ],
+    "datePublished": [
+    
+      "2006-01-01"],
+		"thumbnailUrl": [
+    
+    "https://geomis.geoportal-th.de/geonetwork/srv/api/records/666deaca-27ec-4fdf-91b0-253bff94b738/attachments/HK.jpg"
+    ],
+		"description": "Die amtlichen Hauskoordinaten definieren die genaue Position eines Hauses. Datenquelle ist das Liegenschaftskataster der Länder und somit das amtliche Verzeichnis aller Flurstücke und Gebäude in Deutschland. Anders als durch Interpolation berechnete Daten beruhen die amtlichen Hauskoordinaten auf einer individuellen Vermessung vor Ort. Sie werden durch die Katasterbehörden kontinuierlich aktualisiert, was den Kunden eine langfristige Investitionssicherheit garantiert.Die Hauskoordinaten enthalten: Statistische Landes-, Landkreis- und Gemeindeschlüssel, Straßenschlüssel und -name, Haus-Nr., ETRS89/UTM Koordinaten mit Zonenpräfix 32, Postleitzahl (bisher noch ohne), Postalischer Ortsname, Zusatz zum postalischen Ortsnamen.Nutzungsmöglichkeiten: Hauskoordinaten dokumentieren ihren individuellen Mehrwert z.B. in folgenden Bereichen: Hausgenaue Geocodierung von Adressbestanden, z.B. Kunden-, Filial- oder Wettbewerbsadressen, Verbesserung der Tragerbezirksverwaltung, Reklamationsbearbeitung und Auftragsplanung bei Verlagen, Einbindung in die Netzdokumentation, Netzverwaltung und im Kundenservice bei Energieversorgern und in der Telekommunikations- und Kabel-TV Branche, Entwicklung von Handy-Kommunikationsdiensten (location-based-services) in einer neuen Dimension, Einbindung in WebMapSevices - Navigationstools; Gazetteer Services im Internet",
+
+    
+    
+
+    
+
+    
+    "keywords":[
+      "Hausnummer","Gemeinde","Straße","inspireidentifiziert","AdVMIS","GOVE","opendata","Adressen","Regional"
+		],
+
+
+    
+
+    "author": [],
+    "contributor": [],
+    "creator": [
+   {
+        
+        
+        "@id":"frank.fuchs@tlbg.thueringen.de",
+        "@type":"Organization"
+        
+          ,"name": "Thüringer Landesamt für Bodenmanagement und Geoinformation"
+          ,"email": "frank.fuchs@tlbg.thueringen.de"
+        
+        ,"contactPoint": {
+          "@type" : "PostalAddress"
+          
+            ,"addressCountry": "Deutschland"
+            ,"addressLocality": "Erfurt"
+            ,"postalCode": "99086"
+            ,"streetAddress": "Hohenwindenstraße 13a"
+          }
+        }
+  ],
+    "provider" : [
+   {
+        
+        
+        "@id":"stefanie.hackel@tlbg.thueringen.de",
+        "@type":"Organization"
+        
+          ,"name": "Thüringer Landesamt für Bodenmanagement und Geoinformation"
+          ,"email": "stefanie.hackel@tlbg.thueringen.de"
+        
+        ,"contactPoint": {
+          "@type" : "PostalAddress"
+          
+            ,"addressCountry": "Germany"
+            ,"addressLocality": "Erfurt"
+            ,"postalCode": "99086"
+            ,"streetAddress": "Hohenwindenstraße 13a"
+          }
+        }
+  ],
+    "copyrightHolder": [],
+    "user": [],
+    "sourceOrganization": [],
+    "publisher": []
+
+
+    
+
+    
+    
+    ,"distribution": [
+      
+        {
+         "@type":"DataDownload",
+         "contentUrl": "https://tlbg.thueringen.de/liegenschaftskataster/alkis",
+         "encodingFormat":"WWW:LINK-1.0-http--link",
+         "name": "Amtliches Liegenschaftskataster-Informationssystem ALKIS®",
+         "description": "ALKIS®, das Amtliche Liegenschaftskataster-Informationssystem, ist eine der drei Komponenten des AAA-Datenmodells (ALKIS, ATKIS, AFIS = AAA)."
+        }
+        ,
+        {
+         "@type":"DataDownload",
+         "contentUrl": "https://landesrecht.thueringen.de/jportal/?quelle=jlink&amp;query=VermVwKostO+TH&amp;psml=bsthueprod.psml&amp;max=true&amp;aiz=true",
+         "encodingFormat":"WWW:LINK-1.0-http--link",
+         "name": "ThürVwKostOVerm",
+         "description": "Thüringer Verwaltungskostenordnung für das amtliche Vermessungswesen (ThürVwKostOVerm)"
+        }
+        ,
+        {
+         "@type":"DataDownload",
+         "contentUrl": "https://geoportal.thueringen.de/gdi-th/download-offene-geodaten",
+         "encodingFormat":"WWW:LINK-1.0-http--download",
+         "name": "Download Offene Geodaten",
+         "description": "Downloadbereich auf Geoportal Thüringen"
+        }
+        ,
+        {
+         "@type":"DataDownload",
+         "contentUrl": "https://tlbg.thueringen.de/fileadmin/TLBG/Vertrieb/agnb/agnb-tlbg.pdf",
+         "encodingFormat":"WWW:LINK-1.0-http--link",
+         "name": "AGNB",
+         "description": "AGNB"
+        }
+        ,
+        {
+         "@type":"DataDownload",
+         "contentUrl": "https://www.geoproxy.geoportal-th.de/geoproxy/services/HK?REQUEST=GetCapabilities&amp;service=WMS",
+         "encodingFormat":"OGC:WMS-http-get-map",
+         "name": "WMS TH Hauskoordinaten",
+         "description": "Geoproxy Thüringen WMS für Hauskoordinaten. Der Web Map Service stellt flächendeckend aus der Datengrundlage ALKIS abgeleitete Hauskoordinaten bereit."
+        }
+        ,
+        {
+         "@type":"DataDownload",
+         "contentUrl": "https://geoportal.geoportal-th.de/hausko_umr/HK-TH.zip",
+         "encodingFormat":"WWW:DOWNLOAD-1.0-http--download",
+         "name": "Hauskoordinaten Thüringen",
+         "description": "Downloadbereich auf Geoportal Thüringen"
+        }
+        
+    ]
+    
+      ,"encodingFormat": [
+      "ASCII"
+      ]
+    
+
+
+    ,"spatialCoverage": [
+    
+      {"@type":"Place",
+        "description": [
+        "Thüringen"
+          ],
+        "geo": [
+          
+              {"@type":"GeoShape",
+              "box": "50.19 9.87 51.64 12.65"
+              }
+        ]}]
+
+
+    
+      ,"license":  [
+            "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations"
+          ,
+            {
+              "@type": "CreativeWork",
+              "name": "Es gelten die Lizenzbedingungen „Datenlizenz Deutschland - Namensnennung - Version 2.0“ bzw. „dl-de/by-2-0” (https://www.govdata.de/dl-de/by-2-0) mit den dort geforderten Angaben zum Quellenvermerk. Als Rechteinhaber und Bereitsteller ist die Datenhaltende Stelle, sowie das Jahr des Datenbezugs in Klammern anzugeben. Beispiel für Quellenvermerk: GDI-Th (2021) Datenlizenz Deutschland - Namensnennung - Version 2.0 (www.govdata.de/dl-de/by-2-0)."
+            }
+          ,
+            {
+              "@type": "CreativeWork",
+              "name": "{ \"id\": \"dl-by-de/2.0\", \"name\": \"Datenlizenz Deutschland Namensnennung 2.0\", \"url\": \"https://www.govdata.de/dl-de/by-2-0\", \"quelle\": \"© GDI-Th\" }"
+            }
+           ]
+    
+    
+    
+	}</script>
+                  <div gn-related="md" data-user="user" data-types="onlines">
+                    <!--icon-->
+                  </div>
+                </header>
+                <div>
+                  <div class="tab-content">
+                    <div id="gn-tab-default">
+                      <h1 class="hidden">Simple</h1>
+                      <div id="gn-view-d575386e3912" class="gn-tab-content">
+                        <dl>
+                          <dt>Alternativtitel</dt>
+                          <dd>
+                            <!--gmd:alternateTitle-->
+                            <span>
+                              <!--gmd:alternateTitle-->
+                              <p>Hauskoordinaten</p>
+                            </span>
+                          </dd>
+                        </dl>
+                        <dl class="gn-date">
+                          <dt>Datumsangaben (Publikation)</dt>
+                          <dd>
+                            <span data-gn-humanize-time="2006-01-01" data-format="DD MMM YYYY">
+                              <!--gco:Date-->
+                              2006-01-01
+                            </span>
+                          </dd>
+                        </dl>
+                        <dl class="gn-code">
+                          <dt>Identifikator</dt>
+                          <dd>
+                            <span>
+                              <!--gmd:code-->
+                              https://registry.gdi-de.org/id/de.th.csw/666deaca-27ec-4fdf-91b0-253bff94b738
+                            </span>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>Bearbeitungsstatus</dt>
+                          <dd>
+                            <!--gmd:status-->
+                            <span title="Daten werden fortlaufend aktualisiert">Kontinuierliche Aktualisierung</span>
+                          </dd>
+                        </dl>
+                        <div class="gn-contact">
+                          <strong>
+                            <!--email-->
+                            <span title="Kontakt für Informationen zur Ressource oder deren Bezugsmöglichkeiten&#xA;      ">Ansprechpartner</span>
+                          </strong>
+                          <address>
+                            <i class="fa fa-fw fa-envelope"> </i>
+                            <a href="mailto:frank.fuchs@tlbg.thueringen.de">
+                              <span>
+                                <!--organisationName-->
+                                Thüringer Landesamt für Bodenmanagement und Geoinformation
+                              </span>
+                              -
+                              <span>
+                                <!--individualName-->
+                                Fuchs, Frank
+                              </span>
+                              (
+                              <span>
+                                <!--positionName-->
+                                Referatsleiter - Koordinierung und Fachkonzeption Liegenschaftskataster
+                              </span>
+                              )
+                              <!--email-->
+                            </a>
+                            <br />
+                            <div>
+                              <i class="fa fa-fw fa-map-marker">
+                                <!--address-->
+                              </i>
+                              <span>
+                                <!--deliveryPoint-->
+                                Hohenwindenstraße 13a
+                              </span>
+                              ,
+                              <span>
+                                <!--city-->
+                                Erfurt
+                              </span>
+                              ,
+                              <span>
+                                <!--administrativeArea-->
+                                Thüringen
+                              </span>
+                              ,
+                              <span>
+                                <!--postalCode-->
+                                99086
+                              </span>
+                              ,
+                              <span>
+                                <!--country-->
+                                Deutschland
+                              </span>
+                            </div>
+                            <i class="fa fa-fw fa-phone">
+                              <!--phone-->
+                            </i>
+                            <a href="tel:+4936157-4176944">+49 361 57-4176 944</a>
+                            <br />
+                            <i class="fa fa-fw fa-fax">
+                              <!--fax-->
+                            </i>
+                            <a href="tel:+4936157-4176868">+49 361 57-4176 868</a>
+                            <br />
+                            <i class="fa fa-fw fa-link">
+                              <!--link-->
+                            </i>
+                            <a href="https://tlbg.thueringen.de/">https://tlbg.thueringen.de/</a>
+                          </address>
+                        </div>
+                        <dl>
+                          <dt>Überarbeitungsintervall</dt>
+                          <dd>
+                            <!--gmd:maintenanceAndUpdateFrequency-->
+                            <span title="Daten werden ständig aktualisiert">Kontinuierlich</span>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>Datenpflegebereich</dt>
+                          <dd>
+                            <!--gmd:updateScope-->
+                            <span title="Information gilt für einen Datenbestand">Datenbestand</span>
+                          </dd>
+                        </dl>
+                        <dl class="gn-keyword">
+                          <dt>Keywords</dt>
+                          <dd>
+                            <div>
+                              <ul>
+                                <li>
+                                  <span>
+                                    <!--gmd:keyword-->
+                                    <p>Hausnummer</p>
+                                  </span>
+                                </li>
+                                <li>
+                                  <span>
+                                    <!--gmd:keyword-->
+                                    <p>Gemeinde</p>
+                                  </span>
+                                </li>
+                                <li>
+                                  <span>
+                                    <!--gmd:keyword-->
+                                    <p>Straße</p>
+                                  </span>
+                                </li>
+                                <li>
+                                  <span>
+                                    <!--gmd:keyword-->
+                                    <p>inspireidentifiziert</p>
+                                  </span>
+                                </li>
+                                <li>
+                                  <span>
+                                    <!--gmd:keyword-->
+                                    <p>AdVMIS</p>
+                                  </span>
+                                </li>
+                                <li>
+                                  <span>
+                                    <!--gmd:keyword-->
+                                    <p>GOVE</p>
+                                  </span>
+                                </li>
+                                <li>
+                                  <span>
+                                    <!--gmd:keyword-->
+                                    <p>opendata</p>
+                                  </span>
+                                </li>
+                              </ul>
+                            </div>
+                          </dd>
+                        </dl>
+                        <dl class="gn-keyword">
+                          <dt>
+                            <span>
+                              <!--gmd:title-->
+                              <p>GEMET - INSPIRE themes, version 1.0</p>
+                            </span>
+                          </dt>
+                          <dd>
+                            <div>
+                              <ul>
+                                <li>
+                                  <span>
+                                    <!--gmd:keyword-->
+                                    <p>Adressen</p>
+                                  </span>
+                                </li>
+                              </ul>
+                            </div>
+                          </dd>
+                        </dl>
+                        <dl class="gn-keyword">
+                          <dt>
+                            <span>
+                              <!--gmd:title-->
+                              <p>Spatial scope</p>
+                            </span>
+                          </dt>
+                          <dd>
+                            <div>
+                              <ul>
+                                <li>
+                                  <span>
+                                    <!--gmd:keyword-->
+                                    <p>Regional</p>
+                                  </span>
+                                </li>
+                              </ul>
+                            </div>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>Zugriffseinschränkungen</dt>
+                          <dd>
+                            <!--gmd:accessConstraints-->
+                            <span title="Andere Einschränkungen, die oben nicht aufgeführt sind">Benutzerdefinierte Einschränkungen</span>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>Andere Einschränkungen</dt>
+                          <dd>
+                            <!--gmd:otherConstraints-->
+                            <a href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations">Es gelten keine Zugriffsbeschränkungen</a>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>Nutzungseinschränkungen</dt>
+                          <dd>
+                            <!--gmd:useConstraints-->
+                            <span title="Andere Einschränkungen, die oben nicht aufgeführt sind">Benutzerdefinierte Einschränkungen</span>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>Andere Einschränkungen</dt>
+                          <dd>
+                            <!--gmd:otherConstraints-->
+                            <span>
+                              <!--gmd:otherConstraints-->
+                              <p>
+                                Es gelten die Lizenzbedingungen „Datenlizenz Deutschland - Namensnennung - Version 2.0“ bzw. „dl-de/by-2-0” (
+                                <a href="https://www.govdata.de/dl-de/by-2-0)">https://www.govdata.de/dl-de/by-2-0)</a>
+                                mit den dort geforderten Angaben zum Quellenvermerk. Als Rechteinhaber und Bereitsteller ist die Datenhaltende Stelle, sowie das Jahr des Datenbezugs in Klammern anzugeben. Beispiel für Quellenvermerk: GDI-Th (2021) Datenlizenz Deutschland - Namensnennung - Version 2.0 (www.govdata.de/dl-de/by-2-0).
+                              </p>
+                            </span>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>Andere Einschränkungen</dt>
+                          <dd>
+                            <!--gmd:otherConstraints-->
+                            <span>
+                              <!--gmd:otherConstraints-->
+                              <p>{</p>
+                              <p>"id": "dl-by-de/2.0",</p>
+                              <p>"name": "Datenlizenz Deutschland Namensnennung 2.0",</p>
+                              <p>
+                                "url": "
+                                <a href="https://www.govdata.de/dl-de/by-2-0&quot;,">https://www.govdata.de/dl-de/by-2-0",</a>
+                              </p>
+                              <p>"quelle": "© GDI-Th"</p>
+                              <p>}</p>
+                            </span>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>Räumliche Darstellungsart</dt>
+                          <dd>
+                            <!--gmd:spatialRepresentationType-->
+                            <span title="Zur Darstellung geografischer Informationen werden Vektordaten verwendet&#xA;      ">Vektor</span>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>Distanz</dt>
+                          <dd>
+                            <!--gmd:distance-->
+                            1
+           m
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>Sprache</dt>
+                          <dd>
+                            <!--gmd:language-->
+                            Deutsch
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>Zeichensatz</dt>
+                          <dd>
+                            <!--gmd:characterSet-->
+                            <span title="8-Bit Zeichensatz mit variabler Grösse, universell, basierend auf ISO 10646&#xA;      ">Utf8</span>
+                          </dd>
+                        </dl>
+                        <dl class="gn-date">
+                          <dt>Thematik</dt>
+                          <dd>
+                            <ul>
+                              <li>
+                                <span title="Mittel und Wege zur Beförderung von Personen und/oder Gütern, z.B. Strassen,&#xA;        Flughäfen/Landepisten, Schifffahrtswege, Tunnel, Seekarten, Positionen von Fahrzeugen,&#xA;        Luftfahrtskarten, Schienennetz&#xA;      ">Verkehrswesen</span>
+                              </li>
+                              <li>
+                                <span title="Positionierungsangaben und -dienste, z.B. Adressen, Vermessungsnetze,&#xA;        Kontrollpunkte, Postleitzahlenbereiche, Ortsnamen, Gazetteer&#xA;      ">Ortsangaben</span>
+                              </li>
+                            </ul>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>Beschreibung</dt>
+                          <dd>
+                            <!--gmd:description-->
+                            <span>
+                              <!--gmd:description-->
+                              <p>Thüringen</p>
+                            </span>
+                          </dd>
+                        </dl>
+                        <div class="thumbnail extent">
+                          <div class="input-group coord coord-north">
+                            <input type="text" class="form-control" aria-label="" value="51.64" readonly="" />
+                            <span class="input-group-addon">N</span>
+                          </div>
+                          <div class="input-group coord coord-south">
+                            <input type="text" class="form-control" aria-label="" value="50.19" readonly="" />
+                            <span class="input-group-addon">S</span>
+                          </div>
+                          <div class="input-group coord coord-east">
+                            <input type="text" class="form-control" aria-label="" value="12.65" readonly="" />
+                            <span class="input-group-addon">E</span>
+                          </div>
+                          <div class="input-group coord coord-west">
+                            <input type="text" class="form-control" aria-label="" value="9.87" readonly="" />
+                            <span class="input-group-addon">W</span>
+                          </div>
+                          <img class="gn-img-extent" alt="" src="https://geomis.geoportal-th.de/geonetwork/inspire/api/regions/geom.png?geomsrs=EPSG:4326&amp;geom=POLYGON((12.65%2050.19,12.65%2051.64,9.87%2051.64,9.87%2050.19,12.65%2050.19))" />
+                        </div>
+                        <br />
+                        <br />
+                        <!--icon-->
+                      </div>
+                      <div id="gn-view-d575386e3914" class="gn-tab-content">
+                        <dl class="gn-code">
+                          <dt>Identifikator des Referenzsystems</dt>
+                          <dd>
+                            <span>
+                              <!--gmd:code-->
+                              http://www.opengis.net/def/crs/EPSG/0/25832
+                            </span>
+                          </dd>
+                        </dl>
+                        <!--icon-->
+                      </div>
+                      <div id="gn-view-d575386e3916" class="gn-tab-content">
+                        <!--icon-->
+                      </div>
+                      <div id="gn-view-d575386e3918" class="gn-tab-content">
+                        <dl class="gn-format">
+                          <dt>Abgabeformat</dt>
+                          <dd>
+                            <ul>
+                              <li>
+                                <span>
+                                  <!--gmd:name-->
+                                  ASCII
+                                </span>
+                                (
+                                <span>
+                                  <!--gmd:version-->
+                                  1
+                                </span>
+                                )
+                                <p>
+                                  <!--gmd:distributionFormat-->
+                                </p>
+                              </li>
+                            </ul>
+                          </dd>
+                        </dl>
+                        <div class="gn-contact">
+                          <strong>
+                            <!--email-->
+                            <span title="Kontakt für Informationen zur Ressource oder deren Bezugsmöglichkeiten&#xA;      ">Ansprechpartner</span>
+                          </strong>
+                          <address>
+                            <i class="fa fa-fw fa-envelope"> </i>
+                            <a href="mailto:kompetenzzentrum.gdi-th@tlbg.thueringen.de">
+                              <span>
+                                <!--organisationName-->
+                                Thüringer Landesamt für Bodenmanagement und Geoinformation
+                              </span>
+                              -
+                              <span>
+                                <!--individualName-->
+                                Kompetenzzentrum Geodateninfrastruktur Thüringen (GDI-Th)
+                              </span>
+                              (
+                              <span>
+                                <!--positionName-->
+                                Ansprechpartner
+                              </span>
+                              )
+                              <!--email-->
+                            </a>
+                            <br />
+                            <div>
+                              <i class="fa fa-fw fa-map-marker">
+                                <!--address-->
+                              </i>
+                              <span>
+                                <!--deliveryPoint-->
+                                Hohenwindenstraße 13a
+                              </span>
+                              ,
+                              <span>
+                                <!--city-->
+                                Erfurt
+                              </span>
+                              ,
+                              <span>
+                                <!--administrativeArea-->
+                                Thüringen
+                              </span>
+                              ,
+                              <span>
+                                <!--postalCode-->
+                                99086
+                              </span>
+                              ,
+                              <span>
+                                <!--country-->
+                                Germany
+                              </span>
+                            </div>
+                            <i class="fa fa-fw fa-phone">
+                              <!--phone-->
+                            </i>
+                            <a href="tel:+4936157-4176926">+49 361 57-4176 926</a>
+                            <br />
+                            <i class="fa fa-fw fa-fax">
+                              <!--fax-->
+                            </i>
+                            <a href="tel:+4936157-4176759">+49 361 57-4176 759</a>
+                            <br />
+                          </address>
+                        </div>
+                        <dl class="gn-link">
+                          <dt>Online</dt>
+                          <dd>
+                            <a href="https://tlbg.thueringen.de/liegenschaftskataster/alkis" title="Amtliches Liegenschaftskataster-Informationssystem ALKIS®">
+                              <span>
+                                <!--gmd:onLine-->
+                                Amtliches Liegenschaftskataster-Informationssystem ALKIS®
+                              </span>
+                            </a>
+                            (
+                            <span>
+                              <!--gmd:onLine-->
+                              <span>
+                                <!--gmd:protocol-->
+                                WWW:LINK-1.0-http--link
+                              </span>
+                            </span>
+                            )
+                            <p>
+                              <!--gmd:onLine-->
+                              <span>
+                                <!--gmd:description-->
+                                <p>ALKIS®, das Amtliche Liegenschaftskataster-Informationssystem, ist eine der drei Komponenten des AAA-Datenmodells (ALKIS, ATKIS, AFIS = AAA).</p>
+                              </span>
+                            </p>
+                          </dd>
+                        </dl>
+                        <dl class="gn-link">
+                          <dt>Online</dt>
+                          <dd>
+                            <a href="https://landesrecht.thueringen.de/jportal/?quelle=jlink&amp;query=VermVwKostO+TH&amp;psml=bsthueprod.psml&amp;max=true&amp;aiz=true" title="ThürVwKostOVerm">
+                              <span>
+                                <!--gmd:onLine-->
+                                ThürVwKostOVerm
+                              </span>
+                            </a>
+                            (
+                            <span>
+                              <!--gmd:onLine-->
+                              <span>
+                                <!--gmd:protocol-->
+                                WWW:LINK-1.0-http--link
+                              </span>
+                            </span>
+                            )
+                            <p>
+                              <!--gmd:onLine-->
+                              <span>
+                                <!--gmd:description-->
+                                <p>Thüringer Verwaltungskostenordnung für das amtliche Vermessungswesen (ThürVwKostOVerm)</p>
+                              </span>
+                            </p>
+                          </dd>
+                        </dl>
+                        <dl class="gn-link">
+                          <dt>Online</dt>
+                          <dd>
+                            <a href="https://geoportal.thueringen.de/gdi-th/download-offene-geodaten" title="Download Offene Geodaten">
+                              <span>
+                                <!--gmd:onLine-->
+                                Download Offene Geodaten
+                              </span>
+                            </a>
+                            (
+                            <span>
+                              <!--gmd:onLine-->
+                              <span>
+                                <!--gmd:protocol-->
+                                WWW:LINK-1.0-http--download
+                              </span>
+                            </span>
+                            )
+                            <p>
+                              <!--gmd:onLine-->
+                              <span>
+                                <!--gmd:description-->
+                                <p>Downloadbereich auf Geoportal Thüringen</p>
+                              </span>
+                            </p>
+                          </dd>
+                        </dl>
+                        <dl class="gn-link">
+                          <dt>Online</dt>
+                          <dd>
+                            <a href="https://tlbg.thueringen.de/fileadmin/TLBG/Vertrieb/agnb/agnb-tlbg.pdf" title="AGNB">
+                              <span>
+                                <!--gmd:onLine-->
+                                AGNB
+                              </span>
+                            </a>
+                            (
+                            <span>
+                              <!--gmd:onLine-->
+                              <span>
+                                <!--gmd:protocol-->
+                                WWW:LINK-1.0-http--link
+                              </span>
+                            </span>
+                            )
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>Bezeichnung</dt>
+                          <dd>
+                            <!--gmd:name-->
+                            <span title="CD-ROM (nicht beschreibbar)">CD-ROM</span>
+                          </dd>
+                        </dl>
+                        <dl class="gn-link">
+                          <dt>Online</dt>
+                          <dd>
+                            <a href="https://www.geoproxy.geoportal-th.de/geoproxy/services/HK?REQUEST=GetCapabilities&amp;service=WMS" title="WMS TH Hauskoordinaten">
+                              <span>
+                                <!--gmd:onLine-->
+                                WMS TH Hauskoordinaten
+                              </span>
+                            </a>
+                            (
+                            <span>
+                              <!--gmd:onLine-->
+                              <span>
+                                <!--gmd:protocol-->
+                                OGC:WMS-http-get-map
+                              </span>
+                            </span>
+                            )
+                            <p>
+                              <!--gmd:onLine-->
+                              <span>
+                                <!--gmd:description-->
+                                <p>Geoproxy Thüringen WMS für Hauskoordinaten. Der Web Map Service stellt flächendeckend aus der Datengrundlage ALKIS abgeleitete Hauskoordinaten bereit.</p>
+                              </span>
+                            </p>
+                          </dd>
+                        </dl>
+                        <dl class="gn-link">
+                          <dt>Online</dt>
+                          <dd>
+                            <a href="https://geoportal.geoportal-th.de/hausko_umr/HK-TH.zip" title="Hauskoordinaten Thüringen">
+                              <span>
+                                <!--gmd:onLine-->
+                                Hauskoordinaten Thüringen
+                              </span>
+                            </a>
+                            (
+                            <span>
+                              <!--gmd:onLine-->
+                              <span>
+                                <!--gmd:protocol-->
+                                WWW:DOWNLOAD-1.0-http--download
+                              </span>
+                            </span>
+                            )
+                            <p>
+                              <!--gmd:onLine-->
+                              <span>
+                                <!--gmd:description-->
+                                <p>Downloadbereich auf Geoportal Thüringen</p>
+                              </span>
+                            </p>
+                          </dd>
+                        </dl>
+                        <!--icon-->
+                      </div>
+                      <div id="gn-view-d575386e3920" class="gn-tab-content">
+                        <dl>
+                          <dt>Bezugsebene</dt>
+                          <dd>
+                            <!--gmd:level-->
+                            <span title="Information gilt für einen Datenbestand">Datenbestand</span>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>Datenbestand</dt>
+                          <dd>
+                            <!--gmd:dataset-->
+                            <span>
+                              <!--gmd:dataset-->
+                              <p>Mit der Hauskoordinate - geodätisch korrekt "Georeferenzierte Gebäudeadresse" genannt - wird jedem Gebäude mit einer Hausnummer exakt eine Koordinate im Landeskoordinatensystem zugeordnet. Die Hauskoordinate bildet die Grundlage für zahlreiche Anwendungen, um ein Gebäude genau zu lokalisieren. Dies hilft vor allem Nutzern wie z. B. der Polizei, Feuerwehr, Katastrophenschutz und Taxiunternehmen bei ihrer Arbeit. Die Hauskoordinate besteht im Wesentlichen aus einer Lagebezeichnung mit Angaben zur Stadt, Straße und Hausnummer und einer Koordinate des Gebäudes im Landeskoordinatensystem.</p>
+                            </span>
+                          </dd>
+                        </dl>
+                        <div class="entry name">
+                          <h2>Konformitätsergebnis</h2>
+                          <div class="target">
+                            <!--gmd:DQ_ConformanceResult-->
+                            <dl>
+                              <dt>Alternativtitel</dt>
+                              <dd>
+                                <!--gmd:alternateTitle-->
+                                <span>
+                                  <!--gmd:alternateTitle-->
+                                  <p>Hauskoordinaten</p>
+                                </span>
+                              </dd>
+                            </dl>
+                            <dl class="gn-date">
+                              <dt>Datumsangaben (Publikation)</dt>
+                              <dd>
+                                <span data-gn-humanize-time="2006-01-01" data-format="DD MMM YYYY">
+                                  <!--gco:Date-->
+                                  2006-01-01
+                                </span>
+                              </dd>
+                            </dl>
+                            <dl class="gn-code">
+                              <dt>Identifikator</dt>
+                              <dd>
+                                <span>
+                                  <!--gmd:code-->
+                                  https://registry.gdi-de.org/id/de.th.csw/666deaca-27ec-4fdf-91b0-253bff94b738
+                                </span>
+                              </dd>
+                            </dl>
+                            <dl>
+                              <dt>Erklärung</dt>
+                              <dd>
+                                <!--gmd:explanation-->
+                                <span>
+                                  <!--gmd:explanation-->
+                                  <p>Jedem Gebäude mit einer Hausnummer wird exakt eine Koordinate im Landeskoordinatensystem zugeordnet.</p>
+                                </span>
+                              </dd>
+                            </dl>
+                            <dl>
+                              <dt>Bestanden</dt>
+                              <dd>
+                                <!--gmd:pass-->
+                                Ja
+                              </dd>
+                            </dl>
+                          </div>
+                        </div>
+                        <div class="entry name">
+                          <h2>Konformitätsergebnis</h2>
+                          <div class="target">
+                            <!--gmd:DQ_ConformanceResult-->
+                            <dl class="gn-date">
+                              <dt>Datumsangaben (Publikation)</dt>
+                              <dd>
+                                <span data-gn-humanize-time="2008-12-03" data-format="DD MMM YYYY">
+                                  <!--gco:Date-->
+                                  2008-12-03
+                                </span>
+                              </dd>
+                            </dl>
+                            <dl>
+                              <dt>Erklärung</dt>
+                              <dd>
+                                <!--gmd:explanation-->
+                                <span>
+                                  <!--gmd:explanation-->
+                                  <p>Getestet mit der GDI - DE Testsuite</p>
+                                </span>
+                              </dd>
+                            </dl>
+                            <dl>
+                              <dt>Bestanden</dt>
+                              <dd>
+                                <!--gmd:pass-->
+                                Ja
+                              </dd>
+                            </dl>
+                          </div>
+                        </div>
+                        <div class="entry name">
+                          <h2>Konformitätsergebnis</h2>
+                          <div class="target">
+                            <!--gmd:DQ_ConformanceResult-->
+                            <dl class="gn-date">
+                              <dt>Datumsangaben (Publikation)</dt>
+                              <dd>
+                                <span data-gn-humanize-time="2010-12-08" data-format="DD MMM YYYY">
+                                  <!--gco:Date-->
+                                  2010-12-08
+                                </span>
+                              </dd>
+                            </dl>
+                            <dl>
+                              <dt>Erklärung</dt>
+                              <dd>
+                                <!--gmd:explanation-->
+                                <span>
+                                  <!--gmd:explanation-->
+                                  <p>Getestet mit der GDI - DE Testsuite</p>
+                                </span>
+                              </dd>
+                            </dl>
+                            <dl>
+                              <dt>Bestanden</dt>
+                              <dd>
+                                <!--gmd:pass-->
+                                Nein
+                              </dd>
+                            </dl>
+                          </div>
+                        </div>
+                        <dl>
+                          <dt>Erläuterung</dt>
+                          <dd>
+                            <!--gmd:statement-->
+                            <span>
+                              <!--gmd:statement-->
+                              <p>Ableitung aus dem Liegenschaftskataster</p>
+                            </span>
+                          </dd>
+                        </dl>
+                        <!--icon-->
+                      </div>
+                      <div id="gn-view-d575386e3923" class="gn-tab-content">
+                        <!--icon-->
+                      </div>
+                      <div id="gn-section-d575386e3925" class="gn-tab-content">
+                        <dl>
+                          <dt>Metadatensatzidentifikator</dt>
+                          <dd>
+                            666deaca-27ec-4fdf-91b0-253bff94b738
+                            <a class="btn btn-default" href="https://geomis.geoportal-th.de/geonetwork/inspire/api/records/666deaca-27ec-4fdf-91b0-253bff94b738/formatters/xml">
+                              <i class="fa fa-file-code-o">
+                                <!--file-->
+                              </i>
+                              <span>XML</span>
+                            </a>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>Sprache</dt>
+                          <dd>
+                            <!--gmd:language-->
+                            Deutsch
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>Zeichensatz</dt>
+                          <dd>
+                            <!--gmd:characterSet-->
+                            <span title="8-Bit Zeichensatz mit variabler Grösse, universell, basierend auf ISO 10646&#xA;      ">Utf8</span>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>Hierarchieebene</dt>
+                          <dd>
+                            <!--gmd:hierarchyLevel-->
+                            <span title="Information gilt für einen Datenbestand">Datenbestand</span>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>Datum</dt>
+                          <dd>
+                            <!--gmd:dateStamp-->
+                            <span data-gn-humanize-time="2025-05-06T09:35:49">
+                              <!--gco:DateTime-->
+                              2025-05-06T09:35:49
+                            </span>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>Bezeichnung des Metadatenstandards</dt>
+                          <dd>
+                            <!--gmd:metadataStandardName-->
+                            <span>
+                              <!--gmd:metadataStandardName-->
+                              <p>ISO19115</p>
+                            </span>
+                          </dd>
+                        </dl>
+                        <dl>
+                          <dt>Version des Metadatenstandards</dt>
+                          <dd>
+                            <!--gmd:metadataStandardVersion-->
+                            <span>
+                              <!--gmd:metadataStandardVersion-->
+                              <p>2003/Cor.1:2006</p>
+                            </span>
+                          </dd>
+                        </dl>
+                        <div class="gn-contact">
+                          <strong>
+                            <!--email-->
+                            <span title="Kontakt für Informationen zur Ressource oder deren Bezugsmöglichkeiten&#xA;      ">Ansprechpartner</span>
+                          </strong>
+                          <address>
+                            <i class="fa fa-fw fa-envelope"> </i>
+                            <a href="mailto:stefanie.hackel@tlbg.thueringen.de">
+                              <span>
+                                <!--gmd:organisationName-->
+                                Thüringer Landesamt für Bodenmanagement und Geoinformation
+                              </span>
+                              -
+                              <span>
+                                <!--gmd:individualName-->
+                                Hackel, Stefanie
+                              </span>
+                              <!--email-->
+                            </a>
+                            <br />
+                            <div>
+                              <i class="fa fa-fw fa-map-marker">
+                                <!--address-->
+                              </i>
+                              <span>
+                                <!--gmd:deliveryPoint-->
+                                Hohenwindenstraße 13a
+                              </span>
+                              ,
+                              <span>
+                                <!--gmd:city-->
+                                Erfurt
+                              </span>
+                              ,
+                              <span>
+                                <!--gmd:administrativeArea-->
+                                Thüringen
+                              </span>
+                              ,
+                              <span>
+                                <!--gmd:postalCode-->
+                                99086
+                              </span>
+                              ,
+                              <span>
+                                <!--gmd:country-->
+                                Germany
+                              </span>
+                            </div>
+                            <i class="fa fa-fw fa-phone">
+                              <!--phone-->
+                            </i>
+                            <a href="tel:+4936157-4176864">+49 361 57-4176 864</a>
+                            <br />
+                            <i class="fa fa-fw fa-fax">
+                              <!--fax-->
+                            </i>
+                            <a href="tel:+4936157-4176799">+49 361 57-4176 799</a>
+                            <br />
+                            <i class="fa fa-fw fa-link">
+                              <!--link-->
+                            </i>
+                            <a href="https://tlbg.thueringen.de/">https://tlbg.thueringen.de/</a>
+                          </address>
+                        </div>
+                         
+                      </div>
+                       
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="gn-md-side gn-md-side-advanced col-md-4">
+                <section class="gn-md-side-overview">
+                  <h2>
+                    <i class="fa fa-fw fa-image">
+                      <!--image-->
+                    </i>
+                    <span>
+                      <!--gmd:MD_Metadata-->
+                      Overviews
+                    </span>
+                  </h2>
+                  <img data-gn-img-modal="md" class="gn-img-thumbnail" alt="" src="https://geomis.geoportal-th.de/geonetwork/srv/api/records/666deaca-27ec-4fdf-91b0-253bff94b738/attachments/HK.jpg" />
+                </section>
+                <section class="gn-md-side-extent">
+                  <h2>
+                    <i class="fa fa-fw fa-map-marker">
+                      <!--image-->
+                    </i>
+                    <span>
+                      <!--gmd:MD_Metadata-->
+                      Räumliche Ausdehnung
+                    </span>
+                  </h2>
+                  <div class="thumbnail extent">
+                    <div class="input-group coord coord-north">
+                      <input type="text" class="form-control" aria-label="" value="51.64" readonly="" />
+                      <span class="input-group-addon">N</span>
+                    </div>
+                    <div class="input-group coord coord-south">
+                      <input type="text" class="form-control" aria-label="" value="50.19" readonly="" />
+                      <span class="input-group-addon">S</span>
+                    </div>
+                    <div class="input-group coord coord-east">
+                      <input type="text" class="form-control" aria-label="" value="12.65" readonly="" />
+                      <span class="input-group-addon">E</span>
+                    </div>
+                    <div class="input-group coord coord-west">
+                      <input type="text" class="form-control" aria-label="" value="9.87" readonly="" />
+                      <span class="input-group-addon">W</span>
+                    </div>
+                    <img class="gn-img-extent" alt="" src="https://geomis.geoportal-th.de/geonetwork/inspire/api/regions/geom.png?geomsrs=EPSG:4326&amp;geom=POLYGON((12.65%2050.19,12.65%2051.64,9.87%2051.64,9.87%2050.19,12.65%2050.19))" />
+                  </div>
+                  <br />
+                  <br />
+                </section>
+                <section class="gn-md-side-social">
+                  <h2>
+                    <i class="fa fa-fw fa-tag">
+                      <!--image-->
+                    </i>
+                    <span>
+                      <!--gmd:MD_Metadata-->
+                      Keywords
+                    </span>
+                  </h2>
+                  GEMET - INSPIRE themes, version 1.0
+                  <br />
+                  <a href="#/search?keyword=Adressen">
+                    <span class="badge">
+                      <tag thesaurus="GEMET - INSPIRE themes, version 1.0">Adressen</tag>
+                    </span>
+                  </a>
+                  <hr />
+                  Spatial scope
+                  <br />
+                  <a href="#/search?keyword=Regional">
+                    <span class="badge">
+                      <tag thesaurus="Spatial scope">Regional</tag>
+                    </span>
+                  </a>
+                </section>
+                <br />
+                <section class="gn-md-side-providedby">
+                  <h2>
+                    <i class="fa fa-fw fa-cog">
+                      <!--icon-->
+                    </i>
+                    <span>Provided by</span>
+                  </h2>
+                  <img class="gn-source-logo" alt="" src="https://geomis.geoportal-th.de/geonetwork/inspire/../images/logos/eb8aa3a4-118f-4ef4-a3cd-6dcf93d4d3af.png" />
+                </section>
+                <section class="gn-md-side-access">
+                  <a class="btn btn-block btn-primary" href="https://geomis.geoportal-th.de/geonetwork/inspire/ger/catalog.search#/metadata/666deaca-27ec-4fdf-91b0-253bff94b738">
+                    <i class="fa fa-fw fa-link">
+                      <!--icon-->
+                    </i>
+                  </a>
+                  <div class="hidden-xs hidden-sm" />
+                </section>
+                <section class="gn-md-side-associated">
+                  <h2>
+                    <i class="fa fa-fw fa-link">
+                      <!--icon-->
+                    </i>
+                    <span />
+                  </h2>
+                  <div gn-related="md" data-user="user" data-types="parent|children|services|datasets|hassources|sources|fcats|siblings|associated">Not available</div>
+                </section>
+              </div>
+            </div>
+            <footer>
+              <!--Not yet-->
+            </footer>
+          </article>
+          <br />
+          <br />
+        </div>
+      </div>
+      <div class="navbar navbar-default gn-bottom-bar" role="navigation">
+        <ul class="nav navbar-nav">
+          <li class="gn-footer-text" />
+          <li>
+            <a href="http://geonetwork-opensource.org/">
+              <i class="fa fa-fw"> </i>
+              <span />
+            </a>
+          </li>
+          <li class="hidden-sm">
+            <a href="https://github.com/geonetwork/core-geonetwork">
+              <i class="fa fa-github"> </i>
+              <span />
+            </a>
+          </li>
+          <li>
+            <a href="https://geomis.geoportal-th.de/geonetwork/inspire/ger/../../doc/api" title=""> </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "input": "../2026-08-28/work/states/BY.tsv",
+  "output": "../../../BY/2026-08-28/work-basemap/adressen-unsortiert.csv",
+  "state_filter": "BY",
+  "records": 3761180,
+  "blank_house_numbers": 0,
+  "unknown_states": 0
+}

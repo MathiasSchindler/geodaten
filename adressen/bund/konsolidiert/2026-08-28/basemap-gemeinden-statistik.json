@@ -1,0 +1,804 @@
+{
+  "source_records": 23252486,
+  "basemap_only_records": 4372080,
+  "unique_assignments": 4371973,
+  "boundary_assignments": 0,
+  "multiple_assignments": 0,
+  "no_assignment": 107,
+  "nearest_fallback_within_10m": 35,
+  "nearest_fallback_within_50m": 80,
+  "nearest_fallback_within_100m": 97,
+  "nearest_fallback_within_250m": 107,
+  "nearest_fallback_over_250m": 0,
+  "maximum_nearest_distance_meters": 145.92852165041413,
+  "locality_matches_municipality": 3863955,
+  "locality_differs_from_municipality": 508018,
+  "vg250_polygons": 11094,
+  "vg250_land_polygons": 10939,
+  "vg250_water_polygons": 155,
+  "vg250_unique_municipalities": 10939,
+  "by_state": {
+    "10": {
+      "basemap_only_records": 159,
+      "unique_assignments": 159,
+      "boundary_assignments": 0,
+      "multiple_assignments": 0,
+      "no_assignment": 0
+    },
+    "11": {
+      "basemap_only_records": 153,
+      "unique_assignments": 152,
+      "boundary_assignments": 0,
+      "multiple_assignments": 0,
+      "no_assignment": 1
+    },
+    "12": {
+      "basemap_only_records": 1145,
+      "unique_assignments": 1145,
+      "boundary_assignments": 0,
+      "multiple_assignments": 0,
+      "no_assignment": 0
+    },
+    "13": {
+      "basemap_only_records": 517422,
+      "unique_assignments": 517406,
+      "boundary_assignments": 0,
+      "multiple_assignments": 0,
+      "no_assignment": 16
+    },
+    "14": {
+      "basemap_only_records": 3849,
+      "unique_assignments": 3849,
+      "boundary_assignments": 0,
+      "multiple_assignments": 0,
+      "no_assignment": 0
+    },
+    "15": {
+      "basemap_only_records": 2657,
+      "unique_assignments": 2656,
+      "boundary_assignments": 0,
+      "multiple_assignments": 0,
+      "no_assignment": 1
+    },
+    "16": {
+      "basemap_only_records": 1175,
+      "unique_assignments": 1175,
+      "boundary_assignments": 0,
+      "multiple_assignments": 0,
+      "no_assignment": 0
+    },
+    "03": {
+      "basemap_only_records": 66190,
+      "unique_assignments": 66174,
+      "boundary_assignments": 0,
+      "multiple_assignments": 0,
+      "no_assignment": 16
+    },
+    "09": {
+      "basemap_only_records": 3761180,
+      "unique_assignments": 3761112,
+      "boundary_assignments": 0,
+      "multiple_assignments": 0,
+      "no_assignment": 68
+    },
+    "08": {
+      "basemap_only_records": 4690,
+      "unique_assignments": 4690,
+      "boundary_assignments": 0,
+      "multiple_assignments": 0,
+      "no_assignment": 0
+    },
+    "05": {
+      "basemap_only_records": 7415,
+      "unique_assignments": 7414,
+      "boundary_assignments": 0,
+      "multiple_assignments": 0,
+      "no_assignment": 1
+    },
+    "07": {
+      "basemap_only_records": 1287,
+      "unique_assignments": 1287,
+      "boundary_assignments": 0,
+      "multiple_assignments": 0,
+      "no_assignment": 0
+    },
+    "06": {
+      "basemap_only_records": 1748,
+      "unique_assignments": 1748,
+      "boundary_assignments": 0,
+      "multiple_assignments": 0,
+      "no_assignment": 0
+    },
+    "01": {
+      "basemap_only_records": 1851,
+      "unique_assignments": 1847,
+      "boundary_assignments": 0,
+      "multiple_assignments": 0,
+      "no_assignment": 4
+    },
+    "02": {
+      "basemap_only_records": 1006,
+      "unique_assignments": 1006,
+      "boundary_assignments": 0,
+      "multiple_assignments": 0,
+      "no_assignment": 0
+    },
+    "04": {
+      "basemap_only_records": 153,
+      "unique_assignments": 153,
+      "boundary_assignments": 0,
+      "multiple_assignments": 0,
+      "no_assignment": 0
+    }
+  },
+  "examples": {
+    "boundary": [],
+    "multiple": [],
+    "none": [
+      {
+        "bund_id": "BUND-9e0187f2f95e03e86142bc92",
+        "state": "09",
+        "locality": "Buchenberg",
+        "longitude": 10.117456,
+        "latitude": 47.71702,
+        "matches": [],
+        "nearest": [
+          {
+            "ags": "09780117",
+            "name": "Buchenberg",
+            "distance_meters": 56.83058347444397
+          },
+          {
+            "ags": "09780144",
+            "name": "Weitnau",
+            "distance_meters": 2248.094000398676
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-d224d0285d4b2544ab95fbb1",
+        "state": "03",
+        "locality": "Geestland",
+        "longitude": 8.5235828,
+        "latitude": 53.6054916,
+        "matches": [],
+        "nearest": [
+          {
+            "ags": "03352062",
+            "name": "Geestland",
+            "distance_meters": 45.9588518361958
+          },
+          {
+            "ags": "03352061",
+            "name": "Wurster Nordseeküste",
+            "distance_meters": 1564.4135278640906
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-807ba3c582c9ad433d63d91c",
+        "state": "05",
+        "locality": "Gronau",
+        "longitude": 7.0692006,
+        "latitude": 52.2412561,
+        "matches": [],
+        "nearest": [
+          {
+            "ags": "05554020",
+            "name": "Gronau (Westf.)",
+            "distance_meters": 3.8460891030948186
+          },
+          {
+            "ags": "05566068",
+            "name": "Ochtrup",
+            "distance_meters": 1958.4001641160592
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-e7eaa7d8a8248b565514e5d1",
+        "state": "13",
+        "locality": "Glowe",
+        "longitude": 13.4678194,
+        "latitude": 54.5737455,
+        "matches": [],
+        "nearest": [
+          {
+            "ags": "13073030",
+            "name": "Glowe",
+            "distance_meters": 8.537559180449126
+          },
+          {
+            "ags": "13073013",
+            "name": "Breege",
+            "distance_meters": 2916.5522791876347
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-4bdf7796ce1c746b493530d5",
+        "state": "09",
+        "locality": "Weitnau",
+        "longitude": 10.0914037,
+        "latitude": 47.6630372,
+        "matches": [],
+        "nearest": [
+          {
+            "ags": "09780144",
+            "name": "Weitnau",
+            "distance_meters": 22.36583218822129
+          },
+          {
+            "ags": "09776118",
+            "name": "Maierhöfen",
+            "distance_meters": 1326.8931537908686
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-91e2bfd2db00362f6ef945b1",
+        "state": "09",
+        "locality": "Weitnau",
+        "longitude": 10.0916371,
+        "latitude": 47.6632233,
+        "matches": [],
+        "nearest": [
+          {
+            "ags": "09780144",
+            "name": "Weitnau",
+            "distance_meters": 43.33760044293351
+          },
+          {
+            "ags": "09776118",
+            "name": "Maierhöfen",
+            "distance_meters": 1351.2024173236246
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-f0198f02f88fe6bdb7fbcaf0",
+        "state": "13",
+        "locality": "Sundhagen",
+        "longitude": 13.1803805,
+        "latitude": 54.2643171,
+        "matches": [],
+        "nearest": [
+          {
+            "ags": "13073090",
+            "name": "Sundhagen",
+            "distance_meters": 4.684109022517969
+          },
+          {
+            "ags": "13073088",
+            "name": "Stralsund",
+            "distance_meters": 343.1013793202882
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-1cd62a468f93b10f419b582b",
+        "state": "13",
+        "locality": "Sundhagen",
+        "longitude": 13.1741711,
+        "latitude": 54.2632643,
+        "matches": [],
+        "nearest": [
+          {
+            "ags": "13073090",
+            "name": "Sundhagen",
+            "distance_meters": 9.804735694116925
+          },
+          {
+            "ags": "13073088",
+            "name": "Stralsund",
+            "distance_meters": 393.55848799546186
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-4765f288bbdd86102e1b68f2",
+        "state": "13",
+        "locality": "Sundhagen",
+        "longitude": 13.2885137,
+        "latitude": 54.2339245,
+        "matches": [],
+        "nearest": [
+          {
+            "ags": "13073090",
+            "name": "Sundhagen",
+            "distance_meters": 15.370950029544801
+          },
+          {
+            "ags": "13073027",
+            "name": "Garz/Rügen",
+            "distance_meters": 1786.6696220642948
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-a424845a4fb8d3a06dd215de",
+        "state": "13",
+        "locality": "Sundhagen",
+        "longitude": 13.289887,
+        "latitude": 54.2344935,
+        "matches": [],
+        "nearest": [
+          {
+            "ags": "13073090",
+            "name": "Sundhagen",
+            "distance_meters": 83.80097900072394
+          },
+          {
+            "ags": "13073027",
+            "name": "Garz/Rügen",
+            "distance_meters": 1700.731742426673
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-0e58395936b3712d5c4a860a",
+        "state": "13",
+        "locality": "Sundhagen",
+        "longitude": 13.2890582,
+        "latitude": 54.2341126,
+        "matches": [],
+        "nearest": [
+          {
+            "ags": "13073090",
+            "name": "Sundhagen",
+            "distance_meters": 56.37673652560845
+          },
+          {
+            "ags": "13073027",
+            "name": "Garz/Rügen",
+            "distance_meters": 1756.361513031262
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-35024cb1cfbf3ea16e8bdab3",
+        "state": "13",
+        "locality": "Sundhagen",
+        "longitude": 13.2893881,
+        "latitude": 54.2341737,
+        "matches": [],
+        "nearest": [
+          {
+            "ags": "13073090",
+            "name": "Sundhagen",
+            "distance_meters": 65.6469785231432
+          },
+          {
+            "ags": "13073027",
+            "name": "Garz/Rügen",
+            "distance_meters": 1743.7952219474869
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-fa418c389c4766265aa11d1c",
+        "state": "09",
+        "locality": "Lindau",
+        "longitude": 9.6884286,
+        "latitude": 47.5455174,
+        "matches": [],
+        "nearest": [
+          {
+            "ags": "09776116",
+            "name": "Lindau (Bodensee)",
+            "distance_meters": 7.501165988821101
+          },
+          {
+            "ags": "09776111",
+            "name": "Bodolz",
+            "distance_meters": 2318.3471220952583
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-2beefa3ac0a898b0f3e25412",
+        "state": "09",
+        "locality": "Ulm",
+        "longitude": 10.0400046,
+        "latitude": 48.4322688,
+        "matches": [],
+        "nearest": [
+          {
+            "ags": "09775139",
+            "name": "Elchingen",
+            "distance_meters": 10.360798397129305
+          },
+          {
+            "ags": "09775135",
+            "name": "Neu-Ulm",
+            "distance_meters": 330.08281778215274
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-79dd86bf8c80e9aae1b68450",
+        "state": "09",
+        "locality": "Senden",
+        "longitude": 10.0228062,
+        "latitude": 48.3240466,
+        "matches": [],
+        "nearest": [
+          {
+            "ags": "09775152",
+            "name": "Senden",
+            "distance_meters": 0.25062041032288207
+          },
+          {
+            "ags": "09775135",
+            "name": "Neu-Ulm",
+            "distance_meters": 1332.6043915010691
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-4cfd94ae9d73f462bfb5cd07",
+        "state": "03",
+        "locality": "Achim",
+        "longitude": 8.9521998,
+        "latitude": 53.0334039,
+        "matches": [],
+        "nearest": [
+          {
+            "ags": "03361001",
+            "name": "Achim",
+            "distance_meters": 44.87559297230081
+          },
+          {
+            "ags": "03361009",
+            "name": "Oyten",
+            "distance_meters": 2282.0233341199696
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-9eca1167eabff1645b7ee1f1",
+        "state": "03",
+        "locality": "Achim",
+        "longitude": 8.952755,
+        "latitude": 53.0335603,
+        "matches": [],
+        "nearest": [
+          {
+            "ags": "03361001",
+            "name": "Achim",
+            "distance_meters": 52.54942056282845
+          },
+          {
+            "ags": "03361009",
+            "name": "Oyten",
+            "distance_meters": 2241.890439466475
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-f242b09a511357410428dac7",
+        "state": "03",
+        "locality": "Achim",
+        "longitude": 8.952004,
+        "latitude": 53.0332264,
+        "matches": [],
+        "nearest": [
+          {
+            "ags": "03361001",
+            "name": "Achim",
+            "distance_meters": 28.9804719532023
+          },
+          {
+            "ags": "03361009",
+            "name": "Oyten",
+            "distance_meters": 2304.4547648125717
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-ff10dc63e504590f714b392f",
+        "state": "03",
+        "locality": "Achim",
+        "longitude": 8.9527953,
+        "latitude": 53.03342,
+        "matches": [],
+        "nearest": [
+          {
+            "ags": "03361001",
+            "name": "Achim",
+            "distance_meters": 36.757860899032
+          },
+          {
+            "ags": "03361009",
+            "name": "Oyten",
+            "distance_meters": 2249.3119714751942
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-22a5975d40197d8d829284c1",
+        "state": "03",
+        "locality": "Achim",
+        "longitude": 8.9527443,
+        "latitude": 53.0331571,
+        "matches": [],
+        "nearest": [
+          {
+            "ags": "03361001",
+            "name": "Achim",
+            "distance_meters": 9.2603233068626
+          },
+          {
+            "ags": "03361009",
+            "name": "Oyten",
+            "distance_meters": 2270.0878544323127
+          }
+        ]
+      }
+    ],
+    "differing_names": [
+      {
+        "bund_id": "BUND-d4abeb763039b3bbec851459",
+        "state": "13",
+        "locality": "Strasburg",
+        "longitude": 13.7462166,
+        "latitude": 53.5174221,
+        "matches": [
+          {
+            "ags": "13075130",
+            "name": "Strasburg (Uckermark)"
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-7a74c61d65fd286b8b0b80cd",
+        "state": "13",
+        "locality": "Strasburg",
+        "longitude": 13.7416998,
+        "latitude": 53.5169628,
+        "matches": [
+          {
+            "ags": "13075130",
+            "name": "Strasburg (Uckermark)"
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-b13e14b9aaad9d8ebf0c7d1e",
+        "state": "13",
+        "locality": "Strasburg",
+        "longitude": 13.7415603,
+        "latitude": 53.5169484,
+        "matches": [
+          {
+            "ags": "13075130",
+            "name": "Strasburg (Uckermark)"
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-185bffccd7aaf8f52a8346b9",
+        "state": "13",
+        "locality": "Strasburg",
+        "longitude": 13.7414208,
+        "latitude": 53.5169356,
+        "matches": [
+          {
+            "ags": "13075130",
+            "name": "Strasburg (Uckermark)"
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-6e382c9c38c47c55a56f43e4",
+        "state": "13",
+        "locality": "Strasburg",
+        "longitude": 13.7412786,
+        "latitude": 53.5169213,
+        "matches": [
+          {
+            "ags": "13075130",
+            "name": "Strasburg (Uckermark)"
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-329f8ce66fa1bbad65aeed16",
+        "state": "13",
+        "locality": "Strasburg",
+        "longitude": 13.7409434,
+        "latitude": 53.5168862,
+        "matches": [
+          {
+            "ags": "13075130",
+            "name": "Strasburg (Uckermark)"
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-3d2ae4563a98fd580b671311",
+        "state": "13",
+        "locality": "Strasburg",
+        "longitude": 13.7407422,
+        "latitude": 53.5168687,
+        "matches": [
+          {
+            "ags": "13075130",
+            "name": "Strasburg (Uckermark)"
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-8cb44a45386d58c16886a751",
+        "state": "13",
+        "locality": "Strasburg",
+        "longitude": 13.7406,
+        "latitude": 53.5168559,
+        "matches": [
+          {
+            "ags": "13075130",
+            "name": "Strasburg (Uckermark)"
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-cac69a3cd0b39699f986e1f4",
+        "state": "13",
+        "locality": "Strasburg",
+        "longitude": 13.7404606,
+        "latitude": 53.5168415,
+        "matches": [
+          {
+            "ags": "13075130",
+            "name": "Strasburg (Uckermark)"
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-5f09ce094765182d1fc2c303",
+        "state": "13",
+        "locality": "Strasburg",
+        "longitude": 13.7403184,
+        "latitude": 53.5168272,
+        "matches": [
+          {
+            "ags": "13075130",
+            "name": "Strasburg (Uckermark)"
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-1eaeeca1d5adb0bc09595005",
+        "state": "13",
+        "locality": "Strasburg",
+        "longitude": 13.7399134,
+        "latitude": 53.5167889,
+        "matches": [
+          {
+            "ags": "13075130",
+            "name": "Strasburg (Uckermark)"
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-ad352de71f43c3d093de0a04",
+        "state": "13",
+        "locality": "Strasburg",
+        "longitude": 13.7394708,
+        "latitude": 53.5167443,
+        "matches": [
+          {
+            "ags": "13075130",
+            "name": "Strasburg (Uckermark)"
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-17553a1c25a619f0d37f2233",
+        "state": "13",
+        "locality": "Strasburg",
+        "longitude": 13.7391973,
+        "latitude": 53.5167172,
+        "matches": [
+          {
+            "ags": "13075130",
+            "name": "Strasburg (Uckermark)"
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-20d3192b5302e0e3d9ed95c8",
+        "state": "13",
+        "locality": "Strasburg",
+        "longitude": 13.7388539,
+        "latitude": 53.5166821,
+        "matches": [
+          {
+            "ags": "13075130",
+            "name": "Strasburg (Uckermark)"
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-2a5fcfafe5d0aa338e3deeb9",
+        "state": "13",
+        "locality": "Strasburg",
+        "longitude": 13.7387413,
+        "latitude": 53.5166709,
+        "matches": [
+          {
+            "ags": "13075130",
+            "name": "Strasburg (Uckermark)"
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-4ef9fe9ba921d0cea6dd2133",
+        "state": "13",
+        "locality": "Strasburg",
+        "longitude": 13.7455326,
+        "latitude": 53.5173232,
+        "matches": [
+          {
+            "ags": "13075130",
+            "name": "Strasburg (Uckermark)"
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-93d90ec07ef14adc3610bffe",
+        "state": "13",
+        "locality": "Strasburg",
+        "longitude": 13.7384757,
+        "latitude": 53.516647,
+        "matches": [
+          {
+            "ags": "13075130",
+            "name": "Strasburg (Uckermark)"
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-0af3658f1419552f223cfeaf",
+        "state": "13",
+        "locality": "Strasburg",
+        "longitude": 13.7453234,
+        "latitude": 53.517143,
+        "matches": [
+          {
+            "ags": "13075130",
+            "name": "Strasburg (Uckermark)"
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-009c6ded0432537a2bad1efb",
+        "state": "13",
+        "locality": "Strasburg",
+        "longitude": 13.7451786,
+        "latitude": 53.5171286,
+        "matches": [
+          {
+            "ags": "13075130",
+            "name": "Strasburg (Uckermark)"
+          }
+        ]
+      },
+      {
+        "bund_id": "BUND-966658060fdfa830e40c0c37",
+        "state": "13",
+        "locality": "Strasburg",
+        "longitude": 13.7449855,
+        "latitude": 53.5171111,
+        "matches": [
+          {
+            "ags": "13075130",
+            "name": "Strasburg (Uckermark)"
+          }
+        ]
+      }
+    ]
+  },
+  "assignment_rate": 0.9999755265228449,
+  "generated_at": "2026-08-31T12:53:16.621Z"
+}

@@ -1,0 +1,9 @@
+country=Brandenburg
+country_code=BB
+official_state_code=12
+records=867290
+retrieved_at=2026-08-27T16:56:19Z
+blank_postcode=0
+duplicate_source_ids=0
+csv_columns=14
+sha256=f00f57c9bb1eb805d887bf0757ee1908ee664f48b888732feb65a54ac4c4a713

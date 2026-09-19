@@ -1,0 +1,548 @@
+{
+    "attribution": "GeoBasis-DE",
+    "basename": "bm_web_de_3857",
+    "bounds": [
+        5.8,
+        47.2,
+        15.1,
+        55.1
+    ],
+    "center": [
+        10.45,
+        51.150000000000006,
+        2
+    ],
+    "description": "basemap.de Vektor. Ein Vektor-Kachelarchiv mit amtlichen Daten von Deutschland. (erstellt am 20.07.2026)",
+    "format": "pbf",
+    "id": "bm_web_de_3857",
+    "maxzoom": 15,
+    "minzoom": 0,
+    "name": "bm_web_de_3857",
+    "scheme": "xyz",
+    "tilejson": "2.2.0",
+    "tiles": [
+        "https://sgx.geodatenzentrum.de/gdz_basemapde_vektor/tiles/v2/bm_web_de_3857/{z}/{x}/{y}.pbf"
+    ],
+    "vector_layers": [
+        {
+            "description": "",
+            "fields": {
+                "hausnummer": "",
+                "land": "",
+                "ort": "",
+                "ortsteil": "",
+                "strasse": ""
+            },
+            "id": "Adresse",
+            "maxzoom": 15,
+            "minzoom": 15
+        },
+        {
+            "description": "",
+            "fields": {
+                "ebene": "",
+                "funktion": "",
+                "hoehe": "",
+                "klasse": "",
+                "land": ""
+            },
+            "id": "Barrierenlinie",
+            "maxzoom": 15,
+            "minzoom": 11
+        },
+        {
+            "description": "",
+            "fields": {
+                "art": "",
+                "ebene": "",
+                "hoehe": "",
+                "klasse": "",
+                "land": "",
+                "name": "",
+                "name_kurz": "",
+                "regionalsprache": "",
+                "zustand": ""
+            },
+            "id": "Bauwerksflaeche",
+            "maxzoom": 15,
+            "minzoom": 12
+        },
+        {
+            "description": "",
+            "fields": {
+                "art": "",
+                "breite": "",
+                "ebene": "",
+                "klasse": "",
+                "land": "",
+                "name": "",
+                "name_kurz": "",
+                "regionalsprache": "",
+                "zustand": ""
+            },
+            "id": "Bauwerkslinie",
+            "maxzoom": 15,
+            "minzoom": 11
+        },
+        {
+            "description": "",
+            "fields": {
+                "art": "",
+                "ebene": "",
+                "hoehe": "",
+                "kilometrierung": "",
+                "klasse": "",
+                "lage": "",
+                "land": "",
+                "name": "",
+                "name_kurz": "",
+                "regionalsprache": "",
+                "winkel": "",
+                "zustand": ""
+            },
+            "id": "Bauwerkspunkt",
+            "maxzoom": 15,
+            "minzoom": 11
+        },
+        {
+            "description": "",
+            "fields": {
+                "klasse": "",
+                "land": "",
+                "name": "",
+                "name_kurz": ""
+            },
+            "id": "Besondere_Flaeche",
+            "maxzoom": 15,
+            "minzoom": 11
+        },
+        {
+            "description": "",
+            "fields": {
+                "klasse": "",
+                "land": "",
+                "name": "",
+                "name_kurz": ""
+            },
+            "id": "Besondere_Linie",
+            "maxzoom": 15,
+            "minzoom": 11
+        },
+        {
+            "description": "",
+            "fields": {
+                "klasse": "",
+                "land": "",
+                "name": "",
+                "name_kurz": ""
+            },
+            "id": "Besonderer_Punkt",
+            "maxzoom": 15,
+            "minzoom": 11
+        },
+        {
+            "description": "",
+            "fields": {
+                "hoehe": "",
+                "klasse": "",
+                "lage": "",
+                "land": "",
+                "name": "",
+                "zustand": ""
+            },
+            "id": "Gebaeudeflaeche",
+            "maxzoom": 15,
+            "minzoom": 12
+        },
+        {
+            "description": "",
+            "fields": {
+                "klasse": "",
+                "klasse_zusatz": "",
+                "land": "",
+                "zustand": ""
+            },
+            "id": "Gebaeudepunkt",
+            "maxzoom": 15,
+            "minzoom": 11
+        },
+        {
+            "description": "",
+            "fields": {
+                "bauwerk": "",
+                "ebene": "",
+                "flaeche": "",
+                "kategorie": "",
+                "kennung": "",
+                "klasse": "",
+                "land": "",
+                "merkmal": "",
+                "name": "",
+                "name_kurz": "",
+                "nutzung": "",
+                "ordnung": "",
+                "regionalsprache": "",
+                "zustand": "",
+                "zweitname": ""
+            },
+            "id": "Gewaesserflaeche",
+            "maxzoom": 15,
+            "minzoom": 5
+        },
+        {
+            "description": "",
+            "fields": {
+                "bauwerk": "",
+                "breite": "",
+                "ebene": "",
+                "kategorie": "",
+                "klasse": "",
+                "land": "",
+                "merkmal": "",
+                "name": "",
+                "name_kurz": "",
+                "ordnung": "",
+                "regionalsprache": "",
+                "zustand": "",
+                "zweitname": ""
+            },
+            "id": "Gewaesserlinie",
+            "maxzoom": 15,
+            "minzoom": 6
+        },
+        {
+            "description": "",
+            "fields": {
+                "hoehe": "",
+                "klasse": "",
+                "land": "",
+                "merkmal": "",
+                "name": "",
+                "name_kurz": "",
+                "regionalsprache": "",
+                "zweitname": ""
+            },
+            "id": "Gewaesserpunkt",
+            "maxzoom": 15,
+            "minzoom": 12
+        },
+        {
+            "description": "",
+            "fields": {
+                "klasse": "",
+                "land": "",
+                "name": "",
+                "name_kurz": "",
+                "zone": ""
+            },
+            "id": "Grenze_Flaeche",
+            "maxzoom": 15,
+            "minzoom": 9
+        },
+        {
+            "description": "",
+            "fields": {
+                "klasse": "",
+                "land": ""
+            },
+            "id": "Grenze_Linie",
+            "maxzoom": 15,
+            "minzoom": 0
+        },
+        {
+            "description": "",
+            "fields": {
+                "klasse": "",
+                "land": "",
+                "name": ""
+            },
+            "id": "Grenze_Punkt",
+            "maxzoom": 15,
+            "minzoom": 12
+        },
+        {
+            "description": "",
+            "fields": {
+                "klasse": "",
+                "land": "",
+                "name": "",
+                "name_kurz": ""
+            },
+            "id": "Historische_Flaeche",
+            "maxzoom": 15,
+            "minzoom": 11
+        },
+        {
+            "description": "",
+            "fields": {
+                "ebene": "",
+                "klasse": "",
+                "land": "",
+                "name": "",
+                "name_kurz": ""
+            },
+            "id": "Historische_Linie",
+            "maxzoom": 15,
+            "minzoom": 11
+        },
+        {
+            "description": "",
+            "fields": {
+                "ebene": "",
+                "klasse": "",
+                "land": "",
+                "name": "",
+                "name_kurz": ""
+            },
+            "id": "Historischer_Punkt",
+            "maxzoom": 15,
+            "minzoom": 9
+        },
+        {
+            "description": "",
+            "fields": {
+                "art": "",
+                "einwohnerzahl": "",
+                "flaeche": "",
+                "hoehe": "",
+                "klasse": "",
+                "klasse_einwohnerzahl": "",
+                "laenge": "",
+                "land": "",
+                "name": "",
+                "name_kurz": "",
+                "name_regionalsprache": "",
+                "prio": "",
+                "winkel": ""
+            },
+            "id": "Name_Punkt",
+            "maxzoom": 15,
+            "minzoom": 1
+        },
+        {
+            "description": "",
+            "fields": {
+                "funktion": "",
+                "hoehe": "",
+                "klasse": "",
+                "land": "",
+                "name": "",
+                "name_kurz": ""
+            },
+            "id": "Reliefflaeche",
+            "maxzoom": 15,
+            "minzoom": 11
+        },
+        {
+            "description": "",
+            "fields": {
+                "ebene": "",
+                "funktion": "",
+                "hoehe": "",
+                "klasse": "",
+                "land": "",
+                "name": "",
+                "name_kurz": ""
+            },
+            "id": "Relieflinie",
+            "maxzoom": 15,
+            "minzoom": 9
+        },
+        {
+            "description": "",
+            "fields": {
+                "hoehe": "",
+                "klasse": "",
+                "land": "",
+                "name": "",
+                "name_kurz": ""
+            },
+            "id": "Reliefpunkt",
+            "maxzoom": 15,
+            "minzoom": 11
+        },
+        {
+            "description": "",
+            "fields": {
+                "art": "",
+                "bauwerk": "",
+                "ebene": "",
+                "klasse": "",
+                "land": "",
+                "name": "",
+                "name_kurz": "",
+                "regionalsprache": "",
+                "zustand": ""
+            },
+            "id": "Siedlungsflaeche",
+            "maxzoom": 15,
+            "minzoom": 9
+        },
+        {
+            "description": "",
+            "fields": {
+                "art": "",
+                "bauwerk": "",
+                "ebene": "",
+                "klasse": "",
+                "land": "",
+                "name": "",
+                "name_kurz": "",
+                "regionalsprache": ""
+            },
+            "id": "Vegetationsflaeche",
+            "maxzoom": 15,
+            "minzoom": 6
+        },
+        {
+            "description": "",
+            "fields": {
+                "breite": "",
+                "klasse": "",
+                "land": "",
+                "name": "",
+                "name_kurz": ""
+            },
+            "id": "Vegetationslinie",
+            "maxzoom": 15,
+            "minzoom": 13
+        },
+        {
+            "description": "",
+            "fields": {
+                "klasse": "",
+                "land": "",
+                "name": "",
+                "name_kurz": ""
+            },
+            "id": "Vegetationspunkt",
+            "maxzoom": 15,
+            "minzoom": 12
+        },
+        {
+            "description": "",
+            "fields": {
+                "bahnkategorie": "",
+                "bauwerk": "",
+                "ebene": "",
+                "funktion": "",
+                "klasse": "",
+                "land": "",
+                "name": "",
+                "name_kurz": "",
+                "nutzung": "",
+                "oberflaeche": "",
+                "regionalsprache": "",
+                "zustand": ""
+            },
+            "id": "Verkehrsflaeche",
+            "maxzoom": 15,
+            "minzoom": 6
+        },
+        {
+            "description": "",
+            "fields": {
+                "anzahl": "",
+                "bauwerk": "",
+                "bedeutung": "",
+                "befahrbarkeit": "",
+                "breite": "",
+                "e_nummer1": "",
+                "e_nummer2": "",
+                "ebene": "",
+                "europastrasse": "",
+                "fahrbahn": "",
+                "fahrbahnachse": "",
+                "funktion": "",
+                "klasse": "",
+                "land": "",
+                "markierung": "",
+                "name": "",
+                "name_kurz": "",
+                "name_verhaeltnis": "",
+                "nummer": "",
+                "oberflaeche": "",
+                "regionalsprache": "",
+                "spurweite": "",
+                "typ": "",
+                "zustand": "",
+                "zweitname": ""
+            },
+            "id": "Verkehrslinie",
+            "maxzoom": 15,
+            "minzoom": 5
+        },
+        {
+            "description": "",
+            "fields": {
+                "kennung": "",
+                "kilometrierung": "",
+                "klasse": "",
+                "knotennummer": "",
+                "laenge_knotennummer": "",
+                "land": "",
+                "name": "",
+                "name_kurz": "",
+                "strasse": "",
+                "zustand": "",
+                "zweitname": ""
+            },
+            "id": "Verkehrspunkt",
+            "maxzoom": 15,
+            "minzoom": 9
+        },
+        {
+            "description": "",
+            "fields": {
+                "ebene": "",
+                "klasse": "",
+                "lage": "",
+                "land": "",
+                "produkt": "",
+                "spannung": ""
+            },
+            "id": "Versorgungslinie",
+            "maxzoom": 15,
+            "minzoom": 12
+        },
+        {
+            "description": "",
+            "fields": {
+                "ebene": "",
+                "klasse": "",
+                "lage": "",
+                "land": "",
+                "produkt": ""
+            },
+            "id": "Versorgungspunkt",
+            "maxzoom": 15,
+            "minzoom": 9
+        },
+        {
+            "description": "",
+            "fields": {
+                "art": "",
+                "funktion": "",
+                "klasse": "",
+                "land": "",
+                "name": "",
+                "name_kurz": "",
+                "nutzung": "",
+                "zustand": ""
+            },
+            "id": "Weitere_Nutzung_Flaeche",
+            "maxzoom": 15,
+            "minzoom": 11
+        },
+        {
+            "description": "",
+            "fields": {
+                "land": ""
+            },
+            "id": "Hintergrund",
+            "maxzoom": 15,
+            "minzoom": 0
+        }
+    ],
+    "version": "2.0.0"
+}

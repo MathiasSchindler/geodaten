@@ -1,0 +1,8 @@
+records=3
+municipality_assignments=1
+missing_municipalities=1
+empty_postcodes=1
+empty_house_numbers=1
+structured_house_keys=1
+zero_administrative_keys=1
+sanitized_semicolons=0

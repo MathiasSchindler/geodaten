@@ -1,0 +1,44 @@
+{
+  "state_code": "ST",
+  "basemap_unique_normalized_addresses": 663766,
+  "state_unique_normalized_addresses_either_locality": 664458,
+  "state_unique_normalized_addresses_postal_locality": 664458,
+  "state_unique_normalized_addresses_municipality": 664458,
+  "matched_either_locality": 103516,
+  "matched_postal_locality": 103516,
+  "matched_municipality": 103516,
+  "basemap_fields": {
+    "mode": "basemap",
+    "input": "/Users/mathiasschindler/PLZ/adressen/bund/basemap/2026-08-28/work/states/ST.tsv",
+    "state_code": "ST",
+    "records": 664049,
+    "usable_primary": 664049,
+    "usable_secondary": 0,
+    "blank_street": 0,
+    "blank_house_number": 0,
+    "blank_primary_locality": 0
+  },
+  "state_fields": {
+    "mode": "state",
+    "input": "/Users/mathiasschindler/PLZ/adressen/ST/2026-08-28/adressen.csv.gz",
+    "state_code": "ST",
+    "records": 664459,
+    "usable_primary": 664459,
+    "usable_secondary": 664459,
+    "blank_street": 0,
+    "blank_house_number": 0,
+    "blank_primary_locality": 0
+  },
+  "coordinate_agreement": {
+    "matched_normalized_keys": 103516,
+    "matched_basemap_records": 103565,
+    "within_1_metre": 1,
+    "within_5_metres": 103405,
+    "within_25_metres": 103538,
+    "within_100_metres": 103553,
+    "mean_distance_metres": 3.3196920141163164,
+    "maximum_distance_metres": 12860.572035833631
+  },
+  "basemap_match_rate_either_locality": 0.15595254954306187,
+  "state_match_rate_either_locality": 0.15579013270966713
+}

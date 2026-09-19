@@ -1,0 +1,9 @@
+HTTP/1.1 403 Forbidden
+Date: Fri, 28 Aug 2026 10:33:32 GMT
+Server: CERN httpd
+Content-Type: text/plain; charset=utf-8
+X-failreason: ungueltiger Token
+Strict-Transport-Security: max-age=31536000
+Content-Length: 431
+Connection: close
+

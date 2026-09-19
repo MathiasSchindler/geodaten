@@ -1,0 +1,8 @@
+{
+  "name": "osm-postcode-experiment",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "csv-parse": "6.1.0"
+  }
+}

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>OpenData - Nutzungsbedingungen</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="res/js/bootstrap.bundle.min.js"></script>
+        <script defer type="text/javascript" src="opendata.js"></script>
+        <link rel="stylesheet" type="text/css" href="res/css/iconfont.css" />
+        <link rel="stylesheet" type="text/css" href="res/css/custom.css" />
+        <link rel="stylesheet" type="text/css" href="res/css/gdo.css" /> 
+        
+        <style>
+            /* --- Barrierefreiheits-Ergänzungen (A11Y) --- */
+            
+            /* Fokus-Indikator für Tastaturnutzung stärken (WCAG 2.4.7) */
+            :focus-visible {
+                outline: 3px solid #ffbf47 !important; /* Hoher Kontrast */
+                outline-offset: 2px;
+                box-shadow: 0 0 0 4px rgba(0,0,0,0.5);
+            }
+
+            /* Standardklasse für Screenreader-Texte (ersetzt sr-only in neueren Bootstraps) */
+            .visually-hidden {
+                position: absolute !important;
+                width: 1px !important;
+                height: 1px !important;
+                padding: 0 !important;
+                margin: -1px !important;
+                overflow: hidden !important;
+                clip: rect(0,0,0,0) !important;
+                white-space: nowrap !important;
+                border: 0 !important;
+            }
+
+            /* BEREITS VORHANDENE STYLES (Konsolidiert) */
+            .bayern-logo{ margin-top: 3.5em; }
+            .bayern-logo img{ width: 28em; max-width: 100%; height: auto; } /* Responsive Fix */
+            .open-data-sub{ margin-top: 6.5em; }
+            .open-data__iframe{ display: block; position: relative; width: 100%; height: 26em; }
+            .gdo-navbar-top{ top: 0em }
+            .header-staatswappen_logo{ margin-top: 3em; margin-bottom: 1em }
+            .header-staatswappen_text{ top: -1em; position: relative; }
+            .gdo-dbm-bg{ width: 100%; height: 100%; background-color: #f8f9fa !important; background-image:  none !important; }                    
+            .nav-item{ display: flex; align-items: center; }
+            .nav-item i{ display: block; margin: 0 .5em; color: var(--bs-primary); }
+            .footer-sitemap ul{ border-left: 0; padding-left: 0; list-style: none; }
+            
+            @media (max-width: 767.98px) {
+                #scrollTopButton{ display: none !important; }
+                .header-staatswappen_logo { margin-top: 3.6em; }
+                .open-data-sub{ max-width: 25em; }
+                .navbar{ margin-top: 10em; }
+                .select-type-button{ border: none !important; margin-bottom: .5em; }
+                .list-img{ display: none; }
+                .produkt-list-item h3 { margin: 0 5.5em 0 0; padding: 1em; }
+                .gdo-produkte .card:hover, .gdo-produkte .card:focus-within { box-shadow: none; z-index: 100; height: auto; transform: scale(1.00); border-radius: 0em; }
+                .bayern-footer-end .footer-bottom-link a{ border-right: 0; }
+                tr{ display: flex; flex-direction: column; } /* Table Fix für Mobile */
+                h1{ margin-top: 1em; }
+                .button-copy{ width: 100%; }
+            }
+
+            .normal-page { padding: 20px 0; }
+            .paragraph__header h2 { margin-bottom: 1rem; color: #005293; }
+            .paragraph.faq-list { margin-bottom: 3rem; }
+            
+            /* --- LIZENZ STYLES --- */
+            :root { --bv-blue: #005293; }
+            
+            .license-grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                margin-bottom: 2rem;
+                margin-top: 1.5rem;
+            }
+            
+            @media (min-width: 992px) {
+                .license-grid { grid-template-columns: 1fr 1fr; }
+            }
+
+            .license-card {
+                background: #ffffff;
+                border: 1px solid #dee2e6;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+            }
+
+            .license-card-header {
+                background-color: #f8f9fa;
+                padding: 1.5rem;
+                border-bottom: 4px solid var(--bv-blue);
+                border-radius: 8px 8px 0 0;
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+            }
+            
+            .license-card-header img {
+                height: auto;
+                width: 120px;
+                flex-shrink: 0;
+            }
+
+            .license-card-title {
+                margin: 0;
+                font-size: 1.25rem;
+                font-weight: bold;
+                line-height: 1.3;
+            }
+
+            .license-card-title a { color: var(--bv-blue); text-decoration: underline; text-underline-offset: 2px; }
+            .license-card-title a:hover { text-decoration: none; }
+
+            .license-card-body { padding: 1.5rem; flex-grow: 1; }
+
+            .license-section-title {
+                font-size: 1.1em;
+                font-weight: bold;
+                color: #333;
+                margin-top: 1.5rem;
+                margin-bottom: 0.75rem;
+                display: block; /* War span, verhält sich wie Block */
+            }
+            .license-section-title:first-child { margin-top: 0; }
+
+            .license-list {
+                padding-left: 0;
+                list-style: none;
+                margin-bottom: 1.5rem;
+            }
+            
+            .license-list li {
+                margin-bottom: 1rem;
+                line-height: 1.6;
+                display: flex;
+                align-items: baseline;
+            }
+
+            .license-list li::before { content: "" !important; display: none !important; }
+
+            .license-list strong {
+                margin-right: 0.5rem;
+                white-space: nowrap;
+                color: #333;
+            }
+
+            .info-footer-box {
+                background-color: #f1f4f8;
+                border-left: 5px solid var(--bv-blue);
+                padding: 1.5rem;
+                border-radius: 4px;
+                margin-top: 2rem;
+            }
+            
+            .citation-box {
+                background: #fff;
+                border: 1px solid #ccc;
+                padding: 1rem;
+                font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+                font-size: 0.95em;
+                color: #333;
+                display: block;
+                border-radius: 4px;
+                margin-top: 0.5rem;
+                overflow-x: auto;
+            }
+
+            /* Externe Links Icon */
+            .link-extern:hover { text-decoration: underline; }
+            .link-extern::after {
+                font-family: 'Material Icons';
+                content: "\e89e";
+                font-size: 1.0em;
+                margin-left: 0.3em;
+                vertical-align: middle;
+            }
+        </style>       
+    </head>            
+    <body>
+        <div class="container-fluid container-xxl">
+            <header wicketpath="header">
+                <div wicketpath="header_skipToContentLink">
+                    <a class="skip-to-content-link btn btn-primary visually-hidden-focusable" href="#geoportal-main-content">
+                        Zum Hauptinhalt springen
+                    </a>
+                    
+                    <div class="bayern-logo">
+                        <a href="https://geodaten.bayern.de/opengeodata/" id="gdoappLink546" wicketpath="header_appLink">
+                            <img src="res/od.svg" id="gdoappLogo547" wicketpath="header_appLink_appLogo" alt="Zur Startseite Open Data der Bayerischen Vermessungsverwaltung">
+                        </a>
+                    </div>
+                    
+                    <div class="position-relative">
+                         <div class="open-data-sub position-absolute">
+                            <a href="https://geodaten.bayern.de/opengeodata/" class="text-decoration-none text-dark">
+                                Kostenfreie Geodaten der Bayerischen Vermessungsverwaltung
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="container-lg">
+                        <div class="row justify-content-end py-2">
+                            <div class="header-staatswappen_text col-auto ms-auto me-1 align-self-end text-end text-primary lead">
+                                <span id="gdoid849" wicketpath="header_operatorText">Bayerische<br>Vermessungsverwaltung</span>
+                            </div>
+                            <div class="header-staatswappen_logo col-auto px-0 me-md-4 me-lg-0">
+                                <a href="http://www.vermessung.bayern.de/" id="gdoid847" wicketpath="header_operatorLink" aria-label="Webseite des Landesamts für Digitalisierung, Breitband und Vermessung (öffnet in neuem Fenster)" target="_blank" rel="noopener">
+                                    <img src="res/logo.svg" style="width: 120px;" id="gdoid848" wicketpath="header_operatorLink_operatorLogo" alt="Logo: Landesamt für Digitalisierung, Breitband und Vermessung">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <nav class="navbar navbar-dark bg-primary" aria-label="Hauptnavigation Produktübersicht">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="https://geodaten.bayern.de/opengeodata/"> 
+                        <span class="material-icons" aria-hidden="true" style="float: left; margin-right: .5em">
+                            arrow_back 
+                        </span>
+                        Produktübersicht
+                    </a>
+                </div>
+            </nav>
+                              
+            <div class="row contentBox mb-5">
+                <div class="col-12">
+                    <div class="jumbotron gdo-main-jumbotron gdo-dbm-bg">
+                        <div class="container">
+                            <h1 class="display-4 text-center">                                   
+                                OpenData - Nutzungsbedingungen
+                            </h1>                                
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        
+            <div class="row">
+                <div class="col-12">
+                    <div class="mainContentBox">     
+                        <main class="w_content_container" id="geoportal-main-content" tabindex="-1"> 
+                            
+                            <p class="lead mb-4">
+                                Die kostenfreien Geodatensätze und -dienste der Bayerischen Vermessungsverwaltung stehen unter nachfolgender Lizenz zur Verfügung:
+                            </p>
+
+                            <div class="license-grid">
+                                
+                                <article class="license-card">
+                                    <div class="license-card-header">
+                                        <img src="../html/res/ccby.jpg" alt="Logo Creative Commons Namensnennung">
+                                        <h2 class="license-card-title">
+                                            <a href="https://creativecommons.org/licenses/by/4.0/deed.de" target="_blank" rel="noopener">
+                                                Creative Commons Namensnennung 4.0 International (CC BY 4.0)
+                                                <span class="visually-hidden">(öffnet in neuem Tab)</span>
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="license-card-body">
+                                        <h3 class="license-section-title">Sie dürfen:</h3>
+                                        <ul class="license-list">
+                                            <li>
+                                                <strong>Teilen:</strong> 
+                                                <span>Das Material in jedem Format oder Medium vervielfältigen und weiterverbreiten.</span>
+                                            </li>
+                                            <li>
+                                                <strong>Bearbeiten:</strong> 
+                                                <span>Das Material remixen, verändern und darauf aufbauen und zwar für beliebige Zwecke, sogar kommerziell.</span>
+                                            </li>
+                                        </ul>
+
+                                        <h3 class="license-section-title">Unter folgenden Bedingungen:</h3>
+                                        <ul class="license-list">
+                                            <li>
+                                                <strong>Namensnennung:</strong> 
+                                                <span>Sie müssen angemessene Urheber- und Rechteangaben machen, einen Link zur Lizenz beifügen und angeben, ob Änderungen vorgenommen wurden. Diese Angaben dürfen in jeder angemessenen Art und Weise gemacht werden, allerdings nicht so, dass der Eindruck entsteht, der Lizenzgeber unterstütze gerade Sie oder Ihre Nutzung besonders.</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article>
+
+                             <!--   <article class="license-card">
+                                    <div class="license-card-header">
+                                        <img src="../html/res/ccbynd.jpg" alt="Logo Creative Commons Namensnennung Keine Bearbeitung">
+                                        <h2 class="license-card-title">
+                                            <a href="https://creativecommons.org/licenses/by-nd/4.0/deed.de" target="_blank" rel="noopener">
+                                                Creative Commons Namensnennung – Keine Bearbeitung 4.0 (CC BY-ND 4.0)
+                                                <span class="visually-hidden">(öffnet in neuem Tab)</span>
+                                            </a>
+                                        </h2>
+                                    </div>
+                                    <div class="license-card-body">
+                                        <h3 class="license-section-title">Sie dürfen:</h3>
+                                        <ul class="license-list">
+                                            <li>
+                                                <strong>Teilen:</strong> 
+                                                <span>Das Material in jedem Format oder Medium vervielfältigen und weiterverbreiten und zwar für beliebige Zwecke, sogar kommerziell.</span>
+                                            </li>
+                                        </ul>
+
+                                        <h3 class="license-section-title">Unter folgenden Bedingungen:</h3>
+                                        <ul class="license-list">
+                                            <li>
+                                                <strong>Namensnennung:</strong> 
+                                                <span>Sie müssen angemessene Urheber- und Rechteangaben machen, einen Link zur Lizenz beifügen und angeben, ob Änderungen vorgenommen wurden. Diese Angaben dürfen in jeder angemessenen Art und Weise gemacht werden, allerdings nicht so, dass der Eindruck entsteht, der Lizenzgeber unterstütze gerade Sie oder Ihre Nutzung besonders.</span>
+                                            </li>
+                                            <li>
+                                                <strong>Keine Bearbeitungen:</strong> 
+                                                <span>Wenn Sie das Material remixen, verändern oder darauf anderweitig direkt aufbauen, dürfen Sie die bearbeitete Fassung des Materials nicht verbreiten.</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </article> -->
+
+                            </div>
+
+                            <aside class="info-footer-box" aria-label="Zusätzliche Lizenzinformationen">
+                                <p>
+                                    Eine Anfrage oder der Abschluss einer Nutzungsvereinbarung zur Nutzung dieser Daten ist <strong>nicht erforderlich</strong>.
+                                </p>
+                                <p>
+                                    Welche Lizenz für den jeweiligen Datensatz gilt, ist aus den Produktinformationen oder der 
+                                    <a href="https://www.ldbv.bayern.de/produkte/nutzungsrechte_kosten/kosten.html" class="link-extern" target="_blank" rel="noopener">
+                                        Gebühren- und Preisliste
+                                        <span class="visually-hidden">(öffnet in neuem Tab)</span>
+                                    </a> 
+                                    der Bayerischen Vermessungsverwaltung zu entnehmen.
+                                </p>
+                                
+                                <hr style="margin: 1.5rem 0; opacity: 0.2;">
+                                
+                                <p style="margin-bottom: 0.5rem;"><strong>Die Namensnennung der Bayerischen Vermessungsverwaltung als Rechteinhaberin hat in folgender Weise zu erfolgen:</strong></p>
+                                <code class="citation-box">"Bayerische Vermessungsverwaltung – www.geodaten.bayern.de"</code>
+                            </aside>
+                        </main>
+                    </div>
+                </div>
+            </div>                                                                                                                                                                         
+           
+            <footer>
+                <div class="footer-sitemap d-flex justify-content-start mt-4">
+                    <ul class="main-navbar-list navbar-nav gdo-navbar-items">                   
+                        <li class="nav-item">                        
+                            <i class="material-icons" aria-hidden="true">copyright</i>
+                            <a href="https://www.geodaten.bayern.de/odd/m/3/html/nutzungsbedingungen.html" target="_blank"  rel="noopener" class="nav-link" > Nutzungsbedingungen</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="material-icons" aria-hidden="true">mail_outline</i>
+                            <a href="https://www.ldbv.bayern.de/service/kontakt/" target="_blank" rel="noopener" class="nav-link" > Kontakt</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="material-icons" aria-hidden="true">help_outline</i>
+                            <a href="https://www.geodaten.bayern.de/odd/m/3/html/faq.html" target="_blank" rel="noopener" class="nav-link" > Hilfe</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="material-icons" aria-hidden="true">notifications_active</i>
+                            <a href="https://www.geodaten.bayern.de/odd/m/3/html/newsletter.html" target="_blank" rel="noopener" class="nav-link" > Newsletter</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="material-icons" aria-hidden="true">inventory_2</i>
+                            <a href="https://www.geodaten.bayern.de/odd/m/3/html/newsletter_archiv.html" target="_blank" rel="noopener" class="nav-link" > Newsletter-Archiv</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bayern-footer-end bayern-blue-a">
+                    <div class="col-12 d-flex justify-content-end flex-column flex-md-row ">
+                        <ul style="display: flex" class="footer-bottom-link">
+                            <li class="nav-item">
+                                <a href="https://www.ldbv.bayern.de/impressum.html" class="nav-link"  target="_blank" rel="noopener">Impressum</a>
+                            </li>
+                        </ul><ul style="display: flex" class="footer-bottom-link" >
+                            <li class="nav-item">
+                                <a href="https://www.ldbv.bayern.de/datenschutz.html" class="nav-link" target="_blank" rel="noopener">Datenschutz</a>
+                            </li>
+                        </ul><ul style="display: flex" class="footer-bottom-link" >
+                            <li class="nav-item">
+                                <a href="https://www.geodaten.bayern.de/odd/m/3/html/barrierefreiheit.html" class="nav-link" target="_blank" rel="noopener">Barrierefreiheit</a>
+                            </li>
+                        </ul><ul style="display: flex" class="footer-bottom-link" >
+                            <li class="nav-item">
+                                <a href="http://www.ldbv.bayern.de/vermessung/bvv.html" class="nav-link"  target="_blank" rel="noopener">Bayerische Vermessungsverwaltung</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <button id="scrollTopButton" class="scroll-top-button" aria-label="Nach oben scrollen">
+                        <i class="material-icons" aria-hidden="true">
+                            keyboard_arrow_up
+                        </i>
+                    </button>
+                </div>
+            </footer>
+        </div>
+         
+        <script>     
+                document.addEventListener("DOMContentLoaded", function(){
+                    // Verbesserung: Verwendung von Buttons für Interaktion ist korrekt, keine Änderung nötig
+                    var buttons = document.querySelectorAll('[data-toggle="collapse"]');
+                    buttons.forEach(function(btn){
+                        btn.addEventListener('click', function(e){
+                            e.preventDefault();
+                            var targetId = this.getAttribute('data-target');
+                            var targetEl = document.querySelector(targetId);
+                            var bsCollapse = new bootstrap.Collapse(targetEl, {
+                                toggle: true
+                            });
+                        });
+                    });
+                    
+                    // Scroll Top Logik (Beispielhaft ergänzt, da im Original CSS da war, aber JS Logik fehlte oft)
+                    var scrollTopBtn = document.getElementById("scrollTopButton");
+                    if(scrollTopBtn) {
+                        scrollTopBtn.addEventListener("click", function() {
+                            window.scrollTo({top: 0, behavior: 'smooth'});
+                            // Fokus nach oben setzen für Keyboard User
+                            document.querySelector('header a').focus();
+                        });
+                    }
+                });
+
+                var anchor = window.location.hash;
+                if (anchor) {                                
+                        const collapseElement = document.querySelector(anchor);
+                        if(collapseElement){
+                             const collapse = new bootstrap.Collapse(collapseElement, {toggle: true});
+                             collapseElement.scrollIntoView();            
+                        }
+                }
+        </script>                             
+        
+    </body>
+</html>

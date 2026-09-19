@@ -1,0 +1,44 @@
+{
+  "state_code": "NW",
+  "basemap_unique_normalized_addresses": 4439697,
+  "state_unique_normalized_addresses_either_locality": 4502322,
+  "state_unique_normalized_addresses_postal_locality": 4502322,
+  "state_unique_normalized_addresses_municipality": 4502322,
+  "matched_either_locality": 4231053,
+  "matched_postal_locality": 4231053,
+  "matched_municipality": 4231053,
+  "basemap_fields": {
+    "mode": "basemap",
+    "input": "/Users/mathiasschindler/PLZ/adressen/bund/basemap/2026-08-28/work/states/NW.tsv",
+    "state_code": "NW",
+    "records": 4447809,
+    "usable_primary": 4447809,
+    "usable_secondary": 0,
+    "blank_street": 0,
+    "blank_house_number": 0,
+    "blank_primary_locality": 0
+  },
+  "state_fields": {
+    "mode": "state",
+    "input": "/Users/mathiasschindler/PLZ/adressen/NW/2026-08-28/adressen.csv.gz",
+    "state_code": "NW",
+    "records": 4509543,
+    "usable_primary": 4509543,
+    "usable_secondary": 4509543,
+    "blank_street": 0,
+    "blank_house_number": 0,
+    "blank_primary_locality": 0
+  },
+  "coordinate_agreement": {
+    "matched_normalized_keys": 4231053,
+    "matched_basemap_records": 4239090,
+    "within_1_metre": 466,
+    "within_5_metres": 4225115,
+    "within_25_metres": 4237216,
+    "within_100_metres": 4238902,
+    "mean_distance_metres": 3.0522230004523605,
+    "maximum_distance_metres": 9673.484606979173
+  },
+  "basemap_match_rate_either_locality": 0.9530049010101365,
+  "state_match_rate_either_locality": 0.9397490894698336
+}

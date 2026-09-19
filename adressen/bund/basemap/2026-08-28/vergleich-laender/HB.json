@@ -1,0 +1,44 @@
+{
+  "state_code": "HB",
+  "basemap_unique_normalized_addresses": 176213,
+  "state_unique_normalized_addresses_either_locality": 177347,
+  "state_unique_normalized_addresses_postal_locality": 176367,
+  "state_unique_normalized_addresses_municipality": 176360,
+  "matched_either_locality": 176069,
+  "matched_postal_locality": 175383,
+  "matched_municipality": 176000,
+  "basemap_fields": {
+    "mode": "basemap",
+    "input": "/Users/mathiasschindler/PLZ/adressen/bund/basemap/2026-08-28/work/states/HB.tsv",
+    "state_code": "HB",
+    "records": 176265,
+    "usable_primary": 176265,
+    "usable_secondary": 0,
+    "blank_street": 0,
+    "blank_house_number": 0,
+    "blank_primary_locality": 0
+  },
+  "state_fields": {
+    "mode": "state",
+    "input": "/Users/mathiasschindler/PLZ/adressen/HB/2026-08-28/adressen.csv.gz",
+    "state_code": "HB",
+    "records": 176374,
+    "usable_primary": 176374,
+    "usable_secondary": 176374,
+    "blank_street": 0,
+    "blank_house_number": 0,
+    "blank_primary_locality": 0
+  },
+  "coordinate_agreement": {
+    "matched_normalized_keys": 176069,
+    "matched_basemap_records": 176121,
+    "within_1_metre": 21,
+    "within_5_metres": 175370,
+    "within_25_metres": 176090,
+    "within_100_metres": 176117,
+    "mean_distance_metres": 3.7198786045888386,
+    "maximum_distance_metres": 958.8533100791481
+  },
+  "basemap_match_rate_either_locality": 0.999182807170867,
+  "state_match_rate_either_locality": 0.9927937884486346
+}

@@ -1,0 +1,934 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://schemas.opengis.net/csw/2.0.2/profiles/apiso/1.0.0/apiso.xsd">
+  <gmd:fileIdentifier>
+    <gco:CharacterString>a688600a-7996-4c71-98ab-368feb7977bc</gco:CharacterString>
+  </gmd:fileIdentifier>
+  <gmd:language>
+    <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="ger">ger</gmd:LanguageCode>
+  </gmd:language>
+  <gmd:characterSet>
+    <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
+  </gmd:characterSet>
+  <gmd:hierarchyLevel>
+    <gmd:MD_ScopeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+  </gmd:hierarchyLevel>
+  <gmd:contact>
+    <gmd:CI_ResponsibleParty uuid="009aedf4-3ccc-566a-a441-16bc31f7b7a4">
+      <gmd:individualName>
+        <gco:CharacterString>Geoinformationsdienste - Metadaten 1</gco:CharacterString>
+      </gmd:individualName>
+      <gmd:organisationName>
+        <gco:CharacterString>Landesamt für Vermessung und Geobasisinformation Rheinland-Pfalz</gco:CharacterString>
+      </gmd:organisationName>
+      <gmd:positionName>
+        <gco:CharacterString>Verantwortlich für die Erstellung der Metadaten</gco:CharacterString>
+      </gmd:positionName>
+      <gmd:contactInfo>
+        <gmd:CI_Contact>
+          <gmd:phone>
+            <gmd:CI_Telephone>
+              <gmd:voice>
+                <gco:CharacterString>0261/492-0</gco:CharacterString>
+              </gmd:voice>
+              <gmd:facsimile>
+                <gco:CharacterString>0261/492-492</gco:CharacterString>
+              </gmd:facsimile>
+            </gmd:CI_Telephone>
+          </gmd:phone>
+          <gmd:address>
+            <gmd:CI_Address>
+              <gmd:deliveryPoint>
+                <gco:CharacterString>Von-Kuhl-Straße 49</gco:CharacterString>
+              </gmd:deliveryPoint>
+              <gmd:city>
+                <gco:CharacterString>Koblenz</gco:CharacterString>
+              </gmd:city>
+              <gmd:administrativeArea>
+                <gco:CharacterString>Rheinland-Pfalz</gco:CharacterString>
+              </gmd:administrativeArea>
+              <gmd:postalCode>
+                <gco:CharacterString>56070</gco:CharacterString>
+              </gmd:postalCode>
+              <gmd:country>
+                <gco:CharacterString>DE</gco:CharacterString>
+              </gmd:country>
+              <gmd:electronicMailAddress>
+                <gco:CharacterString>geodaten@vermkv.rlp.de</gco:CharacterString>
+              </gmd:electronicMailAddress>
+            </gmd:CI_Address>
+          </gmd:address>
+          <gmd:onlineResource>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage>
+                <gmd:URL>https://www.lvermgeo.rlp.de</gmd:URL>
+              </gmd:linkage>
+              <gmd:description>
+                <gco:CharacterString>Homepage</gco:CharacterString>
+              </gmd:description>
+            </gmd:CI_OnlineResource>
+          </gmd:onlineResource>
+        </gmd:CI_Contact>
+      </gmd:contactInfo>
+      <gmd:role>
+        <gmd:CI_RoleCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</gmd:CI_RoleCode>
+      </gmd:role>
+    </gmd:CI_ResponsibleParty>
+  </gmd:contact>
+  <gmd:dateStamp>
+    <gco:Date>2026-06-19</gco:Date>
+  </gmd:dateStamp>
+  <gmd:metadataStandardName>
+    <gco:CharacterString>ISO19115</gco:CharacterString>
+  </gmd:metadataStandardName>
+  <gmd:metadataStandardVersion>
+    <gco:CharacterString>2003/Cor.1:2006</gco:CharacterString>
+  </gmd:metadataStandardVersion>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem>
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gco:CharacterString>http://www.opengis.net/def/crs/EPSG/0/25832</gco:CharacterString>
+          </gmd:code>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:identificationInfo>
+    <gmd:MD_DataIdentification id="data_778ce0ae-5830-478d-9a0b-5b0a1e40cece">
+      <gmd:citation>
+        <gmd:CI_Citation>
+          <gmd:title>
+            <gco:CharacterString>Hauskoordinaten Rheinland-Pfalz (HK)</gco:CharacterString>
+          </gmd:title>
+          <gmd:alternateTitle>
+            <gco:CharacterString>Hauskoordinaten</gco:CharacterString>
+          </gmd:alternateTitle>
+          <gmd:date>
+            <gmd:CI_Date>
+              <gmd:date>
+                <gco:Date>2026-03-30</gco:Date>
+              </gmd:date>
+              <gmd:dateType>
+                <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision">revision</gmd:CI_DateTypeCode>
+              </gmd:dateType>
+            </gmd:CI_Date>
+          </gmd:date>
+          <gmd:identifier>
+            <gmd:MD_Identifier>
+              <gmd:code>
+                <gco:CharacterString>https://registry.gdi-de.org/id/de.rp.vermkv/a688600a-7996-4c71-98ab-368feb7977bc</gco:CharacterString>
+              </gmd:code>
+            </gmd:MD_Identifier>
+          </gmd:identifier>
+          <gmd:presentationForm>
+            <gmd:CI_PresentationFormCode codeListValue="tableDigital" codeList="http://www.isotc211.org/2005/resources/codeList.xml#CI_PresentationFormCode">tableDigital</gmd:CI_PresentationFormCode>
+          </gmd:presentationForm>
+        </gmd:CI_Citation>
+      </gmd:citation>
+      <gmd:abstract>
+        <gco:CharacterString>Als Amtliche Hauskoordinaten (georeferenzierte Gebäudeadressen) bezeichnet man die Verbindung zwischen der Adresse eines Gebäudes und seiner exakten Lage. Sie besteht aus dem Gebäudekennzeichen (Land, Regierungsbezirk, Kreis/Stadt, Gemeinde, Straße, Hausnummer), den postalischen Adressdaten (Postleitzahl, postalischer Ortsname) und der zugehörigen Georeferenz.
+Die Hauskoordinaten und -umringe sind wegen ihrer Herkunft aus dem Liegenschaftskataster sehr genau. Sie sichern damit die exakte Positionierung der Adresse. Einen Schluss auf die Hausbewohner lassen die Daten nicht zu.
+Mit Hauskoordinaten und -umringen führt die Auto-Navigation direkt bis vor die gewünschte Haustür. Handy-Kommunikationsdienste und Auskunftssysteme zeigen genau an, wo der nächste Arzt, Apotheker oder das nächste Restaurant zu finden ist. Auch für öffentliche Stellen wie Polizei und Katastrophenschutz sind die Daten unentbehrlich, um so schnell wie möglich an Ort und Stelle Hilfe leisten zu können. Aber auch Unternehmen können ihre Vertriebswege optimieren und haben damit besonders in Ballungsgebieten einen nicht unwesentlichen Wettbewerbsvorteil.</gco:CharacterString>
+      </gmd:abstract>
+      <gmd:status>
+        <gmd:MD_ProgressCode codeListValue="onGoing" codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_ProgressCode">onGoing</gmd:MD_ProgressCode>
+      </gmd:status>
+      <gmd:pointOfContact>
+        <gmd:CI_ResponsibleParty uuid="8ff2ab29-b830-5db0-a379-5896cce63197">
+          <gmd:individualName>
+            <gco:CharacterString>Raumbezug, Liegenschaftskataster, Bodenmanagement 1</gco:CharacterString>
+          </gmd:individualName>
+          <gmd:organisationName>
+            <gco:CharacterString>Landesamt für Vermessung und Geobasisinformation Rheinland-Pfalz</gco:CharacterString>
+          </gmd:organisationName>
+          <gmd:positionName>
+            <gco:CharacterString>Verantwortlich für die Daten</gco:CharacterString>
+          </gmd:positionName>
+          <gmd:contactInfo>
+            <gmd:CI_Contact>
+              <gmd:phone>
+                <gmd:CI_Telephone>
+                  <gmd:voice>
+                    <gco:CharacterString>0261/492-0</gco:CharacterString>
+                  </gmd:voice>
+                  <gmd:facsimile>
+                    <gco:CharacterString>0261/492-492</gco:CharacterString>
+                  </gmd:facsimile>
+                </gmd:CI_Telephone>
+              </gmd:phone>
+              <gmd:address>
+                <gmd:CI_Address>
+                  <gmd:deliveryPoint>
+                    <gco:CharacterString>Von-Kuhl-Straße 49</gco:CharacterString>
+                  </gmd:deliveryPoint>
+                  <gmd:city>
+                    <gco:CharacterString>Koblenz</gco:CharacterString>
+                  </gmd:city>
+                  <gmd:administrativeArea>
+                    <gco:CharacterString>Rheinland-Pfalz</gco:CharacterString>
+                  </gmd:administrativeArea>
+                  <gmd:postalCode>
+                    <gco:CharacterString>56070</gco:CharacterString>
+                  </gmd:postalCode>
+                  <gmd:country>
+                    <gco:CharacterString>DE</gco:CharacterString>
+                  </gmd:country>
+                  <gmd:electronicMailAddress>
+                    <gco:CharacterString>lvermgeo@vermkv.rlp.de</gco:CharacterString>
+                  </gmd:electronicMailAddress>
+                </gmd:CI_Address>
+              </gmd:address>
+              <gmd:onlineResource>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>https://www.lvermgeo.rlp.de</gmd:URL>
+                  </gmd:linkage>
+                  <gmd:description>
+                    <gco:CharacterString>Homepage</gco:CharacterString>
+                  </gmd:description>
+                </gmd:CI_OnlineResource>
+              </gmd:onlineResource>
+            </gmd:CI_Contact>
+          </gmd:contactInfo>
+          <gmd:role>
+            <gmd:CI_RoleCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode" codeListValue="publisher">publisher</gmd:CI_RoleCode>
+          </gmd:role>
+        </gmd:CI_ResponsibleParty>
+      </gmd:pointOfContact>
+      <gmd:resourceMaintenance>
+        <gmd:MD_MaintenanceInformation>
+          <gmd:maintenanceAndUpdateFrequency>
+            <gmd:MD_MaintenanceFrequencyCode codeListValue="biannually" codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_MaintenanceFrequencyCode">biannually</gmd:MD_MaintenanceFrequencyCode>
+          </gmd:maintenanceAndUpdateFrequency>
+        </gmd:MD_MaintenanceInformation>
+      </gmd:resourceMaintenance>
+      <gmd:graphicOverview>
+        <gmd:MD_BrowseGraphic>
+          <gmd:fileName>
+            <gco:CharacterString>http://metadatenkatalog-vermkv.service24.rlp.de/previews/Hauskoordinaten_HK.jpg</gco:CharacterString>
+          </gmd:fileName>
+          <gmd:fileDescription>
+            <gco:CharacterString>HK_Hauskoordinaten</gco:CharacterString>
+          </gmd:fileDescription>
+          <gmd:fileType>
+            <gco:CharacterString>jpg</gco:CharacterString>
+          </gmd:fileType>
+        </gmd:MD_BrowseGraphic>
+      </gmd:graphicOverview>
+      <gmd:descriptiveKeywords>
+        <gmd:MD_Keywords id="harvest_6e10f83e-3dc1-4dd3-ab90-030bc3a46b21">
+          <gmd:keyword>
+            <gco:CharacterString>inspireidentifiziert</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>AdVMIS</gco:CharacterString>
+          </gmd:keyword>
+        </gmd:MD_Keywords>
+      </gmd:descriptiveKeywords>
+      <gmd:descriptiveKeywords>
+        <gmd:MD_Keywords id="wholearea_3a6c65bf-eb8a-4067-8ceb-353268633956">
+          <gmd:keyword>
+            <gco:CharacterString>19.854</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:thesaurusName>
+            <gmd:CI_Citation>
+              <gmd:title>
+                <gco:CharacterString>mapbender.2.inspireWholeArea</gco:CharacterString>
+              </gmd:title>
+              <gmd:date>
+                <gmd:CI_Date>
+                  <gmd:date>
+                    <gco:Date>2014-07-01</gco:Date>
+                  </gmd:date>
+                  <gmd:dateType>
+                    <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+                  </gmd:dateType>
+                </gmd:CI_Date>
+              </gmd:date>
+            </gmd:CI_Citation>
+          </gmd:thesaurusName>
+        </gmd:MD_Keywords>
+      </gmd:descriptiveKeywords>
+      <gmd:descriptiveKeywords>
+        <gmd:MD_Keywords id="atomfeed_9477d910-8850-412c-bf2d-8c2c56c96992">
+          <gmd:keyword>
+            <gco:CharacterString>1</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:thesaurusName>
+            <gmd:CI_Citation>
+              <gmd:title>
+                <gco:CharacterString>mapbender.2.inspireDownload</gco:CharacterString>
+              </gmd:title>
+              <gmd:date>
+                <gmd:CI_Date>
+                  <gmd:date>
+                    <gco:Date>2014-07-01</gco:Date>
+                  </gmd:date>
+                  <gmd:dateType>
+                    <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+                  </gmd:dateType>
+                </gmd:CI_Date>
+              </gmd:date>
+            </gmd:CI_Citation>
+          </gmd:thesaurusName>
+        </gmd:MD_Keywords>
+      </gmd:descriptiveKeywords>
+      <gmd:descriptiveKeywords>
+        <gmd:MD_Keywords id="allgemein_004f5546-2a48-41b9-bd3f-ceaac4e43b36">
+          <gmd:keyword>
+            <gco:CharacterString>RP</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>2f23ed6e-0186-4c2b-8380-748389036509</gco:CharacterString>
+          </gmd:keyword>
+        </gmd:MD_Keywords>
+      </gmd:descriptiveKeywords>
+      <gmd:descriptiveKeywords>
+        <gmd:MD_Keywords id="opendata_8ef97d3c-802f-423b-b905-30d0675f12a0">
+          <gmd:keyword>
+            <gco:CharacterString>Regierung und öffentlicher Sektor</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:thesaurusName>
+            <gmd:CI_Citation>
+              <gmd:title>
+                <gco:CharacterString>OGDD - Kategorien</gco:CharacterString>
+              </gmd:title>
+              <gmd:date>
+                <gmd:CI_Date>
+                  <gmd:date>
+                    <gco:Date>2012-12-10</gco:Date>
+                  </gmd:date>
+                  <gmd:dateType>
+                    <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+                  </gmd:dateType>
+                </gmd:CI_Date>
+              </gmd:date>
+            </gmd:CI_Citation>
+          </gmd:thesaurusName>
+        </gmd:MD_Keywords>
+      </gmd:descriptiveKeywords>
+      <gmd:descriptiveKeywords>
+        <gmd:MD_Keywords id="actualcoverage_e9258425-f2fa-4629-98cc-ca736f45141f">
+          <gmd:keyword>
+            <gco:CharacterString>19.854</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:thesaurusName>
+            <gmd:CI_Citation>
+              <gmd:title>
+                <gco:CharacterString>mapbender.2.inspireActualCoverage</gco:CharacterString>
+              </gmd:title>
+              <gmd:date>
+                <gmd:CI_Date>
+                  <gmd:date>
+                    <gco:Date>2014-07-01</gco:Date>
+                  </gmd:date>
+                  <gmd:dateType>
+                    <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+                  </gmd:dateType>
+                </gmd:CI_Date>
+              </gmd:date>
+            </gmd:CI_Citation>
+          </gmd:thesaurusName>
+        </gmd:MD_Keywords>
+      </gmd:descriptiveKeywords>
+      <gmd:descriptiveKeywords>
+        <gmd:MD_Keywords id="inspire_80a8deb8-4afb-4ba8-bdc4-deb80d884fc8">
+          <gmd:keyword>
+            <gco:CharacterString>Adressen</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:thesaurusName>
+            <gmd:CI_Citation>
+              <gmd:title>
+                <gco:CharacterString>GEMET - INSPIRE themes, version 1.0</gco:CharacterString>
+              </gmd:title>
+              <gmd:date>
+                <gmd:CI_Date>
+                  <gmd:date>
+                    <gco:Date>2008-06-01</gco:Date>
+                  </gmd:date>
+                  <gmd:dateType>
+                    <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+                  </gmd:dateType>
+                </gmd:CI_Date>
+              </gmd:date>
+            </gmd:CI_Citation>
+          </gmd:thesaurusName>
+        </gmd:MD_Keywords>
+      </gmd:descriptiveKeywords>
+      <gmd:descriptiveKeywords>
+        <gmd:MD_Keywords id="spezifisch_2c0e7041-23d0-447f-9820-6cdf2ba2426f">
+          <gmd:keyword>
+            <gco:CharacterString>novaFACTORY</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>RP</gco:CharacterString>
+          </gmd:keyword>
+        </gmd:MD_Keywords>
+      </gmd:descriptiveKeywords>
+      <gmd:descriptiveKeywords>
+        <gmd:MD_Keywords id="produktgruppe_01f9866d-523d-4bd2-b557-985b4d505055">
+          <gmd:keyword>
+            <gco:CharacterString>Hauskoordinaten</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:thesaurusName>
+            <gmd:CI_Citation>
+              <gmd:title>
+                <gco:CharacterString>AdV Produktgruppe</gco:CharacterString>
+              </gmd:title>
+              <gmd:date>
+                <gmd:CI_Date>
+                  <gmd:date>
+                    <gco:Date>2018-11-21</gco:Date>
+                  </gmd:date>
+                  <gmd:dateType>
+                    <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+                  </gmd:dateType>
+                </gmd:CI_Date>
+              </gmd:date>
+            </gmd:CI_Citation>
+          </gmd:thesaurusName>
+        </gmd:MD_Keywords>
+      </gmd:descriptiveKeywords>
+      <gmd:descriptiveKeywords>
+        <gmd:MD_Keywords id="produktkuerzel_7372a81d-7912-4bba-a2ad-93a5e777a660">
+          <gmd:keyword>
+            <gco:CharacterString>HK</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:thesaurusName>
+            <gmd:CI_Citation>
+              <gmd:title>
+                <gco:CharacterString>Produktkürzel</gco:CharacterString>
+              </gmd:title>
+              <gmd:date>
+                <gmd:CI_Date>
+                  <gmd:date>
+                    <gco:Date>2018-06-19</gco:Date>
+                  </gmd:date>
+                  <gmd:dateType>
+                    <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+                  </gmd:dateType>
+                </gmd:CI_Date>
+              </gmd:date>
+            </gmd:CI_Citation>
+          </gmd:thesaurusName>
+        </gmd:MD_Keywords>
+      </gmd:descriptiveKeywords>
+      <gmd:resourceConstraints>
+        <gmd:MD_LegalConstraints>
+          <gmd:useLimitation>
+            <gco:CharacterString>Nutzungseinschränkung: Siehe Nutzungsbedingungen</gco:CharacterString>
+          </gmd:useLimitation>
+        </gmd:MD_LegalConstraints>
+      </gmd:resourceConstraints>
+      <gmd:resourceConstraints>
+        <gmd:MD_LegalConstraints>
+          <gmd:useConstraints>
+            <gmd:MD_RestrictionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
+          </gmd:useConstraints>
+          <gmd:otherConstraints>
+            <gco:CharacterString>Nutzungsbedingungen: Landesgesetz über das amtliche Vermessungswesen (LGVerm §12), Allgemeine Nutzungsbedingungen der VermKV RLP</gco:CharacterString>
+          </gmd:otherConstraints>
+          <gmd:otherConstraints>
+            <gco:CharacterString>Nutzungsbedingungen: ©GeoBasis-DE / LVermGeoRP &lt;Jahr des Datenbezugs&gt;</gco:CharacterString>
+          </gmd:otherConstraints>
+        </gmd:MD_LegalConstraints>
+      </gmd:resourceConstraints>
+      <gmd:resourceConstraints>
+        <gmd:MD_LegalConstraints>
+          <gmd:accessConstraints>
+            <gmd:MD_RestrictionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
+          </gmd:accessConstraints>
+          <gmd:otherConstraints>
+            <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1e">Öffentlicher Zugriff beschränkt entsprechend Artikel 13(1)(e) der INSPIRE-Richtlinie: e) aufgrund nachteiliger Auswirkungen auf die Rechte des geistigen Eigentums</gmx:Anchor>
+          </gmd:otherConstraints>
+        </gmd:MD_LegalConstraints>
+      </gmd:resourceConstraints>
+      <gmd:spatialRepresentationType>
+        <gmd:MD_SpatialRepresentationTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector">vector</gmd:MD_SpatialRepresentationTypeCode>
+      </gmd:spatialRepresentationType>
+      <gmd:spatialResolution>
+        <gmd:MD_Resolution>
+          <gmd:distance>
+            <gco:Distance uom="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/uom/ML_gmxUom.xml#m">0.0</gco:Distance>
+          </gmd:distance>
+        </gmd:MD_Resolution>
+      </gmd:spatialResolution>
+      <gmd:language>
+        <gmd:LanguageCode codeListValue="ger" codeList="http://www.loc.gov/standards/iso639-2/">ger</gmd:LanguageCode>
+      </gmd:language>
+      <gmd:characterSet>
+        <gmd:MD_CharacterSetCode codeListValue="utf8" codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_CharacterSetCode">utf8</gmd:MD_CharacterSetCode>
+      </gmd:characterSet>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>location</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:extent>
+        <gmd:EX_Extent>
+          <gmd:description>
+            <gco:CharacterString>Landesweiter Nachweis</gco:CharacterString>
+          </gmd:description>
+        </gmd:EX_Extent>
+      </gmd:extent>
+      <gmd:extent>
+        <gmd:EX_Extent>
+          <gmd:geographicElement>
+            <gmd:EX_GeographicBoundingBox>
+              <gmd:extentTypeCode>
+                <gco:Boolean>false</gco:Boolean>
+              </gmd:extentTypeCode>
+              <gmd:westBoundLongitude>
+                <gco:Decimal>6.025610894</gco:Decimal>
+              </gmd:westBoundLongitude>
+              <gmd:eastBoundLongitude>
+                <gco:Decimal>8.629460767</gco:Decimal>
+              </gmd:eastBoundLongitude>
+              <gmd:southBoundLatitude>
+                <gco:Decimal>48.894559035</gco:Decimal>
+              </gmd:southBoundLatitude>
+              <gmd:northBoundLatitude>
+                <gco:Decimal>51.000987141</gco:Decimal>
+              </gmd:northBoundLatitude>
+            </gmd:EX_GeographicBoundingBox>
+          </gmd:geographicElement>
+        </gmd:EX_Extent>
+      </gmd:extent>
+      <gmd:extent>
+        <gmd:EX_Extent>
+          <gmd:geographicElement>
+            <gmd:EX_BoundingPolygon>
+              <gmd:extentTypeCode>
+                <gco:Boolean>false</gco:Boolean>
+              </gmd:extentTypeCode>
+              <gmd:polygon>
+                <gml:Polygon gml:id="polygon_da125a81-63b8-4b4f-9b87-8a1e55480b54" srsName="4326">
+                  <gml:exterior>
+                    <gml:LinearRing>
+                      <gml:posList srsDimension="2">7.749006471080499 50.939038860659899 7.770076718086999 50.952805064994749 7.796650694454357 50.961545863863279 7.867148908351165 50.928395281140382 7.900122288521245 50.893161948731972 7.991836816013428 50.860134275596394 8.006752888306336 50.787471648574645 8.072005868288164 50.728760506104749 8.147043410985813 50.709019748399612 8.156012475762791 50.654914489125751 8.186061321470092 50.611114377218065 8.176425261100089 50.553489550421659 8.11595100145372 50.519188678268634 8.049579392475827 50.518665776772608 8.020761727990186 50.499805158112096 8.031826527125871 50.477890070342958 8.037784374930032 50.445774328589323 8.022472725840641 50.416867193443657 8.064992181312622 50.410445025393614 8.086833115314157 50.37676016081069 8.122149043277847 50.327937204040637 8.157272609771178 50.285873665788237 8.152619826150595 50.250287934182417 8.13681070570304 50.248478631647771 8.105291209213435 50.239775446875463 8.097405152408808 50.238021500780448 8.087074488379777 50.226090054270067 8.079549691775059 50.205715062506414 8.056179969460983 50.186904818740494 8.003523185693883 50.183079082590034 7.984711397582342 50.199846026294168 7.955925572242174 50.189432967929463 7.927228159802313 50.175627551618405 7.943340892658794 50.162231291526531 7.962152091807677 50.145470939068566 7.97344898264844 50.110018275375879 7.955429326192843 50.091234412127271 7.903117910422234 50.077207747557075 7.886944529154873 50.093984029056074 7.868646127312928 50.088728072435813 7.819242881002292 50.064533613503606 7.837894708710273 50.054563643446564 7.872943522851851 50.017662430188274 7.920722485844892 49.996107119600637 8.04363686789652 50.022580870396716 8.190091562415745 50.064327669688304 8.279986409946842 50.032753054657711 8.354277429870208 49.980706892978162 8.394803203531827 49.889501860991224 8.43261899577703 49.793189031990508 8.466542171214005 49.800122415135 8.521769684397823 49.769888291902099 8.503903800690759 49.727486250380998 8.407849111448437 49.679628411674273 8.418729322092945 49.642435193096794 8.437427572747691 49.603585874522501 8.493028381015868 49.517492990433169 8.516982808722542 49.461721453976168 8.536219362866689 49.350050579388878 8.53169465025125 49.280611032536584 8.469818620164233 49.258331849753922 8.429268660911305 49.18532959248072 8.391726697649045 49.086928850054555 8.333590916288445 49.000250051746434 8.257372033728064 48.933745305444127 8.110349590105445 48.963184897877596 7.967847472058773 49.014490994835569 7.85436772290842 49.02357998064484 7.676709843663096 49.02337251533487 7.51273634133362 49.082335922106815 7.472732885751044 49.125840331742118 7.430719483509882 49.148983518833276 7.39432262031423 49.156949697570539 7.374453156193802 49.132964844390777 7.317020494265861 49.15246194675354 7.229579856468364 49.215501315414734 7.289714736476289 49.270594044155523 7.360284311526117 49.327496303624386 7.312574683426442 49.35898204373688 7.251360014659827 49.403790949241575 7.220630174132782 49.464280229692875 7.261995417787664 49.469989178954449 7.253181307194977 49.498641894433973 7.225483377275586 49.545631516590674 7.148846435265399 49.576602512964811 7.09439593073502 49.570638712466092 7.04045997210191 49.617149297321497 6.993721606546644 49.612961886651547 6.923917676806409 49.599877578269449 6.756971785139418 49.547655148769294 6.641437267006717 49.514876428947538 6.548074972821403 49.509547655916492 6.342905954829336 49.552430273138569 6.33103166817319 49.579251402812304 6.388056052838306 49.633048280216784 6.397389788649352 49.653579156462911 6.414011378504787 49.684432449643893 6.474911325826383 49.717950762190426 6.475149850595389 49.763676110106047 6.478791998913051 49.794235388922495 6.418249119636018 49.801368248263202 6.314472376313677 49.832875436172728 6.238761852363607 49.875122841567524 6.136644047375575 49.962392936817402 6.097785135872802 50.041014817838764 6.08704094416614 50.088159450866861 6.120677712595178 50.185519217318742 6.154006833131169 50.201580975023688 6.146417265561818 50.240340743230696 6.254627238775443 50.286974446873351 6.260796138536346 50.317598747250472 6.30473662778471 50.335558788116458 6.38673710519755 50.335738541711116 6.347012813049335 50.38394192865109 6.422156453007075 50.414416908205872 6.482984967296658 50.366647283147337 6.587126420925522 50.401025666753526 6.643287126857603 50.390325529627646 6.680576429029256 50.385995984146042 6.708337613392038 50.359456325523354 6.75241053720955 50.378941204540148 6.705183373789492 50.47960593309233 6.7885933957075 50.511696828167288 6.851223128825667 50.477315564989681 6.877127062822866 50.491335663524559 6.851956031282508 50.519655922535691 6.887668420398834 50.552477648170274 6.912951022078401 50.581715402283471 6.992663255682952 50.583116914853463 6.999774371255878 50.603555511109597 7.033769110394888 50.617678492045094 7.079045291373145 50.616741041883188 7.139674717451332 50.63126908320762 7.175672196659631 50.664004857381592 7.218073239887381 50.669739911512828 7.250965776422567 50.644843970689557 7.327598018231565 50.66120571582983 7.336212208527613 50.718888696044893 7.375491013320217 50.739757683275123 7.434665306905583 50.725331069991327 7.643523844673481 50.788891511356745 7.642445093622618 50.826121700696888 7.737584117098949 50.866124987895866 7.714514039317247 50.926814577728763 7.749006471080499 50.939038860659899</gml:posList>
+                    </gml:LinearRing>
+                  </gml:exterior>
+                </gml:Polygon>
+              </gmd:polygon>
+            </gmd:EX_BoundingPolygon>
+          </gmd:geographicElement>
+        </gmd:EX_Extent>
+      </gmd:extent>
+      <gmd:supplementalInformation>
+        <gco:CharacterString>2026-06-19T10:39:12Z</gco:CharacterString>
+      </gmd:supplementalInformation>
+    </gmd:MD_DataIdentification>
+  </gmd:identificationInfo>
+  <gmd:distributionInfo>
+    <gmd:MD_Distribution>
+      <gmd:distributionFormat>
+        <gmd:MD_Format>
+          <gmd:name>
+            <gco:CharacterString>ASCII - CSV</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>unknown</gco:CharacterString>
+          </gmd:version>
+          <gmd:specification>
+            <gco:CharacterString>unknown</gco:CharacterString>
+          </gmd:specification>
+          <gmd:fileDecompressionTechnique>
+            <gco:CharacterString>none, zip</gco:CharacterString>
+          </gmd:fileDecompressionTechnique>
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+      <gmd:distributor>
+        <gmd:MD_Distributor>
+          <gmd:distributorContact>
+            <gmd:CI_ResponsibleParty uuid="39402055-8331-5582-84e3-bde3cf01f145">
+              <gmd:individualName>
+                <gco:CharacterString>Geoinformationsdienste -  Vertriebsprodukte 1</gco:CharacterString>
+              </gmd:individualName>
+              <gmd:organisationName>
+                <gco:CharacterString>Landesamt für Vermessung und Geobasisinformation Rheinland-Pfalz</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:positionName>
+                <gco:CharacterString>Verantwortlich für den Vertrieb der Daten</gco:CharacterString>
+              </gmd:positionName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:phone>
+                    <gmd:CI_Telephone>
+                      <gmd:voice>
+                        <gco:CharacterString>0261/492-0</gco:CharacterString>
+                      </gmd:voice>
+                      <gmd:facsimile>
+                        <gco:CharacterString>0261/492-492</gco:CharacterString>
+                      </gmd:facsimile>
+                    </gmd:CI_Telephone>
+                  </gmd:phone>
+                  <gmd:address>
+                    <gmd:CI_Address>
+                      <gmd:deliveryPoint>
+                        <gco:CharacterString>Von-Kuhl-Straße 49</gco:CharacterString>
+                      </gmd:deliveryPoint>
+                      <gmd:city>
+                        <gco:CharacterString>Koblenz</gco:CharacterString>
+                      </gmd:city>
+                      <gmd:administrativeArea>
+                        <gco:CharacterString>Rheinland-Pfalz</gco:CharacterString>
+                      </gmd:administrativeArea>
+                      <gmd:postalCode>
+                        <gco:CharacterString>56070</gco:CharacterString>
+                      </gmd:postalCode>
+                      <gmd:country>
+                        <gco:CharacterString>DE</gco:CharacterString>
+                      </gmd:country>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString>geodaten@vermkv.rlp.de</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                    </gmd:CI_Address>
+                  </gmd:address>
+                  <gmd:onlineResource>
+                    <gmd:CI_OnlineResource>
+                      <gmd:linkage>
+                        <gmd:URL>https://www.lvermgeo.rlp.de</gmd:URL>
+                      </gmd:linkage>
+                      <gmd:description>
+                        <gco:CharacterString>Homepage</gco:CharacterString>
+                      </gmd:description>
+                    </gmd:CI_OnlineResource>
+                  </gmd:onlineResource>
+                  <gmd:hoursOfService>
+                    <gco:CharacterString>24/7</gco:CharacterString>
+                  </gmd:hoursOfService>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</gmd:CI_RoleCode>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:distributorContact>
+        </gmd:MD_Distributor>
+      </gmd:distributor>
+      <gmd:transferOptions>
+        <gmd:MD_DigitalTransferOptions>
+          <gmd:unitsOfDistribution>
+            <gco:CharacterString>Landesfläche</gco:CharacterString>
+          </gmd:unitsOfDistribution>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage>
+                <gmd:URL>https://lvermgeo.rlp.de/produktinformationen</gmd:URL>
+              </gmd:linkage>
+              <gmd:function>
+                <gmd:CI_OnLineFunctionCode codeList="https://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information">information</gmd:CI_OnLineFunctionCode>
+              </gmd:function>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+        </gmd:MD_DigitalTransferOptions>
+      </gmd:transferOptions>
+    </gmd:MD_Distribution>
+  </gmd:distributionInfo>
+  <gmd:dataQualityInfo>
+    <gmd:DQ_DataQuality>
+      <gmd:scope>
+        <gmd:DQ_Scope>
+          <gmd:level>
+            <gmd:MD_ScopeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+          </gmd:level>
+        </gmd:DQ_Scope>
+      </gmd:scope>
+      <gmd:report>
+        <gmd:DQ_DomainConsistency xsi:type="gmd:DQ_DomainConsistency_Type">
+          <gmd:result>
+            <gmd:DQ_ConformanceResult xsi:type="gmd:DQ_ConformanceResult_Type">
+              <gmd:specification>
+                <gmd:CI_Citation>
+                  <gmd:title>
+                    <gco:CharacterString>Metadatenschema der Vermessungs- und Katasterverwaltung RLP</gco:CharacterString>
+                  </gmd:title>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:Date>2018-03-15</gco:Date>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                  <gmd:edition>
+                    <gco:CharacterString>1.0.9</gco:CharacterString>
+                  </gmd:edition>
+                </gmd:CI_Citation>
+              </gmd:specification>
+              <gmd:explanation>
+                <gco:CharacterString>See the referenced Specification</gco:CharacterString>
+              </gmd:explanation>
+              <gmd:pass>
+                <gco:Boolean>true</gco:Boolean>
+              </gmd:pass>
+            </gmd:DQ_ConformanceResult>
+          </gmd:result>
+        </gmd:DQ_DomainConsistency>
+      </gmd:report>
+      <gmd:report>
+        <gmd:DQ_DomainConsistency xsi:type="gmd:DQ_DomainConsistency_Type">
+          <gmd:result>
+            <gmd:DQ_ConformanceResult xsi:type="gmd:DQ_ConformanceResult_Type">
+              <gmd:specification>
+                <gmd:CI_Citation>
+                  <gmd:title>
+                    <gco:CharacterString>AdV Metadatenprofil</gco:CharacterString>
+                  </gmd:title>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:Date>2016-11-18</gco:Date>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                  <gmd:edition>
+                    <gco:CharacterString>1.1.0</gco:CharacterString>
+                  </gmd:edition>
+                </gmd:CI_Citation>
+              </gmd:specification>
+              <gmd:explanation>
+                <gco:CharacterString>See the referenced Specification</gco:CharacterString>
+              </gmd:explanation>
+              <gmd:pass>
+                <gco:Boolean>true</gco:Boolean>
+              </gmd:pass>
+            </gmd:DQ_ConformanceResult>
+          </gmd:result>
+        </gmd:DQ_DomainConsistency>
+      </gmd:report>
+      <gmd:report>
+        <gmd:DQ_DomainConsistency xsi:type="gmd:DQ_DomainConsistency_Type">
+          <gmd:result>
+            <gmd:DQ_ConformanceResult xsi:type="gmd:DQ_ConformanceResult_Type">
+              <gmd:specification>
+                <gmd:CI_Citation>
+                  <gmd:title>
+                    <gco:CharacterString>ZSHH Datenformatbeschreibung Hauskoordinaten Deutschland</gco:CharacterString>
+                  </gmd:title>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:Date>2017-12-11</gco:Date>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                  <gmd:edition>
+                    <gco:CharacterString>4.1</gco:CharacterString>
+                  </gmd:edition>
+                </gmd:CI_Citation>
+              </gmd:specification>
+              <gmd:explanation>
+                <gco:CharacterString>See the referenced Specification</gco:CharacterString>
+              </gmd:explanation>
+              <gmd:pass>
+                <gco:Boolean>true</gco:Boolean>
+              </gmd:pass>
+            </gmd:DQ_ConformanceResult>
+          </gmd:result>
+        </gmd:DQ_DomainConsistency>
+      </gmd:report>
+      <gmd:report>
+        <gmd:DQ_DomainConsistency xsi:type="gmd:DQ_DomainConsistency_Type">
+          <gmd:result>
+            <gmd:DQ_ConformanceResult xsi:type="gmd:DQ_ConformanceResult_Type">
+              <gmd:specification>
+                <gmd:CI_Citation>
+                  <gmd:title>
+                    <gco:CharacterString>VERORDNUNG (EG) Nr. 1205/2008 DER KOMMISSION vom 3. Dezember 2008 zur Durchführung der Richtlinie 2007/2/EG des Europäischen Parlaments und des Rates hinsichtlich Metadaten</gco:CharacterString>
+                  </gmd:title>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:Date>2008-12-04</gco:Date>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                  <gmd:edition>
+                    <gco:CharacterString>1.0</gco:CharacterString>
+                  </gmd:edition>
+                </gmd:CI_Citation>
+              </gmd:specification>
+              <gmd:explanation>
+                <gco:CharacterString>See the referenced Specification</gco:CharacterString>
+              </gmd:explanation>
+              <gmd:pass gco:nilReason="unknown" />
+            </gmd:DQ_ConformanceResult>
+          </gmd:result>
+        </gmd:DQ_DomainConsistency>
+      </gmd:report>
+      <gmd:report>
+        <gmd:DQ_DomainConsistency xsi:type="gmd:DQ_DomainConsistency_Type">
+          <gmd:result>
+            <gmd:DQ_ConformanceResult xsi:type="gmd:DQ_ConformanceResult_Type">
+              <gmd:specification>
+                <gmd:CI_Citation>
+                  <gmd:title>
+                    <gco:CharacterString>Berichtigung der Verordnung (EG) Nr. 1205/2008 DER KOMMISSION vom 3. Dezember 2008 zur Durchführung der Richtlinie 2007/2/EG des Europäischen Parlaments und des Rates hinsichtlich Metadaten</gco:CharacterString>
+                  </gmd:title>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:Date>2009-12-15</gco:Date>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                  <gmd:edition>
+                    <gco:CharacterString>1.0</gco:CharacterString>
+                  </gmd:edition>
+                </gmd:CI_Citation>
+              </gmd:specification>
+              <gmd:explanation>
+                <gco:CharacterString>See the referenced Specification</gco:CharacterString>
+              </gmd:explanation>
+              <gmd:pass gco:nilReason="unknown" />
+            </gmd:DQ_ConformanceResult>
+          </gmd:result>
+        </gmd:DQ_DomainConsistency>
+      </gmd:report>
+      <gmd:report>
+        <gmd:DQ_DomainConsistency xsi:type="gmd:DQ_DomainConsistency_Type">
+          <gmd:result>
+            <gmd:DQ_ConformanceResult xsi:type="gmd:DQ_ConformanceResult_Type">
+              <gmd:specification>
+                <gmd:CI_Citation>
+                  <gmd:title>
+                    <gco:CharacterString>VERORDNUNG (EG) Nr. 1089/2010 DER KOMMISSION vom 23. November 2010 zur Durchführung der Richtlinie 2007/2/EG des Europäischen Parlaments und des Rates hinsichtlich der Interoperabilität von Geodatensätzen und -diensten</gco:CharacterString>
+                  </gmd:title>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:Date>2010-12-08</gco:Date>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                  <gmd:edition>
+                    <gco:CharacterString>1.0</gco:CharacterString>
+                  </gmd:edition>
+                </gmd:CI_Citation>
+              </gmd:specification>
+              <gmd:explanation>
+                <gco:CharacterString>See the referenced Specification</gco:CharacterString>
+              </gmd:explanation>
+              <gmd:pass gco:nilReason="unknown" />
+            </gmd:DQ_ConformanceResult>
+          </gmd:result>
+        </gmd:DQ_DomainConsistency>
+      </gmd:report>
+      <gmd:report>
+        <gmd:DQ_DomainConsistency xsi:type="gmd:DQ_DomainConsistency_Type">
+          <gmd:result>
+            <gmd:DQ_ConformanceResult xsi:type="gmd:DQ_ConformanceResult_Type">
+              <gmd:specification>
+                <gmd:CI_Citation>
+                  <gmd:title>
+                    <gco:CharacterString>VERORDNUNG (EG) Nr. 976/2009 DER KOMMISSION vom 19. Oktober 2009 zur Durchführung der Richtlinie 2007/2/EG des Europäischen Parlaments und des Rates hinsichtlich der Netzdienste</gco:CharacterString>
+                  </gmd:title>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:Date>2009-10-20</gco:Date>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                  <gmd:edition>
+                    <gco:CharacterString>1.0</gco:CharacterString>
+                  </gmd:edition>
+                </gmd:CI_Citation>
+              </gmd:specification>
+              <gmd:explanation>
+                <gco:CharacterString>See the referenced Specification</gco:CharacterString>
+              </gmd:explanation>
+              <gmd:pass gco:nilReason="unknown" />
+            </gmd:DQ_ConformanceResult>
+          </gmd:result>
+        </gmd:DQ_DomainConsistency>
+      </gmd:report>
+      <gmd:report>
+        <gmd:DQ_DomainConsistency xsi:type="gmd:DQ_DomainConsistency_Type">
+          <gmd:result>
+            <gmd:DQ_ConformanceResult xsi:type="gmd:DQ_ConformanceResult_Type">
+              <gmd:specification>
+                <gmd:CI_Citation>
+                  <gmd:title>
+                    <gco:CharacterString>VERORDNUNG (EU) Nr. 268/2010 DER KOMMISSION vom 29. März 2010 zur Durchführung der Richtlinie 2007/2/EG des Europäischen Parlaments und des Rates in Bezug auf den Zugang der Organe und Einrichtungen der Gemeinschaft zu Geodatensätzen und -diensten der Mitgliedstaaten nach harmonisierten Bedingungen</gco:CharacterString>
+                  </gmd:title>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:Date>2010-03-30</gco:Date>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                  <gmd:edition>
+                    <gco:CharacterString>1.0</gco:CharacterString>
+                  </gmd:edition>
+                </gmd:CI_Citation>
+              </gmd:specification>
+              <gmd:explanation>
+                <gco:CharacterString>See the referenced Specification</gco:CharacterString>
+              </gmd:explanation>
+              <gmd:pass gco:nilReason="unknown" />
+            </gmd:DQ_ConformanceResult>
+          </gmd:result>
+        </gmd:DQ_DomainConsistency>
+      </gmd:report>
+      <gmd:report>
+        <gmd:DQ_AbsoluteExternalPositionalAccuracy>
+          <gmd:result>
+            <gmd:DQ_QuantitativeResult>
+              <gmd:valueType>
+                <gco:RecordType>Die Genauigkeit ist abhängig von der Genauigkeit des Liegenschaftskatasters</gco:RecordType>
+              </gmd:valueType>
+              <gmd:valueUnit>
+                <gml:UnitDefinition gml:id="einheit1_283671ef-39dc-4143-9f78-d67f754165e9">
+                  <gml:identifier codeSpace="SI">-</gml:identifier>
+                </gml:UnitDefinition>
+              </gmd:valueUnit>
+              <gmd:value>
+                <gco:Record>-</gco:Record>
+              </gmd:value>
+            </gmd:DQ_QuantitativeResult>
+          </gmd:result>
+        </gmd:DQ_AbsoluteExternalPositionalAccuracy>
+      </gmd:report>
+      <gmd:lineage>
+        <gmd:LI_Lineage>
+          <gmd:statement>
+            <gco:CharacterString>ALKIS</gco:CharacterString>
+          </gmd:statement>
+          <gmd:processStep>
+            <gmd:LI_ProcessStep>
+              <gmd:description>
+                <gco:CharacterString>Erstellung mittels geodatenverarbeitender Software</gco:CharacterString>
+              </gmd:description>
+            </gmd:LI_ProcessStep>
+          </gmd:processStep>
+        </gmd:LI_Lineage>
+      </gmd:lineage>
+    </gmd:DQ_DataQuality>
+  </gmd:dataQualityInfo>
+</gmd:MD_Metadata>
+

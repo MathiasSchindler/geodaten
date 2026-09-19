@@ -1,0 +1,9 @@
+country=Berlin
+country_code=BE
+official_state_code=11
+records=394303
+retrieved_at=2026-08-27T16:56:19Z
+blank_postcode=0
+duplicate_source_ids=0
+csv_columns=14
+sha256=88f00f0865f8faa3446a79f5fcf182f36c6e1a37e72f4d5701f43d84eb0cf661

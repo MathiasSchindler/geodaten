@@ -1,0 +1,44 @@
+{
+  "state_code": "HH",
+  "basemap_unique_normalized_addresses": 284338,
+  "state_unique_normalized_addresses_either_locality": 302404,
+  "state_unique_normalized_addresses_postal_locality": 302404,
+  "state_unique_normalized_addresses_municipality": 302404,
+  "matched_either_locality": 283442,
+  "matched_postal_locality": 283442,
+  "matched_municipality": 283442,
+  "basemap_fields": {
+    "mode": "basemap",
+    "input": "/Users/mathiasschindler/PLZ/adressen/bund/basemap/2026-08-28/work/states/HH.tsv",
+    "state_code": "HH",
+    "records": 284445,
+    "usable_primary": 284445,
+    "usable_secondary": 0,
+    "blank_street": 0,
+    "blank_house_number": 0,
+    "blank_primary_locality": 0
+  },
+  "state_fields": {
+    "mode": "state",
+    "input": "/Users/mathiasschindler/PLZ/adressen/HH/2026-08-28/adressen.csv.gz",
+    "state_code": "HH",
+    "records": 302408,
+    "usable_primary": 302408,
+    "usable_secondary": 302408,
+    "blank_street": 0,
+    "blank_house_number": 0,
+    "blank_primary_locality": 0
+  },
+  "coordinate_agreement": {
+    "matched_normalized_keys": 283442,
+    "matched_basemap_records": 283549,
+    "within_1_metre": 282893,
+    "within_5_metres": 283235,
+    "within_25_metres": 283514,
+    "within_100_metres": 283547,
+    "mean_distance_metres": 0.1580334027716469,
+    "maximum_distance_metres": 778.7914134414162
+  },
+  "basemap_match_rate_either_locality": 0.9968488207696474,
+  "state_match_rate_either_locality": 0.9372958029655692
+}

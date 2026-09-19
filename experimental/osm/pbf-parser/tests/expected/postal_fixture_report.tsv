@@ -1,0 +1,9 @@
+relation_id	postcode	postcode_source	status	detail	member_ways	outer_rings	inner_rings
+600		none	excluded	invalid_postal_code	1	0	0
+200	04109	postal_code	kept	ok	1	1	0
+100	10115	postal_code:DE	kept	ok	6	1	1
+400	20095	ref	kept	ok	1	1	0
+500	50667	postal_code	broken	unclosed_ring	2	0	0
+700	67000	postal_code	excluded	foreign_country_tag	1	0	0
+300	75001	postal_code	excluded	outside_germany	1	0	0
+800	90402	postal_code	incomplete	missing_way_member	1	0	0

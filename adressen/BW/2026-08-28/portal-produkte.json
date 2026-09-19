@@ -1,0 +1,1493 @@
+[
+  {
+    "orderId": 1,
+    "name": "OGC API Features",
+    "uuid": "oaf",
+    "active": true,
+    "shortName": "OAF",
+    "previewImagePath": "./assets/img/odp/ogc-api-features.png",
+    "previewInfoText": "Das LGL bietet Ihnen ab sofort die OGC API Features in einer Beta-Version an. Die Schnittstelle folgt dem Standard des Open Geospatial Consortium (OGC) und ermöglicht den direkten Zugriff auf räumliche Geo-Objekte im Web. Enthalten sind Daten aus ALKIS und dem Basis-DLM – stets aktuell und direkt abrufbar. Während der Testphase bietet das LGL diese API in zwei Versionen an, die mit unterschiedlichen Werkzeugen erstellt wurden (ldproxy und pygeoapi). Unter Details finden Sie weitere Informationen sowie die Möglichkeit, Feedback zu geben. Wir freuen uns auf Ihre Rückmeldungen. Viel Erfolg und Spaß beim Ausprobieren!",
+    "infoText": "Das LGL bietet Ihnen ab sofort die OGC API Features in einer Beta-Version an. Die Schnittstelle folgt dem Standard des Open Geospatial Consortium (OGC) und ermöglicht den direkten Zugriff auf räumliche Geo-Objekte im Web. Enthalten sind Daten aus ALKIS und dem Basis-DLM – stets aktuell und direkt abrufbar. Während der Testphase bietet das LGL diese API in zwei Versionen an, die mit unterschiedlichen Werkzeugen erstellt wurden (ldproxy und pygeoapi). Unter Details finden Sie weitere Informationen sowie die Möglichkeit, Feedback zu geben. Wir freuen uns auf Ihre Rückmeldungen. Viel Erfolg und Spaß beim Ausprobieren!",
+    "details": [
+      [
+        "URL aus SwaggerUI (Software zum Ausprobieren der Schnittstelle)",
+        "https://editor.swagger.io/"
+      ],
+      [
+        "URI auf API-Homepage PyGeoAPI",
+        "https://pygeoapi.io/"
+      ],
+      [
+        "URL zur Einbindung in GIS-Systeme (PyGeoAPI)",
+        "https://ogcapi.lgl-bw.de/beta/pygeoapi/"
+      ],
+      [
+        "URI auf API-Homepage LDProxy",
+        "https://docs.ldproxy.net/de/"
+      ],
+      [
+        "URL zur Einbindung in GIS-Systeme (LDProxy)",
+        "https://ogcapi.lgl-bw.de/beta/ldproxy/"
+      ],
+      [
+        "Link zur Feedback-Seite für Rückmeldungen an das LGL",
+        "https://ec.europa.eu/eusurvey/runner/Nutzung_OAF/"
+      ],
+      [
+        "Ausführliche Produktbeschreibung",
+        "https://www.lgl-bw.de/Produkte/Geodatendienste"
+      ],
+     [
+        "Download Dokumentation",
+        "https://cloud.landbw.de/index.php/s/9d8Jm5yNF3zDjQ7"
+      ]
+    ]
+  },
+  {
+    "orderId": 2,
+    "name": "ALKIS",
+    "uuid": "alkis",
+    "active": true,
+    "shortName": "ALKIS",
+    "downloadUrlMatching": {
+      "exact": false,
+      "urlPath": "/data/alkis/",
+      "details": {
+        "name": "Gemarkung",
+        "pattern": "ALKIS-oE_\\d+_([^_]+)_\\w+\\.zip"
+      },
+      "chartColor": "rgba(249, 84, 42, 0.8)"
+    },
+    "downloadSource": {
+      "tileOptions": [
+        {
+          "productVariant": "NAS",
+          "tileDownloadType": "NAS"
+        },
+        {
+          "productVariant": "Shape",
+          "tileDownloadType": "Shape"
+        }
+      ],
+      "layerLID": "gemarkungen",
+      "productConnectorKey": "ALKIS",
+      "selectionCapacity": 10
+    },
+    "previewImagePath": "./assets/img/odp/alkis.png",
+    "previewInfoText": "ALKIS® steht für das Amtliche Liegenschaftskatasterinformationssystem. Darin werden die Daten des amtlichen Liegenschaftskatasters geführt, das flächendeckend für Baden-Württemberg ca. 9 Millionen Flurstücke beinhaltet. Die Gemeindegebiete sind in Gemarkungen und diese teilweise noch in Fluren unterteilt. Die Gemarkungen und Fluren sind wiederum flächendeckend in Flurstücke unterteilt. Die Flurstücke werden im Liegenschaftskataster mit ihrer Form, Größe, örtlichen Lage und Nutzung beschrieben.  In Baden-Württemberg wird das Liegenschaftskataster von den Land- und Stadtkreisen sowie einzelnen dafür berechtigten Städten für ihr jeweiliges Gebiet geführt. Hier im Open GeoData Portal des LGL können Sie ALKIS-Daten (ohne Eigentümerangabe) gemarkungsweise herunterladen. Mögliche Datenformate sind die sog. Normbasierte Austauschschnittstelle NAS (zugrundeliegendes AAA-Anwendungsschema in der Version 7.1) und das Datenformat Shape. Für tagesaktuelle ALKIS-Bestandsdaten und amtliche Nachweise des Liegenschaftskatasters (z.B. Flurstücksnachweis, amtliche Liegenschaftskarte) wenden Sie sich bitte an das  LGL (geodaten@lgl.bwl.de).",
+    "infoText": "ALKIS® steht für das Amtliche Liegenschaftskatasterinformationssystem. Darin werden die Daten des amtlichen Liegenschaftskatasters geführt, das flächendeckend für Baden-Württemberg ca. 9 Millionen Flurstücke beinhaltet. Die Gemeindegebiete sind in Gemarkungen und diese teilweise noch in Fluren unterteilt. Die Gemarkungen und Fluren sind wiederum flächendeckend in Flurstücke unterteilt. Die Flurstücke werden im Liegenschaftskataster mit ihrer Form, Größe, örtlichen Lage und Nutzung beschrieben.  In Baden-Württemberg wird das Liegenschaftskataster von den Land- und Stadtkreisen sowie einzelnen dafür berechtigten Städten für ihr jeweiliges Gebiet geführt. Hier im Open GeoData Portal des LGL können Sie ALKIS-Daten (ohne Eigentümerangabe) gemarkungsweise herunterladen. Mögliche Datenformate sind die sog. Normbasierte Austauschschnittstelle NAS (zugrundeliegendes AAA-Anwendungsschema in der Version 7.1) und das Datenformat Shape. Für tagesaktuelle ALKIS-Bestandsdaten und amtliche Nachweise des Liegenschaftskatasters (z.B. Flurstücksnachweis, amtliche Liegenschaftskarte) wenden Sie sich bitte an das LGL (geodaten@lgl.bwl.de).",
+    "details": [
+      [
+        "Koordinatenreferenzsystem",
+        "ETRS89/UTM"
+      ],
+      [
+        "Ausführliche Produktbeschreibung",
+        "https://www.lgl-bw.de/Produkte/"
+      ],
+      [
+        "Datenformat",
+        "NAS und Shape"
+      ],
+      [
+        "Datengröße pro Gemarkung",
+        "1 bis 80 MB"
+      ],
+      [
+        "Download-Einheit",
+        "Gemarkung"
+      ],
+      [
+        "Aktualisierungszyklus",
+        "4 mal pro Jahr"
+      ]
+    ]
+  },
+  {
+    "orderId": 3,
+    "name": "Digitales Orthophoto",
+    "uuid": "dop20",
+    "active": true,
+    "shortName": "DOP 20",
+    "downloadUrlMatching": {
+      "exact": false,
+      "urlPath": "/data/dop20/",
+      "details": {
+        "name": "Kachel",
+		"pattern": "dop20rgb.{0,1}_\\d+_(\\d+_\\d+)_\\d+_bw\\.zip"
+      },
+      "chartColor": "rgba(255, 255, 0, 0.8)"
+    },
+    "downloadSource": {
+      "tileOptions": [
+        {
+          "productVariant": "RGB",
+          "tileDownloadType": "DOP20_RGB"
+        },
+        {
+          "productVariant": "RGBI",
+          "tileDownloadType": "DOP20_RGBI"
+        }
+      ],
+      "layerLID": "zwei_km_gitter",
+      "productConnectorKey": "DOP",
+      "selectionCapacity": 10
+    },
+    "previewImagePath": "./assets/img/odp/dop20.webp",
+    "previewInfoText": "Beim Digitalen Orthophoto handelt es sich um entzerrte und georeferenzierte Luftbilder. Ein Pixel im Bild entspricht in der Natur einer Größe von 20 cm x 20 cm (DOP20). Grundlage sind Luftbildaufnahmen mit digitalen Luftbildkameras, die das Landesamt für Geoinformation und Landentwicklung jährlich ca. die Hälfte der Landesfläche von Baden-Württemberg durchführt. DOP20 liegen flächendeckend in Farbe (RGB) und zusätzlich einschließlich Infrarotaufzeichnung (RGBI) vor. Die Bilddaten sind im Koordinatenreferenzsystem ETRS89/UTM georeferenziert und werden als verzerrungsfreie und maßstabsgetreue Rasterdaten photographischer Abbildungen der Erdoberfläche geliefert. DOP20 liegen als sogenanntes TrueDOP ohne perspektivische Verzerrungen oder sichttote Bereiche vor. Bei höheren Objekten, also insbesondere Gebäude, tritt kein „Umklappeffekt“ auf. Im DOP20 können Entfernungen wie in einer Karte gemessen werden. Der Datensatz kann in Kacheleinheiten von 2 km x 2 km heruntergeladen werden. Bei geodaten@lgl.bwl.de können DOP20-Daten für größere Gebiete oder in größeren Auflösungen bestellt werden, die gegen Aufwandserstattung bereitgestellt werden.",
+    "infoText": "Beim Digitalen Orthophoto handelt es sich um entzerrte und georeferenzierte Luftbilder. Ein Pixel im Bild entspricht in der Natur einer Größe von 20 cm x 20 cm (DOP20). Grundlage sind Luftbildaufnahmen mit digitalen Luftbildkameras, die das Landesamt für Geoinformation und Landentwicklung jährlich ca. die  Hälfte der Landesfläche von Baden-Württemberg durchführt. DOP20 liegen flächendeckend in Farbe (RGB) und zusätzlich einschließlich Infrarotaufzeichnung (RGBI) vor. Die Bilddaten sind im Koordinatenreferenzsystem ETRS89/UTM georeferenziert und werden als verzerrungsfreie und maßstabsgetreue Rasterdaten photographischer Abbildungen der Erdoberfläche geliefert. DOP20 liegen als sogenanntes TrueDOP ohne perspektivische Verzerrungen oder sichttote Bereiche vor. Bei höheren Objekten, also insbesondere Gebäude, tritt kein „Umklappeffekt“ auf. Im DOP20 können Entfernungen wie in einer Karte gemessen werden. Der Datensatz kann in Kacheleinheiten von 2 km x 2 km heruntergeladen werden. Bei geodaten@lgl.bwl.de können DOP20-Daten für größere Gebiete oder in größeren Auflösungen bestellt werden, die gegen Aufwandserstattung bereitgestellt werden.",
+    "details": [
+      [
+        "Koordinatenreferenzsystem",
+        "ETRS89/UTM"
+      ],
+      [
+        "Ausführliche Produktbeschreibung",
+        "https://www.lgl-bw.de/Produkte/"
+      ],
+      [
+        "Datenformat",
+        "TIFF und TFW"
+      ],
+      [
+        "Datengröße pro Kachel",
+        "280 MB (RGB), 320 MB (RGBI)"
+      ],
+      [
+        "Kachelgröße",
+        "2 km x 2 km"
+      ],
+      [
+        "Aktualisierungszyklus",
+        "1 mal pro Jahr"
+      ]
+    ]
+  },
+  {
+    "orderId": 4,
+    "name": "Digitales Geländemodell",
+    "uuid": "dgm1",
+    "active": true,
+    "shortName": "DGM1",
+    "downloadUrlMatching": {
+      "exact": false,
+      "urlPath": "/data/dgm/",
+      "details": {
+        "name": "Kachel",
+		"pattern": "dgm1_\\d+_(\\d+_\\d+)_\\d+_bw\\.zip"
+      },
+      "chartColor": "rgba(176, 172, 171, 0.8)"
+    },
+    "downloadSource": {
+      "tileOptions": [
+        {
+          "productVariant": "DGM1",
+          "tileDownloadType": "DGM1"
+        }
+      ],
+      "layerLID": "zwei_km_gitter",
+      "productConnectorKey": "DGM",
+      "selectionCapacity": 10
+    },
+    "previewImagePath": "./assets/img/odp/dgm1.webp",
+    "previewInfoText": "Das DGM1 enthält die Geländehöhen an den Pixelmitten des jeweiligen Rasterelements. Die Rasterweite beträgt landesweit 1 m x 1 m. Das DGM beschreibt die Geländeoberfläche ohne Vegetation, Bebauung, Infrastruktur- oder Verkehrsobjekte. Die Positionen der Rasterpunkte werden im Koordinatenreferenzsystem ETRS89/UTM geliefert, die Höhen im Höhensystem NHN (DHHN2016). Die Höhengenauigkeit liegt bei +/- 15cm. Grundlage für die Aktualisierung des DGM1 sind Laserscanbefliegungen, die das Landesamt für Geoinformation und Landentwicklung jährlich für ca. ein Achtel der Landesfläche mit einer Punktdichte von 8 Punkten pro m² durchführt. Im Open GeoData Portal des LGL können die Daten in Kacheleinheiten von 2 km x 2 km heruntergeladen werden. Bei geodaten@lgl.bwl.de können DGM-Daten für größere Gebiete oder in größeren Rasterweiten bestellt werden, die gegen Aufwandserstattung bereitgestellt werden.",
+    "infoText": "Das DGM1 enthält die Geländehöhen an den Pixelmitten des jeweiligen Rasterelements. Die Rasterweite beträgt landesweit 1 m x 1 m. Das DGM beschreibt die Geländeoberfläche ohne Vegetation, Bebauung, Infrastruktur- oder Verkehrsobjekte. Die Positionen der Rasterpunkte werden im Koordinatenreferenzsystem ETRS89/UTM geliefert, die Höhen im Höhensystem NHN (DHHN2016). Die Höhengenauigkeit liegt bei  +/- 15cm. Grundlage für die Aktualisierung des DGM1 sind Laserscanbefliegungen, die das Landesamt für Geoinformation und Landentwicklung jährlich für ca. ein Achtel der Landesfläche mit einer Punktdichte von 8 Punkten pro m² durchführt. Im Open GeoData Portal des LGL können die Daten  in Kacheleinheiten von 2 km x 2 km heruntergeladen werden. Bei geodaten@lgl.bwl.de können DGM-Daten für größere Gebiete oder in größeren Rasterweiten bestellt werden, die gegen Aufwandserstattung bereitgestellt werden.",
+    "details": [
+      [
+        "Koordinatenreferenzsystem",
+        "ETRS89/UTM"
+      ],
+      [
+        "Ausführliche Produktbeschreibung",
+        "https://www.lgl-bw.de/Produkte/"
+      ],
+      [
+        "Datenformat",
+        "xyz"
+      ],
+      [
+        "Datengröße pro Kachel",
+        "11 MB"
+      ],
+      [
+        "Kachelgröße",
+        "2 km x 2 km"
+      ],
+      [
+        "Aktualisierungszyklus",
+        "4 mal pro Jahr"
+      ]
+    ]
+  },
+  {
+    "orderId": 5,
+    "name": "Digitales Geländemodell",
+    "uuid": "dgm025",
+    "active": true,
+    "shortName": "DGM025",
+    "downloadUrlMatching": {
+      "exact": false,
+      "urlPath": "/data/dgm025/",
+      "details": {
+        "name": "Kachel",
+		"pattern": "dgm025_\\d+_(\\d+_\\d+)_\\d+_bw\\.zip"
+      },
+      "chartColor": "rgba(176, 172, 171, 0.8)"
+    },
+    "downloadSource": {
+      "tileOptions": [
+        {
+          "productVariant": "DGM025",
+          "tileDownloadType": "DGM025"
+        }
+      ],
+      "layerLID": "zwei_km_gitter",
+      "productConnectorKey": "DGM025",
+      "selectionCapacity": 10
+    },
+    "previewImagePath": "./assets/img/odp/dgm25.webp",
+    "previewInfoText": "Das DGM025 enthält die Geländehöhen an den Pixelmitten des jeweiligen Rasterelements. Die Rasterweite beträgt landesweit 0,25 m x 0,25 m. Das DGM beschreibt die Geländeoberfläche ohne Vegetation, Bebauung, Infrastruktur- oder Verkehrsobjekte. Die Positionen der Rasterpunkte werden im Koordinatenreferenzsystem ETRS89/UTM geliefert, die Höhen im Höhensystem NHN (DHHN2016). Die Höhengenauigkeit liegt bei 15 cm. Grundlage für die Aktualisierung des DGM025 sind Laserscanbefliegungen, die das Landesamt für Geoinformation und Landentwicklung jährlich für ca. ein Achtel der Landesfläche mit einer Punktdichte von mindestens 8 Punkten pro m² durchführt. Im Open GeoData Portal des LGL können die Daten  in Kacheleinheiten von 2 km x 2 km heruntergeladen werden. Bei geodaten@lgl.bwl.de können DGM-Daten für größere Gebiete oder in größeren Rasterweiten bestellt werden, die gegen Aufwandserstattung bereitgestellt werden.",
+    "infoText": "Das DGM025 enthält die Geländehöhen an den Pixelmitten des jeweiligen Rasterelements. Die Rasterweite beträgt landesweit 0,25 m x 0,25 m. Das DGM beschreibt die Geländeoberfläche ohne Vegetation, Bebauung, Infrastruktur- oder Verkehrsobjekte. Die Positionen der Rasterpunkte werden im Koordinatenreferenzsystem ETRS89/UTM geliefert, die Höhen im Höhensystem NHN (DHHN2016). Die Höhengenauigkeit liegt bei 15 cm. Grundlage für die Aktualisierung des DGM025 sind Laserscanbefliegungen, die das Landesamt für Geoinformation und Landentwicklung jährlich für ca. ein Achtel der Landesfläche mit einer Punktdichte von mindestens 8 Punkten pro m² durchführt. Im Open GeoData Portal des LGL können die Daten in Kacheleinheiten von 2 km x 2 km heruntergeladen werden. Bei geodaten@lgl.bwl.de können DGM-Daten für größere Gebiete oder in größeren Rasterweiten bestellt werden, die gegen Aufwandserstattung bereitgestellt werden.",
+    "details": [
+      [
+        "Koordinatenreferenzsystem",
+        "ETRS89/UTM"
+      ],
+      [
+        "Ausführliche Produktbeschreibung",
+        "https://www.lgl-bw.de/Produkte/"
+      ],
+      [
+        "Datenformat",
+        "GeoTIFF"
+      ],
+      [
+        "Datengröße pro Kachel",
+        "40 MB"
+      ],
+      [
+        "Kachelgröße",
+        "2 km x 2 km"
+      ],
+      [
+        "Aktualisierungszyklus",
+        "4 mal pro Jahr"
+      ]
+    ]
+  },
+  {
+    "orderId": 6,
+    "name": "Digitales Basislandschaftsmodell",
+    "uuid": "basisdlm",
+    "active": true,
+    "shortName": "Basis-DLM",
+    "downloadUrlMatching": {
+      "exact": true,
+      "urlPath": ["/data/bdlm/bdlm_bw_nas.zip", "/data/bdlm/bdlm_bw_shp.zip"],
+      "chartColor": "rgba(255,176,244,0.8)"
+    },
+    "downloadSource": {
+      "options": [
+        {
+          "productVariant": "NAS",
+          "downloadURL": "https://opengeodata.lgl-bw.de/data/bdlm/bdlm_bw_nas.zip",
+          "downloadAlias": "bdlm_bw_nas.zip"
+        },
+        {
+          "productVariant": "Shape",
+          "downloadURL": "https://opengeodata.lgl-bw.de/data/bdlm/bdlm_bw_shp.zip",
+          "downloadAlias": "bdlm_bw_shp.zip"
+        }
+      ]
+    },
+    "previewImagePath": "./assets/img/odp/basisdlm.webp",
+    "previewInfoText": "Im Basis-DLM sind die realen Objekte der Landschaft sowie ergänzende Informationen zu Namen und Gebieten mit punkt-, linien- und flächenförmigen Objekten vektoriell modelliert. Dabei wird die Landschaft gemäß einem Objektartenkatalog (ATKIS-OK) in Objekte strukturiert und durch Attribute (z.B. Straßennamen, Gebäudefunktionen, Vegetationsmerkmale) differenziert. Das Basis-DLM ist zweidimensional und deckt die gesamte Landesfläche lückenlos ab. Grundlage für die geometrische Erfassung der Vektordaten sind vor allem DOP20, das Liegenschaftskataster sowie georeferenzierte Pläne wie z.B. Bebauungspläne. Die Genauigkeit von wesentlichen linearen Objekten (z.B. Straßen) liegt bei +/- 3 m. Die Daten liegen im Koordinatenreferenzsystem ETRS89/UTM vor. Mit Verwendung von Regeln zur Darstellung lässt sich ein entsprechendes Kartenbild ableiten. Mit seiner großen Informationsdichte und hohen geometrischen Genauigkeit lässt sich das Basis-DLM hervorragend für raumbezogene Fachaufgaben einsetzen.  Das Basis-DLM kann hier nur landesweit heruntergeladen werden.",
+    "infoText": "Im Basis-DLM sind die realen Objekte der Landschaft sowie ergänzende Informationen zu Namen und Gebieten mit punkt-, linien- und flächenförmigen Objekten vektoriell modelliert. Dabei wird die Landschaft gemäß einem Objektartenkatalog (ATKIS-OK) in Objekte strukturiert und durch Attribute (z.B. Straßennamen, Gebäudefunktionen, Vegetationsmerkmale) differenziert. Das Basis-DLM ist zweidimensional und deckt die gesamte Landesfläche lückenlos ab. Grundlage für die geometrische Erfassung der Vektordaten sind vor allem DOP20, das Liegenschaftskataster sowie georeferenzierte Pläne wie z.B. Bebauungspläne. Die Genauigkeit von wesentlichen linearen Objekten (z.B. Straßen) liegt bei +/- 3 m. Die Daten liegen im Koordinatenreferenzsystem ETRS89/UTM vor. Mit Verwendung von Regeln zur Darstellung lässt sich ein entsprechendes Kartenbild ableiten. Mit seiner großen Informationsdichte und hohen geometrischen Genauigkeit lässt sich das Basis-DLM hervorragend für raumbezogene Fachaufgaben einsetzen.  Das Basis-DLM kann hier nur landesweit heruntergeladen werden.",
+    "details": [
+      [
+        "Koordinatenreferenzsystem",
+        "ETRS89/UTM"
+      ],
+      [
+        "Ausführliche Produktbeschreibung",
+        "https://www.lgl-bw.de/Produkte/"
+      ],
+      [
+        "Datenformat",
+        "NAS oder Shape"
+      ],
+      [
+        "Datengröße pro Kachel",
+        "1,4 GB (NAS), 1,1 GB (Shape)"
+      ],
+      [
+        "Kachelgröße",
+        "landesweit"
+      ],
+      [
+        "Aktualisierungszyklus",
+        "4 mal pro Jahr"
+      ]
+    ]
+  },
+  {
+    "orderId": 7,
+    "name": "Landnutzung",
+    "uuid": "ln",
+    "active": true,
+    "shortName": "LN",
+    "downloadUrlMatching": {
+      "exact": true,
+      "urlPath": ["data/ln/ln_bw.zip", "data/ln/ln_bw_shp.zip"]
+    },
+    "downloadSource": {
+      "options": [
+        {
+          "productVariant": "Geopackage",
+          "downloadURL": "https://opengeodata.lgl-bw.de/data/ln/ln_bw.zip",
+          "downloadAlias": "ln_bw.zip"
+        },
+        {
+          "productVariant": "Shape",
+          "downloadURL": "https://opengeodata.lgl-bw.de/data/ln/ln_bw_shp.zip",
+          "downloadAlias": "ln_bw_shp.zip"
+        }
+      ]
+    },
+    "previewImagePath": "./assets/img/odp/ln.webp",
+    "previewInfoText": "Die Landnutzung (LN) Baden-Württembergs beschreibt die Flächen des Landes anhand ihrer derzeitigen und absehbaren künftigen Funktion oder des sozioökonomischen Nutzens. Grundlage hierfür bildet ein Objektartenkatalog der Arbeitsgemeinschaft der Vermessungsverwaltungen der Länder der Bundesrepublik Deutschland (AdV), welcher die Funktionen in 22 Klassen unterteilt. Diese Klassen werden aus den Tatsächlichen Nutzungen des Amtlichen Liegenschaftskatasterinformationssystems (ALKIS) und des Amtlichen Topograpisch-Kartographischen Informationssystem abgeleitet und durch weitere amtliche Daten ergänzt. Sie stellen die flächendeckende, lückenfreie Nutzung der unmittelbaren Erdoberfläche mit einer Genauigkeit von +/- 15 m dar.",
+    "infoText": "Die Landnutzung (LN) Baden-Württembergs beschreibt die Flächen des Landes anhand ihrer derzeitigen und absehbaren künftigen Funktion oder des sozioökonomischen Nutzens. Grundlage hierfür bildet ein Objektartenkatalog der Arbeitsgemeinschaft der Vermessungsverwaltungen der Länder der Bundesrepublik Deutschland (AdV), welcher die Funktionen in 22 Klassen unterteilt. Diese Klassen werden aus den Tatsächlichen Nutzungen des Amtlichen Liegenschaftskatasterinformationssystems (ALKIS) und des Amtlichen Topograpisch-Kartographischen Informationssystem abgeleitet und durch weitere amtliche Daten ergänzt. Sie stellen die flächendeckende, lückenfreie Nutzung der unmittelbaren Erdoberfläche mit einer Genauigkeit von +/- 15 m dar.",
+    "details": [
+      [
+        "Koordinatenreferenzsystem",
+        "ETRS89/UTM"
+      ],
+      [
+        "Ausführliche Produktbeschreibung",
+        "https://www.lgl-bw.de/Produkte/"
+      ],
+      [
+        "Datenformat",
+        "Geopackage, Shape"
+      ],
+      [
+        "Datengröße pro Kachel",
+        "4,8 GB"
+      ],
+      [
+        "Kachelgröße",
+        "landesweit"
+      ],
+      [
+        "Aktualisierungszyklus",
+        "2 mal pro Jahr"
+      ]
+    ]
+  },
+  {
+    "orderId": 8,
+    "name": "Landbedeckung",
+    "uuid": "lb",
+    "active": true,
+    "shortName": "LB",
+    "downloadUrlMatching": {
+      "exact": true,
+      "urlPath": "/data/lb/lb_bw.zip"
+    },
+    "downloadSource": {
+      "options": [
+        {
+          "downloadURL": "https://opengeodata.lgl-bw.de/data/lb/lb_bw.zip",
+          "downloadAlias": "lb_bw.zip"
+        }
+      ]
+    },
+    "previewImagePath": "./assets/img/odp/lb.webp",
+    "previewInfoText": "Die Landbedeckung (LB) in Baden-Württemberg beschreibt die physische Bedeckung der Erdoberfläche. Sie umfasst sowohl natürliche Elemente wie Wasserflächen und Vegetation als auch künstliche Elemente wie Bebauung und Infrastruktur. Die Landbedeckung wird automatisiert aus Fernerkundungsdaten abgeleitet. Grundlage für die Ableitung ist das Projekt Cop4All („Copernicus für ATKIS, ALKIS und Landbedeckung“), mit dessen Hilfe aus Fernerkundungsdaten und künstlicher Intelligenz ein flächendeckender, lückenloser und überschneidungsfreier Datenbestand der Landbedeckung abgeleitet wird. Datengrundlage hierfür sind die Copernicus-Satellitendaten des europäischen Erdbeobachtungsprogramms, digitale Orthophotos, Daten aus ATKIS/ALKIS und Höhenmodelle.",
+    "infoText": "Die Landbedeckung (LB) in Baden-Württemberg beschreibt die physische Bedeckung der Erdoberfläche. Sie umfasst sowohl natürliche Elemente wie Wasserflächen und Vegetation als auch künstliche Elemente wie Bebauung und Infrastruktur. Die Landbedeckung wird automatisiert aus Fernerkundungsdaten abgeleitet. Grundlage für die Ableitung ist das Projekt Cop4All („Copernicus für ATKIS, ALKIS und Landbedeckung“), mit dessen Hilfe aus Fernerkundungsdaten und künstlicher Intelligenz ein flächendeckender, lückenloser und überschneidungsfreier Datenbestand der Landbedeckung abgeleitet wird. Datengrundlage hierfür sind die Copernicus-Satellitendaten des europäischen Erdbeobachtungsprogramms, digitale Orthophotos, Daten aus ATKIS/ALKIS und Höhenmodelle.",
+    "details": [
+      [
+        "Koordinatenreferenzsystem",
+        "ETRS89/UTM"
+      ],
+      [
+        "Ausführliche Produktbeschreibung",
+        "https://www.lgl-bw.de/Produkte/"
+      ],
+      [
+        "Datenformat",
+        "Geopackage"
+      ],
+      [
+        "Datengröße pro Kachel",
+        "40-60 GB"
+      ],
+      [
+        "Kachelgröße",
+        "landesweit"
+      ],
+      [
+        "Aktualisierungszyklus",
+        "1 mal pro Jahr"
+      ]
+    ]
+  },
+  {
+    "orderId": 9,
+    "name": "Digitale Topographische Karte 1:10 000",
+    "uuid": "dtk10",
+    "active": true,
+    "shortName": "DTK10",
+    "downloadUrlMatching": {
+      "exact": false,
+      "urlPath": "/data/dtk10/",
+      "details": {
+        "name": "Kachel",
+		"pattern": "dtk10_(\\d+_\\d+)_\\d+_bw\\.zip"
+      },
+      "chartColor": "rgba(133, 214, 10, 0.8)"
+    },
+    "downloadSource": {
+      "tileOptions": [
+        {
+          "productVariant": "DTK10",
+          "tileDownloadType": "DTK10"
+        }
+      ],
+      "layerLID": "fuenf_km_gitter",
+      "productConnectorKey": "DTK10",
+      "selectionCapacity": 10
+    },
+    "previewImagePath": "./assets/img/odp/dtk10.webp",
+    "previewInfoText": "Die DTK10 ist ein modernes Kartenwerk mit neuer, moderner Kartengrafik im Maßstab 1:10 000, das vollständig aus den Vektordaten des Digitalen Basislandschaftsmodell, der Automatisierten Liegenschaftskarte (Grundrissinformationen) und des Digitalen Geländemodells (Höhenlinien) abgeleitet wird. Die DTK10 ist im Koordinatenreferenzsystem ETRS89/UTM georeferenziert. Auf Grund des hohen Automatisierungsgrades bei der Herstellung kann das Kartenwerk laufend fortgeführt werden. Im Open GeoData Portal des LGL können die Daten in Kacheleinheiten von 5 km x 5 km in einem Farbkombinationsbild und in getrennten Ebenen (z. B. Grundriss, Schrift, Gewässer, Vegetation usw.) heruntergeladen werden. Die Ebene mit der Farbkombination liefert das Bild der vollständigen Karte und wird jeweils durch die Datei mit der Bezeichnung '_col.tif' am Dateiende transportiert. Die (tages-)aktuelle DTK10 kann bei geodaten@lgl.bwl.de gegen Aufwandserstattung angefordert werden.",
+    "infoText": "Die DTK10 ist ein modernes Kartenwerk mit neuer, moderner Kartengrafik im Maßstab 1:10 000, das vollständig aus den Vektordaten des Digitalen Basislandschaftsmodell, der Automatisierten Liegenschaftskarte (Grundrissinformationen) und des Digitalen Geländemodells (Höhenlinien) abgeleitet wird. Die DTK10 ist im Koordinatenreferenzsystem ETRS89/UTM georeferenziert. Auf Grund des hohen Automatisierungsgrades bei der Herstellung kann das Kartenwerk laufend fortgeführt werden. Im Open GeoData Portal des LGL können die Daten in Kacheleinheiten von 5 km x 5 km in einem Farbkombinationsbild und in getrennten Ebenen (z. B. Grundriss, Schrift, Gewässer, Vegetation usw.) heruntergeladen werden. Die Ebene mit der Farbkombination liefert das Bild der vollständigen Karte und wird jeweils durch die Datei mit der Bezeichnung '_col.tif' am Dateiende transportiert. Die (tages-)aktuelle DTK10 kann bei geodaten@lgl.bwl.de gegen Aufwandserstattung angefordert werden.",
+    "details": [
+      [
+        "Koordinatenreferenzsystem",
+        "ETRS89/UTM"
+      ],
+      [
+        "Ausführliche Produktbeschreibung",
+        "https://www.lgl-bw.de/Produkte/"
+      ],
+      [
+        "Datenformat",
+        "GeoTIFF und TFW"
+      ],
+      [
+        "Datengröße pro Kachel",
+        "10 MB"
+      ],
+      [
+        "Kachelgröße",
+        "5 km x 5 km"
+      ],
+      [
+        "Aktualisierungszyklus",
+        "4 mal pro Jahr"
+      ]
+    ]
+  },
+  {
+    "orderId": 10,
+    "name": "Digitale Topographische Karte 1:25 000",
+    "uuid": "dtk25",
+    "active": true,
+    "shortName": "DTK25",
+    "downloadUrlMatching": {
+      "exact": false,
+      "urlPath": "/data/dtk25/",
+      "details": {
+        "name": "Kachel",
+		"pattern": "dtk25_(\\d+_\\d+)_\\d+_bw\\.zip"
+      },
+      "chartColor": "rgba(77, 127, 10, 0.8)"
+    },
+    "downloadSource": {
+      "tileOptions": [
+        {
+          "productVariant": "DTK25",
+          "tileDownloadType": "DTK25"
+        }
+      ],
+      "layerLID": "fuenf_km_gitter",
+      "productConnectorKey": "DTK25",
+      "selectionCapacity": 10
+    },
+    "previewImagePath": "./assets/img/odp/dtk25.webp",
+    "previewInfoText": "Die DTK25 ist die Digitale Topographische Karte im Rasterdatenformat im Maßstab 1:25 000. Jedes Pixel ist im Koordinatenreferenzsystem ETRS89/UTM georeferenziert. Die Karte enthält eine genaue und vollständige Darstellung der Objekte auf der Erdoberfläche und wird nach bundesweit einheitlichen Gestaltungsrichtlinien hergestellt. Die DTK25 enthält Informationen zu Siedlungen, Verkehr, Gewässer, Vegetation und eine Höhendarstellung in Form von Höhenlinien. Durch Schriftzusätze wie Siedlungs-, Wald-, Landschafts- und Gewannnamen wird die Darstellung näher erläutert. Grundlage für die Aktualisierung der DTK25 ist das Digitale Basislandschaftsmodell und die Gebäude aus dem Liegenschaftskataster. Im Open GeoData Portal des LGL können die Daten in Kacheleinheiten von 5 km x 5 km in einem Farbkombinationsbild und in getrennten Ebenen (z. B. Grundriss, Schrift, Gewässer, Vegetation usw.) heruntergeladen werden. Die Ebene mit der Farbkombination liefert das Bild der vollständigen Karte und wird jeweils durch die Datei mit der Bezeichnung '_col.tif' am Dateiende transportiert.",
+    "infoText": "Die DTK25 ist die Digitale Topographische Karte im Rasterdatenformat im Maßstab 1:25 000. Jedes Pixel ist im Koordinatenreferenzsystem ETRS89/UTM georeferenziert. Die Karte enthält eine genaue und vollständige Darstellung der Objekte auf der Erdoberfläche und wird nach bundesweit einheitlichen Gestaltungsrichtlinien hergestellt. Die DTK25 enthält Informationen zu Siedlungen, Verkehr, Gewässer, Vegetation und eine Höhendarstellung in Form von Höhenlinien. Durch Schriftzusätze wie Siedlungs-, Wald-, Landschafts- und Gewannnamen wird die Darstellung näher erläutert. Grundlage für die Aktualisierung der DTK25 ist das Digitale Basislandschaftsmodell und die Gebäude aus dem Liegenschaftskataster. Im Open GeoData Portal des LGL können die Daten  in Kacheleinheiten von 5 km x 5 km in einem Farbkombinationsbild und in getrennten Ebenen (z. B. Grundriss, Schrift, Gewässer, Vegetation usw.) heruntergeladen werden. Die Ebene mit der Farbkombination liefert das Bild der vollständigen Karte und wird jeweils durch die Datei mit der Bezeichnung '_col.tif' am Dateiende transportiert.",
+    "details": [
+      [
+        "Koordinatenreferenzsystem",
+        "ETRS89/UTM"
+      ],
+      [
+        "Ausführliche Produktbeschreibung",
+        "https://www.lgl-bw.de/Produkte/"
+      ],
+      [
+        "Datenformat",
+        "GeoTIFF und TFW"
+      ],
+      [
+        "Datengröße pro Kachel",
+        "2,6 MB"
+      ],
+      [
+        "Kachelgröße",
+        "5 km x 5 km"
+      ],
+      [
+        "Aktualisierungszyklus",
+        "2 mal pro Jahr"
+      ]
+    ]
+  },
+  {
+    "orderId": 11,
+    "name": "Digitale Topographische Karte 1:50 000",
+    "uuid": "dtk50",
+    "active": true,
+    "shortName": "DTK50",
+    "downloadUrlMatching": {
+      "exact": false,
+      "urlPath": "/data/dtk50/",
+      "details": {
+        "name": "Kachel",
+		"pattern": "dtk50_(\\d+_\\d+)_\\d+_bw\\.zip"
+      },
+      "chartColor": "rgba(42, 38, 35, 0.8)"
+    },
+    "downloadSource": {
+      "tileOptions": [
+        {
+          "productVariant": "DTK50",
+          "tileDownloadType": "DTK50"
+        }
+      ],
+      "layerLID": "fuenf_km_gitter",
+      "productConnectorKey": "DTK50",
+      "selectionCapacity": 10
+    },
+    "previewImagePath": "./assets/img/odp/dtk50.webp",
+    "previewInfoText": "Die DTK50 ist die Topographische Karte im Maßstab 1:50 000. Die Rasterdaten sind im Koordinatenreferenzsystem ETRS89/UTM georeferenziert. Die Karte enthält eine Darstellung der Objekte auf der Erdoberfläche und wird nach bundesweit einheitlichen Gestaltungsrichtlinien hergestellt. Die DTK50 enthält Informationen zu Siedlungen, Verkehr, Gewässer, Vegetation und eine Höhendarstellung in Form von Höhenlinien. Durch Schriftzusätze wie Siedlungs-, Wald-, Landschafts- und Gewannnamen wird die Darstellung näher erläutert. Im Vergleich zur DTK25 müssen die Darstellungen dichter zusammengedrängt werden. Deshalb können manche Objekte nicht dargestellt werden oder müssen in der Position leicht verschoben werden (so genannte kartographische Generalisierung). Ebenso müssen die Beschriftungen anders positioniert werden. Grundlage für die Aktualisierung der DTK50 ist das Digitale Basislandschaftsmodell und die Gebäude aus dem Liegenschaftskataster. Im Open GeoData Portal des LGL können die Daten in Kacheleinheiten von 5 km x 5 km in einem Farbkombinationsbild und in getrennten Ebenen (z. B. Grundriss, Schrift, Gewässer, Vegetation usw.) heruntergeladen werden. Die Ebene mit der Farbkombination liefert das Bild der vollständigen Karte und wird jeweils durch die Datei mit der Bezeichnung '_col.tif' am Dateiende transportiert.",
+    "infoText": "Die DTK50 ist die Topographische Karte im Maßstab 1:50 000. Die Rasterdaten sind im Koordinatenreferenzsystem ETRS89/UTM georeferenziert. Die Karte enthält eine Darstellung der Objekte auf der Erdoberfläche und wird nach bundesweit einheitlichen Gestaltungsrichtlinien hergestellt. Die DTK50 enthält Informationen zu Siedlungen, Verkehr, Gewässer, Vegetation und eine Höhendarstellung in Form von Höhenlinien. Durch Schriftzusätze wie Siedlungs-, Wald-, Landschafts- und Gewannnamen wird die Darstellung näher erläutert. Im Vergleich zur DTK25 müssen die Darstellungen dichter zusammengedrängt werden. Deshalb können manche Objekte nicht dargestellt werden oder müssen in der Position leicht verschoben werden (so genannte kartographische Generalisierung). Ebenso müssen die Beschriftungen anders positioniert werden. Grundlage für die Aktualisierung der DTK50 ist das Digitale Basislandschaftsmodell und die Gebäude aus dem Liegenschaftskataster. Im Open GeoData Portal des LGL können die Daten in Kacheleinheiten von 5 km x 5 km in einem Farbkombinationsbild und in getrennten Ebenen (z. B. Grundriss, Schrift, Gewässer, Vegetation usw.) heruntergeladen werden. Die Ebene mit der Farbkombination liefert das Bild der vollständigen Karte und wird jeweils durch die Datei mit der Bezeichnung '_col.tif' am Dateiende transportiert.",
+    "details": [
+      [
+        "Koordinatenreferenzsystem",
+        "ETRS89/UTM"
+      ],
+      [
+        "Ausführliche Produktbeschreibung",
+        "https://www.lgl-bw.de/Produkte/"
+      ],
+      [
+        "Datenformat",
+        "GeoTIFF und TFW"
+      ],
+      [
+        "Datengröße pro Kachel",
+        "0,9 MB"
+      ],
+      [
+        "Kachelgröße",
+        "5 km x 5 km"
+      ],
+      [
+        "Aktualisierungszyklus",
+        "2 mal pro Jahr"
+      ]
+    ]
+  },
+  {
+    "orderId": 12,
+    "name": "Digitale Topographische Karte 1:100 000",
+    "uuid": "dtk100",
+    "active": true,
+    "shortName": "DTK100",
+    "downloadUrlMatching": {
+      "exact": false,
+      "urlPath": "/data/dtk100/",
+      "details": {
+        "name": "Kachel",
+		"pattern": "dtk100_(\\d+_\\d+)_\\d+_bw\\.zip"
+      },
+      "chartColor": "rgba(17, 106, 141, 0.8)"
+    },
+    "downloadSource": {
+      "tileOptions": [
+        {
+          "productVariant": "DTK100",
+          "tileDownloadType": "DTK100"
+        }
+      ],
+      "layerLID": "fuenf_km_gitter",
+      "productConnectorKey": "DTK100",
+      "selectionCapacity": 10
+    },
+    "previewImagePath": "./assets/img/odp/dtk100.webp",
+    "previewInfoText": "Die DTK100 ist die Topographische Karte im Maßstab 1:100 000. Die Rasterdaten sind im Koordinatenreferenzsystem ETRS89/UTM georeferenziert. Die Karte enthält eine Darstellung der Objekte auf der Erdoberfläche und wird nach bundesweit einheitlichen Gestaltungsrichtlinien hergestellt. Die DTK100 enthält Informationen zu Siedlungen, Verkehr, Gewässer, Vegetation und eine Höhendarstellung in Form von Höhenlinien. Durch Schriftzusätze wie Siedlungs-, Wald-, Landschafts- und Gewannnamen wird die Darstellung näher erläutert. Im Vergleich zu DTK25 und DTK50 müssen die Darstellungen wesentlich dichter zusammengedrängt werden. Deshalb können manche Objekte nicht dargestellt werden oder müssen in der Position leicht verschoben werden (so genannte kartographische Generalisierung). Ebenso müssen die Beschriftungen anders positioniert werden. Da im Maßstab 1:100 000 topographische Objekte nur noch stark generalisiert wiedergegeben werden können, tritt die Detailgenauigkeit gegenüber der Übersichtlichkeit weitgehend in den Hintergrund. Im Open GeoData Portal des LGL können die Daten in Kacheleinheiten von 5 km x 5 km in einem Farbkombinationsbild und in getrennten Ebenen (z. B. Grundriss, Schrift, Gewässer, Vegetation usw.) heruntergeladen werden. Die Ebene mit der Farbkombination liefert das Bild der vollständigen Karte und wird jeweils durch die Datei mit der Bezeichnung '_col.tif' am Dateiende transportiert.",
+    "infoText": "Die DTK100 ist die Topographische Karte im Maßstab 1:100 000. Die Rasterdaten sind im Koordinatenreferenzsystem ETRS89/UTM georeferenziert. Die Karte enthält eine Darstellung der Objekte auf der Erdoberfläche und wird nach bundesweit einheitlichen Gestaltungsrichtlinien hergestellt. Die DTK100 enthält Informationen zu Siedlungen, Verkehr, Gewässer, Vegetation und eine Höhendarstellung in Form von Höhenlinien. Durch Schriftzusätze wie Siedlungs-, Wald-, Landschafts- und Gewannnamen wird die Darstellung näher erläutert. Im Vergleich zu DTK25 und DTK50 müssen die Darstellungen wesentlich dichter zusammengedrängt werden. Deshalb können manche Objekte nicht dargestellt werden oder müssen in der Position leicht verschoben werden (so genannte kartographische Generalisierung). Ebenso müssen die Beschriftungen anders positioniert werden. Da im Maßstab 1:100 000 topographische Objekte nur noch stark generalisiert wiedergegeben werden können, tritt die Detailgenauigkeit gegenüber der Übersichtlichkeit weitgehend in den Hintergrund. Im Open GeoData Portal des LGL können die Daten in Kacheleinheiten von 5 km x 5 km in einem Farbkombinationsbild und in getrennten Ebenen (z. B. Grundriss, Schrift, Gewässer, Vegetation usw.) heruntergeladen werden. Die Ebene mit der Farbkombination liefert das Bild der vollständigen Karte und wird jeweils durch die Datei mit der Bezeichnung '_col.tif' am Dateiende transportiert.",
+    "details": [
+      [
+        "Koordinatenreferenzsystem",
+        "ETRS89/UTM"
+      ],
+      [
+        "Ausführliche Produktbeschreibung",
+        "https://www.lgl-bw.de/Produkte/"
+      ],
+      [
+        "Datenformat",
+        "GeoTIFF und TFW"
+      ],
+      [
+        "Datengröße pro Kachel",
+        "0,3 MB"
+      ],
+      [
+        "Kachelgröße",
+        "5 km x 5 km"
+      ],
+      [
+        "Aktualisierungszyklus",
+        "2 mal pro Jahr"
+      ]
+    ]
+  },
+  {
+    "orderId": 13,
+    "name": "Digitale Topographische Karte 1:100 000 landesweit",
+    "uuid": "dtk100bw",
+    "active": true,
+    "shortName": "DTK100 BW",
+    "downloadUrlMatching": {
+      "exact": true,
+      "urlPath": "/data/dtk100_bw_col/dtk100_bw.zip"
+    },
+    "downloadSource": {
+      "options": [
+        {
+          "downloadURL": "https://opengeodata.lgl-bw.de/data/dtk100_bw_col/dtk100_bw.zip",
+          "downloadAlias": "dtk100_bw.zip"
+        }
+      ]
+    },
+    "previewImagePath": "./assets/img/odp/dtk100bw.webp",
+    "previewInfoText": "Die DTK100 BW ist die Topographische Karte im Maßstab 1:100 000 und steht hier als ein landesweites Farbkombinationsbild (ungekachelt, keine Einzelebenen) zur Verfügung. Die Rasterdaten sind im Koordinatenreferenzsystem ETRS89/UTM georeferenziert. Die DTK100 enthält Informationen zu Siedlungen, Verkehr, Gewässer, Vegetation und eine Höhendarstellung in Form von Höhenlinien. Durch Schriftzusätze wie Siedlungs-, Wald-, Landschafts- und Gewannnamen wird die Darstellung näher erläutert. Da im Maßstab 1:100 000 topographische Objekte nur noch stark generalisiert wiedergegeben werden können, tritt die Detailgenauigkeit gegenüber der Übersichtlichkeit weitgehend in den Hintergrund. Die DTK100 wird jährlich für ein Fünftel der Landesfläche neu abgeleitet.",
+    "infoText": "Die DTK100 BW ist die Topographische Karte im Maßstab 1:100 000 und steht hier als ein landesweites Farbkombinationsbild (ungekachelt, keine Einzelebenen) zur Verfügung. Die Rasterdaten sind im Koordinatenreferenzsystem ETRS89/UTM georeferenziert. Die DTK100 enthält Informationen zu Siedlungen, Verkehr, Gewässer, Vegetation und eine Höhendarstellung in Form von Höhenlinien. Durch Schriftzusätze wie Siedlungs-, Wald-, Landschafts- und Gewannnamen wird die Darstellung näher erläutert. Da im Maßstab 1:100 000 topographische Objekte nur noch stark generalisiert wiedergegeben werden können, tritt die Detailgenauigkeit gegenüber der Übersichtlichkeit weitgehend in den Hintergrund. Die DTK100 wird jährlich für ein Fünftel der Landesfläche neu abgeleitet.",
+    "details": [
+      [
+        "Koordinatenreferenzsystem",
+        "ETRS89/UTM"
+      ],
+      [
+        "Ausführliche Produktbeschreibung",
+        "https://www.lgl-bw.de/Produkte/"
+      ],
+      [
+        "Datenformat",
+        "GeoTIFF und TFW"
+      ],
+      [
+        "Datengröße pro Kachel",
+        "180 MB"
+      ],
+      [
+        "Kachelgröße",
+        "landesweit"
+      ],
+      [
+        "Aktualisierungszyklus",
+        "2 mal pro Jahr"
+      ]
+    ]
+  },
+  {
+    "orderId": 14,
+    "name": "3D-Gebäudemodell",
+    "uuid": "lod2",
+    "active": true,
+    "shortName": "LoD2",
+    "downloadUrlMatching": {
+      "exact": false,
+      "urlPath": "/data/lod2/",
+      "details": {
+        "name": "Kachel",
+		"pattern": "LoD2_\\d+_(\\d+_\\d+)_\\d+_bw\\.zip"
+      },
+      "chartColor": "rgba(8, 170, 213, 0.8)"
+    },
+    "downloadSource": {
+      "tileOptions": [
+        {
+          "productVariant": "LoD2",
+          "tileDownloadType": "LoD2"
+        }
+      ],
+      "layerLID": "zwei_km_gitter",
+      "productConnectorKey": "LoD2",
+      "selectionCapacity": 10
+    },
+    "previewImagePath": "./assets/img/odp/lod2.png",
+    "previewInfoText": "Digitale 3D-Gebäudemodelle sind numerische, computerlesbare Datenbestände, welche die Form eines Gebäudes beschreiben und zusätzliche geometrische und fachliche Attribute enthalten. Entsprechend des Detaillierungsgrades sind die 3D-Gebäudemodelle in verschiedene Kategorien (LoD = level of detail) eingeteilt. Es wird in LoD1 (Klötzchenmodell) und das hier bereitgestellte LoD2 (mit standardisierten Dachformen) unterschieden. Die 3D-Gebäudemodelle werden aus den Gebäudegrundrissen (Hausumringe) aus ALKIS, den 3D-Punktwolken aus Laserscanbefliegungen und digitalen stereoskopischen Luftbildern sowie aus dem aktuellem DGM1 gewonnen.  Die LoD2-Daten werden hier im Format  CityGML in 2 km x 2 km-Kacheln bereitgestellt.  Andere Datenformate (3D-PDF, 3D-DXF, KML, 3D-SHP, SketchUP) können beim Landesamt für Geoinformation und Landentwicklung gegen Aufwandserstattung bestellt werden.",
+    "infoText": "Digitale 3D-Gebäudemodelle sind numerische, computerlesbare Datenbestände, welche die Form eines Gebäudes beschreiben und zusätzliche geometrische und fachliche Attribute enthalten. Entsprechend des Detaillierungsgrades sind die 3D-Gebäudemodelle in verschiedene Kategorien (LoD = level of detail) eingeteilt. Es wird in LoD1 (Klötzchenmodell) und das hier bereitgestellte LoD2 (mit standardisierten Dachformen) unterschieden. Die 3D-Gebäudemodelle werden aus den Gebäudegrundrissen (Hausumringe) aus ALKIS, den 3D-Punktwolken aus Laserscanbefliegungen und digitalen stereoskopischen Luftbildern sowie aus dem aktuellem DGM1 gewonnen.  Die LoD2-Daten werden hier im Format CityGML in 2 km x 2 km-Kacheln bereitgestellt. Andere Datenformate (3D-PDF, 3D-DXF, KML, 3D-SHP, SketchUP) können beim Landesamt für Geoinformation und Landentwicklung gegen Aufwandserstattung bestellt werden.",
+    "details": [
+      [
+        "Datenführendes Projekt",
+        "https://www.lgl-bw.de/unsere-themen/Geoinformation/Digitalisierungsstrategie/Smart-Villages/Ihre-Gemeinde-Ihre-Ideen/"
+      ],
+      [
+        "Koordinatenreferenzsystem",
+        "ETRS89/UTM"
+      ],
+      [
+        "Ausführliche Produktbeschreibung",
+        "https://www.lgl-bw.de/Produkte/"
+      ],
+      [
+        "Datenformat",
+        "CityGML"
+      ],
+      [
+        "Datengröße pro Kachel",
+        "1 bis 12 MB"
+      ],
+      [
+        "Kachelgröße",
+        "2 km x 2 km"
+      ],
+      [
+        "Aktualisierungszyklus",
+        "1 mal pro Jahr"
+      ]
+    ]
+  },
+  {
+    "orderId": 15,
+    "name": "3D-Gebäudemodell",
+    "uuid": "lod1",
+    "active": true,
+    "shortName": "LoD1",
+    "downloadUrlMatching": {
+      "exact": false,
+      "urlPath": "/data/lod1/",
+      "details": {
+        "name": "Kachel",
+		"pattern": "LoD1_\\d+_(\\d+_\\d+)_\\d+_bw\\.zip"
+      },
+      "chartColor": "rgba(8, 170, 213, 0.8)"
+    },
+    "downloadSource": {
+      "tileOptions": [
+        {
+          "productVariant": "LoD1",
+          "tileDownloadType": "LoD1"
+        }
+      ],
+      "layerLID": "zwei_km_gitter",
+      "productConnectorKey": "LoD1",
+      "selectionCapacity": 10
+    },
+    "previewImagePath": "./assets/img/odp/lod1.webp",
+    "previewInfoText": "Digitale 3D-Gebäudemodelle sind numerische, computerlesbare Datenbestände, welche die Form eines Gebäudes beschreiben und zusätzliche geometrische und fachliche Attribute enthalten. Entsprechend des Detaillierungsgrades sind die 3D-Gebäudemodelle in verschiedene Kategorien (LoD = level of detail) eingeteilt. Es wird in LoD2 (mit standardisierten Dachformen) und das hier bereitgestellte LoD1 („Klötzchenmodell“) unterschieden. Die 3D-Gebäudemodelle werden aus den Gebäudegrundrissen (Hausumringe) aus ALKIS, den 3D-Punktwolken aus Laserscanbefliegungen, digitalen stereoskopischen Luftbildern sowie aus dem aktuellem DGM1 gewonnen. Für die Höhe des LoD1-Objektes wird die mittlere Dachhöhe verwendet. Die LoD1-Daten werden hier im Format CityGML in 2 km x 2 km-Kacheln bereitgestellt. Andere Datenformate (3D-PDF, 3D-DXF, KML, 3D-SHP, SketchUP) können beim Landesamt für Geoinformation und Landentwicklung gegen Aufwandserstattung bestellt werden.",
+    "infoText": "Digitale 3D-Gebäudemodelle sind numerische, computerlesbare Datenbestände, welche die Form eines Gebäudes beschreiben und zusätzliche geometrische und fachliche Attribute enthalten. Entsprechend des Detaillierungsgrades sind die 3D-Gebäudemodelle in verschiedene Kategorien (LoD = level of detail) eingeteilt. Es wird in LoD2 (mit standardisierten Dachformen) und das hier bereitgestellte LoD1 („Klötzchenmodell“) unterschieden. Die 3D-Gebäudemodelle werden aus den Gebäudegrundrissen (Hausumringe) aus ALKIS, den 3D-Punktwolken aus Laserscanbefliegungen, digitalen stereoskopischen Luftbildern sowie aus dem aktuellem DGM1 gewonnen. Für die Höhe des LoD1-Objektes wird die mittlere Dachhöhe verwendet. Die LoD1-Daten werden hier im Format CityGML in 2 km x 2 km-Kacheln bereitgestellt. Andere Datenformate (3D-PDF, 3D-DXF, KML, 3D-SHP, SketchUP) können beim Landesamt für Geoinformation und Landentwicklung gegen Aufwandserstattung bestellt werden.",
+    "details": [
+      [
+        "Datenführendes Projekt",
+        "https://www.lgl-bw.de/unsere-themen/Geoinformation/Digitalisierungsstrategie/Smart-Villages/Ihre-Gemeinde-Ihre-Ideen/"
+      ],
+      [
+        "Koordinatenreferenzsystem",
+        "ETRS89/UTM"
+      ],
+      [
+        "Ausführliche Produktbeschreibung",
+        "https://www.lgl-bw.de/Produkte/"
+      ],
+      [
+        "Datenformat",
+        "CityGML"
+      ],
+      [
+        "Datengröße pro Kachel",
+        "1 bis 12 MB"
+      ],
+      [
+        "Kachelgröße",
+        "2 km x 2 km"
+      ],
+      [
+        "Aktualisierungszyklus",
+        "1 mal pro Jahr"
+      ]
+    ]
+  },
+  {
+    "orderId": 16,
+    "name": "Normalisiertes Oberflächenmodell",
+    "uuid": "ndom1",
+    "active": true,
+    "shortName": "nDOM1",
+    "downloadUrlMatching": {
+      "exact": false,
+      "urlPath": "/data/ndom1/",
+      "details": {
+        "name": "Kachel",
+		"pattern": "ndom1_\\d+_(\\d+_\\d+)_\\d+_bw\\.zip"
+      },
+      "chartColor": "rgba(106,102,102,0.8)"
+    },
+    "downloadSource": {
+      "tileOptions": [
+        {
+          "productVariant": "nDOM1",
+          "tileDownloadType": "nDOM1"
+        }
+      ],
+      "layerLID": "zwei_km_gitter",
+      "productConnectorKey": "nDOM",
+      "selectionCapacity": 10
+    },
+    "previewImagePath": "./assets/img/odp/ndom1.webp",
+    "previewInfoText": "Das normalisierte Digitale Oberflächenmodell (nDOM) beinhaltet die Höhen aller Objekte über dem Boden, wie z.B. Gebäude und Vegetation.Das nDOM wird in Baden-Württemberg aus der Differenz von bildbasiertem Digitalen Oberflächenmodell (bDOM) und Digitalem Geländemodell (DGM) berechnet. Es bildet somit die relative Höhe der Objekte über dem Boden ab und liefert keine Information über den Reliefverlauf des Geländes: bDOM – DGM = nDOM. Die Aktualität und die Höhengenauigkeit der zur Ableitung verwendeten Modelle ist durch deren Entstehung unterschiedlich. Das DGM aus Airborne Laserscanning wird ca. alle 8 Jahre aktualisiert, wohingegen das bDOM aus den belaubten Bildflügen im zweijährigen Turnus abgeleitet wird. Die Aktualität des nDOM richtet sich nach der Luftbildbefliegung und wird dementsprechend alle zwei Jahre neu berechnet. Auch die Höhengenauigkeit der beiden Ausgangsdatensätze unterscheidet sich grundlegend. Das DGM hat eine Genauigkeit von +/- 15cm, wohingegen die Höhe des bDOM nur auf +/- 40-60 cm genau festgelegt werden kann. Somit richtet sich die Höhengenauigkeit des nDOM nach der des bDOM. Damit ergeben sich folgende Kernmerkmale: Rasterweite: 1m, Höhengenauigkeit: 40-60 cm. Das nDOM von Baden-Württemberg beinhaltet Höhen zwischen -1m und 55m. Anwendungsfälle: Forstwirtschaft (z.B. Analyse der Waldstruktur und die Ableitung von Informationen wie Vegetationshöhe), Umweltanalysen, Stadtplanung, Katastrophenmanagement.",
+    "infoText": "Das normalisierte Digitale Oberflächenmodell (nDOM) beinhaltet die Höhen aller Objekte über dem Boden, wie z.B. Gebäude und Vegetation.Das nDOM wird in Baden-Württemberg aus der Differenz von bildbasiertem Digitalen Oberflächenmodell (bDOM) und Digitalem Geländemodell (DGM) berechnet. Es bildet somit die relative Höhe der Objekte über dem Boden ab und liefert keine Information über den Reliefverlauf des Geländes: bDOM – DGM = nDOM. Die Aktualität und die Höhengenauigkeit der zur Ableitung verwendeten Modelle ist durch deren Entstehung unterschiedlich. Das DGM aus Airborne Laserscanning wird ca. alle 8 Jahre aktualisiert, wohingegen das bDOM aus den belaubten Bildflügen im zweijährigen Turnus abgeleitet wird. Die Aktualität des nDOM richtet sich nach der Luftbildbefliegung und wird dementsprechend alle zwei Jahre neu berechnet. Auch die Höhengenauigkeit der beiden Ausgangsdatensätze unterscheidet sich grundlegend. Das DGM hat eine Genauigkeit von +/- 15cm, wohingegen die Höhe des bDOM nur auf +/- 40-60 cm genau festgelegt werden kann. Somit richtet sich die Höhengenauigkeit des nDOM nach der des bDOM. Damit ergeben sich folgende Kernmerkmale: Rasterweite: 1m, Höhengenauigkeit: 40-60 cm. Das nDOM von Baden-Württemberg beinhaltet Höhen zwischen -1m und 55m. Anwendungsfälle: Forstwirtschaft (z.B. Analyse der Waldstruktur und die Ableitung von Informationen wie Vegetationshöhe), Umweltanalysen, Stadtplanung, Katastrophenmanagement.",
+    "details": [
+      [
+        "Koordinatenreferenzsystem",
+        "ETRS89/UTM"
+      ],
+      [
+        "Ausführliche Produktbeschreibung",
+        "https://www.lgl-bw.de/Produkte/"
+      ],
+      [
+        "Datenformat",
+        "GeoTIFF"
+      ],
+      [
+        "Datengröße pro Kachel",
+        "1 bis 4 MB"
+      ],
+      [
+        "Kachelgröße",
+        "2 km x 2 km"
+      ],
+      [
+        "Aktualisierungszyklus",
+        "4 mal pro Jahr"
+      ]
+    ]
+  },
+  {
+    "orderId": 17,
+    "name": "Digitales Oberflächenmodell",
+    "uuid": "dom1",
+    "active": true,
+    "shortName": "DOM1",
+    "downloadUrlMatching": {
+      "exact": false,
+      "urlPath": "/data/dom1/",
+      "details": {
+        "name": "Kachel",
+		"pattern": "dom1_\\d+_(\\d+_\\d+)_\\d+_bw\\.zip"
+      },
+      "chartColor": "rgba(106,102,102,0.8)"
+    },
+    "downloadSource": {
+      "tileOptions": [
+        {
+          "productVariant": "DOM1",
+          "tileDownloadType": "DOM1"
+        }
+      ],
+      "layerLID": "zwei_km_gitter",
+      "productConnectorKey": "DOM1",
+      "selectionCapacity": 10
+    },
+    "previewImagePath": "./assets/img/odp/dom1.webp",
+    "previewInfoText": "Das DOM1 enthält die Gelände- oder Objekthöhen an den Pixelmitten des jeweiligen Rasterelements. Die Rasterweite beträgt landesweit 1 m x 1 m.  Das DOM beschreibt die  Geländeoberfläche und die darauf befindlichen Objekte wie z.B. Vegetation und Bauwerke. Sie bilden die Situation zum Zeitpunkt der Erfassung ab. Die Positionen der Rasterpunkte werden im Koordinatenreferenzsystem ETRS89/UTM geliefert, die Höhen im Höhensystem NHN (DHHN2016). Grundlage für die Aktualisierung des DOM1 sind Laserscanbefliegungen in unbelaubtem Zustand, die das Landesamt für Geoinformation und Landentwicklung jährlich für ca. ein Achtel der  Landesfläche mit einer Punktdichte von mindestens 8 Punkten pro m² durchführt. Die Höhengenauigkeit liegt bei 15 cm. Sie bezieht sich auf feste ausreichend große Oberflächen ohne Bewuchs. Bei Bewuchs und hohen schmalen Objekten können größere Abweichungen vorhanden sein. Das DOM wird aus den höchsten Punkten der Laserscanaufnahme abgeleitet. Im Open GeoData Portal des LGL können die Daten in Kacheleinheiten von 2 km x 2 km heruntergeladen werden. Größere zusammenhängende Gebiete stellt das Landesamt für Geoinformation und Landentwicklung gegen Aufwandserstattung bereit (geodaten@lgl.bwl.de).",
+    "infoText": "Das DOM1 enthält die Gelände- oder Objekthöhen an den Pixelmitten des jeweiligen Rasterelements. Die Rasterweite beträgt landesweit 1 m x 1 m.  Das DOM beschreibt die  Geländeoberfläche und die darauf befindlichen Objekte wie z.B. Vegetation und Bauwerke. Sie bilden die Situation zum Zeitpunkt der Erfassung ab. Die Positionen der Rasterpunkte werden im Koordinatenreferenzsystem ETRS89/UTM geliefert, die Höhen im Höhensystem NHN (DHHN2016). Grundlage für die Aktualisierung des DOM1 sind Laserscanbefliegungen in unbelaubtem Zustand, die das Landesamt für Geoinformation und Landentwicklung jährlich für ca. ein Achtel der  Landesfläche mit einer Punktdichte von mindestens 8 Punkten pro m² durchführt. Die Höhengenauigkeit liegt bei 15 cm. Sie bezieht sich auf feste ausreichend große Oberflächen ohne Bewuchs. Bei Bewuchs und hohen schmalen Objekten können größere Abweichungen vorhanden sein. Das DOM wird aus den höchsten Punkten der Laserscanaufnahme abgeleitet. Im Open GeoData Portal des LGL können die Daten in Kacheleinheiten von 2 km x 2 km heruntergeladen werden. Größere zusammenhängende Gebiete stellt das Landesamt für Geoinformation und Landentwicklung gegen Aufwandserstattung bereit (geodaten@lgl.bwl.de).",
+    "details": [
+      [
+        "Koordinatenreferenzsystem",
+        "ETRS89/UTM"
+      ],
+      [
+        "Ausführliche Produktbeschreibung",
+        "https://www.lgl-bw.de/Produkte/"
+      ],
+      [
+        "Datenformat",
+        "GeoTIFF"
+      ],
+      [
+        "Datengröße pro Kachel",
+        "1 bis 4 MB"
+      ],
+      [
+        "Kachelgröße",
+        "2 km x 2 km"
+      ],
+      [
+        "Aktualisierungszyklus",
+        "4 mal pro Jahr"
+      ]
+    ]
+  },
+  {
+    "orderId": 18,
+    "name": "Digitales Oberflächenmodell",
+    "uuid": "dom5",
+    "active": true,
+    "shortName": "DOM5",
+    "downloadUrlMatching": {
+      "exact": false,
+      "urlPath": "/data/dom/",
+      "details": {
+        "name": "Kachel",
+		"pattern": "dom5_\\d+_(\\d+_\\d+)_\\d+_bw\\.zip"
+      },
+      "chartColor": "rgba(106,102,102,0.8)"
+    },
+    "downloadSource": {
+      "tileOptions": [
+        {
+          "productVariant": "DOM5",
+          "tileDownloadType": "DOM5"
+        }
+      ],
+      "layerLID": "zwei_km_gitter",
+      "productConnectorKey": "DOM",
+      "selectionCapacity": 10
+    },
+    "previewImagePath": "./assets/img/odp/dom5.webp",
+    "previewInfoText": "Das DOM5 enthält die Gelände- oder Objekthöhen an den Eckpunkten eines 5 m x 5 m-Gitters. Fällt ein Gitterpunkt auf eine Position, an der ein festes oder bewegliches Objekt liegt, wird die Objekthöhe angegeben, ansonsten die Geländehöhe. Zu den Objekten gehören vor allem Wälder und Bauwerke sowie der ruhende und fließende Verkehr. Die Positionen der Gitterpunkte werden im Koordinatenreferenzsystem ETRS89/UTM geliefert, die Höhen im Höhensystem NN. Grundlage sind die unregelmäßig verteilten Firstpulse Daten der Laserscanaufnahme der Jahre 2000 – 2005. Die dabei unregelmäßig verteilt erfassten Höhen, die aus dem ersten Auftreffen eines Laserstrahls auf ein Objekt ermittelt wurden, wurden anschließend automatisch als regelmäßiges Gitter abgeleitet; die Höhen können daher unplausible Werte enthalten, eine Genauigkeitsabschätzung ist nicht möglich. Im Open GeoData Portal des LGL können die Daten in Kacheleinheiten von 2 km x 2 km heruntergeladen werden. Größere zusammenhängende Gebiete stellt das Landesamt für Geoinformation und Landentwicklung gegen Aufwandserstattung bereit.",
+    "infoText": "Das DOM5 enthält die Gelände- oder Objekthöhen an den Eckpunkten eines 5 m x 5 m-Gitters. Fällt ein Gitterpunkt auf eine Position, an der ein festes oder bewegliches Objekt liegt, wird die Objekthöhe angegeben, ansonsten die Geländehöhe. Zu den Objekten gehören vor allem Wälder und Bauwerke sowie der ruhende und fließende Verkehr. Die Positionen der Gitterpunkte werden im Koordinatenreferenzsystem ETRS89/UTM geliefert, die Höhen im Höhensystem NN. Grundlage sind die unregelmäßig verteilten Firstpulse Daten der Laserscanaufnahme der Jahre 2000 – 2005. Die dabei unregelmäßig verteilt erfassten Höhen, die aus dem ersten Auftreffen eines Laserstrahls auf ein Objekt ermittelt wurden, wurden anschließend automatisch als regelmäßiges Gitter abgeleitet; die Höhen können daher unplausible Werte enthalten, eine Genauigkeitsabschätzung ist nicht möglich. Im Open GeoData Portal des LGL können die Daten in Kacheleinheiten von 2 km x 2 km heruntergeladen werden. Größere zusammenhängende Gebiete stellt das Landesamt für Geoinformation und Landentwicklung gegen Aufwandserstattung bereit.",
+    "details": [
+      [
+        "Koordinatenreferenzsystem",
+        "ETRS89/UTM"
+      ],
+      [
+        "Ausführliche Produktbeschreibung",
+        "https://www.lgl-bw.de/Produkte/"
+      ],
+      [
+        "Datenformat",
+        "xyz"
+      ],
+      [
+        "Datengröße pro Kachel",
+        "0,7 MB"
+      ],
+      [
+        "Kachelgröße",
+        "2 km x 2 km"
+      ],
+      [
+        "Aktualisierungszyklus",
+        "statisch"
+      ]
+    ]
+  },
+  {
+    "orderId": 19,
+    "name": "Laserscandaten 2000-2005",
+    "uuid": "als1",
+    "active": false,
+    "shortName": "ALS_1",
+    "downloadSource": {
+      "tileOptions": [
+        {
+          "productVariant": "3DM",
+          "tileDownloadType": "3DM"
+        }
+      ],
+      "layerLID": "zwei_km_gitter",
+      "productConnectorKey": "3DM",
+      "selectionCapacity": 10
+    },
+    "previewImagePath": "./assets/img/odp/als_1.webp",
+    "previewInfoText": "Laserscandaten sind die Originaldaten der Laserscanbefliegungen (Airborne Laser Scanning (ALS)) aus den Jahren 2000 – 2005. Beim ALS werden die Höhen an einem Messpunkt sowohl von Objekten (First Pulse-Wert) als auch Geländepunkten (Last Pulse-Wert) erfasst. Die Lage der Messpunkte ist dabei unregelmäßig verteilt. Die Punktdichte des ALS_1 beträgt ca. 0,8 Punkte pro m². Die Positionen der Punkte werden im Koordinatenreferenzsystem ETRS89/UTM geliefert, die Höhen im Höhensystem NN. Im Open GeoData Portal des LGL können die Daten in Kacheleinheiten von 2 km x 2 km heruntergeladen werden. Größere zusammenhängende Gebiete stellt das Landesamt für Geoinformation und Landentwicklung gegen Aufwandserstattung bereit.",
+    "infoText": "Laserscandaten sind die Originaldaten der Laserscanbefliegungen (Airborne Laser Scanning (ALS)) aus den Jahren 2000 – 2005. Beim ALS werden die Höhen an einem Messpunkt sowohl von Objekten (First Pulse-Wert) als auch Geländepunkten (Last Pulse-Wert) erfasst. Die Lage der Messpunkte ist dabei unregelmäßig verteilt. Die Punktdichte des ALS_1 beträgt ca. 0,8 Punkte pro m². Die Positionen der Punkte werden im Koordinatenreferenzsystem ETRS89/UTM geliefert, die Höhen im Höhensystem NN. Im Open GeoData Portal des LGL können die Daten in Kacheleinheiten von 2 km x 2 km heruntergeladen werden. Größere zusammenhängende Gebiete stellt das Landesamt für Geoinformation und Landentwicklung gegen Aufwandserstattung bereit.",
+    "details": [
+      [
+        "Koordinatenreferenzsystem",
+        "ETRS89/UTM"
+      ],
+      [
+        "Ausführliche Produktbeschreibung",
+        "https://www.lgl-bw.de/Produkte/"
+      ],
+      [
+        "Datenformat",
+        "LAZ"
+      ],
+      [
+        "Datengröße pro Kachel",
+        "9 MB"
+      ],
+      [
+        "Kachelgröße",
+        "2 km x 2 km"
+      ],
+      [
+        "Aktualisierungszyklus",
+        "statisch"
+      ]
+    ]
+  },
+  {
+    "orderId": 20,
+    "name": "Hauskoordinaten",
+    "uuid": "hk",
+    "active": true,
+    "shortName": "HK",
+    "downloadUrlMatching": {
+      "exact": true,
+      "urlPath": "/data/hk/hk_bw.zip",
+      "chartColor": "rgba(191, 28, 13, 0.8)"
+    },
+    "downloadSource": {
+      "options": [
+        {
+          "downloadURL": "https://opengeodata.lgl-bw.de/data/hk/hk_bw.zip",
+          "downloadAlias": "hk_bw.zip"
+        }
+      ]
+    },
+    "previewImagePath": "./assets/img/odp/hk.webp",
+    "previewInfoText": "Hauskoordinaten – geodätisch korrekt eigentlich georeferenzierte Gebäudeadressen – werden aus dem Amtlichen Liegenschaftskataster-Informationssystem ALKIS abgeleitet. Die Hauskoordinate ordnet jedem Gebäude mit einer Hausnummer exakt eine Koordinate im Koordinatenreferenzsystem ETRS89/UTM zu; oder allgemeiner gesagt, jedes Gebäude erhält eine exakte Position. Die Hauskoordinaten-Datensätze liegen hier landesweit ohne postalische Angaben vor. In Baden-Württemberg stellt das Landesamt für Geoinformation und Landentwicklung mehr als 2,9 Millionen Gebäudepositionen bereit.",
+    "infoText": "Hauskoordinaten – geodätisch korrekt eigentlich georeferenzierte Gebäudeadressen – werden aus dem Amtlichen Liegenschaftskataster-Informationssystem ALKIS abgeleitet. Die Hauskoordinate ordnet jedem Gebäude mit einer Hausnummer exakt eine Koordinate im Koordinatenreferenzsystem ETRS89/UTM zu; oder allgemeiner gesagt, jedes Gebäude erhält eine exakte Position. Die Hauskoordinaten-Datensätze liegen hier landesweit ohne postalische Angaben vor. In Baden-Württemberg stellt das Landesamt für Geoinformation und Landentwicklung mehr als 2,9 Millionen Gebäudepositionen bereit.",
+    "details": [
+      [
+        "Koordinatenreferenzsystem",
+        "ETRS89/UTM"
+      ],
+      [
+        "Ausführliche Produktbeschreibung",
+        "https://www.lgl-bw.de/Produkte/"
+      ],
+      [
+        "Datenformat",
+        "TXT"
+      ],
+      [
+        "Datengröße pro Kachel",
+        "70 MB"
+      ],
+      [
+        "Kachelgröße",
+        "landesweit"
+      ],
+      [
+        "Aktualisierungszyklus",
+        "2 mal pro Jahr"
+      ]
+    ]
+  },
+  {
+    "orderId": 21,
+    "name": "Hausumringe",
+    "uuid": "hu",
+    "active": true,
+    "shortName": "HU",
+    "downloadUrlMatching": {
+      "exact": true,
+      "urlPath": "/data/hu/hu_bw.zip"
+    },
+    "downloadSource": {
+      "options": [
+        {
+          "downloadURL": "https://opengeodata.lgl-bw.de/data/hu/hu_bw.zip",
+          "downloadAlias": "hu_bw.zip"
+        }
+      ]
+    },
+    "previewImagePath": "./assets/img/odp/hur.webp",
+    "previewInfoText": "Die amtlichen Hausumringe (HU) beschreiben georeferenzierte Umringpolygone von Gebäudegrundrissen aus dem Liegenschaftskataster. Die Hausumringe sind flächendeckend für ganz Baden-Württemberg verfügbar. Insgesamt liegen ca. 5,9 Millionen Hausumringe vor. Sie sind aus dem Liegenschaftskataster abgeleitet und haben die Genauigkeit der amtlichen Liegenschaftskarte. Einen Rückschluss auf die Hausbewohner oder die Eigentümer lassen die Daten nicht zu. Die Umringe der Shape-Datei enthalten keine Ausgestaltungsgeometrien, keine Dächer und keine unterirdischen Gebäude. Informationen zur Nutzung des Gebäudes sind ebenso wenig enthalten, wie Informationen zum Gebäudealter oder dem Eigentümer. Die Koordinaten werden im Koordinatenreferenzsystem ETRS89/UTM abgegeben.",
+    "infoText": "Die amtlichen Hausumringe (HU) beschreiben georeferenzierte Umringpolygone von Gebäudegrundrissen aus dem Liegenschaftskataster. Die Hausumringe sind flächendeckend für ganz Baden-Württemberg verfügbar. Insgesamt liegen ca. 5,9 Millionen Hausumringe vor. Sie sind aus dem Liegenschaftskataster abgeleitet und haben die Genauigkeit der amtlichen Liegenschaftskarte. Einen Rückschluss auf die Hausbewohner oder die Eigentümer lassen die Daten nicht zu. Die Umringe der Shape-Datei enthalten keine Ausgestaltungsgeometrien, keine Dächer und keine unterirdischen Gebäude. Informationen zur Nutzung des Gebäudes sind ebenso wenig enthalten, wie Informationen zum Gebäudealter oder dem Eigentümer. Die Koordinaten werden im Koordinatenreferenzsystem ETRS89/UTM abgegeben.",
+    "details": [
+      [
+        "Koordinatenreferenzsystem",
+        "ETRS89/UTM"
+      ],
+      [
+        "Ausführliche Produktbeschreibung",
+        "https://www.lgl-bw.de/Produkte/"
+      ],
+      [
+        "Datenformat",
+        "Shape"
+      ],
+      [
+        "Datengröße pro Kachel",
+        "600 MB"
+      ],
+      [
+        "Kachelgröße",
+        "landesweit"
+      ],
+      [
+        "Aktualisierungszyklus",
+        "2 mal pro Jahr"
+      ]
+    ]
+  },
+  {
+    "orderId": 22,
+    "name": "Verwaltungsgrenzen",
+    "uuid": "alkisvg",
+    "active": true,
+    "shortName": "ALKIS",
+    "downloadUrlMatching": {
+      "exact": true,
+      "urlPath": "/data/vg/Verw-Grenzen_ALKIS.zip"
+    },
+    "downloadSource": {
+      "options": [
+        {
+          "downloadURL": "https://opengeodata.lgl-bw.de/data/vg/Verw-Grenzen_ALKIS.zip",
+          "downloadAlias": "Verw-Grenzen_ALKIS.zip"
+        }
+      ]
+    },
+    "previewImagePath": "./assets/img/odp/vg.webp",
+    "previewInfoText": "Die landesweiten Verwaltungsgrenzen enthalten Umringpolygone (SHAPE) untergliedert nach Fluren, Gemarkungen, Gemeinden, Landkreisen, Regionen, Regierungsbezirken und Land mit Flurnummer, Gemarkungsschlüssel und –name, Gemeindeschlüssel und –name, Kreisschlüssel und -name usw.",
+    "infoText": "Die landesweiten Verwaltungsgrenzen enthalten Umringpolygone (SHAPE) untergliedert nach Fluren, Gemarkungen, Gemeinden, Landkreisen, Regionen, Regierungsbezirken und Land mit Flurnummer, Gemarkungsschlüssel und –name, Gemeindeschlüssel und –name, Kreisschlüssel und -name usw.",
+    "details": [
+      [
+        "Koordinatenreferenzsystem",
+        "ETRS89/UTM"
+      ],
+      [
+        "Ausführliche Produktbeschreibung",
+        "https://www.lgl-bw.de/Produkte/"
+      ],
+      [
+        "Datenformat",
+        "Shape"
+      ],
+      [
+        "Datengröße pro Kachel",
+        "40 MB"
+      ],
+      [
+        "Kachelgröße",
+        "landesweit"
+      ],
+      [
+        "Aktualisierungszyklus",
+        "1 mal pro Jahr"
+      ]
+    ]
+  },
+  {
+    "orderId": 23,
+    "active": true,
+    "name": "Thematische Karten",
+    "uuid": "tk",
+    "previewImagePath": "./assets/img/odp/uebersichtskarten.webp",
+    "previewInfoText": "In dieser Produktgruppe finden Sie Baden-Württemberg-Karten, Gemeinde- und Kreiskarten, Verwaltungskarten, Reliefkarten usw. in kleinen Maßstäben ab 1:350 000 (i.d.R. Rasterdatenformate (GeoTIFF, PNG) oder pdf-Dokumente).",
+    "downloadUrlMatching": {
+      "exact": false,
+      "urlPath": "/data/uebersichtskarten/",
+      "chartColor": "rgba(160,226,255,0.8)"
+    },
+    "products": [
+      {
+        "orderId": 2301,
+        "active": true,
+        "name": "Gemeinde -und Kreiskarte von Baden-Württemberg 1:350 000",
+        "uuid": "gk350bw",
+        "downloadSource": {
+          "options": [
+            {
+              "downloadURL": "https://opengeodata.lgl-bw.de/data/uebersichtskarten/Gemeinde_Kreiskarte_BW.zip",
+              "downloadAlias": "Gemeinde_Kreiskarte_BW.zip"
+            }
+          ]
+        },
+        "previewImagePath": "./assets/img/odp/GKkvBW.webp",
+        "previewInfoText": "Stand: 01.01.1969 (ZIP, ca. 50 MB)"
+      },
+      {
+        "orderId": 2302,
+        "active": true,
+        "name": "Gemarkungsübersichtskarte Baden-Württemberg 1:350 000",
+        "uuid": "guek350bw",
+        "downloadSource": {
+          "options": [
+            {
+              "downloadURL": "https://opengeodata.lgl-bw.de/data/uebersichtskarten/Gemarkungsuebersichtskarte_BW_350.zip",
+              "downloadAlias": "Gemarkungsuebersichtskarte_BW_350.zip"
+            }
+          ]
+        },
+        "previewImagePath": "./assets/img/odp/GkBW.webp",
+        "previewInfoText": "Stand 2018 (ZIP, ca. 4 MB)"
+      },
+      {
+        "orderId": 2303,
+        "active": true,
+        "name": "Verwaltungsgliederungskarte 1:350 000",
+        "uuid": "vgk350",
+        "downloadSource": {
+          "options": [
+            {
+              "downloadURL": "https://opengeodata.lgl-bw.de/data/uebersichtskarten/Verwaltungskarte_BW_300dpi.zip",
+              "downloadAlias": "Verwaltungskarte_BW_300dpi.zip"
+            }
+          ]
+        },
+        "previewImagePath": "./assets/img/odp/Vk.webp",
+        "previewInfoText": "Stand: 2018 (ZIP, ca. 36 MB)"
+      },
+      {
+        "orderId": 2304,
+        "active": true,
+        "name": "Höhenschichtenkarte (mit/ohne Gewässerbeschriftung) 1:500 000 ",
+        "uuid": "hsk500",
+        "downloadSource": {
+          "options": [
+            {
+              "downloadURL": "https://opengeodata.lgl-bw.de/data/uebersichtskarten/Hoehenschichtenkarte.zip",
+              "downloadAlias": "Hoehenschichtenkarte.zip"
+            }
+          ]
+        },
+        "previewImagePath": "./assets/img/odp/Hsk.webp",
+        "previewInfoText": "Stand: 2021 (ZIP, ca. 18 MB)"
+      },
+      {
+        "orderId": 2305,
+        "active": true,
+        "name": "Physische Karte 1:500 000",
+        "uuid": "pk500",
+        "downloadSource": {
+          "options": [
+            {
+              "downloadURL": "https://opengeodata.lgl-bw.de/data/uebersichtskarten/PhysischeKarte_BW_500.zip",
+              "downloadAlias": "PhysischeKarte_BW_500.zip"
+            }
+          ]
+        },
+        "previewImagePath": "./assets/img/odp/Physk.webp",
+        "previewInfoText": "Stand: 2017 (ZIP, ca. 320 MB)"
+      },
+      {
+        "orderId": 2306,
+        "active": true,
+        "name": "Amtliche Straßenkarte 1:200 000",
+        "uuid": "ask200",
+        "downloadSource": {
+          "options": [
+            {
+              "downloadURL": "https://opengeodata.lgl-bw.de/data/uebersichtskarten/ASK200-bw.zip",
+              "downloadAlias": "ASK200-bw.zip"
+            }
+          ]
+        },
+        "previewImagePath": "./assets/img/odp/ASk.png",
+        "previewInfoText": "Die Amtliche Straßenkarte Baden-Württemberg 1:200 000\n(ASK200) präsentiert ausgewählte Inhalte des DLM250, des DLM50 und Fachdaten der Straßenbauverwaltung Baden-Württemberg. Im angrenzenden Ausland werden die jeweiligen vergleichbaren Datengrundlagen präsentiert (Frankreich: BD CARTO(r), Schweiz: VECTOR200). Der thematische Schwerpunkt liegt auf der Darstellung des Straßenverkehrs (klassifiziertes Straßennetz). Farblich hervorgehoben und beschriftet sind alle klassifizierten Straßen (Autobahnen, Bundes-, Landes- und Kreisstraßen). Gemeindestraßen, das Schienenverkehrsnetz (Eisenbahn) und der Luftverkehr (Landeplätze) ergänzen die Verkehrsinfrastruktur. Entlang der Autobahnen sind zusätzlich die verkehrsnahe Infrastruktur (Parkplätze, Tankstellen, Raststätten u.a.) und Fachangaben, wie Knotennummern der Anschlussstellen und die Betriebskilometrierung eingetragen. Topographische Inhalte (Wald, Gewässer und Siedlung) und die Verwaltungsgrenzen helfen bei der Orientierung\n\n(ZIP, ca. 40 MB)",
+        "infoText": "Die Amtliche Straßenkarte Baden-Württemberg 1:200 000\n(ASK200) präsentiert ausgewählte Inhalte des DLM250, des DLM50 und Fachdaten der Straßenbauverwaltung Baden-Württemberg. Im angrenzenden Ausland werden die jeweiligen vergleichbaren Datengrundlagen präsentiert (Frankreich: BD CARTO(r), Schweiz: VECTOR200). Der thematische Schwerpunkt liegt auf der Darstellung des Straßenverkehrs (klassifiziertes Straßennetz). Farblich hervorgehoben und beschriftet sind alle klassifizierten Straßen (Autobahnen, Bundes-, Landes- und Kreisstraßen). Gemeindestraßen, das Schienenverkehrsnetz (Eisenbahn) und der Luftverkehr (Landeplätze) ergänzen die Verkehrsinfrastruktur. Entlang der Autobahnen sind zusätzlich die verkehrsnahe Infrastruktur (Parkplätze, Tankstellen, Raststätten u.a.) und Fachangaben, wie Knotennummern der Anschlussstellen und die Betriebskilometrierung eingetragen. Topographische Inhalte (Wald, Gewässer und Siedlung) und die Verwaltungsgrenzen helfen bei der Orientierung\n\n(ZIP, ca. 40 MB)",
+        "details": []
+      },
+      {
+        "orderId": 2307,
+        "active": true,
+        "name": "Straßennetzkarte 1:100 000",
+        "uuid": "snk100",
+        "downloadSource": {
+          "options": [
+            {
+              "downloadURL": "https://opengeodata.lgl-bw.de/data/uebersichtskarten/SNK100-bw.zip",
+              "downloadAlias": "SNK100-bw.zip"
+            }
+          ]
+        },
+        "previewImagePath": "./assets/img/odp/Snk.png",
+        "previewInfoText": "Die SNK100 präsentiert ausgewählte Inhalte des DLM50.1 und spezielle Fachdaten der Straßenbauverwaltung entsprechend individueller Vorgaben und Ableitungsregeln. Der thematische Schwerpunkt liegt auf der Darstellung des Straßenverkehrs (klassifiziertes Straßennetz). Die Daten sind als georeferenzierte Rasterdaten (Farbkombi) im UTM-Koordinatensystem in maximal 200 Linien/cm, d.h. 512 dpi verfügbar.\n\n(ZIP, ca. 1 GB)",
+        "infoText": "Die SNK100 präsentiert ausgewählte Inhalte des DLM50.1 und spezielle Fachdaten der Straßenbauverwaltung entsprechend individueller Vorgaben und Ableitungsregeln. Der thematische Schwerpunkt liegt auf der Darstellung des Straßenverkehrs (klassifiziertes Straßennetz). Die Daten sind als georeferenzierte Rasterdaten (Farbkombi) im UTM-Koordinatensystem in maximal 200 Linien/cm, d.h. 512 dpi verfügbar.\n\n(ZIP, ca. 1 GB)",
+        "details": []
+      },
+      {
+        "orderId": 2308,
+        "active": true,
+        "name": "Kreiskarte 1:1 200 000",
+        "uuid": "kk200",
+        "downloadSource": {
+          "options": [
+            {
+              "downloadURL": "https://opengeodata.lgl-bw.de/data/uebersichtskarten/Kreiskarte_BW_1200.zip",
+              "downloadAlias": "Kreiskarte_BW_1200.zip"
+            }
+          ]
+        },
+        "previewImagePath": "./assets/img/odp/Kreisk.webp",
+        "previewInfoText": "Stand: 2012 (ZIP, ca. 22 MB)"
+      },
+      {
+        "orderId": 2309,
+        "active": true,
+        "name": "Reliefkarte 1:600 000",
+        "uuid": "rk600",
+        "downloadSource": {
+          "options": [
+            {
+              "downloadURL": "https://opengeodata.lgl-bw.de/data/uebersichtskarten/Reliefkarte_BW_600.zip",
+              "downloadAlias": "Reliefkarte_BW_600.zip"
+            }
+          ]
+        },
+        "previewImagePath": "./assets/img/odp/Reliefk.webp",
+        "previewInfoText": "Stand: 1992 (ZIP, ca. 42 MB)"
+      },
+      {
+        "orderId": 2310,
+        "active": true,
+        "name": "Dienstbezirke der Vermessungsbehörden",
+        "uuid": "dbdvb",
+        "downloadSource": {
+          "options": [
+            {
+              "downloadURL": "https://opengeodata.lgl-bw.de/data/uebersichtskarten/Dienstbezirke_Vermessung.zip",
+              "downloadAlias": "Dienstbezirke_Vermessung.zip"
+            }
+          ]
+        },
+        "previewImagePath": "./assets/img/odp/DdV.webp",
+        "previewInfoText": "Stand: 01.01.2020 (ZIP, 1MB)"
+      },
+      {
+        "orderId": 2311,
+        "active": true,
+        "name": "Dienstbezirke der Flurneuordnungsbehörden",
+        "uuid": "dbdfb",
+        "downloadSource": {
+          "options": [
+            {
+              "downloadURL": "https://opengeodata.lgl-bw.de/data/uebersichtskarten/Dienstbezirke_FNO.zip",
+              "downloadAlias": "Dienstbezirke_FNO.zip"
+            }
+          ]
+        },
+        "previewImagePath": "./assets/img/odp/DbdFnb.webp",
+        "previewInfoText": "Stand: 01.10.2016 (ZIP, ca. 3 MB)"
+      }
+    ]
+  },
+  {
+    "orderId": 24,
+    "active": true,
+    "name": "Verwaltungsgrenzen",
+    "uuid": "vg",
+    "previewImagePath": "./assets/img/odp/verwaltungsgrenzen.webp",
+    "previewInfoText": "Die generalisierten Verwaltungsgrenzen enthalten Umringpolygone (i.d.R. NAS, SHAPE) untergliedert nach Gemeinden, Landkreisen, Regionen, Regierungsbezirken, Land, mit Gemeindeschlüssel, -name usw. Dazu ein \"Schmankerl\": historische Landesgrenzen der ehemaligen Landesteile Baden, Württemberg und Hohenzollern.",
+    "downloadUrlMatching": {
+      "exact": false,
+      "urlPath": "/data/verwaltungsgrenzen/"
+    },
+    "products": [
+      {
+        "orderId": 2401,
+        "active": true,
+        "name": "Komplettpaket Verwaltungsgrenzen",
+        "uuid": "kpvg",
+        "downloadSource": {
+          "options": [
+            {
+              "downloadURL": "https://opengeodata.lgl-bw.de/data/verwaltungsgrenzen/Komplettpaket_Verwaltungsgrenzen.zip",
+              "downloadAlias": "Komplettpaket_Verwaltungsgrenzen.zip"
+            }
+          ]
+        },
+        "previewImagePath": "./assets/img/odp/KpVg.webp",
+        "previewInfoText": "Stand: 2021 und 2017, DHDN/GK3, ETRS89/UTM (ZIP, ca. 62 MB)"
+      },
+      {
+        "orderId": 2402,
+        "active": true,
+        "name": "Historische Landesgrenzen der ehemaligen Landesteile Baden, Württemberg und Hohenzollern",
+        "uuid": "hlgdeltbwhz",
+        "downloadSource": {
+          "options": [
+            {
+              "downloadURL": "https://opengeodata.lgl-bw.de/data/verwaltungsgrenzen/Hist_Landesgrenzen_Baden-Wuerttemberg_Hohenzollern.zip",
+              "downloadAlias": "Hist_Landesgrenzen_Baden-Wuerttemberg_Hohenzollern.zip"
+            }
+          ]
+        },
+        "previewImagePath": "./assets/img/odp/HLgdeLsBWuH.webp",
+        "previewInfoText": "Stand: 19. Jh., DHDN/GK3, ETRS89/UTM (ZIP, ca. 1 MB)"
+      }
+    ]
+  },
+  {
+    "orderId": 25,
+    "active": true,
+    "name": "Schlüsselkataloge",
+    "uuid": "sk",
+    "previewImagePath": "./assets/img/odp/schluesselkataloge.webp",
+    "previewInfoText": "Hier finden Sie die zwei Datensätze „Gemeinde-, Gemarkungs- und Flurverzeichnis“ sowie das „Straßenverzeichnis“ jeweils als CSV-Datei.",
+    "downloadUrlMatching": {
+      "exact": false,
+      "urlPath": "/data/schluesselkataloge/",
+      "chartColor": "rgba(255,153,0,0.8)"
+    },
+    "products": [
+      {
+        "orderId": 2501,
+        "active": true,
+        "name": "Gemeinde-, Gemarkungs- und Flurverzeichnis",
+        "uuid": "ggfvz",
+        "downloadSource": {
+          "options": [
+            {
+              "downloadURL": "https://opengeodata.lgl-bw.de/data/schluesselkataloge/Gemeinde_Gemarkung_Flur.zip",
+              "downloadAlias": "Gemeinde_Gemarkung_Flur.zip"
+            }
+          ]
+        },
+        "previewImagePath": "./assets/img/odp/GGuFv.webp",
+        "previewInfoText": "Stand: 2025 (ZIP, ca. 1 MB)"
+      },
+      {
+        "orderId": 2502,
+        "active": true,
+        "name": "Lageschlüssel-, Straßenverzeichnis",
+        "uuid": "lssvz",
+        "downloadSource": {
+          "options": [
+            {
+              "downloadURL": "https://opengeodata.lgl-bw.de/data/schluesselkataloge/Lageschluessel_StrVerz.zip",
+              "downloadAlias": "Lageschluessel_StrVerz.zip"
+            }
+          ]
+        },
+        "previewImagePath": "./assets/img/odp/LsSv.webp",
+        "previewInfoText": "Stand: 2025 (ZIP, ca. 2 MB)"
+      },
+      {
+        "orderId": 2503,
+        "active": true,
+        "name": "Grundkataloge",
+        "uuid": "gk",
+        "downloadSource": {
+          "options": [
+            {
+              "downloadURL": "https://opengeodata.lgl-bw.de/data/schluesselkataloge/Grundkataloge-bw.zip",
+              "downloadAlias": "Grundkataloge-bw.zip"
+            }
+          ]
+        },
+        "previewImagePath": "./assets/img/odp/Gk.png",
+        "previewInfoText": "Informationen zur Verwaltungszugehörigkeit werden in den ALKIS-Objekten mit Nummern geführt. Die zu den Nummern gehörenden Namen der Verwaltungseinheiten sind in digitalen Katalogen verzeichnet.\n\nDie Grundkataloge enthalten die Nummer-Namen-Zuordnung für das Bundesland Baden-Württemberg, die Regierungsbezirke, Kreise, Gemeinden, Gemarkungen, Fluren, Buchungsblattbezirke und Verwaltungsdienststellen.\n\nStand: 2025 (ZIP, ca. 1 MB)",
+        "infoText": "Informationen zur Verwaltungszugehörigkeit werden in den ALKIS-Objekten mit Nummern geführt. Die zu den Nummern gehörenden Namen der Verwaltungseinheiten sind in digitalen Katalogen verzeichnet.\n\nDie Grundkataloge enthalten die Nummer-Namen-Zuordnung für das Bundesland Baden-Württemberg, die Regierungsbezirke, Kreise, Gemeinden, Gemarkungen, Fluren, Buchungsblattbezirke und Verwaltungsdienststellen.\n\nStand: 2025 (ZIP, ca. 1 MB)",
+        "details": []
+      }
+    ]
+  }
+]

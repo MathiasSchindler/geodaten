@@ -1,0 +1,24 @@
+HTTP/1.1 200 OK
+Date: Fri, 28 Aug 2026 10:11:27 GMT
+Server: Served by LVGL Saarland
+Content-Security-Policy: default-src 'none';
+OC-ETag: "49dd3734ee819a401626b78079e93e29"
+X-Request-Id: C4b1iszU5PKi5wStvN6n
+Content-Disposition: attachment; filename*=UTF-8''HK_SL_EPSG-25832.zip; filename="HK_SL_EPSG-25832.zip"
+X-Accel-Buffering: no, no
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Robots-Tag: noindex, nofollow
+Referrer-Policy: no-referrer
+Last-Modified: Tue, 07 Oct 2025 06:40:02 GMT
+ETag: "49dd3734ee819a401626b78079e93e29"
+Content-Length: 7648458
+Content-Type: application/zip
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+X-XSS-Protection: 1; mode=block
+Set-Cookie: oc_sessionPassphrase=pbpfA9ucr7%2FBtmVJBgScfRjBQWz9EurVlEX75qeldHGyiLCjPpVNjYWcU3MrCAUGBRL%2FtIrDfNIRbphtPSAFHoFOrz25poI7u4KY4pLI0jaaIWFj6osVA%2BdKRMRA7D0T; path=/cloud; secure; HttpOnly; SameSite=Lax;HttpOnly;Secure;HttpOnly;Secure
+Set-Cookie: nc_sameSiteCookielax=true; path=/cloud; httponly;secure; expires=Fri, 31-Dec-2100 23:59:59 GMT; SameSite=lax;HttpOnly;Secure;HttpOnly;Secure
+Set-Cookie: nc_sameSiteCookiestrict=true; path=/cloud; httponly;secure; expires=Fri, 31-Dec-2100 23:59:59 GMT; SameSite=strict;HttpOnly;Secure;HttpOnly;Secure
+Set-Cookie: octztxgat56h=or3ekra1irhai0lf0ftn99jbld; path=/cloud; secure; HttpOnly; SameSite=Lax;HttpOnly;Secure;HttpOnly;Secure
+

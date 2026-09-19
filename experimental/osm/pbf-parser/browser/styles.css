@@ -1,0 +1,382 @@
+:root {
+  color-scheme: light;
+  --bg: #f4f6f8;
+  --panel: #ffffff;
+  --panel-strong: #eef3f7;
+  --text: #17202a;
+  --muted: #5f6f7c;
+  --border: #d5dde5;
+  --accent: #0f766e;
+  --accent-strong: #0b5f59;
+  --route: #d71920;
+  --shadow: 0 16px 40px rgba(23, 32, 42, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--text);
+  font: 14px/1.45 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.app-shell {
+  height: 100vh;
+  min-height: 0;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  overflow: hidden;
+}
+
+.toolbar {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.5fr) minmax(420px, 1fr);
+  gap: 24px;
+  align-items: end;
+  padding: 20px 24px 16px;
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+}
+
+.brand-block h1 {
+  margin: 0 0 4px;
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.brand-block p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.route-form {
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) minmax(220px, 1fr) auto;
+  gap: 12px;
+  align-items: end;
+}
+
+.route-form label {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+}
+
+.route-form span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 650;
+  text-transform: uppercase;
+}
+
+.route-form input {
+  width: 100%;
+  min-height: 38px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 10px;
+  color: var(--text);
+  background: #fff;
+}
+
+.button-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+button {
+  min-height: 38px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 8px 12px;
+  color: #fff;
+  background: var(--accent);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+button:hover {
+  background: var(--accent-strong);
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.62;
+}
+
+.status-band {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 16px;
+  align-items: center;
+  min-height: 42px;
+  padding: 8px 24px;
+  border-bottom: 1px solid var(--border);
+  color: var(--muted);
+  background: var(--panel-strong);
+}
+
+progress {
+  width: 100%;
+  height: 10px;
+}
+
+.workspace {
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  grid-template-rows: minmax(0, 1fr);
+  gap: 18px;
+  padding: 18px 24px 24px;
+}
+
+.map-pane,
+.details-pane {
+  min-height: 0;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.map-pane {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 0;
+  overflow: hidden;
+  cursor: crosshair;
+}
+
+.map-pane img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.map-marker {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(23, 32, 42, 0.35);
+  transform: translate(-50%, -50%);
+  pointer-events: auto;
+  z-index: 2;
+  cursor: grab;
+  touch-action: none;
+}
+
+.map-marker:active {
+  cursor: grabbing;
+}
+
+.from-marker {
+  background: var(--accent);
+}
+
+.to-marker {
+  background: var(--route);
+}
+
+#map-placeholder {
+  color: var(--muted);
+  padding: 24px;
+  text-align: center;
+}
+
+.details-pane {
+  padding: 16px;
+  overflow: auto;
+}
+
+.details-pane h2 {
+  margin: 0 0 12px;
+  font-size: 18px;
+}
+
+.summary-list {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 6px 12px;
+  margin: 0 0 16px;
+}
+
+.summary-list dt {
+  color: var(--muted);
+}
+
+.summary-list dd {
+  margin: 0;
+  font-weight: 650;
+}
+
+.steps-list {
+  margin: 0 0 16px;
+  padding-left: 22px;
+}
+
+.steps-list li {
+  margin: 0 0 8px;
+}
+
+.log-output {
+  margin: 0;
+  max-height: 220px;
+  overflow: auto;
+  white-space: pre-wrap;
+  color: var(--muted);
+  background: #f7f9fb;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.data-footer {
+  padding: 8px 24px 10px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  background: var(--panel);
+  font-size: 12px;
+}
+
+.data-footer a {
+  color: var(--accent-strong);
+}
+
+@media (max-width: 980px) {
+  .toolbar,
+  .workspace,
+  .status-band {
+    grid-template-columns: 1fr;
+  }
+
+  .toolbar {
+    gap: 8px;
+    align-items: center;
+    padding: 8px 12px;
+  }
+
+  .brand-block h1 {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .brand-block p {
+    display: none;
+  }
+
+  .route-form {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
+    gap: 8px;
+  }
+
+  .route-form span {
+    font-size: 11px;
+  }
+
+  .route-form input,
+  button {
+    min-height: 32px;
+    padding: 6px 8px;
+  }
+
+  .status-band {
+    min-height: 30px;
+    padding: 4px 12px;
+    gap: 6px;
+  }
+
+  progress {
+    height: 7px;
+  }
+
+  .workspace {
+    padding: 8px 12px;
+    grid-template-rows: minmax(0, 1fr) minmax(88px, 20vh);
+    gap: 8px;
+  }
+
+  .details-pane {
+    padding: 10px;
+  }
+
+  .details-pane h2 {
+    display: none;
+  }
+
+  .summary-list {
+    grid-template-columns: repeat(4, max-content);
+    gap: 4px 8px;
+    margin-bottom: 8px;
+  }
+
+  .steps-list {
+    margin-bottom: 8px;
+  }
+
+  .steps-list li {
+    margin-bottom: 4px;
+  }
+
+  .log-output {
+    max-height: 72px;
+    padding: 8px;
+  }
+
+  .data-footer {
+    padding: 5px 12px;
+    font-size: 11px;
+  }
+
+  .button-row {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 640px) {
+  .route-form {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  .button-row {
+    grid-column: 1 / -1;
+  }
+
+  .button-row button {
+    flex: 1 1 0;
+  }
+
+  .workspace {
+    grid-template-rows: minmax(0, 1fr) minmax(72px, 16vh);
+  }
+
+  .summary-list {
+    grid-template-columns: max-content 1fr max-content 1fr;
+  }
+
+  .steps-list,
+  .log-output {
+    display: none;
+  }
+}

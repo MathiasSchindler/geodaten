@@ -1,0 +1,14 @@
+Land: SH
+Anzahl der HK: 953360
+Koordinatenreferenzsystem: ETRS89/UTM32  EPSG-Code 25832
+Auslesedatum: 2026-06-01
+Ansprechpartner: Oliver Schneider Oliver.Schneider@LVermGeo.landsh.de 0431/3832110
+#1) Keine Umschlüsselungsdatei
+#2) Es gibt Ferienhaussiedlungen die im Adresszusatz offiziell mit Klammern beginnnen z.B. (134), (150) usw.
+#
+#3) Die Hauptgebäude mit einer Bereichshausnummer (z.B. 17-21) werden als Einzeladressen mit identischer Koordinate geführt.
+#
+#4) In Lübeck gibt eine Besonderheit der Hinterhofbebauung
+#   - Beispiel -
+#   Die Durchfahrt bzw. der Durchgang wir als Straßename mit Hausnummer registriert (z.B. Engelsgrube 26/), 
+#   die hinten liegenden Hauptgebäude werden nur durchnummeriert. Die eigentliche Hausnummer(hier Engelsgrube HSN: 26) wir separat geführt.  

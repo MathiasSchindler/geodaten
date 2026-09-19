@@ -1,0 +1,53 @@
+# Local environments, dependencies, and operating-system files
+.venv/
+**/node_modules/
+.DS_Store
+/package-lock.json
+
+# Build products and runtime logs
+**/build/
+*.o
+*.a
+*.so
+*.dylib
+*.log
+
+# Downloaded source data and generated geodata
+*.zip
+*.gz
+*.br
+*.xz
+*.pbf
+*.osm.pbf
+*.rte
+*.rpack
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.gpkg
+*.parquet
+*.geojson
+*.topojson
+*.csv
+*.tsv
+
+# Large/generated pipeline intermediates
+**/chunks/
+**/tiles-z*.txt
+
+# Small metadata tables and synthetic regression fixtures belong in Git
+!adressen/bund/konsolidiert/*/quellen.csv
+!experimental/ZSHH/libreHKDE/*/QUELLEN.csv
+!experimental/osm/pbf-parser/tests/fixtures/*.csv
+!experimental/osm/pbf-parser/tests/expected/*.tsv
+!experimental/osm/pbf-parser/tests/expected/*.geojson
+
+# Query responses containing feature/address records rather than metadata
+**/wfs-example-address.xml
+**/wfs-adressen-ohne-postaldescriptor.xml
+**/wfs-postal-descriptors.xml
+
+# Locally archived third-party publication, not redistributable project metadata
+experimental/ZSHH/V GeoBund 2024_ § 3 Geobasisdaten - beck-online.pdf

@@ -1,0 +1,7 @@
+7ea738e0878e236aa5a2cb5797058b436d7a28b1cb68c364ca2bb793bda839ee  /Users/mathiasschindler/PLZ/adressen/bund/basemap/2026-08-28/deutschland-mask.geojson
+5acaf53fa507fc76f93c43903b2a77badad4c24add4d70ba2ed557d69b25deb8  /Users/mathiasschindler/PLZ/adressen/bund/basemap/2026-08-28/tilejson.json
+6033fe7e96a5ad770b1bec727099390a639bdf0ff2ec9f713fa434ab63fc932e  /Users/mathiasschindler/PLZ/adressen/bund/basemap/2026-08-28/datenmodell.html
+a388b7dfc542bafb9e88925acf4f7b27119344ba55b3a6a5d806ca86803c886d  /Users/mathiasschindler/PLZ/adressen/bund/basemap/2026-08-28/produktseite.html
+baea873d180b1723026b1e27d1997379b6f7a9d936d85d3a13a4cf0b30244a0e  /Users/mathiasschindler/PLZ/adressen/bund/basemap/2026-08-28/nutzungsbedingungen-basemapde.pdf
+3a04315ad816db98c1ea71430a22d706f2643d419bcfff8ad4555db834942073  /Users/mathiasschindler/PLZ/adressen/bund/basemap/2026-08-28/open-data-katalog-seite-2.html
+3301d5aaed24076105734f85762a36f9acd7d89a7c6ca1c0b353844985f290bc  /Users/mathiasschindler/PLZ/adressen/bund/basemap/2026-08-28/beispielkachel-muenchen-15-17437-11371.pbf

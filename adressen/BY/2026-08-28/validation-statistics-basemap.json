@@ -1,0 +1,13 @@
+{
+  "input": "../../../BY/2026-08-28/adressen.csv.gz",
+  "csv_columns": 14,
+  "records": 3761180,
+  "states": {
+    "09": 3761180
+  },
+  "blank_postcode": 3761180,
+  "blank_locality": 0,
+  "blank_street": 0,
+  "blank_house_number": 0,
+  "invalid_coordinates": 0
+}

@@ -1,0 +1,15 @@
+HTTP/1.1 200 
+Access-Control-Allow-Headers: X-Requested-With,Origin,Content-Type, Accept
+Access-Control-Allow-Methods: GET, POST
+Access-Control-Allow-Origin: *
+Vary: Origin
+Date: Fri, 28 Aug 2026 11:08:35 GMT
+Last-Modified: Mon, 20 Jul 2026 10:55:05 GMT
+ETag: "c187-65708bd25f440"
+Accept-Ranges: bytes
+Keep-Alive: timeout=5, max=85
+Connection: Keep-Alive
+Content-Type: application/octet-stream
+Content-Length: 85861
+Set-Cookie: TS01ea880d=01a5115d43918f58f90d6dc9603032353ff6607782362d073057ef88afc1a1ec6368daf81629b2305cfb61f1df1de685449ed3e3f6; Path=/; Domain=.sgx.geodatenzentrum.de; Secure; HttpOnly; samesite=None
+

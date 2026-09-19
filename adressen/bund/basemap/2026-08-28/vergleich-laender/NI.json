@@ -1,0 +1,44 @@
+{
+  "state_code": "NI",
+  "basemap_unique_normalized_addresses": 2626735,
+  "state_unique_normalized_addresses_either_locality": 2640801,
+  "state_unique_normalized_addresses_postal_locality": 2640801,
+  "state_unique_normalized_addresses_municipality": 2640801,
+  "matched_either_locality": 1008799,
+  "matched_postal_locality": 1008799,
+  "matched_municipality": 1008799,
+  "basemap_fields": {
+    "mode": "basemap",
+    "input": "/Users/mathiasschindler/PLZ/adressen/bund/basemap/2026-08-28/work/states/NI.tsv",
+    "state_code": "NI",
+    "records": 2630761,
+    "usable_primary": 2630761,
+    "usable_secondary": 0,
+    "blank_street": 0,
+    "blank_house_number": 0,
+    "blank_primary_locality": 0
+  },
+  "state_fields": {
+    "mode": "state",
+    "input": "/Users/mathiasschindler/PLZ/adressen/NI/2026-08-28/adressen.csv.gz",
+    "state_code": "NI",
+    "records": 2643144,
+    "usable_primary": 2643144,
+    "usable_secondary": 2643144,
+    "blank_street": 0,
+    "blank_house_number": 0,
+    "blank_primary_locality": 0
+  },
+  "coordinate_agreement": {
+    "matched_normalized_keys": 1008799,
+    "matched_basemap_records": 1009616,
+    "within_1_metre": 971427,
+    "within_5_metres": 981273,
+    "within_25_metres": 1003497,
+    "within_100_metres": 1008664,
+    "mean_distance_metres": 9.282731590528645,
+    "maximum_distance_metres": 132508.24290466052
+  },
+  "basemap_match_rate_either_locality": 0.3840505418323508,
+  "state_match_rate_either_locality": 0.38200492956493126
+}

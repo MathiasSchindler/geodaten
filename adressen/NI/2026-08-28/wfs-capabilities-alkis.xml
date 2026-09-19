@@ -1,0 +1,3226 @@
+<?xml version='1.0' encoding='utf-8'?><wfs:WFS_Capabilities xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://download.lgln.niedersachsen.de/aaa-suite/schema/ogc/wfs/2.0/wfs.xsd http://inspire.ec.europa.eu/schemas/inspire_dls/1.0 http://download.lgln.niedersachsen.de/aaa-suite/schema/inspire/inspire_dls/1.0/inspire_dls.xsd" version="2.0.0">
+<ows:ServiceIdentification>
+<ows:Title>WFS NI ALKIS AAA-Modell-basiert</ows:Title>
+<ows:Abstract>Das von den Vermessungs- und Katasterbehörden zu führende Liegenschaftskataster weist durch eine am Grundeigentum ausgerichtete Einteilung von Grund und Boden die Liegenschaften in Niedersachsen flächendeckend nach. Es enthält insbesondere Flurstücke, Gebäude, Tatsächliche Nutzungen, Lagebezeichnungen, öffentlich-rechtliche Festlegungen, Verwaltungseinheiten, Katasterbezirke und Eigentumsangaben. Das Liegenschaftskataster wird in elektronischer Form im Amtlichen Liegenschaftskataster-Informationssystem (ALKIS) geführt. Der vorliegende Web Feature Service (ALKIS-WFS) ermöglicht das gezielte Herunterladen von in ALKIS geführten Geo-Objekten auf Basis einer Suchanfrage (Direktzugriffs-Downloaddienst). Dieser Dienst beinhaltet keine Eigentumsinformationen. Die Daten werden originär im Koordinatenreferenzsystem ETRS89_UTM32 / EPSG25832 geführt. Transformationen in andere Systeme weisen eine verminderte Genauigkeit auf. * Der Dienst stellt die Geo-Objekte mindestens im Umfang des bundesweit einheitlichen Grunddatenbestands in einem Format bereit, das auf Grundlage der Normbasierten Austauschschnitte (NAS) entsprechend der Dokumentation zur Modellierung der Geoinformationen des Amtlichen Vermessungswesens (GeoInfoDok) in der Version 7.1.2 (www.adv-online.de) definiert ist. Dabei wird die Kodierung der NAS nutzergerecht angepasst durch Verwendung von Geometrien gemäß OGC-Simple-Feature-Standard (http://www.opengeospatial.org/standards/sfa), Maßeinheiten auf Basis von UCUM3 (http://unitsofmeasure.org/), OGC-URIs für EPSG-Koordinatenreferenzsysteme (http://www.epsg-registry.org/), HTTP-URIs bei der Referenzierung von Objekten (http://www.w3.org/Protocols/Specs.html) und zusätzlichen inversen Relationen. Der Dienst ist konzipiert zur Nutzung in praxisgängigen GIS-Clients, die die angepassten Geo-Objekte verwerten können sowie über Funktionalitäten zur Verarbeitung der komplexen NAS-Strukturen verfügen.</ows:Abstract>
+<ows:Keywords>
+<ows:Keyword>AAA</ows:Keyword>
+<ows:Keyword>WFS</ows:Keyword>
+<ows:Keyword>ALKIS</ows:Keyword>
+<ows:Keyword>Geobasisdaten</ows:Keyword>
+<ows:Keyword>AdV</ows:Keyword>
+<ows:Keyword>Liegenschaftskataster</ows:Keyword>
+<ows:Keyword>Flurstücke</ows:Keyword>
+<ows:Keyword>Gebäude</ows:Keyword>
+<ows:Keyword>Lagebezeichnung</ows:Keyword>
+<ows:Keyword>Tatsächliche Nutzung</ows:Keyword>
+<ows:Keyword>Verwaltungsgebiete</ows:Keyword>
+<ows:Keyword>Katasterbezirke</ows:Keyword>
+<ows:Keyword>Niedersachsen</ows:Keyword>
+<ows:Keyword>NI</ows:Keyword>
+</ows:Keywords>
+<ows:ServiceType>WFS</ows:ServiceType>
+<ows:ServiceTypeVersion>1.1.0</ows:ServiceTypeVersion>
+<ows:ServiceTypeVersion>2.0.0</ows:ServiceTypeVersion>
+<ows:Fees>NONE</ows:Fees>
+<ows:AccessConstraints>Es gelten die Lizenzbedingungen „Creative Commons Namensnennung – 4.0 International (CC BY 4.0)“ bzw. „cc-by/4.0” (http://creativecommons.org/licenses/by/4.0/) mit den dort geforderten Angaben zum Quellenvermerk. Als Rechteinhaber und Bereitsteller ist „LGLN“, sowie das Jahr des Datenbezugs in Klammern anzugeben. Beispiel für Quellenvermerk: LGLN (2024) Creative Commons Namensnennung – 4.0 International (CC BY 4.0)</ows:AccessConstraints>
+</ows:ServiceIdentification>
+<ows:ServiceProvider>
+<ows:ProviderName>Landesamt für Geoinformation und Landesvermessung Niedersachsen (LGLN) - Landesvermessung und Geobasisinformation</ows:ProviderName>
+<ows:ProviderSite/>
+<ows:ServiceContact>
+<ows:IndividualName>Kundenservice - Geodatenmanagement</ows:IndividualName>
+<ows:ContactInfo>
+<ows:Phone>
+<ows:Voice>+49 511 64609 555</ows:Voice>
+</ows:Phone>
+<ows:Address>
+<ows:DeliveryPoint>Podbielskistraße 331</ows:DeliveryPoint>
+<ows:City>Hannover</ows:City>
+<ows:AdministrativeArea>NI</ows:AdministrativeArea>
+<ows:PostalCode>30659</ows:PostalCode>
+<ows:Country>DE</ows:Country>
+<ows:ElectronicMailAddress>geodatendienste@lgln.niedersachsen.de</ows:ElectronicMailAddress>
+</ows:Address>
+<ows:OnlineResource xlink:href="https://www.lgln.niedersachsen.de"/>
+</ows:ContactInfo>
+<ows:Role>pointOfContact</ows:Role>
+</ows:ServiceContact>
+</ows:ServiceProvider>
+<ows:OperationsMetadata>
+<ows:Operation name="GetCapabilities">
+<ows:DCP>
+<ows:HTTP>
+<ows:Get xlink:href="https://opendata.lgln.niedersachsen.de/doorman/noauth/alkis_wfs_sf?"/>
+<ows:Post xlink:href="https://opendata.lgln.niedersachsen.de/doorman/noauth/alkis_wfs_sf"/>
+</ows:HTTP>
+</ows:DCP>
+<ows:Parameter name="AcceptVersions">
+<ows:AllowedValues>
+<ows:Value>1.1.0</ows:Value>
+<ows:Value>2.0.0</ows:Value>
+</ows:AllowedValues>
+</ows:Parameter>
+<ows:Parameter name="AcceptFormats">
+<ows:AllowedValues>
+<ows:Value>text/xml</ows:Value>
+</ows:AllowedValues>
+</ows:Parameter>
+<ows:Parameter name="Sections">
+<ows:AllowedValues>
+<ows:Value>ServiceIdentification</ows:Value>
+<ows:Value>ServiceProvider</ows:Value>
+<ows:Value>OperationsMetadata</ows:Value>
+<ows:Value>FeatureTypeList</ows:Value>
+<ows:Value>Filter_Capabilities</ows:Value>
+</ows:AllowedValues>
+</ows:Parameter>
+</ows:Operation>
+<ows:Operation name="DescribeFeatureType">
+<ows:DCP>
+<ows:HTTP>
+<ows:Get xlink:href="https://opendata.lgln.niedersachsen.de/doorman/noauth/alkis_wfs_sf?"/>
+<ows:Post xlink:href="https://opendata.lgln.niedersachsen.de/doorman/noauth/alkis_wfs_sf"/>
+</ows:HTTP>
+</ows:DCP>
+<ows:Parameter name="outputFormat">
+<ows:AllowedValues>
+<ows:Value>text/xml; subtype=gml/3.1.1</ows:Value>
+<ows:Value>application/gml+xml; version=3.1</ows:Value>
+<ows:Value>text/xml; subtype=gml/3.2.1</ows:Value>
+<ows:Value>application/gml+xml; version=3.2</ows:Value>
+</ows:AllowedValues>
+</ows:Parameter>
+</ows:Operation>
+<ows:Operation name="GetFeature">
+<ows:DCP>
+<ows:HTTP>
+<ows:Get xlink:href="https://opendata.lgln.niedersachsen.de/doorman/noauth/alkis_wfs_sf?"/>
+<ows:Post xlink:href="https://opendata.lgln.niedersachsen.de/doorman/noauth/alkis_wfs_sf"/>
+</ows:HTTP>
+</ows:DCP>
+<ows:Parameter name="resolve">
+<ows:AllowedValues>
+<ows:Value>none</ows:Value>
+<ows:Value>local</ows:Value>
+</ows:AllowedValues>
+</ows:Parameter>
+<ows:Parameter name="resultType">
+<ows:AllowedValues>
+<ows:Value>results</ows:Value>
+<ows:Value>hits</ows:Value>
+</ows:AllowedValues>
+</ows:Parameter>
+<ows:Parameter name="outputFormat">
+<ows:AllowedValues>
+<ows:Value>text/xml; subtype=gml/3.1.1</ows:Value>
+<ows:Value>application/gml+xml; version=3.1</ows:Value>
+<ows:Value>text/xml; subtype=gml/3.2.1</ows:Value>
+<ows:Value>application/gml+xml; version=3.2</ows:Value>
+</ows:AllowedValues>
+</ows:Parameter>
+</ows:Operation>
+<ows:Operation name="GetPropertyValue">
+<ows:DCP>
+<ows:HTTP>
+<ows:Get xlink:href="https://opendata.lgln.niedersachsen.de/doorman/noauth/alkis_wfs_sf?"/>
+<ows:Post xlink:href="https://opendata.lgln.niedersachsen.de/doorman/noauth/alkis_wfs_sf"/>
+</ows:HTTP>
+</ows:DCP>
+<ows:Parameter name="resolve">
+<ows:AllowedValues>
+<ows:Value>none</ows:Value>
+<ows:Value>local</ows:Value>
+</ows:AllowedValues>
+</ows:Parameter>
+<ows:Parameter name="outputFormat">
+<ows:AllowedValues>
+<ows:Value>text/xml; subtype=gml/3.1.1</ows:Value>
+<ows:Value>application/gml+xml; version=3.1</ows:Value>
+<ows:Value>text/xml; subtype=gml/3.2.1</ows:Value>
+<ows:Value>application/gml+xml; version=3.2</ows:Value>
+</ows:AllowedValues>
+</ows:Parameter>
+</ows:Operation>
+<ows:Operation name="ListStoredQueries">
+<ows:DCP>
+<ows:HTTP>
+<ows:Get xlink:href="https://opendata.lgln.niedersachsen.de/doorman/noauth/alkis_wfs_sf?"/>
+<ows:Post xlink:href="https://opendata.lgln.niedersachsen.de/doorman/noauth/alkis_wfs_sf"/>
+</ows:HTTP>
+</ows:DCP>
+</ows:Operation>
+<ows:Operation name="DescribeStoredQueries">
+<ows:DCP>
+<ows:HTTP>
+<ows:Get xlink:href="https://opendata.lgln.niedersachsen.de/doorman/noauth/alkis_wfs_sf?"/>
+<ows:Post xlink:href="https://opendata.lgln.niedersachsen.de/doorman/noauth/alkis_wfs_sf"/>
+</ows:HTTP>
+</ows:DCP>
+</ows:Operation>
+<ows:Operation name="CreateStoredQuery">
+<ows:DCP>
+<ows:HTTP>
+<ows:Get xlink:href="https://opendata.lgln.niedersachsen.de/doorman/noauth/alkis_wfs_sf?"/>
+<ows:Post xlink:href="https://opendata.lgln.niedersachsen.de/doorman/noauth/alkis_wfs_sf"/>
+</ows:HTTP>
+</ows:DCP>
+<ows:Parameter name="language">
+<ows:AllowedValues>
+<ows:Value>urn:ogc:def:queryLanguage:OGC-WFS::WFSQueryExpression</ows:Value>
+</ows:AllowedValues>
+</ows:Parameter>
+</ows:Operation>
+<ows:Operation name="DropStoredQuery">
+<ows:DCP>
+<ows:HTTP>
+<ows:Get xlink:href="https://opendata.lgln.niedersachsen.de/doorman/noauth/alkis_wfs_sf?"/>
+<ows:Post xlink:href="https://opendata.lgln.niedersachsen.de/doorman/noauth/alkis_wfs_sf"/>
+</ows:HTTP>
+</ows:DCP>
+</ows:Operation>
+<ows:Parameter name="version">
+<ows:AllowedValues>
+<ows:Value>2.0.0</ows:Value>
+<ows:Value>1.1.0</ows:Value>
+</ows:AllowedValues>
+</ows:Parameter>
+<ows:Parameter name="srsName">
+<ows:AllowedValues>
+<ows:Value>urn:ogc:def:crs:EPSG::25832</ows:Value>
+<ows:Value>urn:ogc:def:crs:EPSG::25833</ows:Value>
+<ows:Value>urn:ogc:def:crs:EPSG::3034</ows:Value>
+<ows:Value>urn:ogc:def:crs:EPSG::31466</ows:Value>
+<ows:Value>urn:ogc:def:crs:EPSG::31467</ows:Value>
+<ows:Value>urn:ogc:def:crs:EPSG::31468</ows:Value>
+<ows:Value>urn:ogc:def:crs:EPSG::4258</ows:Value>
+<ows:Value>urn:ogc:def:crs:EPSG::4326</ows:Value>
+<ows:Value>urn:ogc:def:crs:EPSG::995676</ows:Value>
+<ows:Value>urn:ogc:def:crs:EPSG::995677</ows:Value>
+<ows:Value>urn:ogc:def:crs:EPSG::995678</ows:Value>
+<ows:Value>urn:ogc:def:crs:EPSG::995679</ows:Value>
+</ows:AllowedValues>
+</ows:Parameter>
+<ows:Constraint name="ImplementsSimpleWFS">
+<ows:NoValues/>
+<ows:DefaultValue>TRUE</ows:DefaultValue>
+</ows:Constraint>
+<ows:Constraint name="ImplementsBasicWFS">
+<ows:NoValues/>
+<ows:DefaultValue>TRUE</ows:DefaultValue>
+</ows:Constraint>
+<ows:Constraint name="ImplementsTransactionalWFS">
+<ows:NoValues/>
+<ows:DefaultValue>FALSE</ows:DefaultValue>
+</ows:Constraint>
+<ows:Constraint name="ImplementsLockingWFS">
+<ows:NoValues/>
+<ows:DefaultValue>FALSE</ows:DefaultValue>
+</ows:Constraint>
+<ows:Constraint name="KVPEncoding">
+<ows:NoValues/>
+<ows:DefaultValue>TRUE</ows:DefaultValue>
+</ows:Constraint>
+<ows:Constraint name="XMLEncoding">
+<ows:NoValues/>
+<ows:DefaultValue>TRUE</ows:DefaultValue>
+</ows:Constraint>
+<ows:Constraint name="SOAPEncoding">
+<ows:NoValues/>
+<ows:DefaultValue>FALSE</ows:DefaultValue>
+</ows:Constraint>
+<ows:Constraint name="ImplementsInheritance">
+<ows:NoValues/>
+<ows:DefaultValue>TRUE</ows:DefaultValue>
+</ows:Constraint>
+<ows:Constraint name="ImplementsRemoteResolve">
+<ows:NoValues/>
+<ows:DefaultValue>FALSE</ows:DefaultValue>
+</ows:Constraint>
+<ows:Constraint name="ImplementsResultPaging">
+<ows:NoValues/>
+<ows:DefaultValue>FALSE</ows:DefaultValue>
+</ows:Constraint>
+<ows:Constraint name="ImplementsStandardJoins">
+<ows:NoValues/>
+<ows:DefaultValue>FALSE</ows:DefaultValue>
+</ows:Constraint>
+<ows:Constraint name="ImplementsSpatialJoins">
+<ows:NoValues/>
+<ows:DefaultValue>FALSE</ows:DefaultValue>
+</ows:Constraint>
+<ows:Constraint name="ImplementsTemporalJoins">
+<ows:NoValues/>
+<ows:DefaultValue>FALSE</ows:DefaultValue>
+</ows:Constraint>
+<ows:Constraint name="ImplementsFeatureVersioning">
+<ows:NoValues/>
+<ows:DefaultValue>FALSE</ows:DefaultValue>
+</ows:Constraint>
+<ows:Constraint name="ManageStoredQueries">
+<ows:NoValues/>
+<ows:DefaultValue>TRUE</ows:DefaultValue>
+</ows:Constraint>
+<ows:Constraint name="AutomaticDataLocking">
+<ows:NoValues/>
+<ows:DefaultValue>TRUE</ows:DefaultValue>
+</ows:Constraint>
+<ows:Constraint name="PreservesSiblingOrder">
+<ows:NoValues/>
+<ows:DefaultValue>TRUE</ows:DefaultValue>
+</ows:Constraint>
+<ows:Constraint name="CountDefault">
+<ows:NoValues/>
+<ows:DefaultValue>10000</ows:DefaultValue>
+</ows:Constraint>
+<ows:Constraint name="ResolveLocalScope">
+<ows:NoValues/>
+<ows:DefaultValue>*</ows:DefaultValue>
+</ows:Constraint>
+<ows:Constraint name="ResolveRemoteScope">
+<ows:NoValues/>
+<ows:DefaultValue>0</ows:DefaultValue>
+</ows:Constraint>
+<ows:Constraint name="QueryExpressions">
+<ows:AllowedValues>
+<ows:Value>wfs:Query</ows:Value>
+<ows:Value>wfs:StoredQuery</ows:Value>
+</ows:AllowedValues>
+</ows:Constraint>
+<ows:ExtendedCapabilities>
+<inspire_dls:ExtendedCapabilities>
+<inspire_common:MetadataUrl>
+<inspire_common:URL>https://download.lgln.niedersachsen.de/harvest/srv/ger/csw?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full&amp;id=</inspire_common:URL>
+<inspire_common:MediaType>application/vnd.ogc.csw.GetRecordByIdResponse_xml</inspire_common:MediaType>
+</inspire_common:MetadataUrl>
+<inspire_common:SupportedLanguages>
+<inspire_common:DefaultLanguage>
+<inspire_common:Language>ger</inspire_common:Language>
+</inspire_common:DefaultLanguage>
+</inspire_common:SupportedLanguages>
+<inspire_common:ResponseLanguage>
+<inspire_common:Language>ger</inspire_common:Language>
+</inspire_common:ResponseLanguage>
+<inspire_dls:SpatialDataSetIdentifier>
+<inspire_common:Code>https://registry.gdi-de.org/id/de.ni.land.geobasisdaten/0772a86b-8789-40b3-b388-68c1cf5f8bdf</inspire_common:Code>
+</inspire_dls:SpatialDataSetIdentifier>
+</inspire_dls:ExtendedCapabilities>
+</ows:ExtendedCapabilities>
+</ows:OperationsMetadata>
+<wfs:FeatureTypeList>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AP_Darstellung</wfs:Name>
+<wfs:Title>adv_AP_Darstellung</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AP_FPO</wfs:Name>
+<wfs:Title>adv_AP_FPO</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AP_LPO</wfs:Name>
+<wfs:Title>adv_AP_LPO</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AP_LTO</wfs:Name>
+<wfs:Title>adv_AP_LTO</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AP_PPO</wfs:Name>
+<wfs:Title>adv_AP_PPO</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AP_PTO</wfs:Name>
+<wfs:Title>adv_AP_PTO</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_AndereFestlegungNachStrassenrecht</wfs:Name>
+<wfs:Title>adv_AX_AndereFestlegungNachStrassenrecht</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_AndereFestlegungNachWasserrecht</wfs:Name>
+<wfs:Title>adv_AX_AndereFestlegungNachWasserrecht</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Bahnstrecke</wfs:Name>
+<wfs:Title>adv_AX_Bahnstrecke</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Bahnverkehr</wfs:Name>
+<wfs:Title>adv_AX_Bahnverkehr</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Bahnverkehrsanlage</wfs:Name>
+<wfs:Title>adv_AX_Bahnverkehrsanlage</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_BauRaumOderBodenordnungsrecht</wfs:Name>
+<wfs:Title>adv_AX_BauRaumOderBodenordnungsrecht</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_BauRaumOderBodenordnungsrechtGrundbuch</wfs:Name>
+<wfs:Title>adv_AX_BauRaumOderBodenordnungsrechtGrundbuch</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Baublock</wfs:Name>
+<wfs:Title>adv_AX_Baublock</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Bauteil</wfs:Name>
+<wfs:Title>adv_AX_Bauteil</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_BauwerkImGewaesserbereich</wfs:Name>
+<wfs:Title>adv_AX_BauwerkImGewaesserbereich</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_BauwerkImVerkehrsbereich</wfs:Name>
+<wfs:Title>adv_AX_BauwerkImVerkehrsbereich</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_BauwerkOderAnlageFuerIndustrieUndGewerbe</wfs:Name>
+<wfs:Title>adv_AX_BauwerkOderAnlageFuerIndustrieUndGewerbe</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_BauwerkOderAnlageFuerSportFreizeitUndErholung</wfs:Name>
+<wfs:Title>adv_AX_BauwerkOderAnlageFuerSportFreizeitUndErholung</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Bergbaubetrieb</wfs:Name>
+<wfs:Title>adv_AX_Bergbaubetrieb</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_BesondereFlurstuecksgrenze</wfs:Name>
+<wfs:Title>adv_AX_BesondereFlurstuecksgrenze</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_BesondereGebaeudelinie</wfs:Name>
+<wfs:Title>adv_AX_BesondereGebaeudelinie</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_BesondererBauwerkspunkt</wfs:Name>
+<wfs:Title>adv_AX_BesondererBauwerkspunkt</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_BesondererGebaeudepunkt</wfs:Name>
+<wfs:Title>adv_AX_BesondererGebaeudepunkt</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_BesondererTopographischerPunkt</wfs:Name>
+<wfs:Title>adv_AX_BesondererTopographischerPunkt</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Bewertung</wfs:Name>
+<wfs:Title>adv_AX_Bewertung</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Bodenschaetzung</wfs:Name>
+<wfs:Title>adv_AX_Bodenschaetzung</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_BoeschungKliff</wfs:Name>
+<wfs:Title>adv_AX_BoeschungKliff</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Boeschungsflaeche</wfs:Name>
+<wfs:Title>adv_AX_Boeschungsflaeche</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Buchungsblattbezirk</wfs:Name>
+<wfs:Title>adv_AX_Buchungsblattbezirk</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Bundesland</wfs:Name>
+<wfs:Title>adv_AX_Bundesland</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_DammWallDeich</wfs:Name>
+<wfs:Title>adv_AX_DammWallDeich</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Denkmalschutzrecht</wfs:Name>
+<wfs:Title>adv_AX_Denkmalschutzrecht</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Dienststelle</wfs:Name>
+<wfs:Title>adv_AX_Dienststelle</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Duene</wfs:Name>
+<wfs:Title>adv_AX_Duene</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_EinrichtungInOeffentlichenBereichen</wfs:Name>
+<wfs:Title>adv_AX_EinrichtungInOeffentlichenBereichen</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_EinrichtungenFuerDenSchiffsverkehr</wfs:Name>
+<wfs:Title>adv_AX_EinrichtungenFuerDenSchiffsverkehr</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Fahrbahnachse</wfs:Name>
+<wfs:Title>adv_AX_Fahrbahnachse</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Fahrwegachse</wfs:Name>
+<wfs:Title>adv_AX_Fahrwegachse</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_FelsenFelsblockFelsnadel</wfs:Name>
+<wfs:Title>adv_AX_FelsenFelsblockFelsnadel</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Firstlinie</wfs:Name>
+<wfs:Title>adv_AX_Firstlinie</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_FlaecheBesondererFunktionalerPraegung</wfs:Name>
+<wfs:Title>adv_AX_FlaecheBesondererFunktionalerPraegung</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_FlaecheGemischterNutzung</wfs:Name>
+<wfs:Title>adv_AX_FlaecheGemischterNutzung</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Fliessgewaesser</wfs:Name>
+<wfs:Title>adv_AX_Fliessgewaesser</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Flugverkehr</wfs:Name>
+<wfs:Title>adv_AX_Flugverkehr</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Flugverkehrsanlage</wfs:Name>
+<wfs:Title>adv_AX_Flugverkehrsanlage</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Flurstueck</wfs:Name>
+<wfs:Title>adv_AX_Flurstueck</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Forstrecht</wfs:Name>
+<wfs:Title>adv_AX_Forstrecht</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_FortfuehrungsfallGrundbuch</wfs:Name>
+<wfs:Title>adv_AX_FortfuehrungsfallGrundbuch</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Friedhof</wfs:Name>
+<wfs:Title>adv_AX_Friedhof</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Gebaeude</wfs:Name>
+<wfs:Title>adv_AX_Gebaeude</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Gebaeudeausgestaltung</wfs:Name>
+<wfs:Title>adv_AX_Gebaeudeausgestaltung</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Gehoelz</wfs:Name>
+<wfs:Title>adv_AX_Gehoelz</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Gemarkung</wfs:Name>
+<wfs:Title>adv_AX_Gemarkung</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_GemarkungsteilFlur</wfs:Name>
+<wfs:Title>adv_AX_GemarkungsteilFlur</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Gemeinde</wfs:Name>
+<wfs:Title>adv_AX_Gemeinde</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Gemeindeteil</wfs:Name>
+<wfs:Title>adv_AX_Gemeindeteil</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_GeoreferenzierteGebaeudeadresse</wfs:Name>
+<wfs:Title>adv_AX_GeoreferenzierteGebaeudeadresse</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Gewaesserachse</wfs:Name>
+<wfs:Title>adv_AX_Gewaesserachse</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Gewaessermerkmal</wfs:Name>
+<wfs:Title>adv_AX_Gewaessermerkmal</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Gewaesserstationierungsachse</wfs:Name>
+<wfs:Title>adv_AX_Gewaesserstationierungsachse</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Gleis</wfs:Name>
+<wfs:Title>adv_AX_Gleis</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_GrablochDerBodenschaetzung</wfs:Name>
+<wfs:Title>adv_AX_GrablochDerBodenschaetzung</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Grenzpunkt</wfs:Name>
+<wfs:Title>adv_AX_Grenzpunkt</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Hafen</wfs:Name>
+<wfs:Title>adv_AX_Hafen</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Hafenbecken</wfs:Name>
+<wfs:Title>adv_AX_Hafenbecken</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Halde</wfs:Name>
+<wfs:Title>adv_AX_Halde</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Heide</wfs:Name>
+<wfs:Title>adv_AX_Heide</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_HeilquelleGasquelle</wfs:Name>
+<wfs:Title>adv_AX_HeilquelleGasquelle</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_HistorischesBauwerkOderHistorischeEinrichtung</wfs:Name>
+<wfs:Title>adv_AX_HistorischesBauwerkOderHistorischeEinrichtung</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Hoehenlinie</wfs:Name>
+<wfs:Title>adv_AX_Hoehenlinie</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Hoehleneingang</wfs:Name>
+<wfs:Title>adv_AX_Hoehleneingang</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_IndustrieUndGewerbeflaeche</wfs:Name>
+<wfs:Title>adv_AX_IndustrieUndGewerbeflaeche</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Insel</wfs:Name>
+<wfs:Title>adv_AX_Insel</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Kanal</wfs:Name>
+<wfs:Title>adv_AX_Kanal</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_KlassifizierungNachStrassenrecht</wfs:Name>
+<wfs:Title>adv_AX_KlassifizierungNachStrassenrecht</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_KlassifizierungNachWasserrecht</wfs:Name>
+<wfs:Title>adv_AX_KlassifizierungNachWasserrecht</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_KleinraeumigerLandschaftsteil</wfs:Name>
+<wfs:Title>adv_AX_KleinraeumigerLandschaftsteil</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_KommunalesGebiet</wfs:Name>
+<wfs:Title>adv_AX_KommunalesGebiet</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_KreisRegion</wfs:Name>
+<wfs:Title>adv_AX_KreisRegion</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_LagebezeichnungKatalogeintrag</wfs:Name>
+<wfs:Title>adv_AX_LagebezeichnungKatalogeintrag</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_LagebezeichnungMitHausnummer</wfs:Name>
+<wfs:Title>adv_AX_LagebezeichnungMitHausnummer</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_LagebezeichnungMitPseudonummer</wfs:Name>
+<wfs:Title>adv_AX_LagebezeichnungMitPseudonummer</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_LagebezeichnungOhneHausnummer</wfs:Name>
+<wfs:Title>adv_AX_LagebezeichnungOhneHausnummer</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Landschaft</wfs:Name>
+<wfs:Title>adv_AX_Landschaft</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Landwirtschaft</wfs:Name>
+<wfs:Title>adv_AX_Landwirtschaft</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Leitung</wfs:Name>
+<wfs:Title>adv_AX_Leitung</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Meer</wfs:Name>
+<wfs:Title>adv_AX_Meer</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Moor</wfs:Name>
+<wfs:Title>adv_AX_Moor</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_MusterUndVergleichsstueck</wfs:Name>
+<wfs:Title>adv_AX_MusterUndVergleichsstueck</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_NaturUmweltOderBodenschutzrecht</wfs:Name>
+<wfs:Title>adv_AX_NaturUmweltOderBodenschutzrecht</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Ortslage</wfs:Name>
+<wfs:Title>adv_AX_Ortslage</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Platz</wfs:Name>
+<wfs:Title>adv_AX_Platz</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Punkt3D</wfs:Name>
+<wfs:Title>adv_AX_Punkt3D</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_PunktortAG</wfs:Name>
+<wfs:Title>adv_AX_PunktortAG</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_PunktortAU</wfs:Name>
+<wfs:Title>adv_AX_PunktortAU</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_PunktortTA</wfs:Name>
+<wfs:Title>adv_AX_PunktortTA</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Regierungsbezirk</wfs:Name>
+<wfs:Title>adv_AX_Regierungsbezirk</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_SchifffahrtslinieFaehrverkehr</wfs:Name>
+<wfs:Title>adv_AX_SchifffahrtslinieFaehrverkehr</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Schiffsverkehr</wfs:Name>
+<wfs:Title>adv_AX_Schiffsverkehr</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Schleuse</wfs:Name>
+<wfs:Title>adv_AX_Schleuse</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_SchutzgebietNachNaturUmweltOderBodenschutzrecht</wfs:Name>
+<wfs:Title>adv_AX_SchutzgebietNachNaturUmweltOderBodenschutzrecht</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_SchutzgebietNachWasserrecht</wfs:Name>
+<wfs:Title>adv_AX_SchutzgebietNachWasserrecht</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Schutzzone</wfs:Name>
+<wfs:Title>adv_AX_Schutzzone</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_SeilbahnSchwebebahn</wfs:Name>
+<wfs:Title>adv_AX_SeilbahnSchwebebahn</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_SonstigesBauwerkOderSonstigeEinrichtung</wfs:Name>
+<wfs:Title>adv_AX_SonstigesBauwerkOderSonstigeEinrichtung</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_SonstigesRecht</wfs:Name>
+<wfs:Title>adv_AX_SonstigesRecht</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_SportFreizeitUndErholungsflaeche</wfs:Name>
+<wfs:Title>adv_AX_SportFreizeitUndErholungsflaeche</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_StehendesGewaesser</wfs:Name>
+<wfs:Title>adv_AX_StehendesGewaesser</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Strasse</wfs:Name>
+<wfs:Title>adv_AX_Strasse</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Strassenachse</wfs:Name>
+<wfs:Title>adv_AX_Strassenachse</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Strassenverkehr</wfs:Name>
+<wfs:Title>adv_AX_Strassenverkehr</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Strassenverkehrsanlage</wfs:Name>
+<wfs:Title>adv_AX_Strassenverkehrsanlage</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Strukturlinie3D</wfs:Name>
+<wfs:Title>adv_AX_Strukturlinie3D</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Sumpf</wfs:Name>
+<wfs:Title>adv_AX_Sumpf</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_TagebauGrubeSteinbruch</wfs:Name>
+<wfs:Title>adv_AX_TagebauGrubeSteinbruch</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Tagesabschnitt</wfs:Name>
+<wfs:Title>adv_AX_Tagesabschnitt</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_TopographischeLinie</wfs:Name>
+<wfs:Title>adv_AX_TopographischeLinie</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Transportanlage</wfs:Name>
+<wfs:Title>adv_AX_Transportanlage</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Turm</wfs:Name>
+<wfs:Title>adv_AX_Turm</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_UnlandVegetationsloseFlaeche</wfs:Name>
+<wfs:Title>adv_AX_UnlandVegetationsloseFlaeche</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_UntergeordnetesGewaesser</wfs:Name>
+<wfs:Title>adv_AX_UntergeordnetesGewaesser</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Vegetationsmerkmal</wfs:Name>
+<wfs:Title>adv_AX_Vegetationsmerkmal</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Verwaltungsgemeinschaft</wfs:Name>
+<wfs:Title>adv_AX_Verwaltungsgemeinschaft</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_VorratsbehaelterSpeicherbauwerk</wfs:Name>
+<wfs:Title>adv_AX_VorratsbehaelterSpeicherbauwerk</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Wald</wfs:Name>
+<wfs:Title>adv_AX_Wald</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Wasserlauf</wfs:Name>
+<wfs:Title>adv_AX_Wasserlauf</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Wasserspiegelhoehe</wfs:Name>
+<wfs:Title>adv_AX_Wasserspiegelhoehe</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Weg</wfs:Name>
+<wfs:Title>adv_AX_Weg</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_WegPfadSteig</wfs:Name>
+<wfs:Title>adv_AX_WegPfadSteig</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_WirtschaftlicheEinheit</wfs:Name>
+<wfs:Title>adv_AX_WirtschaftlicheEinheit</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Wohnbauflaeche</wfs:Name>
+<wfs:Title>adv_AX_Wohnbauflaeche</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+<wfs:FeatureType xmlns:adv="http://www.adv-online.de/namespaces/adv/gid/7.1">
+<wfs:Name>adv:AX_Wohnplatz</wfs:Name>
+<wfs:Title>adv_AX_Wohnplatz</wfs:Title>
+<wfs:DefaultCRS>urn:ogc:def:crs:EPSG::25832</wfs:DefaultCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::25833</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::3034</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31466</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31467</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::31468</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4258</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::4326</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995676</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995677</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995678</wfs:OtherCRS>
+<wfs:OtherCRS>urn:ogc:def:crs:EPSG::995679</wfs:OtherCRS>
+<ows:WGS84BoundingBox>
+<ows:LowerCorner>6.27356684447052 51.1973805910083</ows:LowerCorner>
+<ows:UpperCorner>11.7876220580025 54.1621753606462</ows:UpperCorner>
+</ows:WGS84BoundingBox>
+</wfs:FeatureType>
+</wfs:FeatureTypeList>
+<fes:Filter_Capabilities>
+<fes:Conformance>
+<fes:Constraint name="ImplementsQuery">
+<ows:NoValues/>
+<ows:DefaultValue>TRUE</ows:DefaultValue>
+</fes:Constraint>
+<fes:Constraint name="ImplementsAdHocQuery">
+<ows:NoValues/>
+<ows:DefaultValue>TRUE</ows:DefaultValue>
+</fes:Constraint>
+<fes:Constraint name="ImplementsFunctions">
+<ows:NoValues/>
+<ows:DefaultValue>TRUE</ows:DefaultValue>
+</fes:Constraint>
+<fes:Constraint name="ImplementsResourceId">
+<ows:NoValues/>
+<ows:DefaultValue>TRUE</ows:DefaultValue>
+</fes:Constraint>
+<fes:Constraint name="ImplementsMinStandardFilter">
+<ows:NoValues/>
+<ows:DefaultValue>TRUE</ows:DefaultValue>
+</fes:Constraint>
+<fes:Constraint name="ImplementsStandardFilter">
+<ows:NoValues/>
+<ows:DefaultValue>TRUE</ows:DefaultValue>
+</fes:Constraint>
+<fes:Constraint name="ImplementsMinSpatialFilter">
+<ows:NoValues/>
+<ows:DefaultValue>TRUE</ows:DefaultValue>
+</fes:Constraint>
+<fes:Constraint name="ImplementsSpatialFilter">
+<ows:NoValues/>
+<ows:DefaultValue>TRUE</ows:DefaultValue>
+</fes:Constraint>
+<fes:Constraint name="ImplementsMinTemporalFilter">
+<ows:NoValues/>
+<ows:DefaultValue>TRUE</ows:DefaultValue>
+</fes:Constraint>
+<fes:Constraint name="ImplementsTemporalFilter">
+<ows:NoValues/>
+<ows:DefaultValue>TRUE</ows:DefaultValue>
+</fes:Constraint>
+<fes:Constraint name="ImplementsVersionNav">
+<ows:NoValues/>
+<ows:DefaultValue>FALSE</ows:DefaultValue>
+</fes:Constraint>
+<fes:Constraint name="ImplementsSorting">
+<ows:NoValues/>
+<ows:DefaultValue>TRUE</ows:DefaultValue>
+</fes:Constraint>
+<fes:Constraint name="ImplementsExtendedOperators">
+<ows:NoValues/>
+<ows:DefaultValue>FALSE</ows:DefaultValue>
+</fes:Constraint>
+<fes:Constraint name="ImplementsMinimumXPath">
+<ows:NoValues/>
+<ows:DefaultValue>TRUE</ows:DefaultValue>
+</fes:Constraint>
+<fes:Constraint name="ImplementsSchemaElementFunc">
+<ows:NoValues/>
+<ows:DefaultValue>TRUE</ows:DefaultValue>
+</fes:Constraint>
+</fes:Conformance>
+<fes:Id_Capabilities>
+<fes:ResourceIdentifier name="fes:ResourceId"/>
+</fes:Id_Capabilities>
+<fes:Scalar_Capabilities>
+<fes:LogicalOperators/>
+<fes:ComparisonOperators>
+<fes:ComparisonOperator name="PropertyIsEqualTo"/>
+<fes:ComparisonOperator name="PropertyIsNotEqualTo"/>
+<fes:ComparisonOperator name="PropertyIsLessThan"/>
+<fes:ComparisonOperator name="PropertyIsGreaterThan"/>
+<fes:ComparisonOperator name="PropertyIsLessThanOrEqualTo"/>
+<fes:ComparisonOperator name="PropertyIsGreaterThanOrEqualTo"/>
+<fes:ComparisonOperator name="PropertyIsLike"/>
+<fes:ComparisonOperator name="PropertyIsNull"/>
+<fes:ComparisonOperator name="PropertyIsNil"/>
+<fes:ComparisonOperator name="PropertyIsBetween"/>
+</fes:ComparisonOperators>
+</fes:Scalar_Capabilities>
+<fes:Spatial_Capabilities>
+<fes:GeometryOperands>
+<fes:GeometryOperand name="gml:Point"/>
+<fes:GeometryOperand name="gml:MultiPoint"/>
+<fes:GeometryOperand name="gml:LineString"/>
+<fes:GeometryOperand name="gml:Arc"/>
+<fes:GeometryOperand name="gml:CubicSpline"/>
+<fes:GeometryOperand name="gml:MultiLineString"/>
+<fes:GeometryOperand name="gml:Curve"/>
+<fes:GeometryOperand name="gml:MultiCurve"/>
+<fes:GeometryOperand name="gml:Polygon"/>
+<fes:GeometryOperand name="gml:MultiSurface"/>
+<fes:GeometryOperand name="gml:Box"/>
+<fes:GeometryOperand name="gml:Envelope"/>
+</fes:GeometryOperands>
+<fes:SpatialOperators>
+<fes:SpatialOperator name="BBOX"/>
+<fes:SpatialOperator name="Equals"/>
+<fes:SpatialOperator name="Disjoint"/>
+<fes:SpatialOperator name="Intersects"/>
+<fes:SpatialOperator name="Touches"/>
+<fes:SpatialOperator name="Crosses"/>
+<fes:SpatialOperator name="Within"/>
+<fes:SpatialOperator name="Contains"/>
+<fes:SpatialOperator name="Overlaps"/>
+<fes:SpatialOperator name="Beyond"/>
+<fes:SpatialOperator name="DWithin"/>
+</fes:SpatialOperators>
+</fes:Spatial_Capabilities>
+<fes:Temporal_Capabilities>
+<fes:TemporalOperands>
+<fes:TemporalOperand name="gml:TimeInstant"/>
+<fes:TemporalOperand name="gml:TimePeriod"/>
+</fes:TemporalOperands>
+<fes:TemporalOperators>
+<fes:TemporalOperator name="After"/>
+<fes:TemporalOperator name="Before"/>
+<fes:TemporalOperator name="Begins"/>
+<fes:TemporalOperator name="BegunBy"/>
+<fes:TemporalOperator name="TContains"/>
+<fes:TemporalOperator name="During"/>
+<fes:TemporalOperator name="TEquals"/>
+<fes:TemporalOperator name="TOverlaps"/>
+<fes:TemporalOperator name="Meets"/>
+<fes:TemporalOperator name="OverlappedBy"/>
+<fes:TemporalOperator name="MetBy"/>
+<fes:TemporalOperator name="EndedBy"/>
+</fes:TemporalOperators>
+</fes:Temporal_Capabilities>
+<fes:Functions>
+<fes:Function name="modulo">
+<fes:Returns>xsd:integer</fes:Returns>
+<fes:Arguments>
+<fes:Argument name="dividend">
+<fes:Type>xsd:double</fes:Type>
+</fes:Argument>
+<fes:Argument name="divisor">
+<fes:Type>xsd:double</fes:Type>
+</fes:Argument>
+</fes:Arguments>
+</fes:Function>
+<fes:Function name="mod">
+<fes:Returns>xsd:integer</fes:Returns>
+<fes:Arguments>
+<fes:Argument name="dividend">
+<fes:Type>xsd:double</fes:Type>
+</fes:Argument>
+<fes:Argument name="divisor">
+<fes:Type>xsd:double</fes:Type>
+</fes:Argument>
+</fes:Arguments>
+</fes:Function>
+<fes:Function name="abs">
+<fes:Returns>xsd:integer</fes:Returns>
+<fes:Arguments>
+<fes:Argument name="value">
+<fes:Type>xsd:double</fes:Type>
+</fes:Argument>
+</fes:Arguments>
+</fes:Function>
+<fes:Function name="concatenate">
+<fes:Returns>xsd:string</fes:Returns>
+<fes:Arguments>
+<fes:Argument name="value1">
+<fes:Type>xsd:string</fes:Type>
+</fes:Argument>
+<fes:Argument name="value2">
+<fes:Type>xsd:string</fes:Type>
+</fes:Argument>
+</fes:Arguments>
+</fes:Function>
+<fes:Function name="coalesce">
+<fes:Returns>xsd:anyType</fes:Returns>
+<fes:Arguments>
+<fes:Argument name="value1">
+<fes:Type>xsd:anyType</fes:Type>
+</fes:Argument>
+<fes:Argument name="value2">
+<fes:Type>xsd:anyType</fes:Type>
+</fes:Argument>
+</fes:Arguments>
+</fes:Function>
+<fes:Function name="toRomanNumeral">
+<fes:Returns>xsd:string</fes:Returns>
+<fes:Arguments>
+<fes:Argument name="value">
+<fes:Type>xsd:positiveInteger</fes:Type>
+</fes:Argument>
+</fes:Arguments>
+</fes:Function>
+<fes:Function name="geoDim">
+<fes:Returns>xsd:integer</fes:Returns>
+<fes:Arguments>
+<fes:Argument name="value">
+<fes:Type>gml:AbstractGeometryType</fes:Type>
+</fes:Argument>
+</fes:Arguments>
+</fes:Function>
+<fes:Function name="geoArea">
+<fes:Returns>xsd:double</fes:Returns>
+<fes:Arguments>
+<fes:Argument name="value">
+<fes:Type>gml:AbstractGeometryType</fes:Type>
+</fes:Argument>
+</fes:Arguments>
+</fes:Function>
+<fes:Function name="geoLength">
+<fes:Returns>xsd:double</fes:Returns>
+<fes:Arguments>
+<fes:Argument name="value">
+<fes:Type>gml:AbstractGeometryType</fes:Type>
+</fes:Argument>
+</fes:Arguments>
+</fes:Function>
+<fes:Function name="geoMakeLine">
+<fes:Returns>gml:LineString</fes:Returns>
+<fes:Arguments>
+<fes:Argument name="value">
+<fes:Type>gml:AbstractGeometryType</fes:Type>
+</fes:Argument>
+<fes:Argument name="value">
+<fes:Type>gml:AbstractGeometryType</fes:Type>
+</fes:Argument>
+</fes:Arguments>
+</fes:Function>
+<fes:Function name="geoLineMerge">
+<fes:Returns>gml:AbstractGeometryType</fes:Returns>
+<fes:Arguments>
+<fes:Argument name="value">
+<fes:Type>gml:AbstractGeometryType</fes:Type>
+</fes:Argument>
+</fes:Arguments>
+</fes:Function>
+<fes:Function name="geoGeometryN">
+<fes:Returns xmlns:gml="http://www.opengis.net/gml/3.2">gml:AbstractGeometryType</fes:Returns>
+<fes:Arguments>
+<fes:Argument name="value">
+<fes:Type xmlns:gml="http://www.opengis.net/gml/3.2">gml:AbstractGeometryType</fes:Type>
+</fes:Argument>
+<fes:Argument name="num">
+<fes:Type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:positiveInteger</fes:Type>
+</fes:Argument>
+</fes:Arguments>
+</fes:Function>
+<fes:Function name="geoStartPoint">
+<fes:Returns xmlns:gml="http://www.opengis.net/gml/3.2">gml:AbstractGeometryType</fes:Returns>
+<fes:Arguments>
+<fes:Argument name="value">
+<fes:Type xmlns:gml="http://www.opengis.net/gml/3.2">gml:AbstractGeometryType</fes:Type>
+</fes:Argument>
+</fes:Arguments>
+</fes:Function>
+</fes:Functions>
+</fes:Filter_Capabilities>
+</wfs:WFS_Capabilities>

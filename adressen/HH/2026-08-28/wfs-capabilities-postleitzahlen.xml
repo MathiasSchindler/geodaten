@@ -1,0 +1,640 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<WFS_Capabilities version="2.0.0" xmlns="http://www.opengis.net/wfs/2.0" xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:ogc="http://www.opengis.net/ogc" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:gml="http://www.opengis.net/gml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd">
+  <ows:ServiceIdentification>
+    <ows:Title>WFS Postleitzahlen Hamburg</ows:Title>
+    <ows:Abstract>Dieser Web Feature Service (WFS) stellt die Postleitzahlen- und deren Grenzen im Intranet kostenfrei zum Download bereit.
+
+Zur genaueren Beschreibung der Daten und Datenverantwortung nutzen Sie bitte den Verweis zur Datensatzbeschreibung.</ows:Abstract>
+    <ows:ServiceType codeSpace="http://www.opengeospatial.org/">WFS</ows:ServiceType>
+    <ows:ServiceTypeVersion>2.0.0</ows:ServiceTypeVersion>
+    <ows:ServiceTypeVersion>1.1.0</ows:ServiceTypeVersion>
+    <ows:Fees>Nutzung der Daten nur nach Rücksprache mit dem Dateneigentümer</ows:Fees>
+    <ows:AccessConstraints>Die Gebiete der PLZ sind auf Basis von ALKIS "nachrichtlich" erfasst. Die Deutsche Post AG stellt die offiziellen Datensätze nur kostenpflichtig zur Verfügung. Da dem LGV nicht die originären Rechte an diesem Datensatz gehören, können diese im LGV erfassten Datensätze nur für die interne Bearbeitung zur Verfügung gestellt werden.</ows:AccessConstraints>
+  </ows:ServiceIdentification>
+  <ows:ServiceProvider>
+    <ows:ProviderName>LGV Hamburg</ows:ProviderName>
+    <ows:ServiceContact>
+      <ows:PositionName>Geobasisinfrastruktur</ows:PositionName>
+      <ows:ContactInfo>
+        <ows:Phone>
+          <ows:Voice></ows:Voice>
+          <ows:Facsimile></ows:Facsimile>
+        </ows:Phone>
+        <ows:Address>
+          <ows:DeliveryPoint>Neuenfelder Straße 19</ows:DeliveryPoint>
+          <ows:City>Hamburg</ows:City>
+          <ows:AdministrativeArea>HH</ows:AdministrativeArea>
+          <ows:PostalCode>21109</ows:PostalCode>
+          <ows:Country>Germany</ows:Country>
+          <ows:ElectronicMailAddress>udp-hilfe@gv.hamburg.de</ows:ElectronicMailAddress>
+        </ows:Address>
+        <ows:OnlineResource xlink:href="http://www.geoinfo.hamburg.de"/>
+        <ows:HoursOfService></ows:HoursOfService>
+        <ows:ContactInstructions></ows:ContactInstructions>
+      </ows:ContactInfo>
+      <ows:Role>PointOfContact</ows:Role>
+    </ows:ServiceContact>
+  </ows:ServiceProvider>
+  <ows:OperationsMetadata>
+    <ows:Operation name="GetCapabilities">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get xlink:href="https://geodienste.hamburg.de/HH_WFS_Postleitzahlen?"/>
+          <ows:Post xlink:href="https://geodienste.hamburg.de/HH_WFS_Postleitzahlen"/>
+        </ows:HTTP>
+      </ows:DCP>
+      <ows:Parameter name="AcceptVersions">
+        <ows:AllowedValues>
+          <ows:Value>2.0.0</ows:Value>
+          <ows:Value>1.1.0</ows:Value>
+        </ows:AllowedValues>
+      </ows:Parameter>
+      <ows:Parameter name="AcceptFormats">
+        <ows:AllowedValues>
+          <ows:Value>text/xml</ows:Value>
+        </ows:AllowedValues>
+      </ows:Parameter>
+      <ows:Parameter name="Sections">
+        <ows:AllowedValues>
+          <ows:Value>ServiceIdentification</ows:Value>
+          <ows:Value>ServiceProvider</ows:Value>
+          <ows:Value>OperationsMetadata</ows:Value>
+          <ows:Value>FeatureTypeList</ows:Value>
+          <ows:Value>Filter_Capabilities</ows:Value>
+        </ows:AllowedValues>
+      </ows:Parameter>
+    </ows:Operation>
+    <ows:Operation name="DescribeFeatureType">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get xlink:href="https://geodienste.hamburg.de/HH_WFS_Postleitzahlen?"/>
+          <ows:Post xlink:href="https://geodienste.hamburg.de/HH_WFS_Postleitzahlen"/>
+        </ows:HTTP>
+      </ows:DCP>
+    </ows:Operation>
+    <ows:Operation name="ListStoredQueries">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get xlink:href="https://geodienste.hamburg.de/HH_WFS_Postleitzahlen?"/>
+          <ows:Post xlink:href="https://geodienste.hamburg.de/HH_WFS_Postleitzahlen"/>
+        </ows:HTTP>
+      </ows:DCP>
+    </ows:Operation>
+    <ows:Operation name="DescribeStoredQueries">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get xlink:href="https://geodienste.hamburg.de/HH_WFS_Postleitzahlen?"/>
+          <ows:Post xlink:href="https://geodienste.hamburg.de/HH_WFS_Postleitzahlen"/>
+        </ows:HTTP>
+      </ows:DCP>
+    </ows:Operation>
+    <ows:Operation name="GetFeature">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get xlink:href="https://geodienste.hamburg.de/HH_WFS_Postleitzahlen?"/>
+          <ows:Post xlink:href="https://geodienste.hamburg.de/HH_WFS_Postleitzahlen"/>
+        </ows:HTTP>
+      </ows:DCP>
+    </ows:Operation>
+    <ows:Operation name="GetPropertyValue">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get xlink:href="https://geodienste.hamburg.de/HH_WFS_Postleitzahlen?"/>
+          <ows:Post xlink:href="https://geodienste.hamburg.de/HH_WFS_Postleitzahlen"/>
+        </ows:HTTP>
+      </ows:DCP>
+    </ows:Operation>
+    <ows:Parameter name="version">
+      <ows:AllowedValues>
+        <ows:Value>2.0.0</ows:Value>
+        <ows:Value>1.1.0</ows:Value>
+      </ows:AllowedValues>
+    </ows:Parameter>
+    <ows:Parameter name="srsName">
+      <ows:AllowedValues>
+        <ows:Value>EPSG:25832</ows:Value>
+        <ows:Value>EPSG:25833</ows:Value>
+        <ows:Value>EPSG:4326</ows:Value>
+        <ows:Value>EPSG:4258</ows:Value>
+        <ows:Value>EPSG:31467</ows:Value>
+        <ows:Value>EPSG:3857</ows:Value>
+        <ows:Value>EPSG:3044</ows:Value>
+        <ows:Value>EPSG:3034</ows:Value>
+        <ows:Value>EPSG:3035</ows:Value>
+      </ows:AllowedValues>
+    </ows:Parameter>
+    <ows:Parameter name="outputFormat">
+      <ows:AllowedValues>
+        <ows:Value>application/gml+xml; version=3.1</ows:Value>
+        <ows:Value>text/xml; subtype=gml/3.1.1</ows:Value>
+        <ows:Value>text/xml; subtype="gml/3.1.1"</ows:Value>
+        <ows:Value>application/gml+xml; version=3.2</ows:Value>
+        <ows:Value>text/xml; subtype=gml/3.2.1</ows:Value>
+        <ows:Value>text/xml; subtype="gml/3.2.1"</ows:Value>
+        <ows:Value>text/csv</ows:Value>
+        <ows:Value>application/geo+json</ows:Value>
+      </ows:AllowedValues>
+    </ows:Parameter>
+    <ows:Parameter name="resolve">
+      <ows:AllowedValues>
+        <ows:Value>none</ows:Value>
+        <ows:Value>local</ows:Value>
+        <ows:Value>remote</ows:Value>
+        <ows:Value>all</ows:Value>
+      </ows:AllowedValues>
+    </ows:Parameter>
+    <ows:Constraint name="ImplementsSimpleWFS">
+      <ows:NoValues/>
+      <ows:DefaultValue>TRUE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="ImplementsBasicWFS">
+      <ows:NoValues/>
+      <ows:DefaultValue>TRUE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="ImplementsTransactionalWFS">
+      <ows:NoValues/>
+      <ows:DefaultValue>FALSE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="ImplementsLockingWFS">
+      <ows:NoValues/>
+      <ows:DefaultValue>FALSE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="KVPEncoding">
+      <ows:NoValues/>
+      <ows:DefaultValue>TRUE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="XMLEncoding">
+      <ows:NoValues/>
+      <ows:DefaultValue>TRUE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="SOAPEncoding">
+      <ows:NoValues/>
+      <ows:DefaultValue>FALSE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="ImplementsInheritance">
+      <ows:NoValues/>
+      <ows:DefaultValue>FALSE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="ImplementsRemoteResolve">
+      <ows:NoValues/>
+      <ows:DefaultValue>FALSE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="ImplementsResultPaging">
+      <ows:NoValues/>
+      <ows:DefaultValue>FALSE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="ImplementsStandardJoins">
+      <ows:NoValues/>
+      <ows:DefaultValue>FALSE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="ImplementsSpatialJoins">
+      <ows:NoValues/>
+      <ows:DefaultValue>TRUE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="ImplementsTemporalJoins">
+      <ows:NoValues/>
+      <ows:DefaultValue>FALSE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="ImplementsFeatureVersioning">
+      <ows:NoValues/>
+      <ows:DefaultValue>FALSE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="ManageStoredQueries">
+      <ows:NoValues/>
+      <ows:DefaultValue>FALSE</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="CountDefault">
+      <ows:NoValues/>
+      <ows:DefaultValue>1000000</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="ResolveLocalScope">
+      <ows:NoValues/>
+      <ows:DefaultValue>*</ows:DefaultValue>
+    </ows:Constraint>
+    <ows:Constraint name="QueryExpressions">
+      <ows:AllowedValues>
+        <ows:Value>wfs:Query</ows:Value>
+        <ows:Value>wfs:StoredQuery</ows:Value>
+      </ows:AllowedValues>
+    </ows:Constraint>
+    <ows:ExtendedCapabilities xmlns:ows="http://www.opengis.net/ows/1.1" xmlns="http://www.deegree.org/services/metadata" xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://inspire.ec.europa.eu/schemas/common/1.0 http://inspire.ec.europa.eu/schemas/common/1.0/common.xsd http://inspire.ec.europa.eu/schemas/inspire_dls/1.0 http://inspire.ec.europa.eu/schemas/inspire_dls/1.0/inspire_dls.xsd">
+      <inspire_common:MetadataUrl>
+        <inspire_common:URL>https://metaver.de/csw?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;id=AD791683-4295-4A0C-9EE2-DF26EF0944B4&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full</inspire_common:URL>
+        <inspire_common:MediaType>application/vnd.ogc.csw.GetRecordByIdResponse_xml</inspire_common:MediaType>
+      
+      </inspire_common:MetadataUrl>
+      <inspire_common:SupportedLanguages>
+        <inspire_common:DefaultLanguage>
+          <inspire_common:Language>ger</inspire_common:Language>
+        
+        </inspire_common:DefaultLanguage>
+      
+      </inspire_common:SupportedLanguages>
+      <inspire_common:ResponseLanguage>
+        <inspire_common:DefaultLanguage>
+          <inspire_common:Language>ger</inspire_common:Language>
+        
+        </inspire_common:DefaultLanguage>
+      
+      </inspire_common:ResponseLanguage>
+      <inspire_dls:SpatialDataSetIdentifier>
+        <inspire_common:Code>https://registry.gdi-de.org/id/de.hh/01a71088-bee8-48af-a670-8a639edca38b</inspire_common:Code>
+      
+      </inspire_dls:SpatialDataSetIdentifier>
+    
+    </ows:ExtendedCapabilities>
+  </ows:OperationsMetadata>
+  <FeatureTypeList>
+    <FeatureType>
+      <Name xmlns:de.hh.up="https://registry.gdi-de.org/id/de.hh.up">de.hh.up:postleitzahlen</Name>
+      <Title>Postleitzahlen</Title>
+      <DefaultCRS>EPSG:25832</DefaultCRS>
+      <OtherCRS>EPSG:25833</OtherCRS>
+      <OtherCRS>EPSG:4326</OtherCRS>
+      <OtherCRS>EPSG:4258</OtherCRS>
+      <OtherCRS>EPSG:31467</OtherCRS>
+      <OtherCRS>EPSG:3857</OtherCRS>
+      <OtherCRS>EPSG:3044</OtherCRS>
+      <OtherCRS>EPSG:3034</OtherCRS>
+      <OtherCRS>EPSG:3035</OtherCRS>
+      <OutputFormats>
+        <Format>application/gml+xml; version=3.1</Format>
+        <Format>text/xml; subtype=gml/3.1.1</Format>
+        <Format>text/xml; subtype="gml/3.1.1"</Format>
+        <Format>application/gml+xml; version=3.2</Format>
+        <Format>text/xml; subtype=gml/3.2.1</Format>
+        <Format>text/xml; subtype="gml/3.2.1"</Format>
+        <Format>text/csv</Format>
+        <Format>application/geo+json</Format>
+      </OutputFormats>
+      <ows:WGS84BoundingBox>
+        <ows:LowerCorner>8.486589 53.393760</ows:LowerCorner>
+        <ows:UpperCorner>10.362694 53.932950</ows:UpperCorner>
+      </ows:WGS84BoundingBox>
+      <MetadataURL xlink:href="https://metaver.de/csw?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;id=A43C8A72-DA46-4575-960B-D096EB702286&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full"/>
+    </FeatureType>
+  </FeatureTypeList>
+  <fes:Filter_Capabilities>
+    <fes:Conformance>
+      <fes:Constraint name="ImplementsQuery">
+        <ows:NoValues/>
+        <ows:DefaultValue>TRUE</ows:DefaultValue>
+      </fes:Constraint>
+      <fes:Constraint name="ImplementsAdHocQuery">
+        <ows:NoValues/>
+        <ows:DefaultValue>TRUE</ows:DefaultValue>
+      </fes:Constraint>
+      <fes:Constraint name="ImplementsFunctions">
+        <ows:NoValues/>
+        <ows:DefaultValue>TRUE</ows:DefaultValue>
+      </fes:Constraint>
+      <fes:Constraint name="ImplementsResourceId">
+        <ows:NoValues/>
+        <ows:DefaultValue>TRUE</ows:DefaultValue>
+      </fes:Constraint>
+      <fes:Constraint name="ImplementsMinStandardFilter">
+        <ows:NoValues/>
+        <ows:DefaultValue>TRUE</ows:DefaultValue>
+      </fes:Constraint>
+      <fes:Constraint name="ImplementsStandardFilter">
+        <ows:NoValues/>
+        <ows:DefaultValue>TRUE</ows:DefaultValue>
+      </fes:Constraint>
+      <fes:Constraint name="ImplementsMinSpatialFilter">
+        <ows:NoValues/>
+        <ows:DefaultValue>TRUE</ows:DefaultValue>
+      </fes:Constraint>
+      <fes:Constraint name="ImplementsSpatialFilter">
+        <ows:NoValues/>
+        <ows:DefaultValue>TRUE</ows:DefaultValue>
+      </fes:Constraint>
+      <fes:Constraint name="ImplementsMinTemporalFilter">
+        <ows:NoValues/>
+        <ows:DefaultValue>TRUE</ows:DefaultValue>
+      </fes:Constraint>
+      <fes:Constraint name="ImplementsTemporalFilter">
+        <ows:NoValues/>
+        <ows:DefaultValue>TRUE</ows:DefaultValue>
+      </fes:Constraint>
+      <fes:Constraint name="ImplementsVersionNav">
+        <ows:NoValues/>
+        <ows:DefaultValue>FALSE</ows:DefaultValue>
+      </fes:Constraint>
+      <fes:Constraint name="ImplementsSorting">
+        <ows:NoValues/>
+        <ows:DefaultValue>TRUE</ows:DefaultValue>
+      </fes:Constraint>
+      <fes:Constraint name="ImplementsExtendedOperators">
+        <ows:NoValues/>
+        <ows:DefaultValue>FALSE</ows:DefaultValue>
+      </fes:Constraint>
+      <fes:Constraint name="ImplementsMinimumXPath">
+        <ows:NoValues/>
+        <ows:DefaultValue>TRUE</ows:DefaultValue>
+      </fes:Constraint>
+      <fes:Constraint name="ImplementsSchemaElementFunc">
+        <ows:NoValues/>
+        <ows:DefaultValue>FALSE</ows:DefaultValue>
+      </fes:Constraint>
+    </fes:Conformance>
+    <fes:Id_Capabilities>
+      <fes:ResourceIdentifier name="fes:ResourceId"/>
+    </fes:Id_Capabilities>
+    <fes:Scalar_Capabilities>
+      <fes:LogicalOperators/>
+      <fes:ComparisonOperators>
+        <fes:ComparisonOperator name="PropertyIsEqualTo"/>
+        <fes:ComparisonOperator name="PropertyIsNotEqualTo"/>
+        <fes:ComparisonOperator name="PropertyIsLessThan"/>
+        <fes:ComparisonOperator name="PropertyIsGreaterThan"/>
+        <fes:ComparisonOperator name="PropertyIsLessThanOrEqualTo"/>
+        <fes:ComparisonOperator name="PropertyIsGreaterThanOrEqualTo"/>
+        <fes:ComparisonOperator name="PropertyIsLike"/>
+        <fes:ComparisonOperator name="PropertyIsNull"/>
+        <fes:ComparisonOperator name="PropertyIsNil"/>
+        <fes:ComparisonOperator name="PropertyIsBetween"/>
+      </fes:ComparisonOperators>
+    </fes:Scalar_Capabilities>
+    <fes:Spatial_Capabilities>
+      <fes:GeometryOperands xmlns:gml="http://www.opengis.net/gml" xmlns:gml32="http://www.opengis.net/gml/3.2">
+        <fes:GeometryOperand name="gml:Box"/>
+        <fes:GeometryOperand name="gml:Envelope"/>
+        <fes:GeometryOperand name="gml:Point"/>
+        <fes:GeometryOperand name="gml:LineString"/>
+        <fes:GeometryOperand name="gml:Curve"/>
+        <fes:GeometryOperand name="gml:Polygon"/>
+        <fes:GeometryOperand name="gml:Surface"/>
+        <fes:GeometryOperand name="gml:MultiPoint"/>
+        <fes:GeometryOperand name="gml:MultiLineString"/>
+        <fes:GeometryOperand name="gml:MultiCurve"/>
+        <fes:GeometryOperand name="gml:MultiPolygon"/>
+        <fes:GeometryOperand name="gml:MultiSurface"/>
+        <fes:GeometryOperand name="gml:CompositeCurve"/>
+        <fes:GeometryOperand name="gml:CompositeSurface"/>
+        <fes:GeometryOperand name="gml32:Envelope"/>
+        <fes:GeometryOperand name="gml32:Point"/>
+        <fes:GeometryOperand name="gml32:LineString"/>
+        <fes:GeometryOperand name="gml32:Curve"/>
+        <fes:GeometryOperand name="gml32:Polygon"/>
+        <fes:GeometryOperand name="gml32:Surface"/>
+        <fes:GeometryOperand name="gml32:MultiPoint"/>
+        <fes:GeometryOperand name="gml32:MultiLineString"/>
+        <fes:GeometryOperand name="gml32:MultiCurve"/>
+        <fes:GeometryOperand name="gml32:MultiPolygon"/>
+        <fes:GeometryOperand name="gml32:MultiSurface"/>
+        <fes:GeometryOperand name="gml32:CompositeCurve"/>
+        <fes:GeometryOperand name="gml32:CompositeSurface"/>
+      </fes:GeometryOperands>
+      <fes:SpatialOperators>
+        <fes:SpatialOperator name="BBOX"/>
+        <fes:SpatialOperator name="Equals"/>
+        <fes:SpatialOperator name="Disjoint"/>
+        <fes:SpatialOperator name="Intersects"/>
+        <fes:SpatialOperator name="Touches"/>
+        <fes:SpatialOperator name="Crosses"/>
+        <fes:SpatialOperator name="Within"/>
+        <fes:SpatialOperator name="Contains"/>
+        <fes:SpatialOperator name="Overlaps"/>
+        <fes:SpatialOperator name="Beyond"/>
+        <fes:SpatialOperator name="DWithin"/>
+      </fes:SpatialOperators>
+    </fes:Spatial_Capabilities>
+    <fes:Temporal_Capabilities>
+      <fes:TemporalOperands xmlns:gml="http://www.opengis.net/gml" xmlns:gml32="http://www.opengis.net/gml/3.2">
+        <fes:TemporalOperand name="gml:TimeInstant"/>
+        <fes:TemporalOperand name="gml:TimePeriod"/>
+        <fes:TemporalOperand name="gml32:TimeInstant"/>
+        <fes:TemporalOperand name="gml32:TimePeriod"/>
+      </fes:TemporalOperands>
+      <fes:TemporalOperators>
+        <fes:TemporalOperator name="After"/>
+        <fes:TemporalOperator name="Before"/>
+        <fes:TemporalOperator name="During"/>
+        <fes:TemporalOperator name="TEquals"/>
+      </fes:TemporalOperators>
+    </fes:Temporal_Capabilities>
+    <fes:Functions>
+      <fes:Function name="Area">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:double</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml="http://www.opengis.net/gml">gml:_Geometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="Area">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:double</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml32="http://www.opengis.net/gml/3.2">gml32:AbstractGeometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="Centroid">
+        <fes:Returns xmlns:gml="http://www.opengis.net/gml">gml:Point</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml="http://www.opengis.net/gml">gml:_Geometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="Centroid">
+        <fes:Returns xmlns:gml32="http://www.opengis.net/gml/3.2">gml32:Point</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml32="http://www.opengis.net/gml/3.2">gml32:AbstractGeometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="env">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:anyType</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="arg2">
+            <fes:Type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:anyType</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="ExtraProp">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:anyType</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="GeometryFromWKT">
+        <fes:Returns xmlns:gml="http://www.opengis.net/gml">gml:_Geometry</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="arg2">
+            <fes:Type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="GeometryFromWKT">
+        <fes:Returns xmlns:gml32="http://www.opengis.net/gml/3.2">gml32:AbstractGeometry</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:string</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="arg2">
+            <fes:Type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:string</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="GetCurrentScale">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:double</fes:Returns>
+      </fes:Function>
+      <fes:Function name="HatchingDistance">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:double</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:double</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="arg2">
+            <fes:Type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:double</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="IDiv">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:integer</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:integer</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="arg2">
+            <fes:Type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:integer</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="IMod">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:integer</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:integer</fes:Type>
+          </fes:Argument>
+          <fes:Argument name="arg2">
+            <fes:Type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:integer</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="InteriorPoint">
+        <fes:Returns xmlns:gml="http://www.opengis.net/gml">gml:Point</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml="http://www.opengis.net/gml">gml:_Geometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="InteriorPoint">
+        <fes:Returns xmlns:gml32="http://www.opengis.net/gml/3.2">gml32:Point</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml32="http://www.opengis.net/gml/3.2">gml32:AbstractGeometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="IsCurve">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:boolean</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml="http://www.opengis.net/gml">gml:_Geometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="IsCurve">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:boolean</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml32="http://www.opengis.net/gml/3.2">gml32:AbstractGeometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="IsPoint">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:boolean</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml="http://www.opengis.net/gml">gml:_Geometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="IsPoint">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:boolean</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml32="http://www.opengis.net/gml/3.2">gml32:AbstractGeometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="IsSurface">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:boolean</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml="http://www.opengis.net/gml">gml:_Geometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="IsSurface">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:boolean</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml32="http://www.opengis.net/gml/3.2">gml32:AbstractGeometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="Length">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:double</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml="http://www.opengis.net/gml">gml:_Geometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="Length">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:double</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml32="http://www.opengis.net/gml/3.2">gml32:AbstractGeometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="Lower">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:integer</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:double</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="MoveGeometry">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:double</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml="http://www.opengis.net/gml">gml:_Geometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="MoveGeometry">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:double</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:gml32="http://www.opengis.net/gml/3.2">gml32:AbstractGeometry</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+      <fes:Function name="Upper">
+        <fes:Returns xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:integer</fes:Returns>
+        <fes:Arguments>
+          <fes:Argument name="arg1">
+            <fes:Type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:double</fes:Type>
+          </fes:Argument>
+        </fes:Arguments>
+      </fes:Function>
+    </fes:Functions>
+  </fes:Filter_Capabilities>
+</WFS_Capabilities>

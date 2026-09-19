@@ -1,0 +1,12 @@
+/build/
+/data/
+/browser/berlin.rte
+/browser/berlin.rpack
+/browser/berlin.rte.zlib
+/browser/berlin.rpack.zlib
+/browser/berlin.rte.xz
+/browser/berlin.rpack.xz
+/browser/wasm/
+/fileformat.txt
+.DS_Store
+/books/

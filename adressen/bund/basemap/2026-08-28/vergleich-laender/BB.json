@@ -1,0 +1,44 @@
+{
+  "state_code": "BB",
+  "basemap_unique_normalized_addresses": 862020,
+  "state_unique_normalized_addresses_either_locality": 1054452,
+  "state_unique_normalized_addresses_postal_locality": 864432,
+  "state_unique_normalized_addresses_municipality": 857211,
+  "matched_either_locality": 861579,
+  "matched_postal_locality": 861569,
+  "matched_municipality": 665042,
+  "basemap_fields": {
+    "mode": "basemap",
+    "input": "/Users/mathiasschindler/PLZ/adressen/bund/basemap/2026-08-28/work/states/BB.tsv",
+    "state_code": "BB",
+    "records": 865218,
+    "usable_primary": 865218,
+    "usable_secondary": 0,
+    "blank_street": 0,
+    "blank_house_number": 0,
+    "blank_primary_locality": 0
+  },
+  "state_fields": {
+    "mode": "state",
+    "input": "/Users/mathiasschindler/PLZ/adressen/BB/2026-08-27/adressen.csv.gz",
+    "state_code": "BB",
+    "records": 867290,
+    "usable_primary": 867290,
+    "usable_secondary": 867290,
+    "blank_street": 0,
+    "blank_house_number": 0,
+    "blank_primary_locality": 0
+  },
+  "coordinate_agreement": {
+    "matched_normalized_keys": 861579,
+    "matched_basemap_records": 864777,
+    "within_1_metre": 860278,
+    "within_5_metres": 862573,
+    "within_25_metres": 864296,
+    "within_100_metres": 864717,
+    "mean_distance_metres": 0.26406007659568637,
+    "maximum_distance_metres": 8728.095520509885
+  },
+  "basemap_match_rate_either_locality": 0.9994884109417415,
+  "state_match_rate_either_locality": 0.8170869797771734
+}

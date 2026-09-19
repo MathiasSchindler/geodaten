@@ -1,0 +1,44 @@
+{
+  "state_code": "SL",
+  "basemap_unique_normalized_addresses": 328889,
+  "state_unique_normalized_addresses_either_locality": 329655,
+  "state_unique_normalized_addresses_postal_locality": 329655,
+  "state_unique_normalized_addresses_municipality": 329655,
+  "matched_either_locality": 311185,
+  "matched_postal_locality": 311185,
+  "matched_municipality": 311185,
+  "basemap_fields": {
+    "mode": "basemap",
+    "input": "/Users/mathiasschindler/PLZ/adressen/bund/basemap/2026-08-28/work/states/SL.tsv",
+    "state_code": "SL",
+    "records": 334367,
+    "usable_primary": 334367,
+    "usable_secondary": 0,
+    "blank_street": 0,
+    "blank_house_number": 0,
+    "blank_primary_locality": 0
+  },
+  "state_fields": {
+    "mode": "state",
+    "input": "/Users/mathiasschindler/PLZ/adressen/SL/2026-08-28/adressen.csv.gz",
+    "state_code": "SL",
+    "records": 335022,
+    "usable_primary": 335022,
+    "usable_secondary": 335022,
+    "blank_street": 0,
+    "blank_house_number": 0,
+    "blank_primary_locality": 0
+  },
+  "coordinate_agreement": {
+    "matched_normalized_keys": 311185,
+    "matched_basemap_records": 316653,
+    "within_1_metre": 316584,
+    "within_5_metres": 316626,
+    "within_25_metres": 316636,
+    "within_100_metres": 316644,
+    "mean_distance_metres": 0.18199486452275415,
+    "maximum_distance_metres": 6227.412845572716
+  },
+  "basemap_match_rate_either_locality": 0.9461702884559836,
+  "state_match_rate_either_locality": 0.9439717280186862
+}

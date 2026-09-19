@@ -1,0 +1,12 @@
+{
+  "planned_tiles": 679682,
+  "verified_chunks": 1360,
+  "completed_tiles": 679682,
+  "records_before_exact_deduplication": 22758976,
+  "downloaded_bytes": 5446985408,
+  "empty_tiles": 325188,
+  "not_found_tiles": 28376,
+  "all_chunk_checksums_valid": true,
+  "plausible_national_record_floor_met": true,
+  "minimum_expected_records": 20000000
+}

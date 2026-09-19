@@ -1,0 +1,17 @@
+country=Schleswig-Holstein
+country_code=SH
+official_state_code=01
+source_data_date=2026-06-01
+retrieved_at=2026-08-27T17:12:23Z
+records=953360
+blank_postcode=0
+unique_postcodes=509
+duplicate_source_ids=0
+duplicate_display_addresses=447
+duplicate_display_addresses_same_coordinate=0
+csv_columns=14
+coordinate_source_crs=EPSG:25832
+coordinate_output_crs=OGC:CRS84
+invalid_coordinates=0
+sha256=e2b4ac6bc46eda4fef158e55125b25a11bd4e91f42fb225a855893ce90be2155
+source_zip_sha256=a41c532dcb2454aec619ab403d2dd43a3c6778d7d7aec825487ae61bd38673e0

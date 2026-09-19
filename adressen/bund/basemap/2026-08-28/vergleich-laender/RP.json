@@ -1,0 +1,44 @@
+{
+  "state_code": "RP",
+  "basemap_unique_normalized_addresses": 1398139,
+  "state_unique_normalized_addresses_either_locality": 1404134,
+  "state_unique_normalized_addresses_postal_locality": 1404134,
+  "state_unique_normalized_addresses_municipality": 1404134,
+  "matched_either_locality": 1222782,
+  "matched_postal_locality": 1222782,
+  "matched_municipality": 1222782,
+  "basemap_fields": {
+    "mode": "basemap",
+    "input": "/Users/mathiasschindler/PLZ/adressen/bund/basemap/2026-08-28/work/states/RP.tsv",
+    "state_code": "RP",
+    "records": 1402151,
+    "usable_primary": 1402151,
+    "usable_secondary": 0,
+    "blank_street": 0,
+    "blank_house_number": 0,
+    "blank_primary_locality": 0
+  },
+  "state_fields": {
+    "mode": "state",
+    "input": "/Users/mathiasschindler/PLZ/adressen/RP/2026-08-28/adressen.csv.gz",
+    "state_code": "RP",
+    "records": 1406086,
+    "usable_primary": 1406086,
+    "usable_secondary": 1406086,
+    "blank_street": 0,
+    "blank_house_number": 0,
+    "blank_primary_locality": 0
+  },
+  "coordinate_agreement": {
+    "matched_normalized_keys": 1222782,
+    "matched_basemap_records": 1225557,
+    "within_1_metre": 1221191,
+    "within_5_metres": 1222672,
+    "within_25_metres": 1224361,
+    "within_100_metres": 1224594,
+    "mean_distance_metres": 46.02554820281032,
+    "maximum_distance_metres": 193820.5665870394
+  },
+  "basemap_match_rate_either_locality": 0.8745782786976116,
+  "state_match_rate_either_locality": 0.8708442356641175
+}

@@ -1,0 +1,17 @@
+{
+  "records": 23252486,
+  "fields_per_record": 24,
+  "empty_oid": 23252486,
+  "empty_quality": 23252486,
+  "empty_municipality": 107,
+  "empty_postcode": 21,
+  "empty_postal_name": 0,
+  "empty_house_number_code": 3008,
+  "invalid_utf8_replacement_characters": 0,
+  "minimum_easting": 280406.83,
+  "maximum_easting": 920637.606,
+  "minimum_northing": 5241017.328,
+  "maximum_northing": 6100794.594,
+  "valid": true,
+  "generated_at": "2026-08-31T13:36:49.367Z"
+}

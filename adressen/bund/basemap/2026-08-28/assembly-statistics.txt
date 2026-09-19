@@ -1,0 +1,5 @@
+raw_unique_records=22750793
+csv_records=22750793
+csv_columns=14
+output_gzip_bytes=906638828
+sha256=d80d5517339936da51bbf47585e05d3f0899cd2e2a695ef23f4b19acaf1308d4

@@ -1,0 +1,8 @@
+records=23252486
+municipality_assignments=4371973
+missing_municipalities=107
+empty_postcodes=21
+empty_house_numbers=3008
+structured_house_keys=15739689
+zero_administrative_keys=3140824
+sanitized_semicolons=0

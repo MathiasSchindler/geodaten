@@ -1,0 +1,15 @@
+HTTP/1.1 401 Unauthorized
+Date: Fri, 28 Aug 2026 10:33:32 GMT
+Server: CERN httpd
+Access-Control-Allow-Methods: POST, GET, OPTIONS
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Content-Type, Authorization
+Access-Control-Allow-Origin: *
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Content-Security-Policy: default-src; style-src 'self' 'unsafe-inline' geoservices.bayern.de geodaten.bayern.de www.geodaten.bayern.de geoportal.bayern.de
+WWW-Authenticate: Basic realm="INSPIRE-WFS Hauskoordinaten"
+Content-Length: 381
+Content-Type: text/html; charset=iso-8859-1
+Connection: close
+

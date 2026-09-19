@@ -1,0 +1,11 @@
+{
+  "records": 23252486,
+  "ids_match_address_input": true,
+  "official_records": 8528354,
+  "matching": 8509485,
+  "conflicting": 18839,
+  "no_polygon": 29,
+  "multiple_postcodes": 1,
+  "assignment_sha256": "46fd0726017fe491047b631a46e1ef1fe23c6ef748ec9c6f60e2b9493c32a668",
+  "validation_passed": true
+}

@@ -1,0 +1,7 @@
+source_url=https://opendata.schleswig-holstein.de/data/OpenGBD/202606_HK_aus_ALKIS_ohne_PLZ_Abgleich_UTMo32.zip
+retrieved_at=2026-08-27T17:12:23Z
+content-type: application/zip
+content-length: 16222320
+etag: "6a1e7960-f78870"
+last-modified: tue, 02 jun 2026 06:34:08 gmt
+source_zip_sha256=a41c532dcb2454aec619ab403d2dd43a3c6778d7d7aec825487ae61bd38673e0

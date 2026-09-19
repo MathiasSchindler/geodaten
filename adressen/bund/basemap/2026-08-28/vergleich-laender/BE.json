@@ -1,0 +1,44 @@
+{
+  "state_code": "BE",
+  "basemap_unique_normalized_addresses": 374220,
+  "state_unique_normalized_addresses_either_locality": 765236,
+  "state_unique_normalized_addresses_postal_locality": 374216,
+  "state_unique_normalized_addresses_municipality": 391020,
+  "matched_either_locality": 374198,
+  "matched_postal_locality": 374198,
+  "matched_municipality": 0,
+  "basemap_fields": {
+    "mode": "basemap",
+    "input": "/Users/mathiasschindler/PLZ/adressen/bund/basemap/2026-08-28/work/states/BE.tsv",
+    "state_code": "BE",
+    "records": 394452,
+    "usable_primary": 394452,
+    "usable_secondary": 0,
+    "blank_street": 0,
+    "blank_house_number": 0,
+    "blank_primary_locality": 0
+  },
+  "state_fields": {
+    "mode": "state",
+    "input": "/Users/mathiasschindler/PLZ/adressen/BE/2026-08-27/adressen.csv.gz",
+    "state_code": "BE",
+    "records": 394303,
+    "usable_primary": 394303,
+    "usable_secondary": 394303,
+    "blank_street": 0,
+    "blank_house_number": 0,
+    "blank_primary_locality": 0
+  },
+  "coordinate_agreement": {
+    "matched_normalized_keys": 374198,
+    "matched_basemap_records": 394430,
+    "within_1_metre": 394430,
+    "within_5_metres": 394430,
+    "within_25_metres": 394430,
+    "within_100_metres": 394430,
+    "mean_distance_metres": 0.13877920179069642,
+    "maximum_distance_metres": 0.2623263016760193
+  },
+  "basemap_match_rate_either_locality": 0.9999412110523221,
+  "state_match_rate_either_locality": 0.48899685848548685
+}

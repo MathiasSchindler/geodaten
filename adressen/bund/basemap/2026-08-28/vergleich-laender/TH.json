@@ -1,0 +1,44 @@
+{
+  "state_code": "TH",
+  "basemap_unique_normalized_addresses": 624116,
+  "state_unique_normalized_addresses_either_locality": 623701,
+  "state_unique_normalized_addresses_postal_locality": 623701,
+  "state_unique_normalized_addresses_municipality": 623701,
+  "matched_either_locality": 561779,
+  "matched_postal_locality": 561779,
+  "matched_municipality": 561779,
+  "basemap_fields": {
+    "mode": "basemap",
+    "input": "/Users/mathiasschindler/PLZ/adressen/bund/basemap/2026-08-28/work/states/TH.tsv",
+    "state_code": "TH",
+    "records": 624678,
+    "usable_primary": 624678,
+    "usable_secondary": 0,
+    "blank_street": 0,
+    "blank_house_number": 0,
+    "blank_primary_locality": 0
+  },
+  "state_fields": {
+    "mode": "state",
+    "input": "/Users/mathiasschindler/PLZ/adressen/TH/2026-08-28/adressen.csv.gz",
+    "state_code": "TH",
+    "records": 624960,
+    "usable_primary": 624960,
+    "usable_secondary": 624960,
+    "blank_street": 0,
+    "blank_house_number": 0,
+    "blank_primary_locality": 0
+  },
+  "coordinate_agreement": {
+    "matched_normalized_keys": 561779,
+    "matched_basemap_records": 562158,
+    "within_1_metre": 559995,
+    "within_5_metres": 561171,
+    "within_25_metres": 561990,
+    "within_100_metres": 562092,
+    "mean_distance_metres": 0.6096049962705572,
+    "maximum_distance_metres": 10363.125950635584
+  },
+  "basemap_match_rate_either_locality": 0.9001195290619052,
+  "state_match_rate_either_locality": 0.9007184532331999
+}

@@ -1,0 +1,8 @@
+{
+	"datasets": [
+		{ "name":"gebref",
+			"title":"Geb\u00e4udereferenzen (ASCII) - Paketierung: gesamt NRW","files": [
+				{"name":"gebref_EPSG25832_ASCII.zip", "size":"97015231", "timestamp":"2026-07-28T11:37:57"}]
+		}
+	]
+}

@@ -1,0 +1,44 @@
+{
+  "state_code": "SN",
+  "basemap_unique_normalized_addresses": 983043,
+  "state_unique_normalized_addresses_either_locality": 1718343,
+  "state_unique_normalized_addresses_postal_locality": 986377,
+  "state_unique_normalized_addresses_municipality": 981018,
+  "matched_either_locality": 962189,
+  "matched_postal_locality": 961476,
+  "matched_municipality": 241216,
+  "basemap_fields": {
+    "mode": "basemap",
+    "input": "/Users/mathiasschindler/PLZ/adressen/bund/basemap/2026-08-28/work/states/SN.tsv",
+    "state_code": "SN",
+    "records": 987910,
+    "usable_primary": 987910,
+    "usable_secondary": 0,
+    "blank_street": 0,
+    "blank_house_number": 0,
+    "blank_primary_locality": 0
+  },
+  "state_fields": {
+    "mode": "state",
+    "input": "/Users/mathiasschindler/PLZ/adressen/SN/2026-08-28/adressen.csv.gz",
+    "state_code": "SN",
+    "records": 990090,
+    "usable_primary": 990090,
+    "usable_secondary": 990090,
+    "blank_street": 0,
+    "blank_house_number": 0,
+    "blank_primary_locality": 0
+  },
+  "coordinate_agreement": {
+    "matched_normalized_keys": 962189,
+    "matched_basemap_records": 967018,
+    "within_1_metre": 931240,
+    "within_5_metres": 955225,
+    "within_25_metres": 964714,
+    "within_100_metres": 966129,
+    "mean_distance_metres": 34.77014464919868,
+    "maximum_distance_metres": 186250.8991413772
+  },
+  "basemap_match_rate_either_locality": 0.9787862789318473,
+  "state_match_rate_either_locality": 0.5599516510964342
+}

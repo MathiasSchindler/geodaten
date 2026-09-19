@@ -1,0 +1,106 @@
+{
+  "records": 23252486,
+  "official_postcodes_preserved": 8528354,
+  "osm_postcodes_added": 14724111,
+  "unresolved_without_postcode": 21,
+  "records_with_postcode": 23252465,
+  "records_without_postcode": 21,
+  "by_state": {
+    "SN": {
+      "records": 993939,
+      "official_postcodes_preserved": 990090,
+      "osm_postcodes_added": 3849,
+      "unresolved_without_postcode": 0
+    },
+    "NW": {
+      "records": 4516958,
+      "official_postcodes_preserved": 4509538,
+      "osm_postcodes_added": 7419,
+      "unresolved_without_postcode": 1
+    },
+    "BW": {
+      "records": 3387256,
+      "official_postcodes_preserved": 0,
+      "osm_postcodes_added": 3387249,
+      "unresolved_without_postcode": 7
+    },
+    "MV": {
+      "records": 517422,
+      "official_postcodes_preserved": 0,
+      "osm_postcodes_added": 517418,
+      "unresolved_without_postcode": 4
+    },
+    "NI": {
+      "records": 2709334,
+      "official_postcodes_preserved": 0,
+      "osm_postcodes_added": 2709330,
+      "unresolved_without_postcode": 4
+    },
+    "BB": {
+      "records": 868435,
+      "official_postcodes_preserved": 867290,
+      "osm_postcodes_added": 1145,
+      "unresolved_without_postcode": 0
+    },
+    "RP": {
+      "records": 1407373,
+      "official_postcodes_preserved": 0,
+      "osm_postcodes_added": 1407373,
+      "unresolved_without_postcode": 0
+    },
+    "TH": {
+      "records": 626135,
+      "official_postcodes_preserved": 0,
+      "osm_postcodes_added": 626135,
+      "unresolved_without_postcode": 0
+    },
+    "HH": {
+      "records": 303414,
+      "official_postcodes_preserved": 302408,
+      "osm_postcodes_added": 1006,
+      "unresolved_without_postcode": 0
+    },
+    "ST": {
+      "records": 667116,
+      "official_postcodes_preserved": 0,
+      "osm_postcodes_added": 667116,
+      "unresolved_without_postcode": 0
+    },
+    "SH": {
+      "records": 955211,
+      "official_postcodes_preserved": 953360,
+      "osm_postcodes_added": 1851,
+      "unresolved_without_postcode": 0
+    },
+    "BY": {
+      "records": 3761180,
+      "official_postcodes_preserved": 0,
+      "osm_postcodes_added": 3761179,
+      "unresolved_without_postcode": 1
+    },
+    "HE": {
+      "records": 1632549,
+      "official_postcodes_preserved": 0,
+      "osm_postcodes_added": 1632545,
+      "unresolved_without_postcode": 4
+    },
+    "BE": {
+      "records": 394456,
+      "official_postcodes_preserved": 394303,
+      "osm_postcodes_added": 153,
+      "unresolved_without_postcode": 0
+    },
+    "HB": {
+      "records": 176527,
+      "official_postcodes_preserved": 176374,
+      "osm_postcodes_added": 153,
+      "unresolved_without_postcode": 0
+    },
+    "SL": {
+      "records": 335181,
+      "official_postcodes_preserved": 334991,
+      "osm_postcodes_added": 190,
+      "unresolved_without_postcode": 0
+    }
+  }
+}

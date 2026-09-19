@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wfs:FeatureCollection xmlns:wfs="http://www.opengis.net/wfs/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation=" http://www.opengis.net/wfs/2.0 https://www.wfs.nrw.de/aaa-suite/schema/ogc/wfs/2.0/wfs.xsd" timeStamp="2026-08-28T10:02:15.971+02:00" numberReturned="0" numberMatched="4509543"/>

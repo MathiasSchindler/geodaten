@@ -1,0 +1,81 @@
+{
+	"name" : "HK",
+	"in_update" : "https://geobasis-rlp.de/data/hk/in_update.txt",
+	"metadata" : {  
+		"csw_ResourceIdentifier" : "https://registry.gdi-de.org/id/de.rp.vermkv/a688600a-7996-4c71-98ab-368feb7977bc"
+	},
+	"services" : {
+		"atom" : [],
+		"wfs"  : [],
+		"wms"  : []  
+	}, 
+	"selection_hierarchy" : [
+		{
+			"collection_id" : "vermkv:landesgrenze_rlp",
+			"info_template" : "Sie haben gerade <br /> {name} <br /> ausgewählt. <div>Auf dieser Ebene ist der Download-Link stets das gesamte Bundesland, auch beim Deutsch-Lux. Hoheitsgebiet.</div>",
+			"urls" : {
+				"data" : {
+					"scheme" : "https://geobasis-rlp.de/data/hk/current/zip/HAUSKOORDINATEN_RP.zip", 
+					"label" : "Datensatz herunterladen"
+				}
+			}
+		}
+	],
+	"base_layers" : [
+		{
+			"title" : "Liegenschaften RP",
+			"visible" : false,
+			"source_conf" : {
+				"url" : "https://geo5.service24.rlp.de/wms/liegenschaften_rp.fcgi",
+				"params" : {"LAYERS" : "Flurstueck,Lagebezeichnungen,GebaeudeBauwerke", "TILED" : true}
+			}
+		},
+		{
+			"title" : "DOP20",
+			"visible" : true,
+			"source_conf" : {
+				"url" : "https://geo4.service24.rlp.de/wms/rp_dop20.fcgi",
+				"params" : {"LAYERS" : "rp_dop20", "TILED" : true, "FORMAT" : "image/webp"}
+			}
+		},
+		{
+			"title" : "basemap.de Farbe",
+			"visible" : false,
+			"source_conf" : {
+				"url" : "https://sgx.geodatenzentrum.de/wms_basemapde",
+				"params" : {"LAYERS" : "de_basemapde_web_raster_farbe", "TILED" : true}
+			}
+		}
+	],
+	"optional_layers" : [
+		{
+			"title" : "Karte RP - Gewässer",
+			"source_conf" : {
+				"url" : "https://geo5.service24.rlp.de/wms/karte_rp.fcgi",
+				"params" : {"LAYERS" : "Seen,Fluesse", "TILED": true, "TRANSPARENT": true}
+			}
+		},
+		{
+			"title" : "Liegenschaften RP (Hybrid)",
+			"source_conf" : {
+				"url" : "https://geo5.service24.rlp.de/wms/liegenschaften_rp.fcgi",
+				"params" : {"LAYERS": "GebaeudeBauwerke,Flurstueck,Lagebezeichnungen", "TILED": true, "TRANSPARENT": true}
+			}
+		},
+		{
+			"title" : "Karte RP - Verkehr",
+            "visible" : false,
+			"source_conf" : {
+				"url" : "https://geo5.service24.rlp.de/wms/karte_rp.fcgi",
+				"params" : {"LAYERS" : "Autobahnen,Wege,Gemeindestrassen,Kreisstrassen,Landesstrassen,Bundesstrassen,Bahn", "TILED" : true, "TRANSPARENT" : true}
+			}
+		},
+		{
+			"title" : "Karte RP - Orte",
+			"source_conf" : {
+				"url" : "https://geo5.service24.rlp.de/wms/karte_rp.fcgi",
+				"params" : {"LAYERS": "Ortschaften", "TILED" : true, "TRANSPARENT" : true}
+			}
+		}
+	]
+}

@@ -1,0 +1,10 @@
+candidate_relations: 8295
+relations_kept: 8175
+relations_excluded: 76
+relations_incomplete: 44
+relations_broken: 0
+features_written: 8175
+outer_rings: 8712
+inner_rings: 144
+member_ways_resolved: 65699
+member_nodes_resolved: 3550926

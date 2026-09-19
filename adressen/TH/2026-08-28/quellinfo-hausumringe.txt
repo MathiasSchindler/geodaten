@@ -1,0 +1,5 @@
+Land: TH
+Anzahl der HU: 2318005
+Koordinatenreferenzsystem: ETRS89/UTM32; EPSG-Code 25832
+Auslesedatum: 2026-03-17
+Ansprechpartner: Dietl;wolfgang.dietl@tlbg.thueringen.de;0361-574176754

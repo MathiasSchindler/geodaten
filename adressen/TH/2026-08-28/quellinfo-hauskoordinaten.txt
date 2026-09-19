@@ -1,0 +1,5 @@
+Land: TH
+Anzahl der HK: 624960
+Koordinatenreferenzsystem: ETRS89/UTM32; EPSG-Code 25832
+Auslesedatum: 2026-03-26
+Ansprechpartner: Dirk Majewski;dirk.majewski@tlbg.thueringen.de; 0361-574176436

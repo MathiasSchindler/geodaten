@@ -1,0 +1,29 @@
+{
+  "main_records": 23252486,
+  "provenance_records": 23252486,
+  "conflict_records": 212,
+  "records_with_postcode": 8528354,
+  "records_without_postcode": 14724132,
+  "states": {
+    "SN": 993939,
+    "NW": 4516958,
+    "BW": 3387256,
+    "MV": 517422,
+    "NI": 2709334,
+    "BB": 868435,
+    "RP": 1407373,
+    "TH": 626135,
+    "HH": 303414,
+    "ST": 667116,
+    "SH": 955211,
+    "BY": 3761180,
+    "HE": 1632549,
+    "BE": 394456,
+    "HB": 176527,
+    "SL": 335181
+  },
+  "schemas_valid": true,
+  "ids_valid": true,
+  "coordinates_valid": true,
+  "provenance_rules_valid": true
+}
