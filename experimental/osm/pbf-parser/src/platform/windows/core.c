@@ -165,6 +165,7 @@ unsigned long __stack_chk_guard;
 void __main(void) {
 }
 
+#if defined(__x86_64__)
 __attribute__((naked))
 void ___chkstk_ms(void) {
     __asm__(
@@ -189,6 +190,7 @@ void ___chkstk_ms(void) {
         "ret\n"
     );
 }
+#endif
 
 static char windows_command_line[4096];
 static char *windows_argv[64];
@@ -1578,7 +1580,11 @@ int platform_get_uname(
     if (platform_get_hostname(nodename, nodename_size) != 0) return -1;
     if (windows_copy_string(release, release_size, "NT") != 0) return -1;
     if (windows_copy_string(version, version_size, "freestanding") != 0) return -1;
+#if defined(__aarch64__)
+    if (windows_copy_string(machine, machine_size, "aarch64") != 0) return -1;
+#else
     if (windows_copy_string(machine, machine_size, "x86_64") != 0) return -1;
+#endif
     return 0;
 }
 

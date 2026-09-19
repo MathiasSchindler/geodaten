@@ -72,6 +72,16 @@ The build output and local PBF data files are intentionally ignored by git.
 
 `make clean` removes the whole build directory. Recreate the binaries with `make`, then recreate any needed `.rpack` or `.rte` files.
 
+On native Windows ARM64 with LLVM-MinGW, build all tools as freestanding PE
+binaries without a C runtime dependency:
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\build-windows-arm64.ps1
+```
+
+Pass `-Test` to run the synthetic postal regression test after building. The
+outputs are written to `build/freestanding-windows-arm64/`.
+
 ## Data
 
 Place local `.osm.pbf` files under `data/` when running the tools. Example:
